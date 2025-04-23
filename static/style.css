@@ -71,14 +71,20 @@ summary {
 }
 
 img {
-  background: transparent !important;
+  background: transparent;
   max-width: 100%;
   height: auto;
-  border: none !important;
+  border: none;
   border-radius: 8px;
-  box-shadow: none !important;
   margin: 1rem 0;
   animation: pulseGlow 2.0s ease-in-out infinite;
+}
+
+.fuzzy-avatar {
+  border-radius: 8px;
+  box-shadow: 0 0 12px #00eaff88;
+  display: block;
+  margin: 0 auto;
 }
 
 @keyframes pulseGlow {
@@ -179,11 +185,4 @@ td img {
   margin: 0 auto;
   border: none;
   box-shadow: none;
-}
-
-.fuzzy-avatar {
-  border-radius: 8px;
-  box-shadow: 0 0 12px #00eaff88;
-  display: block;
-  margin: 0 auto;
 }
