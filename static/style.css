@@ -79,19 +79,13 @@ img {
   border-radius: 8px;
   box-shadow: 0 0 8px #00eaff22;
   margin: 1rem 0;
-  animation: pulseGlow 3s ease-in-out infinite;
+  animation: pulseGlow 1.5s ease-in-out infinite;
 }
 
 @keyframes pulseGlow {
-  0% {
-    box-shadow: 0 0 8px #00eaff22;
-  }
-  50% {
-    box-shadow: 0 0 20px #00eaff88;
-  }
-  100% {
-    box-shadow: 0 0 8px #00eaff22;
-  }
+  0%   { box-shadow: 0 0 6px #00eaff22; }
+  50%  { box-shadow: 0 0 18px #00eaffcc; }
+  100% { box-shadow: 0 0 6px #00eaff22; }
 }
 
 .button-neon {
