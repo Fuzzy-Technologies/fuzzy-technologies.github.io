@@ -11,7 +11,7 @@
 <table style="border: none; border-collapse: collapse;">
   <tr>
     <td style="width: 330px; vertical-align: middle; horiz-align: middle; border: none;">
-      <img src="/static/images/0000-Вера-и-Дарина.png" width="320" alt="Fuzzy Technologies"/>
+      <img src="/static/images/0000-Вера-и-Дарина.gif" width="320" alt="Fuzzy Technologies"/>
     </td>
     <td style="padding-left: 1em; vertical-align: top; border: none;">
       <p>Добро пожаловать на сайт компании <strong>Fuzzy Technologies</strong>!</p>
