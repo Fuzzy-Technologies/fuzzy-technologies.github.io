@@ -111,6 +111,7 @@ img {
   color: #0d0d0d;
 }
 
+/* Таблицы */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -119,10 +120,25 @@ table {
   background-color: transparent !important;
 }
 
+thead, tbody, tr, th {
+  background-color: transparent !important;
+  color: #b3ecff !important;
+  border: none !important;
+}
+
+th {
+  font-weight: bold;
+  text-align: left;
+  padding: 0.5em 1em;
+  background-color: #111 !important;
+  color: #00eaff !important;
+  border-bottom: 1px solid #00eaff44 !important;
+}
+
 td {
+  padding: 0.5em 1em;
   border: none !important;
   vertical-align: middle;
-  padding: 1rem;
   background-color: transparent !important;
   color: #b3ecff;
 }
