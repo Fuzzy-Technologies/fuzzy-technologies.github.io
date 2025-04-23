@@ -212,8 +212,8 @@ class TradeScenario(TinkoffBrokerServer):
 def Trade():
     # --- Инициализация основного объекта трейдера:
     trader = TradeScenario(
-        userToken="",  # Строка с вашим токеном для доступа к API Т-Инвестиции. Также можно использовать переменную окружения `TKS_API_TOKEN`.
-        userAccount="",  # Строка с accountId пользователя. Также можно использовать переменную окружения `TKS_ACCOUNT_ID`.
+        userToken="",  # Строка с токеном для доступа к API Т-Инвестиции. Или используйте переменную окружения `TKS_API_TOKEN`.
+        userAccount="",  # Строка с accountId пользователя. Или используйте переменную окружения `TKS_ACCOUNT_ID`.
     )
 
     trader.tickers = ["YNDX", "IBM", "GAZP"]  # Задаём тикеры инструментов для работы трейдера.
