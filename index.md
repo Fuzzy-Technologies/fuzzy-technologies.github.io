@@ -6,8 +6,8 @@
 
 <table class="table-clean">
   <tr>
-    <td>
-      <img src="/static/images/0000-Вера-и-Дарина.gif" alt="Fuzzy Technologies"/>
+    <td style="width: 170px;">
+      <img src="/static/images/0000-Вера-и-Дарина.gif" alt="Fuzzy Team" style="width: 160px; border-radius: 8px; box-shadow: 0 0 10px #00eaff55;">
     </td>
     <td>
       <div style="text-align: center;">
