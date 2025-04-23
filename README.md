@@ -3,7 +3,7 @@
 <table style="border: none; border-collapse: collapse;">
   <tr>
     <td style="width: 160px; vertical-align: middle; horiz-align: middle; border: none;">
-      <img src="/static/images/0000-Вера-и-Дарина.png" width="150" alt="Fuzzy Technologies"/>
+      <img src="/static/images/0000-Вера-и-Дарина.png" width="100%" alt="Fuzzy Technologies"/>
     </td>
     <td style="padding-left: 1em; vertical-align: top; border: none;">
       <p><strong>Fuzzy Technologies</strong> — инженерная компания, разрабатывающая продукты в области автоматизации биржевой аналитики, алготрейдинга и оценки рисков. Мы объединяем строгую математику, вероятностные модели и нечёткую логику в продуктах нового поколения.</p>
