@@ -2,7 +2,7 @@
 
 <div style="text-align: center; margin-top: 2em;">
   <a href="https://fuzzy-technologies.github.io">
-    <img src="/static/images/FuzzyTechnologiesTextLogo-1000x180.png" alt="Fuzzy Technologies Logo" width="300"/>
+    <img src="/static/images/FuzzyTechnologiesTextLogo-1000x180-transp.png" alt="Fuzzy Technologies Logo" width="300"/>
   </a>
 </div>
 
@@ -28,7 +28,7 @@
 ## 📊 Fuzzy Market Analytics
 
 <a href="https://fuzzy-technologies.github.io/FMA">
-  <img src="/static/images/FuzzyMarketAnalytics-Text-Logo-1000x180.png" alt="Fuzzy Market Analytics Logo" width="250"/>
+  <img src="/static/images/FuzzyMarketAnalytics-Text-Logo-1000x180-transp.png" alt="Fuzzy Market Analytics Logo" width="250"/>
 </a>
 
 <i><a href="https://fuzzy-technologies.github.io/FMA">Страничка сервисов FMA</a></i>
