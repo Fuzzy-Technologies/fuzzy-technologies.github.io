@@ -1,5 +1,9 @@
+<link rel="stylesheet" href="/static/style.css">
+
 <div style="text-align: center; margin-top: 2em;">
+<a href="https://fuzzy-technologies.github.io">
   <img src="/static/images/FuzzyTechnologiesTextLogo-1000x180.png" alt="Fuzzy Technologies Logo" width="600"/>
+</a>
 </div>
 
 # 🌓 Fuzzy Technologies

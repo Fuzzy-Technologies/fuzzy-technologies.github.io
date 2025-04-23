@@ -1,1 +1,79 @@
-/* Custom styles go here */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+body {
+  background-color: #0d0d0d;
+  color: #e6f7ff;
+  font-family: 'Fira Code', monospace;
+  line-height: 1.75;
+  font-size: 16px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  color: #00eaff;
+  text-shadow: 0 0 5px #00eaff, 0 0 10px #00eaff;
+  border-bottom: 1px solid #00eaff44;
+  padding-bottom: 0.3em;
+  margin-top: 2em;
+}
+
+a {
+  color: #ff79c6;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+a:hover {
+  color: #ff5555;
+  text-shadow: 0 0 3px #ff5555;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, #00eaff33, #ff79c633);
+  margin: 3rem 0;
+}
+
+code, pre {
+  background: #1e1e1e;
+  color: #f8f8f2;
+  padding: 0.5em;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+pre {
+  box-shadow: 0 0 10px #00eaff22;
+  border: 1px solid #00eaff33;
+}
+
+details {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  color: #50fa7b;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #00eaff33;
+  border-radius: 8px;
+  box-shadow: 0 0 8px #00eaff22;
+  margin: 1rem 0;
+}
+
+::selection {
+  background: #ff79c6;
+  color: #0d0d0d;
+}
