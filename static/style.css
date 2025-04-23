@@ -4,7 +4,7 @@ body {
   background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
   background-size: 400% 400%;
   animation: gradientShift 15s ease infinite;
-  color: #e6f7ff;
+  color: #b3ecff; /* 💡 Более мягкий голубой */
   font-family: 'Fira Code', monospace;
   line-height: 1.75;
   font-size: 16px;
@@ -21,8 +21,8 @@ body {
 }
 
 h1, h2, h3 {
-  color: #00eaff;
-  text-shadow: 0 0 5px #00eaff, 0 0 10px #00eaff;
+  color: #66d9ef; /* 🔹 Тёмно-голубой вместо ярко-бирюзового */
+  text-shadow: 0 0 3px #00eaff, 0 0 6px #00eaff;
   border-bottom: 1px solid #00eaff44;
   padding-bottom: 0.3em;
   margin-top: 2em;
@@ -47,7 +47,7 @@ hr {
 
 code, pre {
   background: #1e1e1e;
-  color: #f8f8f2;
+  color: #b3ecff; /* ✅ Синхронно с основным текстом */
   padding: 0.5em;
   border-radius: 6px;
   overflow-x: auto;
@@ -59,7 +59,7 @@ pre {
 }
 
 details {
-  background: #1a1a1a;
+  background: #121212; /* темнее и мягче */
   border: 1px solid #333;
   border-radius: 5px;
   padding: 1em;
