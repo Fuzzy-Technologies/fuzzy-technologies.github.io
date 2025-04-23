@@ -200,3 +200,7 @@ td img {
 hr:first-of-type {
   display: none;
 }
+
+h1:empty, h1 > a:empty {
+  display: none;
+}
