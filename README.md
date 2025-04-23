@@ -1,11 +1,11 @@
 # 🌓 Fuzzy Technologies
 
-<table style="border: none; border-collapse: collapse;">
+<table>
   <tr>
-    <td style="width: 160px; vertical-align: middle; horiz-align: middle; border: none;">
+    <td>
       <img src="/static/images/0000-Вера-и-Дарина.png" width="100%" alt="Fuzzy Technologies"/>
     </td>
-    <td style="padding-left: 1em; vertical-align: top; border: none;">
+    <td>
       <p><strong>Fuzzy Technologies</strong> — инженерная компания, разрабатывающая продукты в области автоматизации биржевой аналитики, алготрейдинга и оценки рисков. Мы объединяем строгую математику, вероятностные модели и нечёткую логику в продуктах нового поколения.</p>
       <p>💬 <strong>Контакты:</strong> <a href="https://t.me/fuzzy_technologies">@fuzzy_technologies</a></p>
     </td>

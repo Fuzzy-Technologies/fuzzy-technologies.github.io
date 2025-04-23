@@ -79,7 +79,7 @@ img {
   border-radius: 8px;
   box-shadow: 0 0 8px #00eaff22;
   margin: 1rem 0;
-  animation: pulseGlow 1.5s ease-in-out infinite;
+  animation: pulseGlow 2.0s ease-in-out infinite;
 }
 
 @keyframes pulseGlow {
@@ -110,4 +110,37 @@ img {
 ::selection {
   background: #ff79c6;
   color: #0d0d0d;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+  margin: 1rem 0;
+}
+
+td {
+  border: none;
+  vertical-align: middle;
+  padding: 1rem;
+}
+
+td img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #00eaff44;
+}
+
+@media (max-width: 768px) {
+  table, tbody, tr, td {
+    display: block;
+    width: 100%;
+  }
+  td {
+    text-align: center;
+  }
+  td img {
+    margin-bottom: 1rem;
+  }
 }
