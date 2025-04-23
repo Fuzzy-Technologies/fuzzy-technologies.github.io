@@ -6,12 +6,12 @@
 
 <table class="table-clean">
   <tr>
-    <td style="width: 170px;">
-      <img src="/static/images/0000-Вера-и-Дарина.gif" alt="Fuzzy Team" style="width: 160px; border-radius: 8px; box-shadow: 0 0 10px #00eaff55;">
+    <td style="width: 160px;">
+      <img src="/static/images/0000-Вера-и-Дарина.gif" alt="Fuzzy Team" style="border-radius: 8px; box-shadow: 0 0 10px #00eaff55;">
     </td>
     <td>
       <div style="text-align: center;">
-        <a href="https://fuzzy-technologies.github.io">
+        <a href="https://fuzzy-technologies.github.io">Л
           <img src="/static/images/FuzzyTechnologiesTextLogo-1000x180-transp.png" alt="Fuzzy Technologies Logo" width="300"/>
         </a>
       </div>
