@@ -45,28 +45,27 @@ hr {
   margin: 3rem 0;
 }
 
-pre {
-  background: #1a1a1a !important;
-  color: #b3ecff !important;
+pre, code {
+  background: #1a1a1a;
   padding: 1em;
   border-radius: 6px;
   overflow-x: auto;
   border: none;
+}
+
+pre {
+  color: #b3ecff;
   box-shadow: 0 0 10px #00eaff22;
 }
 
 code {
-  background: #1a1a1a !important;
-  color: #05f645 !important;
-  padding: 1em;
-  border-radius: 6px;
-  overflow-x: auto;
-  border: none;
+  color: #05f645;
   box-shadow: 0 0 10px rgba(0, 234, 255, 0.05);
 }
 
+/* Спойлеры */
 details {
-  background: #121212 !important;
+  background: #121212;
   color: #b3ecff;
   border: 1px solid #333;
   border-radius: 5px;
@@ -87,12 +86,12 @@ img {
   border: none;
   border-radius: 12px;
   margin: 1rem 0;
-  animation: pulseGlow 3.0s ease-in-out infinite;
+  animation: pulseGlow 3s ease-in-out infinite;
 }
 
 .fuzzy-avatar {
   border-radius: 12px;
-  box-shadow: 0 0 12px #00eaff88; !important;
+  box-shadow: 0 0 12px #00eaff88;
   display: block;
   margin: 0 auto;
 }
@@ -103,6 +102,7 @@ img {
   100% { box-shadow: 0 0 6px #00eaff22; }
 }
 
+/* Кнопки */
 .button-neon {
   display: inline-block;
   padding: 0.75em 1.5em;
@@ -133,29 +133,29 @@ table {
   border-collapse: collapse;
   border: none;
   margin: 1rem 0;
-  background-color: transparent !important;
+  background-color: transparent;
 }
 
 thead, tbody, tr, th {
-  background-color: transparent !important;
-  color: #b3ecff !important;
-  border: none !important;
+  background-color: transparent;
+  color: #b3ecff;
+  border: none;
 }
 
 th {
   font-weight: bold;
   text-align: left;
   padding: 0.5em 1em;
-  background-color: #111 !important;
-  color: #00eaff !important;
-  border-bottom: 1px solid #00eaff44 !important;
+  background-color: #111;
+  color: #00eaff;
+  border-bottom: 1px solid #00eaff44;
 }
 
 td {
   padding: 0.5em 1em;
-  border: none !important;
+  border: none;
   vertical-align: middle;
-  background-color: transparent !important;
+  background-color: transparent;
   color: #b3ecff;
 }
 
@@ -164,7 +164,7 @@ td img {
   margin: 0 auto;
   border-radius: 12px;
   box-shadow: none;
-  background: transparent !important;
+  background: transparent;
 }
 
 @media (max-width: 768px) {
@@ -186,7 +186,7 @@ td img {
   width: 100%;
 }
 .table-clean td {
-  border: none !important;
+  border: none;
   padding: 1em;
   vertical-align: middle;
 }
@@ -197,25 +197,24 @@ td img {
   box-shadow: none;
 }
 
-hr:first-of-type {
-  display: none;
-}
-
-/* --- Скрываем гитхабовский шаблонный заголовок и его лишнюю черту --- */
-h1:empty, h1 > a:empty {
-  display: none;
-}
-
-.markdown-body > h1:empty {
-  display: none;
-}
-.markdown-body > h1:empty::before,
-.markdown-body > h1:empty::after {
+/* Скрытие пустого h1 от GitHub Pages */
+.markdown-body > h1:empty,
+.markdown-body > h1:empty > a:empty {
   display: none !important;
-  content: none !important;
-  border: none !important;
   height: 0 !important;
   margin: 0 !important;
   padding: 0 !important;
+  border: none !important;
 }
-/* -------------------------------------------------------------------- */
+
+.markdown-body > h1:empty::before,
+.markdown-body > h1:empty::after,
+.markdown-body > h1:empty > a:empty::before,
+.markdown-body > h1:empty > a:empty::after {
+  content: none !important;
+  display: none !important;
+  height: 0 !important;
+  border: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
