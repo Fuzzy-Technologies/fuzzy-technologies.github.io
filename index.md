@@ -6,8 +6,8 @@
 
 <table class="table-clean">
   <tr>
-    <td style="width: 160px;">
-      <img class="fuzzy-avatar" src="/static/images/0000-Вера-и-Дарина.gif" alt="Fuzzy Team" style="margin-top: 30px;">
+    <td style="width: 160px; padding-top: 0.4em;">
+      <img class="fuzzy-avatar" src="/static/images/0000-Вера-и-Дарина.gif" alt="Fuzzy Team" style="margin-top: 40px;">
     </td>
     <td>
       <div style="text-align: center;">
