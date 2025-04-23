@@ -11,7 +11,7 @@
     </td>
     <td>
       <div style="text-align: center;">
-        <a href="https://fuzzy-technologies.github.io">Л
+        <a href="https://fuzzy-technologies.github.io">
           <img src="/static/images/FuzzyTechnologiesTextLogo-1000x180-transp.png" alt="Fuzzy Technologies Logo" width="300"/>
         </a>
       </div>
