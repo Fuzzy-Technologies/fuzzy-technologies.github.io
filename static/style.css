@@ -1,39 +1,3 @@
-/* --- Дополнительные стили для Markdown таблиц (GitHub Pages override) --- */
-.markdown-body table,
-.markdown-body thead,
-.markdown-body tbody,
-.markdown-body tr,
-.markdown-body th,
-.markdown-body td {
-  background-color: transparent !important;
-  border: none !important;
-}
-
-/* --- Если у таблиц всё ещё белый фон — переопределяем стили конкретно для таблиц --- */
-table {
-  background-color: transparent !important;
-  border: none !important;
-}
-th, td {
-  background-color: transparent !important;
-}
-
-/* --- Дополнительное правило для скрытия пустого заголовка h1, создаваемого GitHub Pages --- */
-.markdown-body h1:empty,
-.markdown-body h1:empty::before,
-.markdown-body h1:empty::after,
-.markdown-body h1.entry-title,
-.markdown-body h1.entry-title::before,
-.markdown-body h1.entry-title::after {
-  display: none !important;
-  height: 0 !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  border: none !important;
-}
-
-/* --- Кастомные стили остаются без изменений --- */
-
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 
 body {
@@ -51,9 +15,9 @@ body {
 }
 
 @keyframes gradientShift {
-  0% { background-position: 0% 50%; }
+  0% { background-position: 0 50%; }
   50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  100% { background-position: 0 50%; }
 }
 
 h1, h2, h3 {
