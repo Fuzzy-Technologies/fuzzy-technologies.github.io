@@ -1,3 +1,39 @@
+/* --- Дополнительные стили для Markdown таблиц (GitHub Pages override) --- */
+.markdown-body table,
+.markdown-body thead,
+.markdown-body tbody,
+.markdown-body tr,
+.markdown-body th,
+.markdown-body td {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+/* --- Если у таблиц всё ещё белый фон — переопределяем стили конкретно для таблиц --- */
+table {
+  background-color: transparent !important;
+  border: none !important;
+}
+th, td {
+  background-color: transparent !important;
+}
+
+/* --- Дополнительное правило для скрытия пустого заголовка h1, создаваемого GitHub Pages --- */
+.markdown-body h1:empty,
+.markdown-body h1:empty::before,
+.markdown-body h1:empty::after,
+.markdown-body h1.entry-title,
+.markdown-body h1.entry-title::before,
+.markdown-body h1.entry-title::after {
+  display: none !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+}
+
+/* --- Кастомные стили остаются без изменений --- */
+
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 
 body {
@@ -45,27 +81,28 @@ hr {
   margin: 3rem 0;
 }
 
-pre, code {
-  background: #1a1a1a;
+pre {
+  background: #1a1a1a !important;
+  color: #b3ecff !important;
   padding: 1em;
   border-radius: 6px;
   overflow-x: auto;
   border: none;
-}
-
-pre {
-  color: #b3ecff;
   box-shadow: 0 0 10px #00eaff22;
 }
 
 code {
-  color: #05f645;
+  background: #1a1a1a !important;
+  color: #05f645 !important;
+  padding: 1em;
+  border-radius: 6px;
+  overflow-x: auto;
+  border: none;
   box-shadow: 0 0 10px rgba(0, 234, 255, 0.05);
 }
 
-/* Спойлеры */
 details {
-  background: #121212;
+  background: #121212 !important;
   color: #b3ecff;
   border: 1px solid #333;
   border-radius: 5px;
@@ -86,7 +123,7 @@ img {
   border: none;
   border-radius: 12px;
   margin: 1rem 0;
-  animation: pulseGlow 3s ease-in-out infinite;
+  animation: pulseGlow 3.0s ease-in-out infinite;
 }
 
 .fuzzy-avatar {
@@ -102,7 +139,6 @@ img {
   100% { box-shadow: 0 0 6px #00eaff22; }
 }
 
-/* Кнопки */
 .button-neon {
   display: inline-block;
   padding: 0.75em 1.5em;
@@ -133,29 +169,29 @@ table {
   border-collapse: collapse;
   border: none;
   margin: 1rem 0;
-  background-color: transparent;
+  background-color: transparent !important;
 }
 
 thead, tbody, tr, th {
-  background-color: transparent;
-  color: #b3ecff;
-  border: none;
+  background-color: transparent !important;
+  color: #b3ecff !important;
+  border: none !important;
 }
 
 th {
   font-weight: bold;
   text-align: left;
   padding: 0.5em 1em;
-  background-color: #111;
-  color: #00eaff;
-  border-bottom: 1px solid #00eaff44;
+  background-color: #111 !important;
+  color: #00eaff !important;
+  border-bottom: 1px solid #00eaff44 !important;
 }
 
 td {
   padding: 0.5em 1em;
-  border: none;
+  border: none !important;
   vertical-align: middle;
-  background-color: transparent;
+  background-color: transparent !important;
   color: #b3ecff;
 }
 
@@ -164,7 +200,7 @@ td img {
   margin: 0 auto;
   border-radius: 12px;
   box-shadow: none;
-  background: transparent;
+  background: transparent !important;
 }
 
 @media (max-width: 768px) {
@@ -186,7 +222,7 @@ td img {
   width: 100%;
 }
 .table-clean td {
-  border: none;
+  border: none !important;
   padding: 1em;
   vertical-align: middle;
 }
@@ -195,26 +231,4 @@ td img {
   margin: 0 auto;
   border: none;
   box-shadow: none;
-}
-
-/* Скрытие пустого h1 от GitHub Pages */
-.markdown-body > h1:empty,
-.markdown-body > h1:empty > a:empty {
-  display: none !important;
-  height: 0 !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  border: none !important;
-}
-
-.markdown-body > h1:empty::before,
-.markdown-body > h1:empty::after,
-.markdown-body > h1:empty > a:empty::before,
-.markdown-body > h1:empty > a:empty::after {
-  content: none !important;
-  display: none !important;
-  height: 0 !important;
-  border: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
 }
