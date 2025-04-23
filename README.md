@@ -17,8 +17,8 @@
 Этот репозиторий используется как основа GitHub Pages для размещения публичного сайта:
 
 - [`/`](https://fuzzy-technologies.github.io) — главная страница компании
-- [`/FMA`](https://fuzzy-technologies.github.io/FMA) — 📊 *Fuzzy Market Analytics* — линейка сигнальных и аналитических сервисов
-- [`/TKSBrokerAPI`](https://fuzzy-technologies.github.io/TKSBrokerAPI) — ⚙️ *TKSBrokerAPI* — торгово-аналитическая платформа
+- [`/FMA`](https://fuzzy-technologies.github.io/FMA) — 📊 **Fuzzy Market Analytics** — линейка сигнальных и аналитических сервисов
+- [`/TKSBrokerAPI`](https://fuzzy-technologies.github.io/TKSBrokerAPI) — ⚙️ **TKSBrokerAPI** — торгово-аналитическая платформа
 
 ## 📂 Статические ресурсы
 
