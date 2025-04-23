@@ -57,12 +57,12 @@ pre {
 
 code {
   background: #1a1a1a !important;
-  color: #0de145 !important;
+  color: #05f645 !important;
   padding: 1em;
   border-radius: 6px;
   overflow-x: auto;
   border: none;
-  box-shadow: 0 0 10px #00eaff22;
+  box-shadow: 0 0 10px rgba(0, 234, 255, 0.05);
 }
 
 details {
@@ -92,7 +92,7 @@ img {
 
 .fuzzy-avatar {
   border-radius: 12px;
-  box-shadow: 0 0 12px #00eaff88;
+  box-shadow: 0 0 12px #00eaff88; !important;
   display: block;
   margin: 0 auto;
 }
