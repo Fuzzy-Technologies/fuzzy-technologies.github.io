@@ -196,3 +196,7 @@ td img {
   border: none;
   box-shadow: none;
 }
+
+hr:first-of-type {
+  display: none;
+}

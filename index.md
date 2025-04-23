@@ -1,8 +1,8 @@
 <!-- no heading auto -->
 
-<link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="64x64" href="/static/images/favicon-64x64.png">
-<link rel="icon" type="image/png" sizes="128x128" href="/static/images/favicon-128x128.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32x32.png?">
+<link rel="icon" type="image/png" sizes="64x64" href="/static/images/favicon-64x64.png?">
+<link rel="icon" type="image/png" sizes="128x128" href="/static/images/favicon-128x128.png?">
 
 <link rel="stylesheet" href="/static/style.css">
 
@@ -30,9 +30,7 @@
   </tr>
 </table>
 
-Наш девиз: <strong>Technologies · Knowledge · Science</strong>
-
-<hr/>
+<p style="text-align: right;">Наш девиз: <strong>Technologies · Knowledge · Science</strong></p>
 
 ## 📊 Fuzzy Market Analytics
 
@@ -43,8 +41,6 @@
 <i><a href="https://fuzzy-technologies.github.io/FMA">Страничка сервисов FMA</a></i>
 
 Линейка продуктов и сервисов FMA для автоматизации биржевой аналитики и торговли.
-
-<hr/>
 
 ## ⚙️ TKSBrokerAPI
 
