@@ -19,7 +19,7 @@
       <img class="fuzzy-avatar" src="/static/images/0000-Вера-и-Дарина.gif" alt="Fuzzy Team" style="margin-top: 40px;">
     </td>
     <td>
-      <div style="text-align: left;">
+      <div style="text-align: left; margin-bottom: 1rem;">
         <a href="https://fuzzy-technologies.github.io">
           <img src="/static/images/FuzzyTechnologiesTextLogo-1000x180-transp.png" alt="Fuzzy Technologies Logo" width="300"/>
         </a>
