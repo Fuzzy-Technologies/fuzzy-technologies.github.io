@@ -201,6 +201,21 @@ hr:first-of-type {
   display: none;
 }
 
+/* --- Скрываем гитхабовский шаблонный заголовок и его лишнюю черту --- */
 h1:empty, h1 > a:empty {
   display: none;
 }
+
+.markdown-body > h1:empty {
+  display: none;
+}
+.markdown-body > h1:empty::before,
+.markdown-body > h1:empty::after {
+  display: none !important;
+  content: none !important;
+  border: none !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+/* -------------------------------------------------------------------- */
