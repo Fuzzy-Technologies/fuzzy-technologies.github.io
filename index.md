@@ -1,8 +1,6 @@
 <!-- no heading auto -->
 
-<link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32x32.png?">
-<link rel="icon" type="image/png" sizes="64x64" href="/static/images/favicon-64x64.png?">
-<link rel="icon" type="image/png" sizes="128x128" href="/static/images/favicon-128x128.png?">
+<link rel="icon" type="image/x-icon" sizes="128x128" href="/static/images/favicon.ico">
 
 <link rel="stylesheet" href="/static/style.css">
 
