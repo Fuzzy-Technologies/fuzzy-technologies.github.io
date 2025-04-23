@@ -57,7 +57,7 @@ code, pre {
 
 details {
   background: #121212 !important;
-  color: #b3ecff;
+  color: #0de145;
   border: 1px solid #333;
   border-radius: 5px;
   padding: 1em;
@@ -75,13 +75,13 @@ img {
   max-width: 100%;
   height: auto;
   border: none;
-  border-radius: 8px;
+  border-radius: 12px;
   margin: 1rem 0;
-  animation: pulseGlow 2.0s ease-in-out infinite;
+  animation: pulseGlow 3.0s ease-in-out infinite;
 }
 
 .fuzzy-avatar {
-  border-radius: 8px;
+  border-radius: 12px;
   box-shadow: 0 0 12px #00eaff88;
   display: block;
   margin: 0 auto;
@@ -152,7 +152,7 @@ td {
 td img {
   display: block;
   margin: 0 auto;
-  border-radius: 8px;
+  border-radius: 12px;
   box-shadow: none;
   background: transparent !important;
 }

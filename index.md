@@ -1,7 +1,5 @@
 <link rel="stylesheet" href="/static/style.css">
 
-
-
 # 🌓 Fuzzy Technologies
 
 <table class="table-clean">
