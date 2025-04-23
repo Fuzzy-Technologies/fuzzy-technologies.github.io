@@ -1,6 +1,6 @@
 # 🌓 Fuzzy Technologies
 
-<table>
+<table class="table-clean">
   <tr>
     <td>
       <img src="/static/images/0000-Вера-и-Дарина.png" width="100%" alt="Fuzzy Technologies"/>

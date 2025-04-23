@@ -8,7 +8,7 @@
 
 # 🌓 Fuzzy Technologies
 
-<table>
+<table class="table-clean">
   <tr>
     <td>
       <img src="/static/images/0000-Вера-и-Дарина.gif" width="160" alt="Fuzzy Technologies"/>
