@@ -21,8 +21,8 @@
 ## 🔗 Ссылки
 
 - 🌐 Сайт Fuzzy Technologies: [https://fuzzy-technologies.github.io](https://fuzzy-technologies.github.io)
-- ⚙️ TKSBrokerAPI — телеграм-канал платформы : [@TKSBrokerAPI](https://t.me/TKSBrokerAPI)
-- ✌️ Личный телеграм-канал разработчика: [@tgilmullin_blog](https://t.me/tgilmullin_blog) 
+- ⚙️ TKSBrokerAPI — телеграм-канал платформы : [@TKSBrokerAPI](https://t.me/TKSBrokerAPI/19)
+- ✌️ Личный телеграм-канал разработчика: [@tgilmullin_blog](https://t.me/tgilmullin_blog/3) 
   - 📊 Статьи и публикации: [https://teletype.in/@tgilmullin](https://teletype.in/@tgilmullin)
 
 ---
