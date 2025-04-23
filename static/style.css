@@ -45,7 +45,7 @@ hr {
   margin: 3rem 0;
 }
 
-code, pre {
+pre {
   background: #1a1a1a !important;
   color: #b3ecff !important;
   padding: 1em;
@@ -55,9 +55,19 @@ code, pre {
   box-shadow: 0 0 10px #00eaff22;
 }
 
+code {
+  background: #1a1a1a !important;
+  color: #0de145 !important;
+  padding: 1em;
+  border-radius: 6px;
+  overflow-x: auto;
+  border: none;
+  box-shadow: 0 0 10px #00eaff22;
+}
+
 details {
   background: #121212 !important;
-  color: #0de145;
+  color: #b3ecff;
   border: 1px solid #333;
   border-radius: 5px;
   padding: 1em;
