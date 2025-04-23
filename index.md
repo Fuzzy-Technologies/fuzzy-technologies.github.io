@@ -10,7 +10,7 @@
       <img src="/static/images/0000-Вера-и-Дарина.gif" alt="Fuzzy Technologies"/>
     </td>
     <td>
-      <div style="text-align: center; margin-top: 2em;">
+      <div style="text-align: center;">
         <a href="https://fuzzy-technologies.github.io">
           <img src="/static/images/FuzzyTechnologiesTextLogo-1000x180-transp.png" alt="Fuzzy Technologies Logo" width="300"/>
         </a>
@@ -35,8 +35,6 @@
 <i><a href="https://fuzzy-technologies.github.io/FMA">Страничка сервисов FMA</a></i>
 
 Линейка продуктов и сервисов FMA для автоматизации биржевой аналитики и торговли.
-
-<hr/>
 
 ## ⚙️ TKSBrokerAPI
 
