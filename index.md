@@ -1,6 +1,12 @@
+<!-- no heading auto -->
+
 <link rel="stylesheet" href="/static/style.css">
 
-# 🌓 Fuzzy Technologies
+<h1 style="text-align: left;">
+  <a href="https://fuzzy-technologies.github.io/" style="color: #ff79c6; text-decoration: none;">
+    🌓 Fuzzy Technologies
+  </a>
+</h1>
 
 <table class="table-clean">
   <tr>
@@ -20,9 +26,9 @@
   </tr>
 </table>
 
-<hr/>
-
 Наш девиз: <strong>Technologies · Knowledge · Science</strong>
+
+<hr/>
 
 ## 📊 Fuzzy Market Analytics
 
@@ -33,6 +39,8 @@
 <i><a href="https://fuzzy-technologies.github.io/FMA">Страничка сервисов FMA</a></i>
 
 Линейка продуктов и сервисов FMA для автоматизации биржевой аналитики и торговли.
+
+<hr/>
 
 ## ⚙️ TKSBrokerAPI
 
