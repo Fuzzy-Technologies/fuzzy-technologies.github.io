@@ -180,3 +180,10 @@ td img {
   border: none;
   box-shadow: none;
 }
+
+.fuzzy-avatar {
+  border-radius: 8px;
+  box-shadow: 0 0 12px #00eaff88;
+  display: block;
+  margin: 0 auto;
+}

@@ -7,7 +7,7 @@
 <table class="table-clean">
   <tr>
     <td style="width: 160px;">
-      <img src="/static/images/0000-Вера-и-Дарина.gif" alt="Fuzzy Team" style="border-radius: 8px; box-shadow: 0 0 10px #00eaff55;">
+      <img class="fuzzy-avatar" src="/static/images/0000-Вера-и-Дарина.gif" alt="Fuzzy Team" style="margin-top: 30px;">
     </td>
     <td>
       <div style="text-align: center;">
