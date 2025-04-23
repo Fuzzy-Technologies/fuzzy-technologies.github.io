@@ -1,16 +1,24 @@
 <link rel="stylesheet" href="/static/style.css">
 
 <div style="text-align: center; margin-top: 2em;">
-<a href="https://fuzzy-technologies.github.io">
-  <img src="/static/images/FuzzyTechnologiesTextLogo-1000x180.png" alt="Fuzzy Technologies Logo" width="600"/>
-</a>
+  <a href="https://fuzzy-technologies.github.io">
+    <img src="/static/images/FuzzyTechnologiesTextLogo-1000x180.png" alt="Fuzzy Technologies Logo" width="300"/>
+  </a>
 </div>
 
 # 🌓 Fuzzy Technologies
 
-Добро пожаловать на сайт компании **Fuzzy Technologies** — мы инженерная компания, разрабатываем платформы, продукты и сервисы для автоматизации биржевой аналитики, оценки рисков и алготрейдинга. Мы объединяем строгую математику, вероятностные модели и нечёткую логику в продуктах нового поколения.
-
-💬 Контакты: @fuzzy_technologies
+<table style="border: none; border-collapse: collapse;">
+  <tr>
+    <td style="width: 330px; vertical-align: middle; horiz-align: middle; border: none;">
+      <img src="/static/images/0000-Вера-и-Дарина.gif" width="320" alt="Fuzzy Technologies"/>
+    </td>
+    <td style="padding-left: 1em; vertical-align: top; border: none;">
+      <p>Добро пожаловать на сайт компании <strong>Fuzzy Technologies</strong> — мы инженерная компания, разрабатываем платформы, продукты и сервисы для автоматизации биржевой аналитики, оценки рисков и алготрейдинга. Мы объединяем строгую математику, вероятностные модели и нечёткую логику в продуктах нового поколения.</p>
+      <p>💬 <strong>Контакты:</strong> <a href="https://t.me/fuzzy_technologies">@fuzzy_technologies</a></p>
+    </td>
+  </tr>
+</table>
 
 <hr/>
 
@@ -19,7 +27,7 @@
 ## 📊 Fuzzy Market Analytics
 
 <a href="https://fuzzy-technologies.github.io/FMA">
-  <img src="/static/images/FuzzyMarketAnalytics-Text-Logo-1000x180.png" alt="Fuzzy Market Analytics Logo" width="300"/>
+  <img src="/static/images/FuzzyMarketAnalytics-Text-Logo-1000x180.png" alt="Fuzzy Market Analytics Logo" width="250"/>
 </a>
 
 <i><a href="https://fuzzy-technologies.github.io/FMA">Страничка сервисов FMA</a></i>
@@ -31,7 +39,7 @@
 ## ⚙️ TKSBrokerAPI
 
 <a href="https://fuzzy-technologies.github.io/TKSBrokerAPI">
-  <img src="/static/images/TKSBrokerAPI-Logo.png" alt="TKSBrokerAPI Logo" width="600">
+  <img src="/static/images/TKSBrokerAPI-Logo.png" alt="TKSBrokerAPI Logo" width="650">
 </a>
 
 <a href="https://fuzzy-technologies.github.io/TKSBrokerAPI"><i>Страничка платформы</i> ⚙️ <i>TKSBrokerAPI</i></a>
@@ -57,10 +65,10 @@ TKSBrokerAPI легко встраивается в CI/CD пайплайны, а
 
    Запуск сценариев, экспорт данных, получение информации — через простой CLI-интерфейс с ключами.
 
-<details markdown="block">
+<details>
   <summary>Пример запроса клиентского портфеля и вывод информации в консоль</summary>
 
-```shell
+  <pre><code class="language-markdown">
 $ tksbrokerapi --overview
 
 TKSBrokerAPI.py     L:1821 INFO    [2022-08-10 22:06:27,150] Statistics of client's portfolio:
@@ -181,18 +189,17 @@ TKSBrokerAPI.py     L:1821 INFO    [2022-08-10 22:06:27,150] Statistics of clien
 | [US] Соединенные Штаты Америки     | 1.96%   | 7948.93 rub
 
 TKSBrokerAPI.py     L:1827 INFO    [2022-08-10 22:06:27,153] Client's portfolio is saved to file: [overview.md]
-```
-
+   </code></pre>
 </details>
 
 2. **Как Python-модуль**  
 
    Импортируйте в проект и стройте собственные торговые и аналитические алгоритмы.
 
-<details markdown="block">
+<details>
   <summary>Пример структуры собственного трейдерского алгоритма</summary>
 
-```python
+  <pre><code class="language-python">
 from tksbrokerapi.TKSBrokerAPI import TinkoffBrokerServer, uLogger
 from tksbrokerapi.TradeRoutines import *
 
@@ -228,8 +235,7 @@ def Trade():
 
 if __name__ == "__main__":
     Trade()  # Инициализация, параметризация и запуск торгового сценария
-```
-
+   </code></pre>
 </details>
 
 ### Зачем нужна платформа ⚙️ TKSBrokerAPI
@@ -240,7 +246,7 @@ if __name__ == "__main__":
 
 #### 💡 Как это работает
 
-<img src="/static/images/TKSBrokerAPI-flow.png" alt="TKSBrokerAPI Flow" width="600">
+<img src="/static/images/TKSBrokerAPI-flow.png" alt="TKSBrokerAPI Flow" width="650">
 
 1. Вы придумываете гениальную торговую идею или алгоритм.
 2. Описываете его как сценарий — пошагово, как вы бы торговали вручную.
@@ -252,7 +258,7 @@ if __name__ == "__main__":
 
 #### 📊 Обогащение и анализ данных
 
-<img src="/static/images/TKSBrokerAPI-extend-data-flow.png" alt="TKSBrokerAPI Analytics" width="600"/>
+<img src="/static/images/TKSBrokerAPI-extend-data-flow.png" alt="TKSBrokerAPI Analytics" width="650"/>
 
 Платформа TKSBrokerAPI помогает не только в торговле, но и в подготовке первичных данных для анализа. Она получает «сырые» данные по активам — акции, облигации, фонды, фьючерсы и валюты — и предоставляет их в удобных форматах:
 
@@ -274,6 +280,8 @@ if __name__ == "__main__":
 <hr/>
 
 <div style="text-align: center; margin-top: 2em;">
-  <img src="/static/images/Technologies-Knowledge-Science.png" alt="Technologies · Knowledge · Science" width="250"/>
+  <a href="https://fuzzy-technologies.github.io">
+    <img src="/static/images/Technologies-Knowledge-Science.png" alt="Technologies · Knowledge · Science" width="200"/>
+  </a>
   <p style="font-size: 0.9em; color: #666;">Fuzzy Technologies · 2025</p>
 </div>
