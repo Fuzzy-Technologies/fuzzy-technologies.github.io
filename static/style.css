@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 
 body {
-  background-color: #0d0d0d;
+  background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
   color: #e6f7ff;
   font-family: 'Fira Code', monospace;
   line-height: 1.75;
@@ -10,6 +12,12 @@ body {
   margin: 0 auto;
   padding: 2rem;
   box-sizing: border-box;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 h1, h2, h3 {
@@ -71,6 +79,38 @@ img {
   border-radius: 8px;
   box-shadow: 0 0 8px #00eaff22;
   margin: 1rem 0;
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 8px #00eaff22;
+  }
+  50% {
+    box-shadow: 0 0 20px #00eaff88;
+  }
+  100% {
+    box-shadow: 0 0 8px #00eaff22;
+  }
+}
+
+.button-neon {
+  display: inline-block;
+  padding: 0.75em 1.5em;
+  margin: 1rem 0;
+  background: #1e1e1e;
+  border: 1px solid #00eaff88;
+  color: #00eaff;
+  font-weight: bold;
+  text-shadow: 0 0 5px #00eaff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #00eaff33;
+  transition: 0.3s ease;
+}
+.button-neon:hover {
+  background: #00eaff11;
+  color: #ffffff;
+  box-shadow: 0 0 20px #00eaff88;
 }
 
 ::selection {
