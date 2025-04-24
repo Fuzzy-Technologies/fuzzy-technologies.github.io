@@ -7,23 +7,23 @@
 
 <link rel="stylesheet" href="/static/style.css">
 
-<h1 style="text-align: left;">
-  <a href="https://fuzzy-technologies.github.io/" style="color: #ff79c6; text-decoration: none;">
-    🌓 Fuzzy Technologies
+<div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 2rem;">
+  <h1 style="margin: 0; font-size: 1.8rem;">
+    <a href="https://fuzzy-technologies.github.io/" style="color: #ff79c6; text-decoration: none;">
+      🌓 Fuzzy Technologies
+    </a>
+  </h1>
+  <a href="https://fuzzy-technologies.github.io/">
+    <img src="/static/images/FuzzyTechnologiesTextLogo-1000x180-transp.png" alt="Fuzzy Technologies Logo" width="200" />
   </a>
-</h1>
+</div>
 
 <table class="table-clean">
   <tr>
-    <td style="width: 160px; padding-top: 0.4em;">
-      <img class="fuzzy-avatar" src="/static/images/0000-Вера-и-Дарина.gif" alt="Fuzzy Team" style="margin-top: 40px;">
+    <td style="width: 200px;">
+      <img class="fuzzy-avatar" src="/static/images/0000-Вера-и-Дарина.gif" alt="Fuzzy Team">
     </td>
     <td>
-      <div style="text-align: left; margin-bottom: 1rem;">
-        <a href="https://fuzzy-technologies.github.io">
-          <img src="/static/images/FuzzyTechnologiesTextLogo-1000x180-transp.png" alt="Fuzzy Technologies Logo" width="300"/>
-        </a>
-      </div>
       <p>Добро пожаловать на сайт компании <strong>Fuzzy Technologies</strong>!</p>
       <p>Мы инженерная команда, разрабатываем платформы, продукты и сервисы для автоматизации биржевой аналитики, оценки рисков и алготрейдинга. Мы объединяем строгую математику, вероятностные модели и нечёткую логику в продуктах нового поколения.</p>
       <p>💬 <strong>Контакты:</strong> <a href="https://t.me/fuzzy_technologies">@fuzzy_technologies</a></p>
@@ -36,7 +36,7 @@
 ## 📊 Fuzzy Market Analytics
 
 <a href="https://fuzzy-technologies.github.io/FMA">
-  <img src="/static/images/FuzzyMarketAnalytics-Text-Logo-1000x180-transp.png" alt="Fuzzy Market Analytics Logo" width="250"/>
+  <img src="/static/images/FuzzyMarketAnalytics-Text-Logo-1000x180-transp.png" alt="Fuzzy Market Analytics Logo" width="300"/>
 </a>
 
 <i><a href="https://fuzzy-technologies.github.io/FMA">Страничка сервисов FMA</a></i>
