@@ -172,8 +172,11 @@ td img {
     display: block;
     width: 100%;
   }
-  td {
+  td:first-child {
     text-align: center;
+  }
+  td:last-child {
+    text-align: left;
   }
   td img {
     margin-bottom: 1rem;
