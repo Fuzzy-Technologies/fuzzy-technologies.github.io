@@ -87,7 +87,7 @@ img {
   border: none;
   border-radius: 12px;
   margin: 1rem 0;
-  animation: pulseGlow 5.0s ease-in-out infinite;
+  animation: pulseGlow 3.0s ease-in-out infinite;
 }
 
 .fuzzy-avatar {
