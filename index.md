@@ -31,7 +31,8 @@
   </tr>
 </table>
 
-<p style="text-align: right;">Наш девиз: <strong>Technologies · Knowledge · Science</strong></p>
+[//]: # (<p style="text-align: right;">Наш девиз: <strong>Technologies · Knowledge · Science</strong></p>)
+<p style="text-align: right;">Наш девиз: <strong>Технологии · Знания · Наука</strong></p>
 
 ## 📊 Fuzzy Market Analytics
 

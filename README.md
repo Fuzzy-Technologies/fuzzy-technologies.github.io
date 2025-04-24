@@ -4,6 +4,8 @@
 
 *We engineer trading tools for signal analysis, probabilistic decisions, anomaly-driven insights, and fuzzy-driven strategies.*
 
+<p style="text-align: right;">Technologies · Knowledge · Science</p>
+
 ---
 
 <table class="table-clean">
@@ -23,6 +25,8 @@
     </td>
   </tr>
 </table>
+
+<p style="text-align: right;">Наш девиз: <strong>Технологии · Знания · Наука</strong></p>
 
 ## 📦 Структура репозитория
 
