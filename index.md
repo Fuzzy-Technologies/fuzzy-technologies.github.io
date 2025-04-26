@@ -39,7 +39,6 @@
 <a href="https://fuzzy-technologies.github.io/FMA">
   <img src="/static/images/FuzzyMarketAnalytics-Text-Logo-1000x180-transp.png" alt="Fuzzy Market Analytics Logo" width="300"/>
 </a><br>
-<i><a href="https://fuzzy-technologies.github.io/FMA">Страничка сервисов FMA</a></i><br><br>
 
 Линейка продуктов и сервисов для автоматизации биржевой аналитики и торговли, созданные с использованием авторских методик Fuzzy Market Analytics (FMA, «Нечёткая аналитика рынка»).
 
