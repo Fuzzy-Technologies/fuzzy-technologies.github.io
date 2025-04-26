@@ -81,8 +81,7 @@ FMA помогает принимать обоснованные решения,
 <a href="https://fuzzy-technologies.github.io/TKSBrokerAPI">
   <img src="/static/images/TKSBrokerAPI-Logo-text-only.png" alt="TKSBrokerAPI Logo" width="250">
 </a><br>
-<a href="https://fuzzy-technologies.github.io/TKSBrokerAPI"><i>Страничка платформы</i> ⚙️ <i>TKSBrokerAPI</i></a><br>
-<a href="https://t.me/TKSBrokerAPI/19"><i>Телеграм-канал платформы: ➤ @TKSBrokerAPI</i></a><br><br>
+<a href="https://t.me/TKSBrokerAPI/19"><i>Телеграм-канал: ➤ @TKSBrokerAPI</i></a><br><br>
 
 ⚙️ **[TKSBrokerAPI](https://github.com/Tim55667757/TKSBrokerAPI)** — это платформа собственной разработки для упрощённой работы с брокером Т-Инвестиции через REST API и автоматизации сбора биржевой аналитики и торговых сценариев на Python. 
 
