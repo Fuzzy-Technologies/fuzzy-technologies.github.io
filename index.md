@@ -20,7 +20,7 @@
 
 <table class="table-clean">
   <tr>
-    <td style="width: 300px;">
+    <td style="width: 250px;">
       <img class="fuzzy-avatar" src="/static/images/0000-Вера-и-Дарина.gif" alt="Fuzzy Market Analytics Team">
     </td>
     <td>
