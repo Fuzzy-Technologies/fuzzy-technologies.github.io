@@ -21,7 +21,7 @@
 <a href="https://fuzzy-technologies.github.io/TKSBrokerAPI">
   <img src="/static/images/TKSBrokerAPI-Logo.png" alt="TKSBrokerAPI Logo" width="650">
 </a><br>
-<a href="https://t.me/TKSBrokerAPI/19"><i>Телеграм-канал платформы: ➤ @TKSBrokerAPI</i></a>
+<a href="https://t.me/TKSBrokerAPI/19"><i>Телеграм-канал платформы: ➤ @TKSBrokerAPI</i></a><br><br>
 
 ⚙️ **[TKSBrokerAPI](https://github.com/Tim55667757/TKSBrokerAPI)** — это платформа собственной разработки для упрощённой работы с брокером Т-Инвестиции через REST API и автоматизации сбора биржевой аналитики и торговых сценариев на Python. 
 
