@@ -19,7 +19,7 @@
 </div>
 
 <a href="https://fuzzy-technologies.github.io/TKSBrokerAPI">
-  <img src="/static/images/TKSBrokerAPI-Logo.png" alt="TKSBrokerAPI Logo" width="650">
+  <img src="/static/images/TKSBrokerAPI-Logo.png" alt="TKSBrokerAPI Logo" height="250">
 </a><br>
 <a href="https://t.me/TKSBrokerAPI/19"><i>Телеграм-канал платформы: ➤ @TKSBrokerAPI</i></a><br><br>
 
@@ -39,7 +39,7 @@ TKSBrokerAPI легко встраивается в CI/CD пайплайны, а
 
 #### 💡 Как это работает
 
-<img src="/static/images/TKSBrokerAPI-flow.png" alt="TKSBrokerAPI Flow" width="650">
+<img src="/static/images/TKSBrokerAPI-flow.png" alt="TKSBrokerAPI Flow" height="250">
 
 1. Вы придумываете гениальную торговую идею или алгоритм.
 2. Описываете его как сценарий — пошагово, как вы бы торговали вручную.
@@ -51,7 +51,7 @@ TKSBrokerAPI легко встраивается в CI/CD пайплайны, а
 
 #### 📊 Обогащение и анализ данных
 
-<img src="/static/images/TKSBrokerAPI-extend-data-flow.png" alt="TKSBrokerAPI Analytics" width="650"/>
+<img src="/static/images/TKSBrokerAPI-extend-data-flow.png" alt="TKSBrokerAPI Analytics" height="250"/>
 
 Платформа TKSBrokerAPI помогает не только в торговле, но и в подготовке первичных данных для анализа. Она получает «сырые» данные по активам — акции, облигации, фонды, фьючерсы и валюты — и предоставляет их в удобных форматах:
 
