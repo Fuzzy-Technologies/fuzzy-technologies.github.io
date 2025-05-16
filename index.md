@@ -14,7 +14,7 @@
     </a>
   </h1>
   <a href="https://fuzzy-technologies.github.io/">
-    <img src="/static/images/FuzzyTechnologiesTextLogo-1000x180-transp.png" alt="Fuzzy Technologies Logo" width="200" />
+    <img src="/static/images/FuzzyTechnologies-Logo-transp.png" alt="Fuzzy Technologies Logo" width="200" />
   </a>
 </div>
 
