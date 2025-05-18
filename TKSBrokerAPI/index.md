@@ -73,10 +73,10 @@ TKSBrokerAPI легко встраивается в CI/CD пайплайны, а
 
 ### 📦 Как установить
 
-⚠️ Актуальная и наиболее оптимизированная dev-версия на текущий момент в PyPI: [v1.6.dev247](https://pypi.org/project/tksbrokerapi/1.6.dev247/) (release-версия платформы ожидается до 1 июня 2025).
+⚠️ Актуальная и наиболее оптимизированная dev-версия на текущий момент в PyPI: [v1.6.dev248](https://pypi.org/project/tksbrokerapi/1.6.dev248/) (release-версия платформы ожидается до 1 июня 2025).
 
 ```shell
-pip install tksbrokerapi==1.6.dev247
+pip install tksbrokerapi==1.6.dev248
 ```
 
 🇷🇺 📚 Документация на русском:
