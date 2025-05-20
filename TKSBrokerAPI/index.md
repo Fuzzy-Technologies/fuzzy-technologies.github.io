@@ -31,6 +31,22 @@ TKSBrokerAPI легко встраивается в CI/CD пайплайны, а
 
 Все сигнальные и торговые сценарии [FMA](https://fuzzy-technologies.github.io/FMA) также работают на базе платформы TKSBrokerAPI.
 
+
+### 📦 Как установить
+
+⚠️ Актуальная и наиболее оптимизированная dev-версия на текущий момент в PyPI: [v1.6.dev247](https://pypi.org/project/tksbrokerapi/1.6.dev247/) (release-версия платформы ожидается до 1 июня 2025).
+
+```shell
+pip install tksbrokerapi==1.6.dev247
+```
+
+🇷🇺 📚 Документация на русском:
+- Код на GitHub: [TKSBrokerAPI](https://github.com/Tim55667757/TKSBrokerAPI/tree/develop)
+- Подробное описание и примеры: [README.md](https://github.com/Tim55667757/TKSBrokerAPI/blob/develop/README.md)
+- Документация на API: [TKSBrokerAPI module docs](https://tim55667757.github.io/TKSBrokerAPI/docs/tksbrokerapi/TKSBrokerAPI.html)
+- Накопительные релиз-ноты: [CHANGELOG.md](https://github.com/Tim55667757/TKSBrokerAPI/blob/develop/CHANGELOG.md)
+
+
 ### Зачем нужна платформа ⚙️ TKSBrokerAPI
 
 Если требуется совместить инвестиции, Python и алготрейдинг, то вам не нужно разбираться в тонкостях сетевых протоколов или документации API. TKSBrokerAPI берёт это на себя.
@@ -70,20 +86,6 @@ TKSBrokerAPI легко встраивается в CI/CD пайплайны, а
 7. ... 🔮 магия 🎩 ...
 8. 💰 Профит!
 
-
-### 📦 Как установить
-
-⚠️ Актуальная и наиболее оптимизированная dev-версия на текущий момент в PyPI: [v1.6.dev247](https://pypi.org/project/tksbrokerapi/1.6.dev247/) (release-версия платформы ожидается до 1 июня 2025).
-
-```shell
-pip install tksbrokerapi==1.6.dev247
-```
-
-🇷🇺 📚 Документация на русском:
-- Код на GitHub: [TKSBrokerAPI](https://github.com/Tim55667757/TKSBrokerAPI/tree/develop)
-- Подробное описание и примеры: [README.md](https://github.com/Tim55667757/TKSBrokerAPI/blob/develop/README.md)
-- Документация на API: [TKSBrokerAPI module docs](https://tim55667757.github.io/TKSBrokerAPI/docs/tksbrokerapi/TKSBrokerAPI.html)
-- Накопительные релиз-ноты: [CHANGELOG.md](https://github.com/Tim55667757/TKSBrokerAPI/blob/develop/CHANGELOG.md)
 
 ### 🛠 Как использовать
 
