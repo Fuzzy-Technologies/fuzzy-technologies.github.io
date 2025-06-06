@@ -69,7 +69,7 @@ description: Сервисы биржевых сигналов Fuzzy Market Analy
 <tr>
   <td style="width: 280px; vertical-align: top;">
 
-#### 🟩 Пример сигнала в ТГ-канале
+#### 🟩 Пример сигнала
 
   <img class="fuzzy-avatar" src="/static/images/signal-example.png" alt="Signal Example">
   </td>
