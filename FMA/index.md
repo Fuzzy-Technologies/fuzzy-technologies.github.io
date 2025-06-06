@@ -25,7 +25,7 @@ description: Сервисы биржевых сигналов Fuzzy Market Analy
 
 <table class="table-clean">
   <tr>
-    <td style="width: 300px;">
+    <td style="width: 280px;">
       <img class="fuzzy-avatar" src="/static/images/FMA-purple-pink.png" alt="Fuzzy Market Analytics Logo" >
     </td>
     <td>
@@ -38,7 +38,7 @@ description: Сервисы биржевых сигналов Fuzzy Market Analy
 
 <table class="table-clean" style="margin-top: 2rem; margin-bottom: 2rem;">
   <tr>
-    <td style="width: 300px; vertical-align: top;">
+    <td style="width: 280px; vertical-align: top;">
       <a href="https://web.tribute.tg/s/nub">
         <img class="fuzzy-avatar" src="/static/images/0001-Ева-и-Мария.png" alt="Fuzzy Market Analytics Girls">
       </a>
@@ -67,7 +67,7 @@ description: Сервисы биржевых сигналов Fuzzy Market Analy
 
 <table class="table-clean">
 <tr>
-  <td style="width: 300px; vertical-align: top;">
+  <td style="width: 280px; vertical-align: top;">
 
 #### 🟩 Пример сигнала в ТГ-канале
 
