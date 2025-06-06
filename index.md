@@ -21,7 +21,7 @@
 <table class="table-clean">
   <tr>
     <td style="width: 275px;">
-      <img class="fuzzy-avatar" src="/static/images/0000-Вера-и-Дарина.gif" alt="Fuzzy Market Analytics Team">
+      <img class="fuzzy-avatar" src="/static/images/0000-Вера-и-Дарина.gif" alt="Fuzzy Market Analytics Girls">
     </td>
     <td>
       <p><strong>Fuzzy Technologies</strong> — инженерная команда, создающая платформы и сервисы для автоматизации биржевой аналитики, алготрейдинга и оценки рисков.</p>
