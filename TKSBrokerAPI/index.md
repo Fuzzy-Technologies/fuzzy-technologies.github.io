@@ -1,3 +1,8 @@
+---
+title: TKSBrokerAPI
+description: Платформа ⚙️ TKSBrokerAPI для упрощённой работы с брокером Т-Инвестиции через REST API и автоматизации сбора биржевой аналитики и торговых сценариев на Python.
+---
+
 <!-- no heading auto -->
 
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
