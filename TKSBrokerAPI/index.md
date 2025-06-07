@@ -1,3 +1,8 @@
+---
+title: TKSBrokerAPI
+description: Платформа ⚙️ TKSBrokerAPI для упрощённой работы с брокером Т-Инвестиции через REST API и автоматизации сбора биржевой аналитики и торговых сценариев на Python.
+---
+
 <!-- no heading auto -->
 
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -30,6 +35,40 @@
 TKSBrokerAPI легко встраивается в CI/CD пайплайны, автосценарии и дата-инжиниринг. Платформа подойдёт как для локальной аналитики, так и для полноценных бэктестов и торговых роботов.
 
 Все сигнальные и торговые сценарии [FMA](https://fuzzy-technologies.github.io/FMA) также работают на базе платформы TKSBrokerAPI.
+
+
+### 📦 Как установить
+
+✅ Стабильная релизная версия в PyPI: [v1.6.268](https://pypi.org/project/tksbrokerapi/1.6.268/)
+
+```shell
+pip install tksbrokerapi==1.6.268
+```
+
+Или в [Docker Hub](https://hub.docker.com/repository/docker/tim55667757/tksbrokerapi/general):
+
+```shell
+docker pull tim55667757/tksbrokerapi:1.6.268
+```
+
+⚠️ Актуальная и наиболее оптимизированная dev-версия в PyPI: [v1.6.dev265](https://pypi.org/project/tksbrokerapi/1.6.dev265/)
+
+```shell
+pip install tksbrokerapi==1.6.dev265
+```
+
+В Docker Hub:
+
+```shell
+docker pull tim55667757/tksbrokerapi:1.6.dev265
+```
+
+🇷🇺 📚 Документация на русском:
+- Код на GitHub: [TKSBrokerAPI](https://github.com/Tim55667757/TKSBrokerAPI/tree/develop)
+- Подробное описание и примеры: [README.md](https://github.com/Tim55667757/TKSBrokerAPI/blob/develop/README.md)
+- Документация на API: [TKSBrokerAPI module docs](https://tim55667757.github.io/TKSBrokerAPI/docs/tksbrokerapi/TKSBrokerAPI.html)
+- Накопительные релиз-ноты: [CHANGELOG.md](https://github.com/Tim55667757/TKSBrokerAPI/blob/develop/CHANGELOG.md)
+
 
 ### Зачем нужна платформа ⚙️ TKSBrokerAPI
 
@@ -70,20 +109,6 @@ TKSBrokerAPI легко встраивается в CI/CD пайплайны, а
 7. ... 🔮 магия 🎩 ...
 8. 💰 Профит!
 
-
-### 📦 Как установить
-
-⚠️ Актуальная и наиболее оптимизированная dev-версия на текущий момент в PyPI: [v1.6.dev251](https://pypi.org/project/tksbrokerapi/1.6.dev251/) (release-версия платформы ожидается до 1 июня 2025).
-
-```shell
-pip install tksbrokerapi==1.6.dev251
-```
-
-🇷🇺 📚 Документация на русском:
-- Код на GitHub: [TKSBrokerAPI](https://github.com/Tim55667757/TKSBrokerAPI/tree/develop)
-- Подробное описание и примеры: [README.md](https://github.com/Tim55667757/TKSBrokerAPI/blob/develop/README.md)
-- Документация на API: [TKSBrokerAPI module docs](https://tim55667757.github.io/TKSBrokerAPI/docs/tksbrokerapi/TKSBrokerAPI.html)
-- Накопительные релиз-ноты: [CHANGELOG.md](https://github.com/Tim55667757/TKSBrokerAPI/blob/develop/CHANGELOG.md)
 
 ### 🛠 Как использовать
 
