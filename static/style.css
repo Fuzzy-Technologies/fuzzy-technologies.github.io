@@ -95,6 +95,7 @@ img {
   box-shadow: 0 0 12px #00eaff88;
   display: block;
   margin: 12px auto 0 auto;
+  padding-top: 6px;
 }
 
 @keyframes pulseGlow {
