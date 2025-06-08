@@ -96,7 +96,7 @@ description: Сервисы биржевых сигналов Fuzzy Market Analy
 
 Ответы можно найти в статьях об алгоритмах и методиках FMA:
 
-[Что такое нечёткие шкалы](https://teletype.in/@tgilmullin/fuzzy-scales) • [Метод Хампеля и аномалии](https://teletype.in/@tgilmullin/hampel-anomalies-filtering) • [Как оценивается вероятность](https://teletype.in/@tgilmullin/target-probability) • [Как бот принимает решения](https://teletype.in/@tgilmullin/trading-algorithm) • [История создания алгоритма](https://teletype.in/@tgilmullin/trading-algorithm-history)
+[Что такое нечёткие шкалы](https://teletype.in/@tgilmullin/fuzzy-scales) • [Метод Хампеля и аномалии](https://teletype.in/@tgilmullin/hampel-anomalies-filtering) • [Как оценивается вероятность](https://teletype.in/@tgilmullin/target-probability) • [Как бот принимает решения](https://teletype.in/@tgilmullin/trading-algorithm) • [История создания алгоритма](https://teletype.in/@tgilmullin/trading-algorithm-history) • [Как работают сигнальные сервисы в Telegram](https://teletype.in/@tgilmullin/fma-signals-how-it-works)
 
 #### ⚠️ Дисклеймер
 
