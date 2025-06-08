@@ -23,10 +23,11 @@ description: Платформа ⚙️ TKSBrokerAPI для упрощённой 
   </a>
 </div>
 
+*By [Fuzzy Technologies](https://fuzzy-technologies.github.io/)*<br>
 <a href="https://fuzzy-technologies.github.io/TKSBrokerAPI">
   <img src="/static/images/TKSBrokerAPI-Logo.png" alt="TKSBrokerAPI Logo">
 </a><br>
-<a href="https://t.me/TKSBrokerAPI/19"><i>Телеграм-канал платформы: ➤ @TKSBrokerAPI</i></a><br><br>
+<a href="https://t.me/TKSBrokerAPI/19"><i>Телеграм-канал разработчиков платформы: ➤ @TKSBrokerAPI</i></a><br><br>
 
 ⚙️ **TKSBrokerAPI** — это опенсорс-платформа собственной разработки для упрощённой работы с брокером Т-Инвестиции через REST API и автоматизации сбора биржевой аналитики и торговых сценариев на Python. 
 
