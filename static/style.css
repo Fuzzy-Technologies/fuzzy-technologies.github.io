@@ -7,7 +7,7 @@ body {
   color: #b3ecff;
   font-family: 'Fira Code', monospace;
   line-height: 1.5;
-  font-size: 14px;
+  font-size: 15px;
   max-width: 900px;
   margin: 0 auto;
   padding: 1.25rem;
@@ -53,6 +53,10 @@ pre {
   overflow-x: auto;
   border: none;
   box-shadow: 0 0 10px #00eaff22;
+  font-family: 'Fira Code', monospace;
+  font-size: 14px;
+  line-height: 1.4;
+  white-space: pre;
 }
 
 code {
@@ -63,6 +67,10 @@ code {
   overflow-x: auto;
   border: none;
   box-shadow: 0 0 10px rgba(0, 234, 255, 0.05);
+  font-family: 'Fira Code', monospace;
+  font-size: 14px;
+  line-height: 1.4;
+  white-space: pre;
 }
 
 details {
