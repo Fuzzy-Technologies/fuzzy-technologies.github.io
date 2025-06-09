@@ -36,6 +36,7 @@ description: Fuzzy Technologies — инженерная команда, раз�
 <a href="https://fuzzy-technologies.github.io/FMA">
   <img src="/static/images/FuzzyMarketAnalytics-Text-Logo-1000x180-transp.png" alt="Fuzzy Market Analytics Logo" width="300"/>
 </a><br>
+<a href="https://teletype.in/@tgilmullin/fma-signals-how-it-works"><i>Статья: ➤ Как работают FMA-сервисы</i></a><br><br>
 
 Линейка продуктов и сервисов для автоматизации биржевой аналитики и торговли, созданные с использованием авторских методик Fuzzy Market Analytics (FMA, «Нечёткая аналитика рынка»).
 
