@@ -1,16 +1,8 @@
 ---
+layout: default
 title: Fuzzy Technologies
 description: Fuzzy Technologies — инженерная команда, разрабатывающая open-source платформу ⚙️ TKSBrokerAPI для алгоритмической торговли и сервисы биржевых сигналов Fuzzy Market Analytics на основе статистики, вероятностей и нечёткой логики. Отбор сильных сигналов выполняется по фазе, тренду и встроенной модели риска — прозрачная методика, без шума, без рекламы.
 ---
-
-<!-- no heading auto -->
-
-<link rel="icon" href="/favicon.ico" type="image/x-icon">
-<link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="64x64" href="/static/images/favicon-64x64.png">
-<link rel="icon" type="image/png" sizes="128x128" href="/static/images/favicon-128x128.png">
-
-<link rel="stylesheet" href="/static/style.css">
 
 <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 2rem;">
   <h1 style="margin: 0; font-size: 1.8rem;">

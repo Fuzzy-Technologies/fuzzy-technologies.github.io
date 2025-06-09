@@ -1,16 +1,8 @@
 ---
+layout: default
 title: TKSBrokerAPI
 description: Платформа ⚙️ TKSBrokerAPI для упрощённой работы с брокером Т-Инвестиции через REST API и автоматизации сбора биржевой аналитики и торговых сценариев на Python.
 ---
-
-<!-- no heading auto -->
-
-<link rel="icon" href="/favicon.ico" type="image/x-icon">
-<link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="64x64" href="/static/images/favicon-64x64.png">
-<link rel="icon" type="image/png" sizes="128x128" href="/static/images/favicon-128x128.png">
-
-<link rel="stylesheet" href="/static/style.css">
 
 <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 2rem;">
   <h1 style="margin: 0; font-size: 1.8rem;">
