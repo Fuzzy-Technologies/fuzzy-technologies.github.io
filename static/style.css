@@ -6,11 +6,11 @@ body {
   animation: gradientShift 15s ease infinite;
   color: #b3ecff;
   font-family: 'Fira Code', monospace;
-  line-height: 1.75;
-  font-size: 16px;
-  max-width: 1000px;
+  line-height: 1.5;
+  font-size: 14px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1.25rem;
   box-sizing: border-box;
 }
 
@@ -22,10 +22,10 @@ body {
 
 h1, h2, h3 {
   color: #66d9ef;
-  text-shadow: 0 0 3px #00eaff, 0 0 6px #00eaff;
-  border-bottom: 1px solid #00eaff44;
-  padding-bottom: 0.3em;
-  margin-top: 2em;
+  text-shadow: 0 0 1px #00eaff, 0 0 3px #00eaff55;
+  border-bottom: 1px solid #00eaff22;
+  padding-bottom: 0.25em;
+  margin-top: 1.5em;
 }
 
 a {
