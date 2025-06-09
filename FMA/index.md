@@ -34,7 +34,7 @@ description: Сервисы биржевых сигналов Fuzzy Market Analy
       <a href="https://web.tribute.tg/s/nub">
         <img class="fuzzy-avatar" src="/static/images/0001-Ева-и-Мария.png" alt="Fuzzy Market Analytics Girls">
       </a>
-      <div style="margin-top: 1.5em; width: 250px">
+      <div style="margin-top: 1.5em; width: 260px">
         <a href="https://web.tribute.tg/s/nub" style="background-color: #ff79c6; padding: 0.75em 0.5em; color: white; text-decoration: none; font-weight: bold; border-radius: 8px; display: inline-block; width: 100%;">
           🔔 Подписаться в Telegram
         </a>
