@@ -215,6 +215,6 @@ blockquote {
   padding: 0.5rem 1rem;
   background: #1c0e17;
   color: #b3ecff;
-  font-style: italic;
+  font-style: normal;
   border-radius: 6px;
 }
