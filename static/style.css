@@ -208,3 +208,13 @@ td img {
   border: none;
   box-shadow: none;
 }
+
+blockquote {
+  border-left: 3px solid #ff79c6;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  background: #1c0e17;
+  color: #ffb3dd;
+  font-style: italic;
+  border-radius: 6px;
+}
