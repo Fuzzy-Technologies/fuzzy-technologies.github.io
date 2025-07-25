@@ -31,11 +31,11 @@ description: Сервисы биржевых сигналов Fuzzy Market Analy
 <table class="table-clean" style="margin-top: 2rem; margin-bottom: 2rem;">
   <tr>
     <td style="width: 280px; vertical-align: top;">
-      <a href="https://web.tribute.tg/s/nub">
+      <a href="https://t.me/FuzzyMarketAnalytics">
         <img class="fuzzy-avatar" src="/static/images/0001-Ева-и-Мария.png" alt="Fuzzy Market Analytics Girls">
       </a>
       <div style="margin-top: 1.5em; width: 265px">
-        <a href="https://web.tribute.tg/s/nub" style="background-color: #ff79c6; padding: 0.75em 0.5em; color: white; text-decoration: none; font-weight: bold; border-radius: 8px; display: inline-block; width: 100%;">
+        <a href="https://t.me/FuzzyMarketAnalytics" style="background-color: #ff79c6; padding: 0.75em 0.5em; color: white; text-decoration: none; font-weight: bold; border-radius: 8px; display: inline-block; width: 100%;">
           🔔 Подписаться в Telegram
         </a>
       </div>    
@@ -45,7 +45,7 @@ description: Сервисы биржевых сигналов Fuzzy Market Analy
       <p>🤖 Бот-трейдер отслеживает рынок России и сообщает о моментах входа в краткосрочные позиции, указывает цели, вероятности и силу сигналов. Использует теханализ, нечёткую логику и выявляет ценовые аномалии.</p>
       <p>📊 Отбор сильных сигналов выполняется по фазе, тренду и встроенной модели риска — прозрачная методика без шума.</p>
       <p>📡 Сигналы публикуются в течение торгового дня — без задержек, автоматически. Список анализируемых инструментов: <a href="https://fuzzy-technologies.github.io/FMA/instruments.html"><b>здесь</b></a>.</p>
-      <p><a href="https://web.tribute.tg/s/nub"><b>Протестируйте сервис в первую неделю</b></a><b> — всего за 100 ₽.</b></p>
+      <p><a href="https://t.me/FuzzyMarketAnalytics"><b>Протестируйте сервис бесплатно</b></a></p>
     </td>
   </tr>
 </table>
