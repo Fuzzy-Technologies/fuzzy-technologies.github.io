@@ -50,9 +50,31 @@ description: Сервисы биржевых сигналов Fuzzy Market Analy
   </tr>
 </table>
 
+<table class="table-clean" style="margin-top: 2rem; margin-bottom: 2rem;">
+  <tr>
+    <td style="width: 280px; vertical-align: top;">
+      <a href="https://t.me/fuzzy_technologies">
+        <img class="fuzzy-avatar" src="/static/images/0000-Вера-и-Дарина.png" alt="Fuzzy Market Analytics Girls">
+      </a>
+      <div style="margin-top: 1.5em; width: 265px">
+        <a href="https://t.me/fuzzy_technologies" style="background-color: #ff79c6; padding: 0.75em 0.5em; color: white; text-decoration: none; font-weight: bold; border-radius: 8px; display: inline-block; width: 100%;">
+          💬 Свяжитесь с нами
+        </a>
+      </div>    
+    </td>
+    <td style="vertical-align: top;">
+      <h3 style="margin-top: 0;">🤖 Аренда робота для автоматической торговли</h3>
+      <p>💼 Мы предлагаем индивидуальные условия для клиентов с крупными портфелями: аренда робота для торговли на вашем брокерском счёте, подключение к автоследованию за сигналами и индивидуальная настройка стратегии под специфические цели и различные наборы инструментов.</p>
+      <p>📡 Сигналы, роботы и настройки — для пользователей, которые не хотят тратить время на ручную торговлю — с гибким подходом и индивидуальными настройками.</p>
+      <p>💰 Торговля ведётся полностью на вашем брокерском счёте с доверенным доступом для робота. Мы зарабатываем по модели success fee + фиксированная аренда робота. У нас есть прототип робота-трейдера для краткосрочных инвестиций, который умеет торговать на счёте пользователя полностью в автономном режиме.</p>
+      <p><a href="https://t.me/fuzzy_technologies"><b>Напишите нам для обсуждения условий</b></a></p>
+    </td>
+  </tr>
+</table>
+
 ### ❓ FAQ — Ответы на частые вопросы
 
-#### 🤖 Для кого этот сервис
+#### 🤖 Для кого сигнальный сервис
 
 Для тех, кто торгует внутри дня или удерживает позицию 1–5 дней.
 
