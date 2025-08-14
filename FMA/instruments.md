@@ -22,7 +22,7 @@ description: Сервисы биржевых сигналов Fuzzy Market Analy
 
 ## 💼 FMA — список анализируемых инструментов
 
-***Всего уникальных инструментов: 168***
+***Всего уникальных инструментов: 166***
 
 ### Фонды от Т-Капитал (0% комиссии)
 
@@ -227,7 +227,6 @@ description: Сервисы биржевых сигналов Fuzzy Market Analy
 | AQUA  | rub    | ИНАРКТИКА.          |
 | MVID  | rub    | М.Видео.            |
 | BELU  | rub    | Novabev Group.      |
-| FIXP  | rub    | Fix Price.          |
 | RAGR  | rub    | РусАгро.            |
 | ABRD  | rub    | Абрау-Дюрсо.        |
 | HNFG  | rub    | HENDERSON.          |
@@ -243,7 +242,6 @@ description: Сервисы биржевых сигналов Fuzzy Market Analy
 | Тикер | Валюта | Комментарий   |
 |-------|--------|---------------|
 | SMLT  | rub    | ГК Самолет.   |
-| ETLN  | rub    | Etalon Group. |
 | LSRG  | rub    | Группа ЛСР.   |
 | PIKK  | rub    | ГК ПИК.       |
 
