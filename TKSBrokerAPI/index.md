@@ -44,16 +44,16 @@ pip install tksbrokerapi==1.6.268
 docker pull tim55667757/tksbrokerapi:1.6.268
 ```
 
-⚠️ Актуальная и наиболее оптимизированная dev-версия в PyPI: [v1.6.dev265](https://pypi.org/project/tksbrokerapi/1.6.dev265/)
+⚠️ Актуальная, с последними баг-фиксами, и наиболее оптимизированная dev-версия в PyPI: [v1.6.dev269](https://pypi.org/project/tksbrokerapi/1.6.dev269/)
 
 ```shell
-pip install tksbrokerapi==1.6.dev265
+pip install tksbrokerapi==1.6.dev269
 ```
 
 В Docker Hub:
 
 ```shell
-docker pull tim55667757/tksbrokerapi:1.6.dev265
+docker pull tim55667757/tksbrokerapi:1.6.dev269
 ```
 
 🇷🇺 📚 Документация на русском:
