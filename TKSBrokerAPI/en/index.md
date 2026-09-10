@@ -7,19 +7,18 @@ alternate_en: /TKSBrokerAPI/en/
 alternate_ru: /TKSBrokerAPI/
 ---
 
-<nav class="language-switch" aria-label="Language">
-  <span class="active" aria-current="page">EN</span>
-  <a href="/TKSBrokerAPI/" lang="ru">RU</a>
-</nav>
-
-<div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 2rem;">
-  <h1 style="margin: 0; font-size: 1.8rem;">
-    <a href="/TKSBrokerAPI/en/" style="color: #ff79c6; text-decoration: none;">⚙️ TKSBrokerAPI</a>
-  </h1>
-  <a href="/">
-    <img src="/static/images/FuzzyTechnologies-Logo-transp.png" alt="Fuzzy Technologies Logo" width="200" />
-  </a>
-</div>
+<header class="site-header">
+  <h1 class="site-title"><a href="/TKSBrokerAPI/en/">⚙️ TKSBrokerAPI</a></h1>
+  <div class="site-actions">
+    <nav class="language-switch" aria-label="Language">
+      <span class="active" aria-current="page">EN</span>
+      <a href="/TKSBrokerAPI/" lang="ru">RU</a>
+    </nav>
+    <a class="brand-button" href="/" aria-label="Back to Fuzzy Technologies">
+      <img src="/static/images/FuzzyTechnologies-Logo-transp.png" alt="Fuzzy Technologies" />
+    </a>
+  </div>
+</header>
 
 *By [Fuzzy Technologies](/)*
 

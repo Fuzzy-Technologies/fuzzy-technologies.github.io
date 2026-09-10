@@ -1,42 +1,35 @@
 # 🌓 Fuzzy Technologies
 
-**Engineering · R&D · Open Source**  
-*— powered by math & fuzzy logic*
+<table>
+  <tr>
+    <td width="280">
+      <img src="/static/images/0000-Вера-и-Дарина.png" alt="Fuzzy Technologies" width="260" />
+    </td>
+    <td>
+      <strong>Engineering · R&D · Open Source</strong><br><br>
+      Fuzzy Technologies builds practical engineering systems for cybersecurity, AI agents, quantitative analysis, and open-source automation.<br><br>
+      <strong>Technologies · Knowledge · Science</strong><br>
+      <em>— powered by math & fuzzy logic</em>
+    </td>
+  </tr>
+</table>
 
-Fuzzy Technologies builds engineering platforms and applied R&D projects in cybersecurity, AI and agent systems, quantitative technologies, and open-source automation.
+## Website
 
-> **Technologies · Knowledge · Science**
+- 🌐 [Fuzzy Technologies](https://fuzzy-technologies.github.io/) — English, default
+- 🇷🇺 [Fuzzy Technologies / RU](https://fuzzy-technologies.github.io/ru/)
+- 🛡️ [1337 Security Workbench](https://fuzzy-technologies.github.io/1337/)
 
-This repository is the source for the public GitHub Pages site:  
-**https://fuzzy-technologies.github.io/**
+## Product pages
 
-## Languages
-
-- [`/`](https://fuzzy-technologies.github.io/) — English, default
-- [`/ru/`](https://fuzzy-technologies.github.io/ru/) — Русский
-
-The company landing page is bilingual. Existing product pages keep their current language and technical content.
-
-## Public project pages
-
-- [`/1337`](https://fuzzy-technologies.github.io/1337/) — 🛡️ 1337 Security Workbench, maintained in [`Fuzzy-Technologies/1337`](https://github.com/Fuzzy-Technologies/1337)
-- [`/FMA/en`](https://fuzzy-technologies.github.io/FMA/en/) — English · 📊 Fuzzy Market Analytics
-- [`/TKSBrokerAPI/en`](https://fuzzy-technologies.github.io/TKSBrokerAPI/en/) — English · ⚙️ TKSBrokerAPI
-
-## Site structure
-
-- `index.md` — English landing page
-- `ru/index.md` — Russian landing page
-- `_layouts/default.html` — shared GitHub Pages layout and metadata
-- `_config.yml` — Jekyll/CommonMark configuration
-- `static/style.css` — shared Fuzzy Technologies visual system
-- `static/images/` — logos and project artwork
-- `FMA/` and `TKSBrokerAPI/` — existing product pages
+| Project | English | Русский |
+|---|---|---|
+| 📊 Fuzzy Market Analytics | [FMA / EN](https://fuzzy-technologies.github.io/FMA/en/) | [FMA / RU](https://fuzzy-technologies.github.io/FMA/) |
+| 💼 FMA instruments | [Instruments / EN](https://fuzzy-technologies.github.io/FMA/en/instruments.html) | [Инструменты / RU](https://fuzzy-technologies.github.io/FMA/instruments.html) |
+| ⚙️ TKSBrokerAPI | [TKSBrokerAPI / EN](https://fuzzy-technologies.github.io/TKSBrokerAPI/en/) | [TKSBrokerAPI / RU](https://fuzzy-technologies.github.io/TKSBrokerAPI/) |
 
 ## Links
 
-- 🌐 [Fuzzy Technologies](https://fuzzy-technologies.github.io/)
-- 🛡️ [1337 Security Workbench](https://fuzzy-technologies.github.io/1337/)
 - 💻 [Fuzzy Technologies on GitHub](https://github.com/Fuzzy-Technologies)
 - 💬 [@fuzzy_technologies](https://t.me/fuzzy_technologies)
 - ✌️ [Engineering blog](https://t.me/tgilmullin_blog)
@@ -45,5 +38,3 @@ The company landing page is bilingual. Existing product pages keep their current
 ---
 
 © Fuzzy Technologies
-
-Technologies · Knowledge · Science

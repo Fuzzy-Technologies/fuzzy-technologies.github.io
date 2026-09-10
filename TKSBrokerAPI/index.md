@@ -7,23 +7,20 @@ title: TKSBrokerAPI
 description: Платформа ⚙️ TKSBrokerAPI для упрощённой работы с брокером Т-Инвестиции через REST API и автоматизации сбора биржевой аналитики и торговых сценариев на Python.
 ---
 
-<nav class="language-switch" aria-label="Язык">
-  <a href="/TKSBrokerAPI/en/" lang="en">EN</a>
-  <span class="active" aria-current="page">RU</span>
-</nav>
-
-<div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 2rem;">
-  <h1 style="margin: 0; font-size: 1.8rem;">
-    <a href="https://fuzzy-technologies.github.io/TKSBrokerAPI" style="color: #ff79c6; text-decoration: none;">
-      ⚙️ TKSBrokerAPI
+<header class="site-header">
+  <h1 class="site-title"><a href="/TKSBrokerAPI/">⚙️ TKSBrokerAPI</a></h1>
+  <div class="site-actions">
+    <nav class="language-switch" aria-label="Язык">
+      <a href="/TKSBrokerAPI/en/" lang="en">EN</a>
+      <span class="active" aria-current="page">RU</span>
+    </nav>
+    <a class="brand-button" href="/ru/" aria-label="Назад на Fuzzy Technologies">
+      <img src="/static/images/FuzzyTechnologies-Logo-transp.png" alt="Fuzzy Technologies" />
     </a>
-  </h1>
-  <a href="https://fuzzy-technologies.github.io/">
-    <img src="/static/images/FuzzyTechnologies-Logo-transp.png" alt="Fuzzy Technologies Logo" width="200" />
-  </a>
-</div>
+  </div>
+</header>
 
-*By [Fuzzy Technologies](https://fuzzy-technologies.github.io/)*<br>
+*By [Fuzzy Technologies](/ru/)*<br>
 <a href="https://fuzzy-technologies.github.io/TKSBrokerAPI">
   <img src="/static/images/TKSBrokerAPI-Logo.png" alt="TKSBrokerAPI Logo">
 </a><br>
@@ -297,8 +294,8 @@ if __name__ == "__main__":
 <hr/>
 
 <div style="text-align: center; margin-top: 2em;">
-  <a href="https://fuzzy-technologies.github.io">
+  <a href="/ru/">
     <img src="/static/images/Technologies-Knowledge-Science.png" alt="Technologies · Knowledge · Science" width="200"/>
   </a>
-  <p style="font-size: 0.9em; color: #666;">Fuzzy Technologies · 2025</p>
+  <p style="font-size: 0.9em; color: #666;">Fuzzy Technologies</p>
 </div>
