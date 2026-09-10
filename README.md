@@ -20,8 +20,8 @@ The company landing page is bilingual. Existing product pages keep their current
 ## Public project pages
 
 - [`/1337`](https://fuzzy-technologies.github.io/1337/) — 🛡️ 1337 Security Workbench, maintained in [`Fuzzy-Technologies/1337`](https://github.com/Fuzzy-Technologies/1337)
-- [`/FMA`](https://fuzzy-technologies.github.io/FMA/) — 📊 Fuzzy Market Analytics
-- [`/TKSBrokerAPI`](https://fuzzy-technologies.github.io/TKSBrokerAPI/) — ⚙️ TKSBrokerAPI
+- [`/FMA/en`](https://fuzzy-technologies.github.io/FMA/en/) — English · 📊 Fuzzy Market Analytics
+- [`/TKSBrokerAPI/en`](https://fuzzy-technologies.github.io/TKSBrokerAPI/en/) — English · ⚙️ TKSBrokerAPI
 
 ## Site structure
 
@@ -45,3 +45,6 @@ The company landing page is bilingual. Existing product pages keep their current
 ---
 
 © Fuzzy Technologies. Technologies · Knowledge · Science.
+
+
+Legacy Russian product pages remain at `/FMA/`, `/FMA/instruments.html`, and `/TKSBrokerAPI/`; English counterparts live under each product's `/en/` path.
