@@ -7,7 +7,7 @@
     </td>
     <td>
       <strong>Engineering · R&D · Open Source</strong><br><br>
-      Fuzzy Technologies builds practical engineering systems for cybersecurity, AI agents, quantitative analysis, and open-source automation.<br><br>
+      Fuzzy Technologies builds practical engineering systems for cybersecurity, AI agents, quantitative analysis, and open-source automation.<br><br><br><br>
       <strong>Technologies · Knowledge · Science</strong><br>
       <em>— powered by math & fuzzy logic</em>
     </td>
