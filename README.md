@@ -1,56 +1,41 @@
 # 🌓 Fuzzy Technologies
 
-***Analytics, signals, automation — powered by math & fuzzy logic.***
+**Engineering · R&D · Open Source**
 
-*We engineer trading tools for signal analysis, probabilistic decisions, anomaly-driven insights, and fuzzy-driven strategies.*
+Fuzzy Technologies builds engineering platforms and applied R&D projects across cybersecurity, AI-assisted automation, quantitative systems, and open-source developer tooling.
 
-<p style="text-align: right;">Technologies · Knowledge · Science</p>
+> **Technologies · Knowledge · Science**
 
----
+This repository is the source for the public GitHub Pages site:  
+**https://fuzzy-technologies.github.io/**
 
-<table class="table-clean">
-  <tr>
-    <td>
-      <img src="/static/images/0000-Вера-и-Дарина.png" width="100%" alt="Fuzzy Technologies"/>
-    </td>
-    <td>
-      <div style="text-align: left; margin-top: 2em;">
-        <a href="https://fuzzy-technologies.github.io">
-          <img src="/static/images/FuzzyTechnologiesTextLogo-1000x180-transp.png" alt="Fuzzy Technologies Logo" width="300"/>
-        </a>
-      </div>
-      <p><strong>Fuzzy Technologies</strong> — инженерная команда, создающая платформы и сервисы для автоматизации биржевой аналитики, алготрейдинга и оценки рисков.</p>
-      <p>Мы разрабатываем аналитические и торговые инструменты для оценки биржевых сигналов, вероятностных решений, аналитики на основе аномалий и стратегий, построенных на гибких логических моделях. В наших продуктах сочетаются строгая математика, вероятностные модели и методы нечёткого вывода.</p>
-      <p>💬 <strong>Контакты:</strong> <a href="https://t.me/fuzzy_technologies">@fuzzy_technologies</a></p>
-    </td>
-  </tr>
-</table>
+## Public project pages
 
-<p style="text-align: right;">Наш девиз: <strong>Технологии · Знания · Наука</strong></p>
+- [`/`](https://fuzzy-technologies.github.io/) — Fuzzy Technologies umbrella site
+- [`/1337`](https://fuzzy-technologies.github.io/1337/) — 🛡️ 1337 Security Workbench, maintained in [`Fuzzy-Technologies/1337`](https://github.com/Fuzzy-Technologies/1337)
+- [`/FMA`](https://fuzzy-technologies.github.io/FMA/) — 📊 Fuzzy Market Analytics
+- [`/TKSBrokerAPI`](https://fuzzy-technologies.github.io/TKSBrokerAPI/) — ⚙️ TKSBrokerAPI
 
-## 📦 Структура репозитория
+The root landing page is intentionally broader than any one product. Product-specific pages keep their own technical detail and lifecycle.
 
-Этот репозиторий используется как основа GitHub Pages для размещения публичного сайта:
+## Site structure
 
-- [`/`](https://fuzzy-technologies.github.io) — [главная страница](https://fuzzy-technologies.github.io)
-- [`/FMA`](https://fuzzy-technologies.github.io/FMA) — 📊 [Fuzzy Market Analytics](https://fuzzy-technologies.github.io/FMA/) — линейка сигнальных и аналитических сервисов
-- [`/TKSBrokerAPI`](https://fuzzy-technologies.github.io/TKSBrokerAPI) — ⚙️ [TKSBrokerAPI](https://fuzzy-technologies.github.io/TKSBrokerAPI/) — торгово-аналитическая платформа
+- `index.md` — umbrella landing page
+- `_layouts/default.html` — shared GitHub Pages layout and metadata
+- `_config.yml` — Jekyll/CommonMark configuration
+- `static/style.css` — shared Fuzzy Technologies visual system
+- `static/images/` — logos and project artwork
+- `FMA/` and `TKSBrokerAPI/` — existing product pages
 
-## 📂 Статические ресурсы
+## Links
 
-Все изображения, стили и скрипты находятся в папке [`/static`](./static):
-
-- [`/static/images/`](./static/images) — логотипы и диаграммы
-- [`/static/style.css`](./static/style.css) — кастомные стили
-- [`/static/main.js`](./static/main.js) — ява-скрипты
-
-## 🔗 Ссылки
-
-- 🌐 Сайт Fuzzy Technologies: [https://fuzzy-technologies.github.io](https://fuzzy-technologies.github.io)
-- ⚙️ TKSBrokerAPI — телеграм-канал платформы : [@TKSBrokerAPI](https://t.me/TKSBrokerAPI/19)
-- ✌️ Личный телеграм-канал разработчика: [@tgilmullin_blog](https://t.me/tgilmullin_blog/3) 
-  - 📊 Статьи и публикации: [https://teletype.in/@tgilmullin](https://teletype.in/@tgilmullin)
+- 🌐 [Fuzzy Technologies](https://fuzzy-technologies.github.io/)
+- 🛡️ [1337 Security Workbench](https://fuzzy-technologies.github.io/1337/)
+- 💻 [Fuzzy Technologies on GitHub](https://github.com/Fuzzy-Technologies)
+- 💬 [@fuzzy_technologies](https://t.me/fuzzy_technologies)
+- ✌️ [Engineering blog](https://t.me/tgilmullin_blog)
+- 📚 [Articles and research notes](https://teletype.in/@tgilmullin)
 
 ---
 
-© 2025 Fuzzy Technologies. Все права защищены.
+© Fuzzy Technologies. Technologies · Knowledge · Science.
