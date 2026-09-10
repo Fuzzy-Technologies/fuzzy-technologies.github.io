@@ -1,5 +1,9 @@
+{% assign document_lang = page.lang | default: site.lang | default: "en" %}
+{% if page.url contains '/FMA/' or page.url contains '/TKSBrokerAPI/' %}
+  {% assign document_lang = "ru" %}
+{% endif %}
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: 'ru' }}">
+<html lang="{{ document_lang }}">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -12,9 +16,22 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ page.url | absolute_url }}" />
     <meta property="og:site_name" content="Fuzzy Technologies" />
+    {% if document_lang == "ru" %}
+    <meta property="og:locale" content="ru_RU" />
+    {% else %}
+    <meta property="og:locale" content="en_US" />
+    {% endif %}
     <meta name="twitter:card" content="summary" />
 
     <link rel="canonical" href="{{ page.url | absolute_url }}" />
+    {% if page.alternate_en %}
+    <link rel="alternate" hreflang="en" href="{{ page.alternate_en | absolute_url }}" />
+    <link rel="alternate" hreflang="x-default" href="{{ page.alternate_en | absolute_url }}" />
+    {% endif %}
+    {% if page.alternate_ru %}
+    <link rel="alternate" hreflang="ru" href="{{ page.alternate_ru | absolute_url }}" />
+    {% endif %}
+
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="64x64" href="/static/images/favicon-64x64.png" />
