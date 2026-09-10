@@ -25,8 +25,8 @@ The company landing page is bilingual. Existing product pages keep their current
 
 ## Site structure
 
-- `index.md` — English umbrella landing page
-- `ru/index.md` — Russian umbrella landing page
+- `index.md` — English landing page
+- `ru/index.md` — Russian landing page
 - `_layouts/default.html` — shared GitHub Pages layout and metadata
 - `_config.yml` — Jekyll/CommonMark configuration
 - `static/style.css` — shared Fuzzy Technologies visual system
@@ -44,7 +44,5 @@ The company landing page is bilingual. Existing product pages keep their current
 
 ---
 
-© Fuzzy Technologies. Technologies · Knowledge · Science.
-
-
-Legacy Russian product pages remain at `/FMA/`, `/FMA/instruments.html`, and `/TKSBrokerAPI/`; English counterparts live under each product's `/en/` path.
+© Fuzzy Technologies
+Technologies · Knowledge · Science
