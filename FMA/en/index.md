@@ -33,6 +33,8 @@ alternate_ru: /FMA/
   </tr>
 </table>
 
+## Products & services
+
 <div class="fma-product-grid">
   <section class="project-card fma-product-card featured">
     <span class="card-label">Signals · Analytics · Free</span>
