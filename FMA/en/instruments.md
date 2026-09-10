@@ -7,19 +7,18 @@ alternate_en: /FMA/en/instruments.html
 alternate_ru: /FMA/instruments.html
 ---
 
-<nav class="language-switch" aria-label="Language">
-  <span class="active" aria-current="page">EN</span>
-  <a href="/FMA/instruments.html" lang="ru">RU</a>
-</nav>
-
-<div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 2rem;">
-  <h1 style="margin: 0; font-size: 1.8rem;">
-    <a href="/FMA/en/" style="color: #ff79c6; text-decoration: none;">📊 Fuzzy Market Analytics: Instruments</a>
-  </h1>
-  <a href="/">
-    <img src="/static/images/FuzzyTechnologies-Logo-transp.png" alt="Fuzzy Technologies Logo" width="200" />
-  </a>
-</div>
+<header class="site-header">
+  <h1 class="site-title"><a href="/FMA/en/instruments.html">📊 Fuzzy Market Analytics: Instruments</a></h1>
+  <div class="site-actions">
+    <nav class="language-switch" aria-label="Language">
+      <span class="active" aria-current="page">EN</span>
+      <a href="/FMA/instruments.html" lang="ru">RU</a>
+    </nav>
+    <a class="brand-button" href="/" aria-label="Back to Fuzzy Technologies">
+      <img src="/static/images/FuzzyTechnologies-Logo-transp.png" alt="Fuzzy Technologies" />
+    </a>
+  </div>
+</header>
 
 <a href="/FMA/en/">
   <img src="/static/images/FuzzyMarketAnalytics-Text-Logo-1000x180-transp.png" alt="Fuzzy Market Analytics Logo" width="300"/>
@@ -92,7 +91,6 @@ MDMG, LIFE, GECO, OZPH, ABIO, PRMD, GEMC.
 | PLTRUB_TOM | rub | Platinum |
 | PLDRUB_TOM | rub | Palladium |
 
-The Russian page contains the longer per-instrument notes used by the original service documentation.
 
 <div style="text-align: center; margin-top: 2em;">
   <a href="/">

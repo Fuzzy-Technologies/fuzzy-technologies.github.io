@@ -7,21 +7,18 @@ alternate_en: /FMA/en/
 alternate_ru: /FMA/
 ---
 
-<nav class="language-switch" aria-label="Language">
-  <span class="active" aria-current="page">EN</span>
-  <a href="/FMA/" lang="ru">RU</a>
-</nav>
-
-<div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 2rem;">
-  <h1 style="margin: 0; font-size: 1.8rem;">
-    <a href="https://fuzzy-technologies.github.io/FMA/en/" style="color: #ff79c6; text-decoration: none;">
-      📊 Fuzzy Market Analytics
+<header class="site-header">
+  <h1 class="site-title"><a href="/FMA/en/">📊 Fuzzy Market Analytics</a></h1>
+  <div class="site-actions">
+    <nav class="language-switch" aria-label="Language">
+      <span class="active" aria-current="page">EN</span>
+      <a href="/FMA/" lang="ru">RU</a>
+    </nav>
+    <a class="brand-button" href="/" aria-label="Back to Fuzzy Technologies">
+      <img src="/static/images/FuzzyTechnologies-Logo-transp.png" alt="Fuzzy Technologies" />
     </a>
-  </h1>
-  <a href="https://fuzzy-technologies.github.io/">
-    <img src="/static/images/FuzzyTechnologies-Logo-transp.png" alt="Fuzzy Technologies Logo" width="200" />
-  </a>
-</div>
+  </div>
+</header>
 
 <table class="table-clean">
   <tr>
@@ -168,7 +165,7 @@ FMA is built around engineering mathematics and explicit data-processing rules:
 > **FMA: mathematics, engineering and real markets — without magic promises.**
 
 <div style="text-align: center; margin-top: 2em;">
-  <a href="https://fuzzy-technologies.github.io/">
+  <a href="/">
     <img src="/static/images/Technologies-Knowledge-Science.png" alt="Technologies · Knowledge · Science" width="200"/>
   </a>
   <p style="font-size: 0.9em; color: #666;">Fuzzy Technologies</p>
