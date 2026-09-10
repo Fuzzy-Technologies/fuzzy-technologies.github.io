@@ -45,4 +45,5 @@ The company landing page is bilingual. Existing product pages keep their current
 ---
 
 © Fuzzy Technologies
+
 Technologies · Knowledge · Science
