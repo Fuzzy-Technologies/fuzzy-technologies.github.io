@@ -1,112 +1,118 @@
 ---
 layout: default
-title: Fuzzy Technologies
-description: Fuzzy Technologies — инженерная команда, разрабатывающая open-source платформу ⚙️ TKSBrokerAPI для алгоритмической торговли и сервисы биржевых сигналов Fuzzy Market Analytics на основе статистики, вероятностей и нечёткой логики. Отбор сильных сигналов выполняется по фазе, тренду и встроенной модели риска — прозрачная методика, без шума, без рекламы.
+title: Fuzzy Technologies — Engineering & R&D
+description: Fuzzy Technologies — инженерные платформы и прикладные R&D-проекты в cybersecurity, AI-assisted automation, quantitative systems и open-source engineering.
+keywords: Fuzzy Technologies, cybersecurity, AI agents, AI automation, security engineering, quantitative finance, algorithmic trading, fuzzy logic, open source, Python, research, developer tools
 ---
 
-<div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 2rem;">
-  <h1 style="margin: 0; font-size: 1.8rem;">
-    <a href="https://fuzzy-technologies.github.io/" style="color: #ff79c6; text-decoration: none;">
-      🌓 Fuzzy Technologies
-    </a>
-  </h1>
-  <a href="https://fuzzy-technologies.github.io/">
-    <img src="/static/images/FuzzyTechnologies-Logo-transp.png" alt="Fuzzy Technologies Logo" width="200" />
-  </a>
+<header class="brand-hero">
+  <div class="brand-copy">
+    <span class="eyebrow">Engineering · R&D · Open Source</span>
+    <h1>Fuzzy Technologies</h1>
+    <p class="hero-subtitle">Инженерные системы на стыке технологий, знаний и прикладной науки.</p>
+    <p class="hero-text"><strong>Fuzzy Technologies</strong> создаёт платформы и исследовательские инструменты для cybersecurity, AI/agentic automation, quantitative systems и developer tooling.</p>
+    <div class="chips">
+      <span class="chip">Cybersecurity</span>
+      <span class="chip">AI & Agents</span>
+      <span class="chip">Quantitative Systems</span>
+      <span class="chip">Open Engineering</span>
+    </div>
+    <div class="links">
+      <a href="https://github.com/Fuzzy-Technologies">GitHub</a>
+      <a href="https://fuzzy-technologies.github.io/1337/">1337 Security Workbench</a>
+      <a href="https://fuzzy-technologies.github.io/FMA/">Fuzzy Market Analytics</a>
+      <a href="https://t.me/fuzzy_technologies">Contact</a>
+    </div>
+  </div>
+  <div class="brand-mark">
+    <img src="/static/images/FuzzyTechnologies-Logo-transp.png" alt="Fuzzy Technologies logo" />
+  </div>
+</header>
+
+> **Technologies · Knowledge · Science**
+
+## What we build
+
+Мы не привязываем Fuzzy Technologies к одному рынку или одному типу продукта. Общий знаменатель наших проектов — инженерная автоматизация, воспроизводимые методы, измеримый результат и возможность развивать решение как платформу, а не как одноразовый скрипт.
+
+<div class="grid project-grid">
+  <article class="card featured">
+    <span class="card-label">Security · AI · Open Source</span>
+    <h3>🛡️ 1337 Security Workbench</h3>
+    <p>Открытое рабочее место специалиста по информационной безопасности и model-neutral cyber runtime для людей и будущих AI-агентов.</p>
+    <p>1337 связывает security objects, capabilities, scope/policy, execution и evidence с reachability и attack-path reasoning.</p>
+    <p class="quiet">Early pre-alpha · Apache-2.0 Community core</p>
+    <div class="project-links">
+      <a href="https://fuzzy-technologies.github.io/1337/">Project site →</a>
+      <a href="https://github.com/Fuzzy-Technologies/1337">GitHub →</a>
+    </div>
+  </article>
+
+  <article class="card">
+    <span class="card-label">Quant · Analytics · Trading</span>
+    <h3>📊 Fuzzy Market Analytics</h3>
+    <p>Линейка количественных аналитических и торговых систем на основе статистики, вероятностных моделей, фильтрации данных и методов нечёткого вывода.</p>
+    <p>Фокус — интерпретируемые правила, оценка риска и работа с реальными рыночными данными без обещаний «магического прогноза».</p>
+    <div class="project-links">
+      <a href="https://fuzzy-technologies.github.io/FMA/">Explore FMA →</a>
+    </div>
+  </article>
+
+  <article class="card">
+    <span class="card-label">Python · API · Automation</span>
+    <h3>⚙️ TKSBrokerAPI</h3>
+    <p>Open-source Python-платформа для работы с API Т-Инвестиций, сбора и обогащения рыночных данных, аналитики и автоматизации торговых сценариев.</p>
+    <p>Используется как инфраструктурный слой для части количественных и торговых задач Fuzzy Technologies.</p>
+    <div class="project-links">
+      <a href="https://fuzzy-technologies.github.io/TKSBrokerAPI/">Project site →</a>
+      <a href="https://github.com/Tim55667757/TKSBrokerAPI">GitHub →</a>
+    </div>
+  </article>
 </div>
 
-<table class="table-clean">
-  <tr>
-    <td style="width: 275px;">
-      <img class="fuzzy-avatar" src="/static/images/0000-Вера-и-Дарина.gif" alt="Fuzzy Market Analytics Girls">
-    </td>
-    <td>
-      <p><strong>Fuzzy Technologies</strong> — инженерная команда, создающая платформы и сервисы для автоматизации биржевой аналитики, алготрейдинга и оценки рисков.</p>
-      <p>Мы разрабатываем аналитические и торговые инструменты для оценки биржевых сигналов, вероятностных решений, аналитики на основе аномалий и стратегий, построенных на гибких логических моделях. В наших продуктах сочетаются строгая математика, вероятностные модели и методы нечёткого вывода.</p>
-      <p>💬 <strong>Контакты:</strong> <a href="https://t.me/fuzzy_technologies">@fuzzy_technologies</a></p>
-    </td>
-  </tr>
-</table>
+## Engineering directions
 
-[//]: # (<p style="text-align: right;">Наш девиз: <strong>Technologies · Knowledge · Science</strong></p>)
-<p style="text-align: right;">Наш девиз: <strong>Технологии · Знания · Наука</strong></p>
-
-## 📊 Fuzzy Market Analytics
-
-<a href="https://fuzzy-technologies.github.io/FMA">
-  <img src="/static/images/FuzzyMarketAnalytics-Text-Logo-1000x180-transp.png" alt="Fuzzy Market Analytics Logo" width="300"/>
-</a><br>
-<a href="https://teletype.in/@tgilmullin/fma-signals-how-it-works"><i>Статья: ➤ Как работают FMA-сервисы</i></a><br><br>
-
-Линейка продуктов и сервисов для автоматизации биржевой аналитики и торговли, созданные с использованием авторских методик Fuzzy Market Analytics (FMA, «Нечёткая аналитика рынка»).
-
-### 💡 Почему методики FMA работают для реального трейдинга
-
-Все FMA-методики построены на инженерной математике — не на догадках, не на «магии», а на строгой логике обработки рыночных данных.
-
-Что лежит в её основе:
-
-- **Оценка вероятности достижения целей:** мы рассчитываем волатильность и доходности, [объединяем вероятности](https://teletype.in/@tgilmullin/target-probability) с помощью Байесовского пересчёта, а результаты превращаем в понятные [нечёткие уровни](https://teletype.in/@tgilmullin/fuzzy-scales).
-
-- **Защита от рыночного шума:** [модифицированный фильтр Хампеля](https://teletype.in/@tgilmullin/hampel-anomalies-filtering) автоматически очищает ценовые ряды от выбросов и аномалий — чтобы сигналы строились только на надёжных данных.
-
-- **Осознанные сигналы, а не случайные догадки:** алгоритм принимает решения на основе пересечения нечётких уровней риска и достижимости цели. Всё зафиксировано в [открытых и понятных правилах](https://teletype.in/@tgilmullin/trading-algorithm).
-
-- **Работа в реальном времени:** сигналы учитывают волатильность, сессионную активность и реальное время жизни ордеров — без отставания от рынка.
-
-- **Оптимизированная инфраструктура:** полная работа в оперативной памяти (tmpfs), мультипроцессинг, минимизация загрузки системы и быстрый расчёт на больших данных.
-
-### ✨ Что это даёт вам
-
-✅ Чистые, надёжные торговые сигналы без перегруза шумом. Автоматические и без влияния человека.
-
-✅ Понятные оценки и актуальные цели — достижимые в реальных условиях, а не гипотетические.
-
-✅ Ясные правила принятия решений, которые можно объяснить, проверить и контролировать.
-
-✅ Скорость работы, достаточная для реального рынка, а не для «бумажных моделей».
-
-⚠️ Важно понимать, что FMA — это не про скальпинг, не про HFT, не про «купи-продай» и не про инфоцыганство на новостях, а про математический расчёт и управление вероятностями на реальном рынке. Это система, где каждая торговая идея проходит через статистическую фильтрацию, оценку рисков, вероятностный прогноз и строгие правила принятия решений.
-
-FMA помогает принимать обоснованные решения, а не гадать на новостях или импульсах. Это дополнительный инструмент-помощник для тех, кто ценит точность, стабильность и прозрачность в торговле.
-
-> FMA: математика, инженерия и реальный трейдинг — без лишних обещаний.
-
-*[Через тернии к звёздам: история создания торгового алгоритма](https://teletype.in/@tgilmullin/trading-algorithm-history)*
-
-## ⚙️ TKSBrokerAPI
-
-<a href="https://fuzzy-technologies.github.io/TKSBrokerAPI">
-  <img src="/static/images/TKSBrokerAPI-Logo-text-only.png" alt="TKSBrokerAPI Logo" width="250">
-</a><br>
-<a href="https://t.me/TKSBrokerAPI/19"><i>Телеграм-канал: ➤ @TKSBrokerAPI</i></a><br><br>
-
-⚙️ **TKSBrokerAPI** — это опенсорс-платформа собственной разработки для упрощённой работы с брокером Т-Инвестиции через REST API и автоматизации сбора биржевой аналитики и торговых сценариев на Python. 
-
-Она решает типичные задачи трейдеров, аналитиков и разработчиков: подключение к брокеру, запрос информации по портфелю, котировкам и операциям, отправка торговых команд — всё в одном инструменте.
-
-TKSBrokerAPI легко встраивается в CI/CD пайплайны, автосценарии и дата-инжиниринг. Платформа подойдёт как для локальной аналитики, так и для полноценных бэктестов и торговых роботов.
-
-Все сигнальные и торговые сценарии FMA также работают на базе платформы TKSBrokerAPI.
-
-### 🔧 Возможности
-
-- Работа с брокером Т-Инвестиции через REST API.
-- Управление портфелем и позициями.
-- Получение котировок и рыночных данных.
-- Формирование отчётов и выгрузка аналитики в Markdown, CSV, HTML.
-
-### Зачем нужна платформа ⚙️ TKSBrokerAPI
-
-Если требуется совместить инвестиции, Python и алготрейдинг, то вам не нужно разбираться в тонкостях сетевых протоколов или документации API. TKSBrokerAPI берёт это на себя.
-
-> Вы пишете гениальную торговую стратегию — всё остальное автоматизирует платформа.
-
-[*Краткий обзор платформы TKSBrokerAPI для автоматизации торговли на бирже*](https://teletype.in/@tgilmullin/TKSBrokerAPI)
-
-<div style="text-align: center; margin-top: 2em;">
-  <a href="https://fuzzy-technologies.github.io">
-    <img src="/static/images/Technologies-Knowledge-Science.png" alt="Technologies · Knowledge · Science" width="200"/>
-  </a>
-  <p style="font-size: 0.9em; color: #666;">Fuzzy Technologies · 2025</p>
+<div class="grid direction-grid">
+  <div class="card compact">
+    <h3>Security engineering</h3>
+    <p>Security workstations, evidence-backed automation, attack-surface intelligence, reachability and attack-path analysis.</p>
+  </div>
+  <div class="card compact">
+    <h3>AI & agentic systems</h3>
+    <p>AI-assisted engineering, governed agent execution, durable state and interfaces between reasoning models and real tools.</p>
+  </div>
+  <div class="card compact">
+    <h3>Quantitative systems</h3>
+    <p>Probability, statistics, anomaly filtering, risk models, fuzzy systems and algorithmic decision support.</p>
+  </div>
+  <div class="card compact">
+    <h3>Open engineering</h3>
+    <p>Reusable Python tooling, APIs, automation, CI/CD practices and public engineering artifacts where open source makes sense.</p>
+  </div>
 </div>
+
+## How we think
+
+<div class="principles">
+  <div><strong>Technologies</strong><br><span>Строим инструменты и платформы, которые можно использовать и развивать.</span></div>
+  <div><strong>Knowledge</strong><br><span>Формализуем предметную область, данные, модели и инженерный опыт.</span></div>
+  <div><strong>Science</strong><br><span>Предпочитаем измерения, эксперименты и проверяемые выводы красивым обещаниям.</span></div>
+</div>
+
+Название <strong>Fuzzy Technologies</strong> сохраняет наши корни и интерес к нечётким системам, но не ограничивает область работы fuzzy logic или алгоритмической торговлей. Сегодня это зонтичное имя для инженерных и R&D-направлений компании.
+
+## Open projects & knowledge
+
+<div class="links links-secondary">
+  <a href="https://github.com/Fuzzy-Technologies">Fuzzy Technologies on GitHub</a>
+  <a href="https://github.com/Fuzzy-Technologies/1337">1337 source</a>
+  <a href="https://teletype.in/@tgilmullin">Articles & research notes</a>
+  <a href="https://t.me/tgilmullin_blog">Engineering blog</a>
+  <a href="https://t.me/fuzzy_technologies">Fuzzy Technologies contact</a>
+</div>
+
+<footer>
+  <strong>Fuzzy Technologies</strong><br>
+  Founder & architect: Timur Gilmullin<br>
+  Technologies · Knowledge · Science
+</footer>
