@@ -1,7 +1,7 @@
 ---
 layout: default
 lang: ru
-title: Fuzzy Technologies — инженерные проекты и R&D
+title: Fuzzy Technologies — инженерные проекты и исследования
 description: Fuzzy Technologies создаёт инженерные системы для информационной безопасности, ИИ-агентов, количественного анализа и автоматизации.
 keywords: Fuzzy Technologies, информационная безопасность, ИИ агенты, автоматизация, количественные системы, алгоритмическая торговля, нечёткая логика, open source, Python, исследования
 alternate_en: /
