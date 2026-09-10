@@ -42,6 +42,7 @@ alternate_ru: /FMA/
       <img class="fuzzy-avatar product-art" src="/static/images/0001-Ева-и-Мария.png" alt="Fuzzy Market Analytics signal service">
     </a>
     <h3>📈 Short-term signals for Russian equities</h3>
+    <p class="quiet">⏸ The service is temporarily paused. We plan to restore signal publishing after the trading robot release.</p>
     <p>🤖 The service watches the Russian market and reports short-term entry setups together with target prices, estimated probability, and signal strength. It combines technical analysis, fuzzy rules, and anomaly detection.</p>
     <p>📊 Strong signals are filtered by market phase, trend, and the built-in risk model instead of publishing every price movement.</p>
     <p>📡 Signals are generated automatically during the trading day. <a href="/FMA/en/instruments.html"><strong>Tracked instruments →</strong></a></p>
