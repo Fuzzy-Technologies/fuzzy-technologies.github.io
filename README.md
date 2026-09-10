@@ -1,26 +1,32 @@
 # 🌓 Fuzzy Technologies
 
-**Engineering · R&D · Open Source**
+**Engineering · R&D · Open Source**  
+*— powered by math & fuzzy logic*
 
-Fuzzy Technologies builds engineering platforms and applied R&D projects across cybersecurity, AI-assisted automation, quantitative systems, and open-source developer tooling.
+Fuzzy Technologies builds engineering platforms and applied R&D projects in cybersecurity, AI and agent systems, quantitative technologies, and open-source automation.
 
 > **Technologies · Knowledge · Science**
 
 This repository is the source for the public GitHub Pages site:  
 **https://fuzzy-technologies.github.io/**
 
+## Languages
+
+- [`/`](https://fuzzy-technologies.github.io/) — English, default
+- [`/ru/`](https://fuzzy-technologies.github.io/ru/) — Русский
+
+The company landing page is bilingual. Existing product pages keep their current language and technical content.
+
 ## Public project pages
 
-- [`/`](https://fuzzy-technologies.github.io/) — Fuzzy Technologies umbrella site
 - [`/1337`](https://fuzzy-technologies.github.io/1337/) — 🛡️ 1337 Security Workbench, maintained in [`Fuzzy-Technologies/1337`](https://github.com/Fuzzy-Technologies/1337)
 - [`/FMA`](https://fuzzy-technologies.github.io/FMA/) — 📊 Fuzzy Market Analytics
 - [`/TKSBrokerAPI`](https://fuzzy-technologies.github.io/TKSBrokerAPI/) — ⚙️ TKSBrokerAPI
 
-The root landing page is intentionally broader than any one product. Product-specific pages keep their own technical detail and lifecycle.
-
 ## Site structure
 
-- `index.md` — umbrella landing page
+- `index.md` — English umbrella landing page
+- `ru/index.md` — Russian umbrella landing page
 - `_layouts/default.html` — shared GitHub Pages layout and metadata
 - `_config.yml` — Jekyll/CommonMark configuration
 - `static/style.css` — shared Fuzzy Technologies visual system
