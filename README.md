@@ -3,7 +3,7 @@
 <table>
   <tr>
     <td width="280">
-      <img src="/static/images/0000-Вера-и-Дарина.png" alt="Fuzzy Technologies" width="260" />
+      <img src="static/images/0000-Вера-и-Дарина.png" alt="Fuzzy Technologies" width="260" />
     </td>
     <td>
       <strong>Engineering · R&D · Open Source</strong><br><br>
