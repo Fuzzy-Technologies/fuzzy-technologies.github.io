@@ -515,8 +515,7 @@ td img {
 
 .fma-product-card .product-art {
   width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+  height: auto;
   margin: 0;
 }
 
@@ -529,7 +528,4 @@ td img {
     grid-template-columns: 1fr;
   }
 
-  .fma-product-card .product-art {
-    aspect-ratio: 16 / 10;
-  }
 }
