@@ -33,47 +33,35 @@ alternate_ru: /FMA/
   </tr>
 </table>
 
-<table class="table-clean" style="margin-top: 2rem; margin-bottom: 2rem;">
-  <tr>
-    <td style="width: 280px; vertical-align: top;">
-      <a href="https://t.me/FuzzyMarketAnalytics">
-        <img class="fuzzy-avatar" src="/static/images/0001-Ева-и-Мария.png" alt="Fuzzy Market Analytics">
-      </a>
-      <div style="margin-top: 1.5em; width: 265px">
-        <a href="https://t.me/FuzzyMarketAnalytics" style="background-color: #ff79c6; padding: 0.75em 0.5em; color: white; text-decoration: none; font-weight: bold; border-radius: 8px; display: inline-block; width: 100%;">
-          🔔 Follow on Telegram
-        </a>
-      </div>
-    </td>
-    <td style="vertical-align: top;">
-      <h3 style="margin-top: 0;">📈 Short-term signals for Russian equities (free)</h3>
-      <p>🤖 The service watches the Russian market and reports short-term entry setups together with target prices, estimated probability and signal strength. It combines technical analysis, fuzzy rules and anomaly detection.</p>
-      <p>📊 Signals are filtered by market phase, trend and the built-in risk model instead of publishing every price movement.</p>
-      <p>📡 Signals are generated automatically during the trading day. The current list of tracked instruments is <a href="/FMA/en/instruments.html"><strong>available here</strong></a>.</p>
-      <p><a href="https://t.me/FuzzyMarketAnalytics"><strong>Try the signal feed</strong></a></p>
-    </td>
-  </tr>
-</table>
+<div class="fma-product-grid">
+  <section class="project-card fma-product-card featured">
+    <span class="card-label">Signals · Analytics · Free</span>
+    <a class="product-art-link" href="https://t.me/FuzzyMarketAnalytics">
+      <img class="fuzzy-avatar product-art" src="/static/images/0001-Ева-и-Мария.png" alt="Fuzzy Market Analytics signal service">
+    </a>
+    <h3>📈 Short-term signals for Russian equities</h3>
+    <p>🤖 The service watches the Russian market and reports short-term entry setups together with target prices, estimated probability, and signal strength. It combines technical analysis, fuzzy rules, and anomaly detection.</p>
+    <p>📊 Strong signals are filtered by market phase, trend, and the built-in risk model instead of publishing every price movement.</p>
+    <p>📡 Signals are generated automatically during the trading day. <a href="/FMA/en/instruments.html"><strong>Tracked instruments →</strong></a></p>
+    <div class="project-links">
+      <a href="https://t.me/FuzzyMarketAnalytics">🔔 Follow on Telegram →</a>
+    </div>
+  </section>
 
-<table class="table-clean" style="margin-top: 2rem; margin-bottom: 2rem;">
-  <tr>
-    <td style="width: 280px; vertical-align: top;">
-      <a href="https://t.me/fuzzy_technologies">
-        <img class="fuzzy-avatar" src="/static/images/0000-Вера-и-Дарина.png" alt="Fuzzy Market Analytics">
-      </a>
-      <div style="margin-top: 1.5em; width: 265px">
-        <a href="https://t.me/fuzzy_technologies" style="background-color: #ff79c6; padding: 0.75em 0.5em; color: white; text-decoration: none; font-weight: bold; border-radius: 8px; display: inline-block; width: 100%;">
-          💬 Contact us
-        </a>
-      </div>
-    </td>
-    <td style="vertical-align: top;">
-      <h3 style="margin-top: 0;">🤖 Automated trading systems</h3>
-      <p>FMA research is also used in automated trading systems and strategy prototypes. The work focuses on controlled risk, explicit rules and reproducible testing rather than discretionary trade calls.</p>
-      <p>Product availability and distribution depend on the specific platform and project stage. Contact us for current information.</p>
-    </td>
-  </tr>
-</table>
+  <section class="project-card fma-product-card">
+    <span class="card-label">Automated Trading · Robot · In Development</span>
+    <a class="product-art-link" href="https://t.me/fuzzy_technologies">
+      <img class="fuzzy-avatar product-art" src="/static/images/0000-Вера-и-Дарина.png" alt="Fuzzy Market Analytics trading robot">
+    </a>
+    <h3>🤖 Automated trading robot</h3>
+    <p>FMA research is also used in automated trading systems and strategy prototypes running on a user's brokerage account.</p>
+    <p>The goal is to automate strategy execution while keeping risk rules and operating assumptions explicit.</p>
+    <p>The current commercial direction combines a fixed rental fee with performance-based compensation. Product availability depends on the platform and development stage.</p>
+    <div class="project-links">
+      <a href="https://t.me/fuzzy_technologies">💬 Discuss access →</a>
+    </div>
+  </section>
+</div>
 
 ### ❓ FAQ
 
