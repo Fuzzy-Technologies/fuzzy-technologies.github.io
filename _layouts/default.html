@@ -1,7 +1,9 @@
 {% assign document_lang = page.lang | default: site.lang | default: "en" %}
-{% if page.url contains '/FMA/' or page.url contains '/TKSBrokerAPI/' %}
-  {% assign document_lang = "ru" %}
-{% endif %}
+{% unless page.lang %}
+  {% if page.url contains '/FMA/' or page.url contains '/TKSBrokerAPI/' %}
+    {% assign document_lang = "ru" %}
+  {% endif %}
+{% endunless %}
 <!DOCTYPE html>
 <html lang="{{ document_lang }}">
   <head>
