@@ -33,6 +33,8 @@ description: Сервисы биржевых сигналов Fuzzy Market Analy
   </tr>
 </table>
 
+## Продукты и сервисы
+
 <div class="fma-product-grid">
   <section class="project-card fma-product-card featured">
     <span class="card-label">Сигналы · Аналитика · Бесплатно</span>
