@@ -135,6 +135,30 @@ img {
   border-radius: 12px;
 }
 
+.language-switch {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.language-switch a,
+.language-switch span {
+  min-width: 2.4rem;
+  padding: 0.25rem 0.45rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  text-align: center;
+}
+
+.language-switch .active {
+  border-color: #00eaff66;
+  background: #00eaff12;
+  color: var(--cyan);
+}
+
 .brand-hero {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(180px, 260px);
@@ -178,6 +202,13 @@ img {
   max-width: 760px;
   margin-top: 1.25rem;
   color: var(--text);
+}
+
+.brand-signature {
+  margin-top: 0.35rem;
+  color: var(--green);
+  font-size: 0.9rem;
+  font-style: italic;
 }
 
 .chips {
@@ -378,6 +409,11 @@ footer {
   color: var(--muted);
   text-align: center;
   font-size: 0.9rem;
+}
+
+.footer-signature {
+  color: var(--green);
+  font-style: italic;
 }
 
 ::selection {
