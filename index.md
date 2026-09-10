@@ -29,7 +29,7 @@ alternate_ru: /ru/
     <div class="links">
       <a href="https://github.com/Fuzzy-Technologies">GitHub</a>
       <a href="https://fuzzy-technologies.github.io/1337/">1337 Security Workbench</a>
-      <a href="https://fuzzy-technologies.github.io/FMA/">Fuzzy Market Analytics</a>
+      <a href="https://fuzzy-technologies.github.io/FMA/en/">Fuzzy Market Analytics</a>
       <a href="https://t.me/fuzzy_technologies">Contact</a>
     </div>
   </div>
@@ -63,7 +63,7 @@ We build engineering products for problems where software has to do real work: p
     <p>A family of quantitative analytics and trading systems built around statistics, probability models, anomaly filtering, risk estimation, and fuzzy inference.</p>
     <p>The focus is on interpretable rules, measurable risk, and real market data rather than promises of a perfect forecast.</p>
     <div class="project-links">
-      <a href="https://fuzzy-technologies.github.io/FMA/">Project page (RU) →</a>
+      <a href="https://fuzzy-technologies.github.io/FMA/en/">Project page (RU) →</a>
     </div>
   </article>
 
@@ -73,7 +73,7 @@ We build engineering products for problems where software has to do real work: p
     <p>An open-source Python platform for the T-Investments API, market-data collection and enrichment, analytics, and automated trading scenarios.</p>
     <p>It is used as an infrastructure layer for part of our quantitative and trading work.</p>
     <div class="project-links">
-      <a href="https://fuzzy-technologies.github.io/TKSBrokerAPI/">Project page (RU) →</a>
+      <a href="https://fuzzy-technologies.github.io/TKSBrokerAPI/en/">Project page (RU) →</a>
       <a href="https://github.com/Tim55667757/TKSBrokerAPI">GitHub →</a>
     </div>
   </article>
