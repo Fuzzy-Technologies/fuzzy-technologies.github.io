@@ -495,3 +495,37 @@ td img {
   html { scroll-behavior: auto; }
   body, .fuzzy-avatar { animation: none; }
 }
+
+/* FMA product catalog: same visual language as the company project cards. */
+.fma-product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.1rem;
+  margin: 2rem 0 2.4rem;
+}
+
+.fma-product-card {
+  min-width: 0;
+}
+
+.fma-product-card .product-art-link {
+  display: block;
+  margin: 0.8rem 0 0.95rem;
+}
+
+.fma-product-card .product-art {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.fma-product-card h3 {
+  margin-top: 0.25rem;
+}
+
+@media (max-width: 820px) {
+  .fma-product-grid {
+    grid-template-columns: 1fr;
+  }
+
+}

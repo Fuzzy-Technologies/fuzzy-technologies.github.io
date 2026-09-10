@@ -3,12 +3,12 @@ layout: default
 lang: ru
 alternate_en: /FMA/en/instruments.html
 alternate_ru: /FMA/instruments.html
-title: Fuzzy Market Analytics — Instruments
+title: Fuzzy Market Analytics — Инструменты
 description: Сервисы биржевых сигналов Fuzzy Market Analytics на основе статистики, вероятностей и нечёткой логики. Список анализируемых инструментов.
 ---
 
 <header class="site-header">
-  <h1 class="site-title"><a href="/FMA/instruments.html">📊 Fuzzy Market Analytics: Instruments</a></h1>
+  <h1 class="site-title"><a href="/FMA/instruments.html">📊 Fuzzy Market Analytics: Инструменты</a></h1>
   <div class="site-actions">
     <nav class="language-switch" aria-label="Язык">
       <a href="/FMA/en/instruments.html" lang="en">EN</a>

@@ -1,7 +1,7 @@
 ---
 layout: default
 lang: ru
-title: Fuzzy Technologies — инженерные проекты и R&D
+title: Fuzzy Technologies — инженерные проекты и исследования
 description: Fuzzy Technologies создаёт инженерные системы для информационной безопасности, ИИ-агентов, количественного анализа и автоматизации.
 keywords: Fuzzy Technologies, информационная безопасность, ИИ агенты, автоматизация, количественные системы, алгоритмическая торговля, нечёткая логика, open source, Python, исследования
 alternate_en: /
@@ -27,7 +27,7 @@ alternate_ru: /ru/
       <img class="fuzzy-avatar home-girls" src="/static/images/0000-Вера-и-Дарина.gif" alt="Fuzzy Technologies" />
     </td>
     <td class="home-intro-copy">
-      <p class="eyebrow">Engineering · R&D · Open Source</p>
+      <p class="eyebrow">Инженерия · Исследования · Открытый код</p>
       <p class="hero-lead"><strong>Fuzzy Technologies</strong> делает инженерные системы для информационной безопасности, ИИ-агентов, количественного анализа и программной автоматизации.</p>
       <p>Любим сложные технические задачи, явные модели, воспроизводимые эксперименты и софт, который можно проверить, а не только красиво показать.</p>
       <p class="brand-signature">— powered by math &amp; fuzzy logic</p>
@@ -45,9 +45,9 @@ alternate_ru: /ru/
 
 <div class="project-grid">
   <section class="project-card featured">
-    <span class="card-label">Security · AI · Open Source</span>
+    <span class="card-label">Безопасность · ИИ · Открытый код</span>
     <h3>🛡️ 1337 Security Workbench</h3>
-    <p>Открытое рабочее место для ИБ-специалистов и пентестеров. Единое пространство для scope, управляемого запуска инструментов, доказательств, reachability и attack paths; архитектура рассчитана и на ИИ-агентов.</p>
+    <p>Открытое рабочее место для ИБ-специалистов и пентестеров. Единое пространство для области проверки, управляемого запуска инструментов, доказательств, анализа достижимости и путей атаки; архитектура рассчитана и на ИИ-агентов.</p>
     <div class="project-links">
       <a href="/1337/">Сайт проекта →</a>
       <a href="https://github.com/Fuzzy-Technologies/1337">GitHub →</a>
@@ -55,7 +55,7 @@ alternate_ru: /ru/
   </section>
 
   <section class="project-card">
-    <span class="card-label">Quant · Analytics · Trading</span>
+    <span class="card-label">Количественный анализ · Торговля</span>
     <h3>📊 Fuzzy Market Analytics</h3>
     <p>Количественная рыночная аналитика и торговые системы: статистика, вероятностные модели, фильтрация аномалий, оценка риска и нечёткая логика.</p>
     <div class="project-links">
@@ -64,7 +64,7 @@ alternate_ru: /ru/
   </section>
 
   <section class="project-card">
-    <span class="card-label">Python · API · Automation</span>
+    <span class="card-label">Python · API · Автоматизация</span>
     <h3>⚙️ TKSBrokerAPI</h3>
     <p>Открытая Python-платформа для API Т-Инвестиций, сбора и обработки рыночных данных, аналитики и автоматизации торговых сценариев.</p>
     <div class="project-links">
@@ -79,18 +79,18 @@ alternate_ru: /ru/
 <div class="direction-grid">
   <section class="direction-card">
     <h3>Информационная безопасность</h3>
-    <p>Рабочие места ИБ-специалистов, управляемая автоматизация, доказательства, reachability и attack paths.</p>
+    <p>Рабочие места ИБ-специалистов, управляемая автоматизация, доказательства, анализ достижимости и пути атаки.</p>
   </section>
   <section class="direction-card">
     <h3>ИИ и агентные системы</h3>
-    <p>Агентные среды, состояние, политики, запуск инструментов и связка reasoning-моделей с реальными системами.</p>
+    <p>Агентные среды, состояние, политики, запуск инструментов и связка моделей рассуждений с реальными системами.</p>
   </section>
   <section class="direction-card">
     <h3>Количественные системы</h3>
     <p>Вероятности, статистика, фильтрация аномалий, риск-модели, нечёткие системы и алгоритмические решения.</p>
   </section>
   <section class="direction-card">
-    <h3>Open engineering</h3>
+    <h3>Открытая инженерия</h3>
     <p>Python, API, автоматизация, CI/CD и переиспользуемые инженерные инструменты.</p>
   </section>
 </div>
