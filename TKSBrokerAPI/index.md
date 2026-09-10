@@ -1,8 +1,16 @@
 ---
 layout: default
+lang: ru
+alternate_en: /TKSBrokerAPI/en/
+alternate_ru: /TKSBrokerAPI/
 title: TKSBrokerAPI
 description: Платформа ⚙️ TKSBrokerAPI для упрощённой работы с брокером Т-Инвестиции через REST API и автоматизации сбора биржевой аналитики и торговых сценариев на Python.
 ---
+
+<nav class="language-switch" aria-label="Язык">
+  <a href="/TKSBrokerAPI/en/" lang="en">EN</a>
+  <span class="active" aria-current="page">RU</span>
+</nav>
 
 <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 2rem;">
   <h1 style="margin: 0; font-size: 1.8rem;">

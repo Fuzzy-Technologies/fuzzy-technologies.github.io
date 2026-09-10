@@ -1,41 +1,67 @@
+{% assign document_lang = page.lang | default: site.lang | default: "en" %}
+{% unless page.lang %}
+  {% if page.url contains '/FMA/' or page.url contains '/TKSBrokerAPI/' %}
+    {% assign document_lang = "ru" %}
+  {% endif %}
+{% endunless %}
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="{{ document_lang }}">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="{{ page.description }}">
-    <title>{{ page.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}" />
+    <meta name="keywords" content="{{ page.keywords | default: site.keywords }}" />
+    <meta name="theme-color" content="#0d0d0d" />
 
-    <!-- Favicon -->
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="64x64" href="/static/images/favicon-64x64.png">
-    <link rel="icon" type="image/png" sizes="128x128" href="/static/images/favicon-128x128.png">
+    <meta property="og:title" content="{{ page.title | default: site.title }}" />
+    <meta property="og:description" content="{{ page.description | default: site.description }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ page.url | absolute_url }}" />
+    <meta property="og:site_name" content="Fuzzy Technologies" />
+    {% if document_lang == "ru" %}
+    <meta property="og:locale" content="ru_RU" />
+    {% else %}
+    <meta property="og:locale" content="en_US" />
+    {% endif %}
+    <meta name="twitter:card" content="summary" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="/static/style.css">
+    <link rel="canonical" href="{{ page.url | absolute_url }}" />
+    {% if page.alternate_en %}
+    <link rel="alternate" hreflang="en" href="{{ page.alternate_en | absolute_url }}" />
+    <link rel="alternate" hreflang="x-default" href="{{ page.alternate_en | absolute_url }}" />
+    {% endif %}
+    {% if page.alternate_ru %}
+    <link rel="alternate" hreflang="ru" href="{{ page.alternate_ru | absolute_url }}" />
+    {% endif %}
 
-    <!-- JS -->
-    <script src="/static/main.js"></script>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="64x64" href="/static/images/favicon-64x64.png" />
+    <link rel="icon" type="image/png" sizes="128x128" href="/static/images/favicon-128x128.png" />
+    <link rel="stylesheet" href="/static/style.css" />
+
+    <title>{{ page.title | default: site.title }}</title>
   </head>
 
   <body>
-    {{ content }}
+    <main>
+      {{ content }}
+    </main>
 
     <!-- Yandex.Metrika counter -->
-    <script type="text/javascript" >
-       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-       m[i].l=1*new Date();
-       for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-       k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    <script type="text/javascript">
+      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();
+      for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-       ym(102511623, "init", {
-            clickmap:true,
-            trackLinks:true,
-            accurateTrackBounce:true,
-            webvisor:true
-       });
+      ym(102511623, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+      });
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/102511623" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
