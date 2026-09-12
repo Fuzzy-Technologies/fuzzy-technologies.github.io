@@ -20,6 +20,16 @@
 - 🇷🇺 [Fuzzy Technologies / RU](https://fuzzy-technologies.github.io/ru/)
 - 🛡️ [1337 Security Workbench](https://fuzzy-technologies.github.io/1337/)
 
+## Public localization policy
+
+- **English is canonical.** Public product meaning, technical claims, release facts, links, and positioning are authored in English first.
+- **Russian and Simplified Chinese are derived but adaptive.** Preserve meaning, but write naturally for native technical practitioners instead of translating sentence structure word for word.
+- Prefer established local professional terminology over literal calques or invented wording.
+- Keep product names, standard acronyms, protocol names, commands, package names, and intentional architecture labels unchanged where appropriate.
+- Do not strengthen claims during localization. Product maturity, roadmap status, limitations, financial wording, and technical claims must remain equivalent across languages.
+- When canonical English changes, review Russian and Simplified Chinese in the same pull request whenever practical.
+- Code, API identifiers, repository paths, package names, commands, and internal engineering contracts are not localized.
+
 ## Product pages
 
 | Project | English | Русский |
