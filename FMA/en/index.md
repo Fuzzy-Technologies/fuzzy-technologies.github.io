@@ -5,6 +5,7 @@ title: Fuzzy Market Analytics
 description: Fuzzy Market Analytics services use statistics, probability models, anomaly filtering and fuzzy logic for market analysis and trading automation.
 alternate_en: /FMA/en/
 alternate_ru: /FMA/
+alternate_zh: /FMA/zh-cn/
 ---
 
 <header class="site-header">
@@ -13,6 +14,7 @@ alternate_ru: /FMA/
     <nav class="language-switch" aria-label="Language">
       <span class="active" aria-current="page">EN</span>
       <a href="/FMA/" lang="ru">RU</a>
+      <a href="/FMA/zh-cn/" lang="zh-CN">简中</a>
     </nav>
     <a class="brand-button" href="/" aria-label="Back to Fuzzy Technologies">
       <img src="/static/images/FuzzyTechnologies-Logo-transp.png" alt="Fuzzy Technologies" />
