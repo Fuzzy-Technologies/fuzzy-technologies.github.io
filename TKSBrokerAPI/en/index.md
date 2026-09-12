@@ -60,10 +60,10 @@ docker pull tim55667757/tksbrokerapi:1.6.dev269
 
 ### 📚 Documentation
 
-- [Source code on GitHub](https://github.com/Tim55667757/TKSBrokerAPI/tree/develop)
-- [README and examples](https://github.com/Tim55667757/TKSBrokerAPI/blob/develop/README.md)
+- [Source code on GitHub](https://github.com/Fuzzy-Technologies/TKSBrokerAPI/tree/develop)
+- [README and examples](https://github.com/Fuzzy-Technologies/TKSBrokerAPI/blob/develop/README.md)
 - [Generated API documentation](https://tim55667757.github.io/TKSBrokerAPI/docs/tksbrokerapi/TKSBrokerAPI.html)
-- [CHANGELOG](https://github.com/Tim55667757/TKSBrokerAPI/blob/develop/CHANGELOG.md)
+- [CHANGELOG](https://github.com/Fuzzy-Technologies/TKSBrokerAPI/blob/develop/CHANGELOG.md)
 
 ### Why TKSBrokerAPI exists
 
@@ -155,7 +155,7 @@ if __name__ == "__main__":
     Trade()
 ```
 
-More examples are available in the [project README](https://github.com/Tim55667757/TKSBrokerAPI).
+More examples are available in the [project README](https://github.com/Fuzzy-Technologies/TKSBrokerAPI).
 
 <div style="text-align: center; margin-top: 2em;">
   <a href="/">
