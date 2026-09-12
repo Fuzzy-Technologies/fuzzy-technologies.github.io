@@ -62,10 +62,10 @@ docker pull tim55667757/tksbrokerapi:1.6.dev269
 ```
 
 🇷🇺 📚 Документация на русском:
-- Код на GitHub: [TKSBrokerAPI](https://github.com/Tim55667757/TKSBrokerAPI/tree/develop)
-- Подробное описание и примеры: [README.md](https://github.com/Tim55667757/TKSBrokerAPI/blob/develop/README.md)
+- Код на GitHub: [TKSBrokerAPI](https://github.com/Fuzzy-Technologies/TKSBrokerAPI/tree/develop)
+- Подробное описание и примеры: [README.md](https://github.com/Fuzzy-Technologies/TKSBrokerAPI/blob/develop/README.md)
 - Документация на API: [TKSBrokerAPI module docs](https://tim55667757.github.io/TKSBrokerAPI/docs/tksbrokerapi/TKSBrokerAPI.html)
-- Накопительные релиз-ноты: [CHANGELOG.md](https://github.com/Tim55667757/TKSBrokerAPI/blob/develop/CHANGELOG.md)
+- Накопительные релиз-ноты: [CHANGELOG.md](https://github.com/Fuzzy-Technologies/TKSBrokerAPI/blob/develop/CHANGELOG.md)
 
 
 ### Зачем нужна платформа ⚙️ TKSBrokerAPI
@@ -289,7 +289,7 @@ if __name__ == "__main__":
    </code></pre>
 </details>
 
-> Больше примеров: [в документации](https://github.com/Tim55667757/TKSBrokerAPI?tab=readme-ov-file#%D0%9A%D0%B0%D0%BA-Python-API-%D1%87%D0%B5%D1%80%D0%B5%D0%B7-%D0%B8%D0%BC%D0%BF%D0%BE%D1%80%D1%82-%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8F-TKSBrokerAPI)
+> Больше примеров: [в документации](https://github.com/Fuzzy-Technologies/TKSBrokerAPI?tab=readme-ov-file#%D0%9A%D0%B0%D0%BA-Python-API-%D1%87%D0%B5%D1%80%D0%B5%D0%B7-%D0%B8%D0%BC%D0%BF%D0%BE%D1%80%D1%82-%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8F-TKSBrokerAPI)
 
 <hr/>
 

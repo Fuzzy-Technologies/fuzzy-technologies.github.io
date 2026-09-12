@@ -2,10 +2,11 @@
 layout: default
 lang: ru
 title: Fuzzy Technologies — инженерные проекты и исследования
-description: Fuzzy Technologies создаёт инженерные системы для информационной безопасности, ИИ-агентов, количественного анализа и автоматизации.
+description: Fuzzy Technologies занимается прикладными исследованиями и разработкой в области торговых систем, информационной безопасности, ИИ и инженерной автоматизации.
 keywords: Fuzzy Technologies, информационная безопасность, ИИ агенты, автоматизация, количественные системы, алгоритмическая торговля, нечёткая логика, open source, Python, исследования
 alternate_en: /
 alternate_ru: /ru/
+alternate_zh: /zh-cn/
 ---
 
 <header class="site-header">
@@ -14,6 +15,7 @@ alternate_ru: /ru/
     <nav class="language-switch" aria-label="Язык">
       <a href="/" lang="en">EN</a>
       <span class="active" aria-current="page">RU</span>
+      <a href="/zh-cn/" lang="zh-CN">简中</a>
     </nav>
     <a class="brand-button" href="/ru/" aria-label="Главная Fuzzy Technologies">
       <img src="/static/images/FuzzyTechnologies-Logo-transp.png" alt="Fuzzy Technologies" />
@@ -28,8 +30,8 @@ alternate_ru: /ru/
     </td>
     <td class="home-intro-copy">
       <p class="eyebrow">Инженерия · Исследования · Открытый код</p>
-      <p class="hero-lead"><strong>Fuzzy Technologies</strong> делает инженерные системы для информационной безопасности, ИИ-агентов, количественного анализа и программной автоматизации.</p>
-      <p>Любим сложные технические задачи, явные модели, воспроизводимые эксперименты и софт, который можно проверить, а не только красиво показать.</p>
+      <p class="hero-lead"><strong>Fuzzy Technologies</strong> занимается прикладными исследованиями и разработкой в области торговых систем, информационной безопасности, ИИ и инженерной автоматизации.</p>
+      <p>Любим сложные технические задачи, явные модели, воспроизводимые эксперименты и системы, работу которых можно проверить, а не только эффектно продемонстрировать.</p>
       <p class="brand-signature">— powered by math &amp; fuzzy logic</p>
       <div class="hero-actions">
         <a class="button-neon" href="https://github.com/Fuzzy-Technologies">GitHub</a>
@@ -69,7 +71,7 @@ alternate_ru: /ru/
     <p>Открытая Python-платформа для API Т-Инвестиций, сбора и обработки рыночных данных, аналитики и автоматизации торговых сценариев.</p>
     <div class="project-links">
       <a href="/TKSBrokerAPI/">Сайт проекта →</a>
-      <a href="https://github.com/Tim55667757/TKSBrokerAPI">GitHub →</a>
+      <a href="https://github.com/Fuzzy-Technologies/TKSBrokerAPI">GitHub →</a>
     </div>
   </section>
 </div>

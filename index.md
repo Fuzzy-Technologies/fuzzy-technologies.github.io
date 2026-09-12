@@ -2,10 +2,11 @@
 layout: default
 lang: en
 title: Fuzzy Technologies — Engineering & R&D
-description: Fuzzy Technologies builds practical engineering systems for cybersecurity, AI agents, quantitative analysis and open-source automation.
+description: Fuzzy Technologies develops trading systems, cybersecurity tools, AI systems and engineering automation through applied R&D.
 keywords: Fuzzy Technologies, cybersecurity, AI agents, security engineering, quantitative systems, algorithmic trading, fuzzy logic, open source, Python, research, developer tools
 alternate_en: /
 alternate_ru: /ru/
+alternate_zh: /zh-cn/
 ---
 
 <header class="site-header">
@@ -14,6 +15,7 @@ alternate_ru: /ru/
     <nav class="language-switch" aria-label="Language">
       <span class="active" aria-current="page">EN</span>
       <a href="/ru/" lang="ru">RU</a>
+      <a href="/zh-cn/" lang="zh-CN">简中</a>
     </nav>
     <a class="brand-button" href="/" aria-label="Fuzzy Technologies home">
       <img src="/static/images/FuzzyTechnologies-Logo-transp.png" alt="Fuzzy Technologies" />
@@ -28,7 +30,7 @@ alternate_ru: /ru/
     </td>
     <td class="home-intro-copy">
       <p class="eyebrow">Engineering · R&D · Open Source</p>
-      <p class="hero-lead"><strong>Fuzzy Technologies</strong> builds practical systems for cybersecurity, AI agents, quantitative analysis and software automation.</p>
+      <p class="hero-lead"><strong>Fuzzy Technologies</strong> develops trading systems, cybersecurity tools, AI systems and engineering automation through applied R&amp;D.</p>
       <p>We like hard technical problems, explicit models, reproducible experiments, and software that can be checked instead of merely demonstrated.</p>
       <p class="brand-signature">— powered by math &amp; fuzzy logic</p>
       <div class="hero-actions">
@@ -70,7 +72,7 @@ alternate_ru: /ru/
     <p>Open-source Python platform for the T-Investments API, market-data collection, analytics, and automated trading workflows.</p>
     <div class="project-links">
       <a href="/TKSBrokerAPI/en/">Project page →</a>
-      <a href="https://github.com/Tim55667757/TKSBrokerAPI">GitHub →</a>
+      <a href="https://github.com/Fuzzy-Technologies/TKSBrokerAPI">GitHub →</a>
     </div>
   </section>
 </div>

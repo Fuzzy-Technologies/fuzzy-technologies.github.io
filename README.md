@@ -7,7 +7,7 @@
     </td>
     <td>
       <strong>Engineering · R&D · Open Source</strong><br><br>
-      Fuzzy Technologies builds practical engineering systems for cybersecurity, AI agents, quantitative analysis, and open-source automation.<br><br><br><br><br>
+      Fuzzy Technologies develops trading systems, cybersecurity tools, AI systems, and engineering automation through applied R&D.<br><br><br><br><br>
       <strong>Technologies · Knowledge · Science</strong><br>
       <em>— powered by math & fuzzy logic</em>
     </td>
@@ -18,7 +18,14 @@
 
 - 🌐 [Fuzzy Technologies](https://fuzzy-technologies.github.io/) — English, default
 - 🇷🇺 [Fuzzy Technologies / RU](https://fuzzy-technologies.github.io/ru/)
+- 🇨🇳 [Fuzzy Technologies / 简中](https://fuzzy-technologies.github.io/zh-cn/)
 - 🛡️ [1337 Security Workbench](https://fuzzy-technologies.github.io/1337/)
+
+## Project documentation
+
+- [Localization policy](docs/LOCALIZATION.md)
+- [Public terminology guide](docs/TERMINOLOGY.md)
+- [Development protocol](DEVELOPMENT_PROTOCOL.md)
 
 ## Product pages
 
