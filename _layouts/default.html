@@ -20,6 +20,8 @@
     <meta property="og:site_name" content="Fuzzy Technologies" />
     {% if document_lang == "ru" %}
     <meta property="og:locale" content="ru_RU" />
+    {% elsif document_lang == "zh-CN" %}
+    <meta property="og:locale" content="zh_CN" />
     {% else %}
     <meta property="og:locale" content="en_US" />
     {% endif %}
@@ -32,6 +34,9 @@
     {% endif %}
     {% if page.alternate_ru %}
     <link rel="alternate" hreflang="ru" href="{{ page.alternate_ru | absolute_url }}" />
+    {% endif %}
+    {% if page.alternate_zh %}
+    <link rel="alternate" hreflang="zh-CN" href="{{ page.alternate_zh | absolute_url }}" />
     {% endif %}
 
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
