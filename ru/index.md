@@ -2,7 +2,7 @@
 layout: default
 lang: ru
 title: Fuzzy Technologies — инженерные проекты и исследования
-description: Fuzzy Technologies создаёт инженерные системы для информационной безопасности, ИИ-агентов, количественного анализа и автоматизации.
+description: Fuzzy Technologies занимается прикладными инженерными исследованиями и разрабатывает торговые системы, инструменты информационной безопасности, ИИ-системы и средства автоматизации.
 keywords: Fuzzy Technologies, информационная безопасность, ИИ агенты, автоматизация, количественные системы, алгоритмическая торговля, нечёткая логика, open source, Python, исследования
 alternate_en: /
 alternate_ru: /ru/
@@ -28,7 +28,7 @@ alternate_ru: /ru/
     </td>
     <td class="home-intro-copy">
       <p class="eyebrow">Инженерия · Исследования · Открытый код</p>
-      <p class="hero-lead"><strong>Fuzzy Technologies</strong> делает инженерные системы для информационной безопасности, ИИ-агентов, количественного анализа и программной автоматизации.</p>
+      <p class="hero-lead"><strong>Fuzzy Technologies</strong> занимается прикладными инженерными исследованиями и разрабатывает торговые системы, инструменты информационной безопасности, ИИ-системы и средства автоматизации.</p>
       <p>Любим сложные технические задачи, явные модели, воспроизводимые эксперименты и софт, который можно проверить, а не только красиво показать.</p>
       <p class="brand-signature">— powered by math &amp; fuzzy logic</p>
       <div class="hero-actions">
@@ -69,7 +69,7 @@ alternate_ru: /ru/
     <p>Открытая Python-платформа для API Т-Инвестиций, сбора и обработки рыночных данных, аналитики и автоматизации торговых сценариев.</p>
     <div class="project-links">
       <a href="/TKSBrokerAPI/">Сайт проекта →</a>
-      <a href="https://github.com/Tim55667757/TKSBrokerAPI">GitHub →</a>
+      <a href="https://github.com/Fuzzy-Technologies/TKSBrokerAPI">GitHub →</a>
     </div>
   </section>
 </div>
