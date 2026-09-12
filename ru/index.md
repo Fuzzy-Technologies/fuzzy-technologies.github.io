@@ -6,6 +6,7 @@ description: Fuzzy Technologies занимается прикладными ис
 keywords: Fuzzy Technologies, информационная безопасность, ИИ агенты, автоматизация, количественные системы, алгоритмическая торговля, нечёткая логика, open source, Python, исследования
 alternate_en: /
 alternate_ru: /ru/
+alternate_zh: /zh-cn/
 ---
 
 <header class="site-header">
@@ -14,6 +15,7 @@ alternate_ru: /ru/
     <nav class="language-switch" aria-label="Язык">
       <a href="/" lang="en">EN</a>
       <span class="active" aria-current="page">RU</span>
+      <a href="/zh-cn/" lang="zh-CN">简中</a>
     </nav>
     <a class="brand-button" href="/ru/" aria-label="Главная Fuzzy Technologies">
       <img src="/static/images/FuzzyTechnologies-Logo-transp.png" alt="Fuzzy Technologies" />

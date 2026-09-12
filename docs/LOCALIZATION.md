@@ -77,7 +77,7 @@ Prefer established terms such as:
 
 Avoid mixing generic English nouns into normal Chinese prose when an established Chinese term exists. Standard acronyms and product names may remain in English where that is normal professional usage.
 
-For cybersecurity-specific wording, the canonical reference is the 1337 Security Workbench terminology guide in `docs/TERMINOLOGY.md` of the 1337 repository.
+Use [Public terminology guide](TERMINOLOGY.md) for site-wide terminology. For 1337-specific cybersecurity architecture terminology, also follow the 1337 Security Workbench `docs/TERMINOLOGY.md` guide.
 
 ## Cross-locale review checklist
 

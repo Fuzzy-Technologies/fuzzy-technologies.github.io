@@ -6,6 +6,7 @@ description: Fuzzy Technologies develops trading systems, cybersecurity tools, A
 keywords: Fuzzy Technologies, cybersecurity, AI agents, security engineering, quantitative systems, algorithmic trading, fuzzy logic, open source, Python, research, developer tools
 alternate_en: /
 alternate_ru: /ru/
+alternate_zh: /zh-cn/
 ---
 
 <header class="site-header">
@@ -14,6 +15,7 @@ alternate_ru: /ru/
     <nav class="language-switch" aria-label="Language">
       <span class="active" aria-current="page">EN</span>
       <a href="/ru/" lang="ru">RU</a>
+      <a href="/zh-cn/" lang="zh-CN">简中</a>
     </nav>
     <a class="brand-button" href="/" aria-label="Fuzzy Technologies home">
       <img src="/static/images/FuzzyTechnologies-Logo-transp.png" alt="Fuzzy Technologies" />
