@@ -75,6 +75,16 @@ alternate_zh: /zh-cn/
       <a href="https://github.com/Fuzzy-Technologies/TKSBrokerAPI">GitHub →</a>
     </div>
   </section>
+
+  <section class="project-card">
+    <span class="card-label">Python · Fuzzy Logic · Mathematics</span>
+    <h3>🧮 FuzzyRoutines</h3>
+    <p>Mathematically reliable Python foundation for membership functions, fuzzy sets, fuzzy scales, and common fuzzy-logic operators.</p>
+    <div class="project-links">
+      <a href="/FuzzyRoutines/">Project page →</a>
+      <a href="https://github.com/Fuzzy-Technologies/FuzzyRoutines">GitHub →</a>
+    </div>
+  </section>
 </div>
 
 ## Engineering directions
