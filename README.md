@@ -3,13 +3,14 @@
 <table>
   <tr>
     <td width="280">
-      <img src="static/images/0000-Вера-и-Дарина.png" alt="Fuzzy Technologies" width="260" />
+      <img src="static/images/Fuzzy-Technologies-Team.png" alt="Fuzzy Technologies Team" width="260" />
     </td>
+  </tr>
+  <tr>
     <td>
       <strong>Engineering · R&D · Open Source</strong><br><br>
-      Fuzzy Technologies develops trading systems, cybersecurity tools, AI systems, and engineering automation through applied R&D.<br><br><br><br><br>
-      <strong>Technologies · Knowledge · Science</strong><br>
-      <em>— powered by math & fuzzy logic</em>
+      Fuzzy Technologies develops trading systems, cybersecurity tools, AI systems, and engineering automation through applied R&D.<br><br>
+      <strong>Technologies · Knowledge · Science</strong> <em>— powered by math & fuzzy logic</em>
     </td>
   </tr>
 </table>
