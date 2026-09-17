@@ -3,7 +3,7 @@
 <table>
   <tr>
     <td width="280">
-      <img src="static/images/Fuzzy-Technologies-Team.png" alt="Fuzzy Technologies Team" width="260" />
+      <img src="static/images/Fuzzy-Technologies-Team.png" alt="Fuzzy Technologies Team" width="100%" />
     </td>
   </tr>
   <tr>
