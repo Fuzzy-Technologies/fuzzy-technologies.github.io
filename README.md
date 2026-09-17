@@ -2,7 +2,7 @@
 
 <table>
   <tr>
-    <td width="280">
+    <td width="100%">
       <img src="static/images/Fuzzy-Technologies-Team.png" alt="Fuzzy Technologies Team" width="100%" />
     </td>
   </tr>
