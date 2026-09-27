@@ -172,8 +172,12 @@ blockquote {
 
 .language-switch a,
 .language-switch span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   min-width: 2.25rem;
-  padding: 0.24rem 0.4rem;
+  height: 42px;
+  padding: 0 0.4rem;
   border: 1px solid var(--border-soft);
   border-radius: 5px;
   text-align: center;
@@ -443,9 +447,9 @@ blockquote {
 }
 
 .article-preview-copy h2 {
-  margin: 0.7rem 0 0.9rem;
-  font-size: clamp(1.35rem, 3vw, 1.85rem);
-  line-height: 1.28;
+  margin: 0.6rem 0 0.75rem;
+  font-size: clamp(1.2rem, 2.1vw, 1.5rem);
+  line-height: 1.25;
 }
 
 .article-preview-copy h2 a {
@@ -563,6 +567,11 @@ td img {
   .brand-button {
     width: 155px;
     min-height: 38px;
+  }
+
+  .language-switch a,
+  .language-switch span {
+    height: 38px;
   }
 
   .brand-button img {
