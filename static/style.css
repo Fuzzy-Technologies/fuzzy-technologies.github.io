@@ -447,9 +447,9 @@ blockquote {
 }
 
 .article-preview-copy h2 {
-  margin: 0.6rem 0 0.75rem;
-  font-size: clamp(1.2rem, 2.1vw, 1.5rem);
-  line-height: 1.25;
+  margin: 0.55rem 0 0.7rem;
+  font-size: clamp(1.08rem, 1.65vw, 1.28rem);
+  line-height: 1.28;
 }
 
 .article-preview-copy h2 a {
