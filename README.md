@@ -2,14 +2,15 @@
 
 <table>
   <tr>
-    <td width="280">
-      <img src="static/images/0000-Вера-и-Дарина.png" alt="Fuzzy Technologies" width="260" />
+    <td width="100%">
+      <img src="static/images/Fuzzy-Technologies-Team.png" alt="Fuzzy Technologies Team" width="100%" />
     </td>
+  </tr>
+  <tr>
     <td>
       <strong>Engineering · R&D · Open Source</strong><br><br>
-      Fuzzy Technologies develops trading systems, cybersecurity tools, AI systems, and engineering automation through applied R&D.<br><br><br><br><br>
-      <strong>Technologies · Knowledge · Science</strong><br>
-      <em>— powered by math & fuzzy logic</em>
+      Fuzzy Technologies develops trading systems, cybersecurity tools, AI systems, and engineering automation through applied R&D.<br><br>
+      <strong>Technologies · Knowledge · Science</strong> <em>— powered by math & fuzzy logic</em>
     </td>
   </tr>
 </table>
@@ -19,6 +20,7 @@
 - 🌐 [Fuzzy Technologies](https://fuzzy-technologies.github.io/) — English, default
 - 🇷🇺 [Fuzzy Technologies / RU](https://fuzzy-technologies.github.io/ru/)
 - 🇨🇳 [Fuzzy Technologies / 简中](https://fuzzy-technologies.github.io/zh-cn/)
+- 📚 [Articles](https://fuzzy-technologies.github.io/articles/) · [Статьи](https://fuzzy-technologies.github.io/ru/articles/) · [文章](https://fuzzy-technologies.github.io/zh-cn/articles/)
 - 🛡️ [1337 Security Workbench](https://fuzzy-technologies.github.io/1337/)
 
 ## Project documentation
@@ -26,14 +28,15 @@
 - [Localization policy](docs/LOCALIZATION.md)
 - [Public terminology guide](docs/TERMINOLOGY.md)
 - [Development protocol](DEVELOPMENT_PROTOCOL.md)
+- [Article publishing contract](docs/ARTICLES.md)
 
 ## Product pages
 
-| Project | English | Русский |
-|---|---|---|
-| 📊 Fuzzy Market Analytics | [FMA / EN](https://fuzzy-technologies.github.io/FMA/en/) | [FMA / RU](https://fuzzy-technologies.github.io/FMA/) |
-| 💼 FMA instruments | [Instruments / EN](https://fuzzy-technologies.github.io/FMA/en/instruments.html) | [Инструменты / RU](https://fuzzy-technologies.github.io/FMA/instruments.html) |
-| ⚙️ TKSBrokerAPI | [TKSBrokerAPI / EN](https://fuzzy-technologies.github.io/TKSBrokerAPI/en/) | [TKSBrokerAPI / RU](https://fuzzy-technologies.github.io/TKSBrokerAPI/) |
+| Project                   | English                                                                          | Русский                                                                       |
+|---------------------------|----------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
+| 📊 Fuzzy Market Analytics | [FMA / EN](https://fuzzy-technologies.github.io/FMA/en/)                         | [FMA / RU](https://fuzzy-technologies.github.io/FMA/)                         |
+| 💼 FMA instruments        | [Instruments / EN](https://fuzzy-technologies.github.io/FMA/en/instruments.html) | [Инструменты / RU](https://fuzzy-technologies.github.io/FMA/instruments.html) |
+| ⚙️ TKSBrokerAPI           | [TKSBrokerAPI / EN](https://fuzzy-technologies.github.io/TKSBrokerAPI/en/)       | [TKSBrokerAPI / RU](https://fuzzy-technologies.github.io/TKSBrokerAPI/)       |
 
 ## Links
 

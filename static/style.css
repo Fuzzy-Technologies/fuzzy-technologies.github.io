@@ -121,6 +121,21 @@ blockquote {
   color: var(--text);
 }
 
+
+/* Long-form articles reuse the site's neon media treatment. */
+.article-content img {
+  box-shadow: 0 0 12px #00eaff88;
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+.article-content a {
+  text-shadow: 0 0 3px #ff79c633;
+}
+
+.article-content a:hover {
+  text-shadow: 0 0 7px #ff79c6aa;
+}
+
 .site-header {
   display: flex;
   align-items: center;
@@ -359,6 +374,98 @@ blockquote {
 
 .site-footer strong { color: var(--cyan); }
 
+.articles-heading {
+  max-width: 720px;
+  margin: 2.5rem 0 3.25rem;
+}
+
+.articles-heading h1 {
+  margin: 0;
+}
+
+.article-feed {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 3.25rem;
+  min-width: 0;
+}
+
+.article-feed-item {
+  display: grid;
+  grid-template-columns: minmax(260px, 42%) minmax(0, 1fr);
+  gap: 1.8rem;
+  align-items: center;
+  min-width: 0;
+  padding-bottom: 3.25rem;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.article-feed-item:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.article-preview-link {
+  display: block;
+  min-width: 0;
+}
+
+.article-preview-copy { min-width: 0; }
+
+.article-preview-image {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  box-shadow: 0 12px 32px #00000044;
+}
+
+.article-preview-link:hover .article-preview-image {
+  border-color: #ff79c666;
+  box-shadow: 0 12px 34px #00000055, 0 0 18px #ff79c618;
+}
+
+.article-preview-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.8rem;
+  color: var(--green);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.article-preview-meta > * + *::before {
+  content: "·";
+  margin-right: 0.8rem;
+  color: var(--muted);
+}
+
+.article-preview-copy h2 {
+  margin: 0.7rem 0 0.9rem;
+  font-size: clamp(1.35rem, 3vw, 1.85rem);
+  line-height: 1.28;
+}
+
+.article-preview-copy h2 a {
+  color: var(--cyan);
+}
+
+.article-preview-copy p {
+  color: var(--text-strong);
+}
+
+.article-read-more {
+  display: inline-block;
+  margin-top: 0.45rem;
+  font-weight: 700;
+}
+
+.translation-status {
+  color: var(--pink);
+}
+
 table {
   width: 100%;
   margin: 1rem 0;
@@ -466,6 +573,20 @@ td img {
     grid-template-columns: 1fr;
   }
 
+  .articles-heading {
+    margin: 1.8rem 0 2.4rem;
+  }
+
+  .article-feed {
+    gap: 2.4rem;
+  }
+
+  .article-feed-item {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.15rem;
+    padding-bottom: 2.4rem;
+  }
+
   table, tbody, tr, td {
     display: block;
     width: 100%;
@@ -493,7 +614,7 @@ td img {
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  body, .fuzzy-avatar { animation: none; }
+  body, .fuzzy-avatar, .article-content img { animation: none; }
 }
 
 /* FMA product catalog: same visual language as the company project cards. */
