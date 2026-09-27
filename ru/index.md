@@ -81,7 +81,7 @@ alternate_zh: /zh-cn/
     <h3>🧮 FuzzyRoutines</h3>
     <p>Математически надёжная Python-основа для функций принадлежности, нечётких множеств и шкал, а также основных операторов нечёткой логики.</p>
     <div class="project-links">
-      <a href="/FuzzyRoutines/">Сайт проекта →</a>
+      <a href="/ru/FuzzyRoutines/">Сайт проекта →</a>
       <a href="https://github.com/Fuzzy-Technologies/FuzzyRoutines">GitHub →</a>
     </div>
   </section>
