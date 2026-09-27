@@ -121,6 +121,21 @@ blockquote {
   color: var(--text);
 }
 
+
+/* Long-form articles reuse the site's neon media treatment. */
+.article-content img {
+  box-shadow: 0 0 12px #00eaff88;
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+.article-content a {
+  text-shadow: 0 0 3px #ff79c633;
+}
+
+.article-content a:hover {
+  text-shadow: 0 0 7px #ff79c6aa;
+}
+
 .site-header {
   display: flex;
   align-items: center;
@@ -599,7 +614,7 @@ td img {
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  body, .fuzzy-avatar { animation: none; }
+  body, .fuzzy-avatar, .article-content img { animation: none; }
 }
 
 /* FMA product catalog: same visual language as the company project cards. */
