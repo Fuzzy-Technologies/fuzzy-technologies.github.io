@@ -1,0 +1,91 @@
+---
+layout: default
+---
+
+{% assign article_lang = page.lang | default: "en" %}
+{% assign home_url = "/" %}
+{% if article_lang == "ru" %}
+  {% assign home_url = "/ru/" %}
+{% elsif article_lang == "zh-CN" %}
+  {% assign home_url = "/zh-cn/" %}
+{% endif %}
+
+<header class="site-header">
+  <h1 class="site-title"><a href="{{ home_url }}">🌓 Fuzzy Technologies</a></h1>
+  <div class="site-actions">
+    <nav class="language-switch" aria-label="Language">
+      {% if article_lang == "en" %}
+        <span class="active" aria-current="page">EN</span>
+      {% elsif page.alternate_en %}
+        <a href="{{ page.alternate_en }}" lang="en">EN</a>
+      {% endif %}
+
+      {% if article_lang == "ru" %}
+        <span class="active" aria-current="page">RU</span>
+      {% elsif page.alternate_ru %}
+        <a href="{{ page.alternate_ru }}" lang="ru">RU</a>
+      {% endif %}
+
+      {% if article_lang == "zh-CN" %}
+        <span class="active" aria-current="page">简中</span>
+      {% elsif page.alternate_zh %}
+        <a href="{{ page.alternate_zh }}" lang="zh-CN">简中</a>
+      {% endif %}
+    </nav>
+
+    <a class="brand-button" href="{{ home_url }}" aria-label="Fuzzy Technologies home">
+      <img src="/static/images/FuzzyTechnologies-Logo-transp.png" alt="Fuzzy Technologies" />
+    </a>
+  </div>
+</header>
+
+<article>
+  {% if page.series %}
+    <p class="eyebrow">
+      {% if page.series_url %}
+        <a href="{{ page.series_url }}">{{ page.series }}</a>
+      {% else %}
+        {{ page.series }}
+      {% endif %}
+    </p>
+  {% endif %}
+
+  <h1>{{ page.title }}</h1>
+
+  {% if page.author or page.date %}
+    <p class="quiet">
+      {% if page.author %}
+        {% if page.author_url %}
+          <a href="{{ page.author_url }}">{{ page.author }}</a>
+        {% else %}
+          {{ page.author }}
+        {% endif %}
+      {% endif %}
+      {% if page.author and page.date %} · {% endif %}
+      {% if page.date %}{{ page.date | date: "%Y-%m-%d" }}{% endif %}
+    </p>
+  {% endif %}
+
+  {% if page.hero_image %}
+    <figure>
+      <img src="{{ page.hero_image }}" alt="{{ page.hero_alt | default: page.title }}" />
+      {% if page.hero_caption %}
+        <figcaption class="quiet">{{ page.hero_caption }}</figcaption>
+      {% endif %}
+    </figure>
+  {% endif %}
+
+  {{ content }}
+</article>
+
+<footer class="site-footer">
+  <strong><a href="{{ home_url }}">Fuzzy Technologies</a></strong>
+  {% if article_lang == "ru" %}
+    <span>Технологии · Знания · Наука</span>
+  {% elsif article_lang == "zh-CN" %}
+    <span>技术 · 知识 · 科学</span>
+  {% else %}
+    <span>Technologies · Knowledge · Science</span>
+  {% endif %}
+  <span class="footer-signature">— powered by math &amp; fuzzy logic</span>
+</footer>
