@@ -18,6 +18,9 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ page.url | absolute_url }}" />
     <meta property="og:site_name" content="Fuzzy Technologies" />
+    {% if page.cover_image %}
+    <meta property="og:image" content="{{ page.cover_image | absolute_url }}" />
+    {% endif %}
     {% if document_lang == "ru" %}
     <meta property="og:locale" content="ru_RU" />
     {% elsif document_lang == "zh-CN" %}
@@ -25,7 +28,12 @@
     {% else %}
     <meta property="og:locale" content="en_US" />
     {% endif %}
+    {% if page.cover_image %}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="{{ page.cover_image | absolute_url }}" />
+    {% else %}
     <meta name="twitter:card" content="summary" />
+    {% endif %}
 
     <link rel="canonical" href="{{ page.url | absolute_url }}" />
     {% if page.alternate_en %}

@@ -20,6 +20,7 @@
 - 🌐 [Fuzzy Technologies](https://fuzzy-technologies.github.io/) — English, default
 - 🇷🇺 [Fuzzy Technologies / RU](https://fuzzy-technologies.github.io/ru/)
 - 🇨🇳 [Fuzzy Technologies / 简中](https://fuzzy-technologies.github.io/zh-cn/)
+- 📚 [Articles](https://fuzzy-technologies.github.io/articles/) · [Статьи](https://fuzzy-technologies.github.io/ru/articles/) · [文章](https://fuzzy-technologies.github.io/zh-cn/articles/)
 - 🛡️ [1337 Security Workbench](https://fuzzy-technologies.github.io/1337/)
 
 ## Project documentation
@@ -27,6 +28,7 @@
 - [Localization policy](docs/LOCALIZATION.md)
 - [Public terminology guide](docs/TERMINOLOGY.md)
 - [Development protocol](DEVELOPMENT_PROTOCOL.md)
+- [Article publishing contract](docs/ARTICLES.md)
 
 ## Product pages
 
