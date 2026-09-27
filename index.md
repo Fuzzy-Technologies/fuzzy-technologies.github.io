@@ -34,6 +34,7 @@ alternate_zh: /zh-cn/
       <p>We like hard technical problems, explicit models, reproducible experiments, and software that can be checked instead of merely demonstrated.</p>
       <p class="brand-signature">— powered by math &amp; fuzzy logic</p>
       <div class="hero-actions">
+        <a class="button-neon" href="/articles/">Articles</a>
         <a class="button-neon" href="https://github.com/Fuzzy-Technologies">GitHub</a>
         <a class="button-neon" href="https://t.me/fuzzy_technologies">Contact</a>
       </div>

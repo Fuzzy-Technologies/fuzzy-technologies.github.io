@@ -1,0 +1,93 @@
+---
+layout: default
+---
+
+{% assign articles_lang = page.lang | default: "en" %}
+{% assign home_url = "/" %}
+{% assign articles_label = "Articles" %}
+{% assign articles_intro = "Research notes and engineering articles from Fuzzy Technologies." %}
+{% assign read_more = "Read more →" %}
+{% assign placeholder_label = "Translation placeholder" %}
+{% if articles_lang == "ru" %}
+  {% assign home_url = "/ru/" %}
+  {% assign articles_label = "Статьи" %}
+  {% assign articles_intro = "Исследовательские и инженерные статьи Fuzzy Technologies." %}
+  {% assign read_more = "Подробнее →" %}
+  {% assign placeholder_label = "Перевод готовится" %}
+{% elsif articles_lang == "zh-CN" %}
+  {% assign home_url = "/zh-cn/" %}
+  {% assign articles_label = "文章" %}
+  {% assign articles_intro = "Fuzzy Technologies 的研究与工程文章。" %}
+  {% assign read_more = "阅读全文 →" %}
+  {% assign placeholder_label = "翻译占位页" %}
+{% endif %}
+
+<header class="site-header">
+  <h1 class="site-title"><a href="{{ home_url }}">🌓 Fuzzy Technologies</a></h1>
+  <div class="site-actions">
+    <nav class="language-switch" aria-label="Language">
+      {% if articles_lang == "en" %}
+        <span class="active" aria-current="page">EN</span>
+      {% else %}
+        <a href="{{ page.alternate_en }}" lang="en">EN</a>
+      {% endif %}
+      {% if articles_lang == "ru" %}
+        <span class="active" aria-current="page">RU</span>
+      {% else %}
+        <a href="{{ page.alternate_ru }}" lang="ru">RU</a>
+      {% endif %}
+      {% if articles_lang == "zh-CN" %}
+        <span class="active" aria-current="page">简中</span>
+      {% else %}
+        <a href="{{ page.alternate_zh }}" lang="zh-CN">简中</a>
+      {% endif %}
+    </nav>
+
+    <a class="brand-button" href="{{ home_url }}" aria-label="Fuzzy Technologies home">
+      <img src="/static/images/FuzzyTechnologies-Logo-transp.png" alt="Fuzzy Technologies" />
+    </a>
+  </div>
+</header>
+
+<section class="articles-heading">
+  <p class="eyebrow">Fuzzy Technologies</p>
+  <h1>{{ articles_label }}</h1>
+  <p class="hero-lead">{{ articles_intro }}</p>
+</section>
+
+{% assign locale_articles = site.pages | where: "layout", "article" | where: "lang", articles_lang | sort: "date" | reverse %}
+<div class="article-feed">
+  {% for article in locale_articles %}
+    {% assign preview_image = article.preview_image | default: article.hero_image %}
+    <article class="article-feed-item{% if article.translation_status == 'placeholder' %} is-placeholder{% endif %}">
+      {% if preview_image %}
+        <a class="article-preview-link" href="{{ article.url }}" aria-label="{{ article.title | escape }}">
+          <img class="article-preview-image" src="{{ preview_image }}" alt="{{ article.preview_text | default: article.title | escape }}" loading="lazy" />
+        </a>
+      {% endif %}
+      <div class="article-preview-copy">
+        <div class="article-preview-meta">
+          {% if article.series %}<span>{{ article.series }}</span>{% endif %}
+          {% if article.date %}<time datetime="{{ article.date | date_to_xmlschema }}">{{ article.date | date: "%Y-%m-%d" }}</time>{% endif %}
+          {% if article.author %}<span>{{ article.author }}</span>{% endif %}
+          {% if article.translation_status == "placeholder" %}<span class="translation-status">{{ placeholder_label }}</span>{% endif %}
+        </div>
+        <h2><a href="{{ article.url }}">{{ article.title }}</a></h2>
+        {% if article.preview_text %}<p>{{ article.preview_text }}</p>{% endif %}
+        <a class="article-read-more" href="{{ article.url }}">{{ read_more }}</a>
+      </div>
+    </article>
+  {% endfor %}
+</div>
+
+<footer class="site-footer">
+  <strong><a href="{{ home_url }}">Fuzzy Technologies</a></strong>
+  {% if articles_lang == "ru" %}
+    <span>Технологии · Знания · Наука</span>
+  {% elsif articles_lang == "zh-CN" %}
+    <span>技术 · 知识 · 科学</span>
+  {% else %}
+    <span>Technologies · Knowledge · Science</span>
+  {% endif %}
+  <span class="footer-signature">— powered by math &amp; fuzzy logic</span>
+</footer>

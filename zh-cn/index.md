@@ -34,6 +34,7 @@ alternate_zh: /zh-cn/
       <p>我们关注有难度的工程问题、明确的模型、可复现的实验，以及能够被验证而不只是被演示的软件系统。</p>
       <p class="brand-signature">— powered by math &amp; fuzzy logic</p>
       <div class="hero-actions">
+        <a class="button-neon" href="/zh-cn/articles/">文章</a>
         <a class="button-neon" href="https://github.com/Fuzzy-Technologies">GitHub</a>
         <a class="button-neon" href="https://t.me/fuzzy_technologies">联系我们</a>
       </div>
