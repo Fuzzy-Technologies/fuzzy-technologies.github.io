@@ -82,7 +82,7 @@ alternate_zh: /zh-cn/
     <h3>🧮 FuzzyRoutines</h3>
     <p>数学可靠的 Python 模糊计算基础库，提供隶属函数、模糊集、模糊量表及常用模糊逻辑算子。</p>
     <div class="project-links">
-      <a href="/FuzzyRoutines/">项目页面 →</a>
+      <a href="/zh-cn/FuzzyRoutines/">项目页面 →</a>
       <a href="https://github.com/Fuzzy-Technologies/FuzzyRoutines">GitHub →</a>
     </div>
   </section>
