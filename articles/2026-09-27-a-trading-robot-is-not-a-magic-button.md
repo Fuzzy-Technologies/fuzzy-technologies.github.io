@@ -20,7 +20,6 @@ cover_image: "/static/images/articles/2026-09-27-a-trading-robot-is-not-a-magic-
 mql5_url: "https://www.mql5.com/en/blogs/post/776446"
 ---
 ![Fig. 1. The probabilistic approach views the market not as a single predetermined trajectory, but as a set of possible scenarios with different probabilities of reaching target levels](/static/images/articles/2026-09-27-a-trading-robot-is-not-a-magic-button/01_FMA_probabilistic_scenarios.png)
-
 *Fig. 1. The probabilistic approach views the market not as a single predetermined trajectory, but as a set of possible scenarios with different probabilities of reaching target levels*
 
 Our first experiments with trading automation began back in 2015. The idea seemed straightforward: if price movements could be modeled mathematically, part of the decision-making process could be automated — collecting data, analyzing it, generating forecasts, and acting according to explicitly defined rules.
@@ -34,7 +33,6 @@ However, this was exactly where the fundamental problem emerged. Even getting th
 [For the background to these experiments, see “Through Thorns to the Stars: How We Developed a Trading Algorithm”](https://teletype.in/@tgilmullin/trading-algorithm-history)
 
 ![Fig. 2. Historical example: a forecast scenario is compared with actual market movement, allowing evaluation of not only direction but also model quality](/static/images/articles/2026-09-27-a-trading-robot-is-not-a-magic-button/02_FMA_history_example.png)
-
 *Fig. 2. Historical example: a forecast scenario is compared with actual market movement, allowing evaluation of not only direction but also model quality*
 
 ## Can Price Movement Be Predicted Exactly?
@@ -50,7 +48,6 @@ Price series also contain noise, anomalous observations, outliers, and potential
 > **For a trading system, asking “Where exactly will the price go?” is too restrictive.** The more useful questions are which scenarios are currently plausible, how well the available data support them, and whether there is enough evidence to act.
 
 ![Fig. 3. Similar observed market states can lead to different outcomes: trend continuation, consolidation, or reversal](/static/images/articles/2026-09-27-a-trading-robot-is-not-a-magic-button/03_FMA_Different_Futures.png)
-
 *Fig. 3. Similar observed market states can lead to different outcomes: trend continuation, consolidation, or reversal*
 
 ## From Direction to Scenario Probabilities
@@ -74,7 +71,6 @@ Both formulations are useful in a trading system, but they answer different ques
 [More about the basic probabilistic formulation: “Will the Price Reach the Target: Probability Estimation Instead of Guessing”](https://teletype.in/@tgilmullin/target-probability)
 
 ![Fig. 4. Terminal probability and touch probability refer to different events: the price may touch or cross a target during the forecast horizon but finish back on the other side of that level](/static/images/articles/2026-09-27-a-trading-robot-is-not-a-magic-button/04_FMA_probability_reachability.png)
-
 *Fig. 4. Terminal probability and touch probability refer to different events: the price may touch or cross a target during the forecast horizon but finish back on the other side of that level*
 
 Our early Fuzzy Market Analytics (FMA) research included probability estimates based on price data across multiple timeframes. We filtered anomalous outliers before calculating log returns, average price changes, volatility, and standardized deviations.
@@ -111,7 +107,6 @@ This is not simply a replacement of a numerical value with a verbal label. In fu
 [More details: “When ‘Yes’ and ‘No’ Are Not Enough: How Fuzzy Scales Work”](https://teletype.in/@tgilmullin/fuzzy-scales)
 
 ![Fig. 5. Hard thresholds and fuzzy scales are two different ways of interpreting market states. Fuzzy assessments allow transition and borderline conditions to be represented more naturally](/static/images/articles/2026-09-27-a-trading-robot-is-not-a-magic-button/05_FMA_fuzzy_levels.png)
-
 *Fig. 5. Hard thresholds and fuzzy scales are two different ways of interpreting market states. Fuzzy assessments allow transition and borderline conditions to be represented more naturally*
 
 ## Why Probability Alone Is Not Enough for a Trade Decision
@@ -123,7 +118,6 @@ First, we need to verify that the input data are suitable for analysis. Then we 
 Modern FMA is built precisely as a sequence of such checks. Some features are used to evaluate a scenario, others determine its quality, and others limit risk. **A single strong indicator should not automatically override all other constraints.**
 
 ![Fig. 6. Market analytics should be not only computationally powerful but also interpretable: meaningful features, controlled risk, and transparent decision logic are essential](/static/images/articles/2026-09-27-a-trading-robot-is-not-a-magic-button/06_FMA_steps_1b.png)
-
 *Fig. 6. Market analytics should be not only computationally powerful but also interpretable: meaningful features, controlled risk, and transparent decision logic are essential*
 
 In earlier versions of our system, probability and risk were combined using fuzzy decision matrices. One axis represented target reachability assessment, while the other represented risk assessment, and their combination determined whether an action was acceptable.
@@ -147,7 +141,6 @@ In such situations, the model need not choose between “Buy” and “Sell.” 
 The number of trades itself is not a measure of trading system quality. Sometimes the best way to reduce poor decisions is simply not to participate in every noticeable market movement.
 
 ![Fig. 7. FMA’s selective filtering process: market states undergo successive checks of data quality, scenario consistency, probabilistic edge, and risk; the result can be Trade, Wait, or No Trade](/static/images/articles/2026-09-27-a-trading-robot-is-not-a-magic-button/07_FMA_Selective_filtering_2.png)
-
 *Fig. 7. FMA’s selective filtering process: market states undergo successive checks of data quality, scenario consistency, probabilistic edge, and risk; the result can be Trade, Wait, or No Trade*
 
 ## Opening a Position Is Only the Beginning
@@ -171,7 +164,6 @@ Such telemetry allows us to analyze not only trades that were executed, but also
 > **A decision that cannot be reconstructed after an experiment is completed has significantly lower research value.** Therefore, reproducibility for us is not an addition to trading logic — it is one of its fundamental engineering characteristics.
 
 ![Fig. 8. An engineering approach requires more than a convincing guess: a reproducible record must connect the data, model, scenario assessment, risk constraints, and verifiable outcome](/static/images/articles/2026-09-27-a-trading-robot-is-not-a-magic-button/08_FMA_Reproducible.png)
-
 *Fig. 8. An engineering approach requires more than a convincing guess: a reproducible record must connect the data, model, scenario assessment, risk constraints, and verifiable outcome*
 
 ## Tests, Not Stories
@@ -203,7 +195,6 @@ A probabilistic model does not eliminate uncertainty. Risk management does not m
 This publication opens a series of articles about mathematical methods for market analysis and automated decision-making. In upcoming articles, we will examine each of these components in turn: probabilistic assessment of price targets, fuzzy measurement scales, robust anomaly filtering, and methods for testing trading algorithms.
 
 ![Fig. 9. Main directions of the FMA Research Series: probabilistic scenario evaluation, fuzzy scales, robust data processing, testing, and validation of trading algorithms](/static/images/articles/2026-09-27-a-trading-robot-is-not-a-magic-button/09_FMA_Research_Outro.png)
-
 *Fig. 9. Main directions of the FMA Research Series: probabilistic scenario evaluation, fuzzy scales, robust data processing, testing, and validation of trading algorithms*
 
 ### Related articles
