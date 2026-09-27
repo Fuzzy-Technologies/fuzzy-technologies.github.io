@@ -30,11 +30,11 @@
 
 ## Product pages
 
-| Project | English | Русский |
-|---|---|---|
-| 📊 Fuzzy Market Analytics | [FMA / EN](https://fuzzy-technologies.github.io/FMA/en/) | [FMA / RU](https://fuzzy-technologies.github.io/FMA/) |
-| 💼 FMA instruments | [Instruments / EN](https://fuzzy-technologies.github.io/FMA/en/instruments.html) | [Инструменты / RU](https://fuzzy-technologies.github.io/FMA/instruments.html) |
-| ⚙️ TKSBrokerAPI | [TKSBrokerAPI / EN](https://fuzzy-technologies.github.io/TKSBrokerAPI/en/) | [TKSBrokerAPI / RU](https://fuzzy-technologies.github.io/TKSBrokerAPI/) |
+| Project                   | English                                                                          | Русский                                                                       |
+|---------------------------|----------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
+| 📊 Fuzzy Market Analytics | [FMA / EN](https://fuzzy-technologies.github.io/FMA/en/)                         | [FMA / RU](https://fuzzy-technologies.github.io/FMA/)                         |
+| 💼 FMA instruments        | [Instruments / EN](https://fuzzy-technologies.github.io/FMA/en/instruments.html) | [Инструменты / RU](https://fuzzy-technologies.github.io/FMA/instruments.html) |
+| ⚙️ TKSBrokerAPI           | [TKSBrokerAPI / EN](https://fuzzy-technologies.github.io/TKSBrokerAPI/en/)       | [TKSBrokerAPI / RU](https://fuzzy-technologies.github.io/TKSBrokerAPI/)       |
 
 ## Links
 
