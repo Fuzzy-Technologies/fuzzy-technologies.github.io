@@ -267,61 +267,81 @@ blockquote {
 }
 
 
-/* Cyberpunk signal artifacts: short, desynchronized interference bursts.
-   Images stay spatially stable; colored horizontal corruption bands pass over them. */
+/* Cyberpunk signal artifacts: soft horizontal chromatic interference.
+   The image stays fixed; thin red/magenta/purple bands fade in and out over it. */
 @keyframes imageGlitchBandsA {
-  0%, 71.8%, 74.6%, 100% {
+  0%, 67.5%, 75.5%, 100% {
     opacity: 0;
     transform: translateX(0);
-    background-position: 0 0, 0 0;
+    background-position-y: 0;
   }
-  72.0% {
-    opacity: 0.9;
-    transform: translateX(-1.2%);
-    background-position: 0 -8px, 12px 0;
+  68.6% {
+    opacity: 0.18;
+    transform: translateX(-0.15%);
+    background-position-y: -3px;
   }
-  72.7% {
-    opacity: 0.72;
-    transform: translateX(1.6%);
-    background-position: 0 13px, -18px 0;
+  69.8% {
+    opacity: 0.48;
+    transform: translateX(0.35%);
+    background-position-y: 5px;
+  }
+  71.0% {
+    opacity: 0.78;
+    transform: translateX(-0.45%);
+    background-position-y: -8px;
+  }
+  72.2% {
+    opacity: 0.62;
+    transform: translateX(0.3%);
+    background-position-y: 6px;
   }
   73.4% {
-    opacity: 0.95;
-    transform: translateX(-0.7%);
-    background-position: 0 -21px, 9px 0;
+    opacity: 0.36;
+    transform: translateX(-0.18%);
+    background-position-y: -3px;
   }
-  74.1% {
-    opacity: 0.38;
-    transform: translateX(0.5%);
-    background-position: 0 7px, -7px 0;
+  74.5% {
+    opacity: 0.12;
+    transform: translateX(0);
+    background-position-y: 0;
   }
 }
 
 @keyframes imageGlitchBandsB {
-  0%, 42.4%, 45.1%, 100% {
+  0%, 37.5%, 45.0%, 100% {
     opacity: 0;
     transform: translateX(0);
-    background-position: 0 0, 0 0;
+    background-position-y: 0;
   }
-  42.7% {
-    opacity: 0.72;
-    transform: translateX(1%);
-    background-position: 0 16px, -12px 0;
+  38.5% {
+    opacity: 0.14;
+    transform: translateX(0.12%);
+    background-position-y: 4px;
   }
-  43.4% {
-    opacity: 0.92;
-    transform: translateX(-1.7%);
-    background-position: 0 -11px, 19px 0;
+  39.7% {
+    opacity: 0.42;
+    transform: translateX(-0.3%);
+    background-position-y: -5px;
   }
-  44.1% {
-    opacity: 0.66;
-    transform: translateX(0.8%);
-    background-position: 0 24px, -9px 0;
+  40.9% {
+    opacity: 0.70;
+    transform: translateX(0.42%);
+    background-position-y: 7px;
   }
-  44.7% {
-    opacity: 0.26;
-    transform: translateX(-0.4%);
-    background-position: 0 -5px, 5px 0;
+  42.1% {
+    opacity: 0.58;
+    transform: translateX(-0.26%);
+    background-position-y: -6px;
+  }
+  43.3% {
+    opacity: 0.30;
+    transform: translateX(0.14%);
+    background-position-y: 3px;
+  }
+  44.3% {
+    opacity: 0.10;
+    transform: translateX(0);
+    background-position-y: 0;
   }
 }
 
@@ -363,12 +383,29 @@ blockquote {
   }
 }
 
-/* Target wrappers rather than moving the actual image. */
+@keyframes cyanFramePulse {
+  0%, 100% {
+    border-color: #00eaff55;
+    box-shadow: 0 0 7px #00eaff28, 0 10px 28px #00000044;
+  }
+  50% {
+    border-color: #55e7ffbb;
+    box-shadow: 0 0 18px #00eaff88, 0 12px 32px #00000055;
+  }
+}
+
 .article-preview-link,
 .team-banner-wrap,
-.home-intro-visual,
 .fma-product-card .product-art-link,
 .article-content p:has(> img) {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #00eaff55;
+  border-radius: 12px;
+  animation: cyanFramePulse 6.8s ease-in-out infinite;
+}
+
+.home-intro-visual {
   position: relative;
   overflow: hidden;
   border-radius: 12px;
@@ -400,32 +437,21 @@ blockquote {
 .home-intro-visual::before,
 .fma-product-card .product-art-link::before,
 .article-content p:has(> img)::before {
-  background:
-    linear-gradient(
-      to bottom,
-      transparent 0 7%,
-      #ff234fcc 7.2% 8.0%,
-      transparent 8.2% 18%,
-      #b43dffb8 18.3% 19.5%,
-      transparent 19.7% 37%,
-      #ff2bd6c2 37.2% 38.8%,
-      transparent 39% 57%,
-      #7c3aedaa 57.2% 58.4%,
-      transparent 58.6% 73%,
-      #ff234fb8 73.2% 74.1%,
-      transparent 74.3% 87%,
-      #d946ef99 87.2% 88.7%,
-      transparent 89% 100%
-    ),
-    repeating-linear-gradient(
-      90deg,
-      transparent 0 7%,
-      #ff2bd655 7% 12%,
-      transparent 12% 22%,
-      #7c3aed44 22% 29%,
-      transparent 29% 43%
-    );
-  animation: imageGlitchBandsA 15.7s steps(1, end) -4.9s infinite;
+  background: linear-gradient(
+    to bottom,
+    transparent 0 10%,
+    #ff234fb8 10.1% 10.9%,
+    transparent 11.0% 24%,
+    #b43dffad 24.1% 25.0%,
+    transparent 25.1% 42%,
+    #ff2bd6b8 42.1% 43.2%,
+    transparent 43.3% 63%,
+    #7c3aed9e 63.1% 63.9%,
+    transparent 64.0% 79%,
+    #ff234fa8 79.1% 80.0%,
+    transparent 80.1% 100%
+  );
+  animation: imageGlitchBandsA 13.8s ease-in-out -3.7s infinite;
 }
 
 .article-preview-link::after,
@@ -433,73 +459,63 @@ blockquote {
 .home-intro-visual::after,
 .fma-product-card .product-art-link::after,
 .article-content p:has(> img)::after {
-  background:
-    linear-gradient(
-      to bottom,
-      transparent 0 12%,
-      #8b5cf6aa 12.2% 13.4%,
-      transparent 13.6% 28%,
-      #ff234fbb 28.2% 29.0%,
-      transparent 29.2% 49%,
-      #ff2bd6b8 49.2% 50.5%,
-      transparent 50.7% 68%,
-      #a855f7a8 68.2% 69.6%,
-      transparent 69.8% 82%,
-      #ff234f99 82.2% 83.0%,
-      transparent 83.2% 100%
-    ),
-    repeating-linear-gradient(
-      90deg,
-      #ff234f22 0 4%,
-      transparent 4% 15%,
-      #d946ef44 15% 20%,
-      transparent 20% 33%
-    );
-  animation: imageGlitchBandsB 21.3s steps(1, end) -11.2s infinite;
+  background: linear-gradient(
+    to bottom,
+    transparent 0 16%,
+    #8b5cf69e 16.1% 16.8%,
+    transparent 16.9% 33%,
+    #ff234fae 33.1% 33.9%,
+    transparent 34.0% 54%,
+    #ff2bd6a8 54.1% 55.0%,
+    transparent 55.1% 72%,
+    #a855f795 72.1% 73.0%,
+    transparent 73.1% 89%,
+    #ff234f8e 89.1% 89.7%,
+    transparent 89.8% 100%
+  );
+  animation: imageGlitchBandsB 18.2s ease-in-out -9.8s infinite;
 }
 
-/* Different image groups use different periods and phases. */
-.team-banner-wrap::before { animation-duration: 17.9s; animation-delay: -7.3s; }
-.team-banner-wrap::after  { animation-duration: 23.6s; animation-delay: -15.1s; }
+.team-banner-wrap::before { animation-duration: 15.4s; animation-delay: -6.0s; }
+.team-banner-wrap::after  { animation-duration: 20.1s; animation-delay: -13.5s; }
 
-.home-intro-visual::before { animation-duration: 16.8s; animation-delay: -2.2s; }
-.home-intro-visual::after  { animation-duration: 24.7s; animation-delay: -18.4s; }
+.home-intro-visual::before { animation-duration: 14.7s; animation-delay: -1.8s; }
+.home-intro-visual::after  { animation-duration: 19.6s; animation-delay: -15.8s; }
 
 .fma-product-card:nth-child(2n) .product-art-link::before {
-  animation-duration: 18.6s;
-  animation-delay: -12.8s;
+  animation-duration: 16.3s;
+  animation-delay: -10.8s;
 }
 .fma-product-card:nth-child(2n) .product-art-link::after {
-  animation-duration: 22.4s;
-  animation-delay: -6.1s;
+  animation-duration: 18.9s;
+  animation-delay: -4.8s;
 }
 
 .article-content p:nth-of-type(3n + 1):has(> img)::before {
-  animation-duration: 14.9s;
-  animation-delay: -9.7s;
+  animation-duration: 13.2s;
+  animation-delay: -8.1s;
 }
 .article-content p:nth-of-type(3n + 1):has(> img)::after {
-  animation-duration: 20.8s;
-  animation-delay: -3.4s;
+  animation-duration: 17.7s;
+  animation-delay: -2.8s;
 }
 .article-content p:nth-of-type(3n + 2):has(> img)::before {
-  animation-duration: 17.1s;
-  animation-delay: -5.8s;
+  animation-duration: 15.1s;
+  animation-delay: -4.7s;
 }
 .article-content p:nth-of-type(3n + 2):has(> img)::after {
-  animation-duration: 24.2s;
-  animation-delay: -16.6s;
+  animation-duration: 19.8s;
+  animation-delay: -14.6s;
 }
 .article-content p:nth-of-type(3n):has(> img)::before {
-  animation-duration: 19.4s;
-  animation-delay: -13.2s;
+  animation-duration: 16.8s;
+  animation-delay: -11.2s;
 }
 .article-content p:nth-of-type(3n):has(> img)::after {
-  animation-duration: 22.7s;
-  animation-delay: -8.5s;
+  animation-duration: 18.5s;
+  animation-delay: -7.0s;
 }
 
-/* Text glitches run on their own clocks. */
 .site-title a {
   animation: textSignalA 13.9s steps(1, end) -3.6s infinite;
 }
@@ -512,7 +528,6 @@ blockquote {
   animation: textSignalA 19.1s steps(1, end) -12.4s infinite;
 }
 
-/* Keep a very faint static scanline texture across the site. */
 body::before {
   content: "";
   position: fixed;
@@ -530,13 +545,6 @@ body::before {
   mix-blend-mode: screen;
 }
 
-.eyebrow {
-  animation: textSignalB 19s steps(1, end) -11s infinite;
-}
-
-.card-label {
-  animation: textSignalA 17s steps(1, end) -5s infinite;
-}
 
 
 
@@ -994,6 +1002,10 @@ td img {
   .site-title a,
   .eyebrow,
   .card-label,
+  .article-preview-link,
+  .team-banner-wrap,
+  .fma-product-card .product-art-link,
+  .article-content p:has(> img),
   .article-preview-link::before,
   .article-preview-link::after,
   .team-banner-wrap::before,
