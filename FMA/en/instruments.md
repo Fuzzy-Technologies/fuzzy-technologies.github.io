@@ -94,9 +94,8 @@ MDMG, LIFE, GECO, OZPH, ABIO, PRMD, GEMC.
 | PLDRUB_TOM | rub | Palladium |
 
 
-<div style="text-align: center; margin-top: 2em;">
-  <a href="/">
-    <img src="/static/images/Technologies-Knowledge-Science.png" alt="Technologies · Knowledge · Science" width="200"/>
-  </a>
-  <p style="font-size: 0.9em; color: #666;">Fuzzy Technologies</p>
-</div>
+<footer class="site-footer">
+  <strong><a href="/">Fuzzy Technologies</a></strong>
+  <span>Technologies · Knowledge · Science</span>
+  <span class="footer-signature">— powered by math &amp; fuzzy logic</span>
+</footer>

@@ -157,9 +157,8 @@ FMA is built around engineering mathematics and explicit data-processing rules:
 
 > **FMA: mathematics, engineering and real markets — without magic promises.**
 
-<div style="text-align: center; margin-top: 2em;">
-  <a href="/">
-    <img src="/static/images/Technologies-Knowledge-Science.png" alt="Technologies · Knowledge · Science" width="200"/>
-  </a>
-  <p style="font-size: 0.9em; color: #666;">Fuzzy Technologies</p>
-</div>
+<footer class="site-footer">
+  <strong><a href="/">Fuzzy Technologies</a></strong>
+  <span>Technologies · Knowledge · Science</span>
+  <span class="footer-signature">— powered by math &amp; fuzzy logic</span>
+</footer>
