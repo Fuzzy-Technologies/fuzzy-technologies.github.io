@@ -5,7 +5,7 @@
   --bg-soft: #0b1016;
   --panel: #0b1117;
   --panel-strong: #101820;
-  --text: #b9cbd3;
+  --text: #b9dce8;
   --text-strong: #edf7fa;
   --muted: #7f9da8;
   --cyan: #55e7ff;
@@ -155,7 +155,21 @@ blockquote {
   line-height: 1.2;
 }
 
-.site-title a { color: var(--pink); }
+.site-title a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: var(--pink);
+}
+
+.site-mark {
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  margin: 0;
+  border-radius: 0;
+  filter: drop-shadow(0 0 5px #00eaff55);
+}
 
 .site-actions {
   display: flex;
@@ -428,22 +442,21 @@ blockquote {
 .team-banner-tooltip {
   position: absolute;
   z-index: 4;
-  top: 50%;
   left: 50%;
-  bottom: auto;
-  width: min(90%, 860px);
-  padding: 0.65rem 0.8rem;
+  bottom: 0.75rem;
+  width: min(84%, 820px);
+  padding: 0.45rem 0.7rem;
   border: 1px solid #00eaff55;
   border-radius: 8px;
   background: #070b10ee;
   box-shadow: 0 0 18px #00eaff22;
   color: var(--text-strong);
-  font-size: 0.74rem;
-  line-height: 1.45;
+  font-size: 0.68rem;
+  line-height: 1.3;
   text-align: center;
   opacity: 0;
   pointer-events: none;
-  transform: translate(-50%, calc(-50% + 8px));
+  transform: translate(-50%, 6px);
   transition: opacity 0.18s ease, transform 0.18s ease;
 }
 
@@ -451,7 +464,7 @@ blockquote {
 .team-banner-wrap:focus .team-banner-tooltip,
 .team-banner-wrap:focus-within .team-banner-tooltip {
   opacity: 1;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0);
 }
 
 .article-feed {
@@ -624,6 +637,12 @@ td img {
   .site-header {
     flex-direction: column;
     gap: 0.8rem;
+  }
+
+  .site-mark {
+    width: 30px;
+    height: 30px;
+    flex-basis: 30px;
   }
 
   .site-actions {
