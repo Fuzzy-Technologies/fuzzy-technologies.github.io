@@ -10,7 +10,7 @@ alternate_zh: /zh-cn/
 ---
 
 <header class="site-header">
-  <h1 class="site-title"><a href="/ru/">🌓 Fuzzy Technologies</a></h1>
+  <h1 class="site-title"><a href="/ru/"><img class="site-mark" src="/static/images/FTech-mark-mini.svg" alt="" aria-hidden="true" />Fuzzy Technologies</a></h1>
   <div class="site-actions">
     <nav class="language-switch" aria-label="Язык">
       <a href="/" lang="en">EN</a>
