@@ -121,10 +121,159 @@
     });
   }
 
+  /* Article image lightbox */
+  function initializeArticleLightbox() {
+    const images = Array.from(document.querySelectorAll('.article-content img'))
+      .filter((image) => !image.closest('a'));
+    if (!images.length) return;
+
+    const lightbox = document.createElement('div');
+    const stage = document.createElement('div');
+    const expandedImage = document.createElement('img');
+    const closeButton = document.createElement('button');
+
+    lightbox.className = 'article-lightbox';
+    lightbox.setAttribute('role', 'dialog');
+    lightbox.setAttribute('aria-modal', 'true');
+    lightbox.setAttribute('aria-label', 'Expanded image preview');
+    lightbox.setAttribute('aria-hidden', 'true');
+    lightbox.inert = true;
+
+    stage.className = 'article-lightbox__stage';
+    expandedImage.className = 'article-lightbox__image';
+    closeButton.className = 'article-lightbox__close';
+    closeButton.type = 'button';
+    closeButton.setAttribute('aria-label', 'Close image preview');
+    closeButton.textContent = '\u00d7';
+
+    stage.appendChild(expandedImage);
+    lightbox.append(stage, closeButton);
+    document.body.appendChild(lightbox);
+
+    let activeTrigger = null;
+    let scrollPosition = 0;
+    let bodyStyles = null;
+    let cleanupTimer = null;
+
+    function lockScroll() {
+      const body = document.body;
+      const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+      const currentPadding = Number.parseFloat(window.getComputedStyle(body).paddingRight) || 0;
+
+      scrollPosition = window.scrollY;
+      bodyStyles = {
+        position: body.style.position,
+        top: body.style.top,
+        left: body.style.left,
+        right: body.style.right,
+        width: body.style.width,
+        paddingRight: body.style.paddingRight
+      };
+
+      body.style.position = 'fixed';
+      body.style.top = `-${scrollPosition}px`;
+      body.style.left = '0';
+      body.style.right = '0';
+      body.style.width = '100%';
+      if (scrollbarWidth > 0) body.style.paddingRight = `${currentPadding + scrollbarWidth}px`;
+      document.documentElement.classList.add('article-lightbox-open');
+    }
+
+    function unlockScroll() {
+      if (!bodyStyles) return scrollPosition;
+      const body = document.body;
+      const restorePosition = scrollPosition;
+
+      Object.entries(bodyStyles).forEach(([property, value]) => {
+        body.style[property] = value;
+      });
+      document.documentElement.classList.remove('article-lightbox-open');
+      bodyStyles = null;
+      return restorePosition;
+    }
+
+    function openLightbox(image, trigger) {
+      if (cleanupTimer) {
+        window.clearTimeout(cleanupTimer);
+        cleanupTimer = null;
+      }
+
+      activeTrigger = trigger;
+      expandedImage.src = image.currentSrc || image.src;
+      expandedImage.alt = image.alt || '';
+      lightbox.setAttribute('aria-hidden', 'false');
+      lightbox.inert = false;
+      lockScroll();
+
+      window.requestAnimationFrame(() => {
+        lightbox.classList.add('is-open');
+        closeButton.focus({ preventScroll: true });
+      });
+    }
+
+    function closeLightbox() {
+      if (!lightbox.classList.contains('is-open')) return;
+
+      lightbox.classList.remove('is-open');
+      const restorePosition = unlockScroll();
+      const trigger = activeTrigger;
+      activeTrigger = null;
+      lightbox.setAttribute('aria-hidden', 'true');
+      lightbox.inert = true;
+
+      window.requestAnimationFrame(() => {
+        const root = document.documentElement;
+        const previousScrollBehavior = root.style.scrollBehavior;
+        root.style.scrollBehavior = 'auto';
+        window.scrollTo(0, restorePosition);
+        root.style.scrollBehavior = previousScrollBehavior;
+        if (trigger) trigger.focus({ preventScroll: true });
+      });
+
+      cleanupTimer = window.setTimeout(() => {
+        expandedImage.removeAttribute('src');
+        expandedImage.alt = '';
+        cleanupTimer = null;
+      }, 240);
+    }
+
+    images.forEach((image) => {
+      const trigger = image.closest('.digital-media-frame') || image;
+      trigger.classList.add('article-lightbox-trigger');
+      trigger.setAttribute('role', 'button');
+      trigger.setAttribute('tabindex', '0');
+      trigger.setAttribute('aria-haspopup', 'dialog');
+      trigger.setAttribute('aria-label', image.alt ? `Open image preview: ${image.alt}` : 'Open image preview');
+
+      trigger.addEventListener('click', () => openLightbox(image, trigger));
+      trigger.addEventListener('keydown', (event) => {
+        if (event.key !== 'Enter' && event.key !== ' ') return;
+        event.preventDefault();
+        openLightbox(image, trigger);
+      });
+    });
+
+    closeButton.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (event) => {
+      if (event.target === lightbox || event.target === stage) closeLightbox();
+    });
+    document.addEventListener('keydown', (event) => {
+      if (!lightbox.classList.contains('is-open')) return;
+      if (event.key === 'Escape') {
+        event.preventDefault();
+        closeLightbox();
+      } else if (event.key === 'Tab') {
+        event.preventDefault();
+        closeButton.focus({ preventScroll: true });
+      }
+    });
+  }
+
   function initialize() {
     document.querySelectorAll(targetSelectors.join(',')).forEach(createTarget);
     start();
     reducedMotion.addEventListener('change', start);
+    initializeArticleLightbox();
   }
 
   if (document.readyState === 'loading') {
