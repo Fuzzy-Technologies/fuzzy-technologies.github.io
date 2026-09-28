@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 
 :root {
-  --bg: #0d0d0d;
-  --bg-soft: #151515;
-  --panel: #111417;
-  --panel-strong: #171b1f;
-  --text: #b3ecff;
-  --text-strong: #e7f8ff;
-  --muted: #86aebc;
-  --cyan: #66d9ef;
-  --pink: #ff79c6;
-  --pink-hot: #ff5555;
-  --green: #50fa7b;
-  --border: #00eaff44;
-  --border-soft: #00eaff22;
+  --bg: #07090d;
+  --bg-soft: #0b1016;
+  --panel: #0b1117;
+  --panel-strong: #101820;
+  --text: #b9cbd3;
+  --text-strong: #edf7fa;
+  --muted: #7f9da8;
+  --cyan: #55e7ff;
+  --pink: #ff5bd8;
+  --pink-hot: #ff7ae4;
+  --green: #5dff8d;
+  --border: #00eaff4d;
+  --border-soft: #00eaff24;
 }
 
 * { box-sizing: border-box; }
@@ -22,9 +22,12 @@ html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
-  background: linear-gradient(135deg, var(--bg), #1a1a1a);
-  background-size: 400% 400%;
-  animation: gradientShift 15s ease infinite;
+  background:
+    radial-gradient(circle at 14% 12%, #00eaff0d 0, transparent 28%),
+    radial-gradient(circle at 86% 18%, #ff5bd80b 0, transparent 26%),
+    linear-gradient(135deg, var(--bg), #0b1118 52%, #10131a);
+  background-size: 160% 160%, 170% 170%, 300% 300%;
+  animation: gradientShift 20s ease infinite;
   color: var(--text);
   font-family: 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   line-height: 1.55;
@@ -282,16 +285,17 @@ blockquote {
 .project-links a {
   display: inline-block;
   padding: 0.5rem 0.75rem;
-  border: 1px solid #ff79c666;
+  border: 1px solid #ff5bd86b;
   border-radius: 6px;
-  background: #171717;
+  background: linear-gradient(180deg, #15131a, #0d1116);
+  box-shadow: inset 0 1px 0 #ffffff06;
   font-weight: 700;
 }
 
 .button-neon:hover,
 .project-links a:hover {
-  border-color: #ff555599;
-  box-shadow: 0 0 12px #ff555522;
+  border-color: #ff7ae4aa;
+  box-shadow: 0 0 14px #ff5bd82b, inset 0 1px 0 #ffffff0a;
 }
 
 .motto-line {
@@ -311,8 +315,18 @@ blockquote {
 .direction-card {
   border: 1px solid var(--border);
   border-radius: 9px;
-  background: linear-gradient(145deg, #111315, #15181b);
-  box-shadow: 0 8px 24px #00000033;
+  background:
+    radial-gradient(circle at 85% 0%, #00eaff08, transparent 34%),
+    linear-gradient(145deg, #0a1016, #10171d);
+  box-shadow: 0 8px 24px #00000044, inset 0 1px 0 #ffffff05;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover,
+.direction-card:hover {
+  transform: translateY(-2px);
+  border-color: #00eaff73;
+  box-shadow: 0 12px 30px #00000055, 0 0 18px #00eaff12, inset 0 1px 0 #ffffff08;
 }
 
 .project-card {
@@ -322,8 +336,8 @@ blockquote {
 }
 
 .project-card.featured {
-  border-color: #ff79c666;
-  box-shadow: 0 0 18px #ff79c610, 0 8px 24px #00000033;
+  border-color: #ff5bd866;
+  box-shadow: 0 0 18px #ff5bd612, 0 8px 24px #00000044;
 }
 
 .project-card h3,
@@ -379,8 +393,15 @@ blockquote {
 .site-footer strong { color: var(--cyan); }
 
 .articles-heading {
-  max-width: 720px;
+  width: 100%;
+  max-width: none;
   margin: 2.5rem 0 3.25rem;
+}
+
+.articles-heading > .eyebrow,
+.articles-heading > h1,
+.articles-heading > .hero-lead {
+  max-width: 720px;
 }
 
 .articles-heading h1 {
@@ -407,9 +428,10 @@ blockquote {
 .team-banner-tooltip {
   position: absolute;
   z-index: 4;
+  top: 50%;
   left: 50%;
-  bottom: 0.85rem;
-  width: min(92%, 860px);
+  bottom: auto;
+  width: min(90%, 860px);
   padding: 0.65rem 0.8rem;
   border: 1px solid #00eaff55;
   border-radius: 8px;
@@ -421,7 +443,7 @@ blockquote {
   text-align: center;
   opacity: 0;
   pointer-events: none;
-  transform: translate(-50%, 8px);
+  transform: translate(-50%, calc(-50% + 8px));
   transition: opacity 0.18s ease, transform 0.18s ease;
 }
 
@@ -429,7 +451,7 @@ blockquote {
 .team-banner-wrap:focus .team-banner-tooltip,
 .team-banner-wrap:focus-within .team-banner-tooltip {
   opacity: 1;
-  transform: translate(-50%, 0);
+  transform: translate(-50%, -50%);
 }
 
 .article-feed {
@@ -466,12 +488,14 @@ blockquote {
   width: 100%;
   border: 1px solid var(--border);
   background: var(--panel);
-  box-shadow: 0 12px 32px #00000044;
+  box-shadow: 0 14px 34px #00000055, 0 0 14px #00eaff0e;
+  transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
 }
 
 .article-preview-link:hover .article-preview-image {
-  border-color: #ff79c666;
-  box-shadow: 0 12px 34px #00000055, 0 0 18px #ff79c618;
+  transform: translateY(-2px);
+  border-color: #ff5bd875;
+  box-shadow: 0 16px 38px #00000066, 0 0 20px #ff5bd81f;
 }
 
 .article-preview-meta {
