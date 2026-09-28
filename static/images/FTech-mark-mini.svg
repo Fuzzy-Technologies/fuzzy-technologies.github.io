@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Fuzzy Technologies compact mark</title>
+  <defs>
+    <linearGradient id="ft-f" x1="8" y1="12" x2="40" y2="54" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#edf7fa"/>
+      <stop offset="1" stop-color="#55e7ff"/>
+    </linearGradient>
+    <filter id="ft-glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="1.4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#ft-glow)">
+    <path fill="url(#ft-f)" d="M9 54V12h32v8H19v10h18v8H19v16z"/>
+    <path fill="#55e7ff" opacity=".72" d="M9 54l10-8v-8H9z"/>
+    <path fill="#ff5bd8" d="M43 8h13v5l-7 8h8v6H41v-5l7-8h-5z"/>
+  </g>
+</svg>
