@@ -1,5 +1,6 @@
 ---
 layout: article
+math: true
 lang: en
 title: "A Trading Robot Is Not a Magic Button: Why We Work With Probabilities"
 market_title: "Trading Robots Without Magic: A Probabilistic Approach, Risk, and Uncertainty"
@@ -56,13 +57,17 @@ For practical trading, it is not enough to say that the price will probably rise
 
 In the basic probabilistic formulation, we consider the current moment t, the horizon H, and a target level. For the upper target U, we can estimate the probability that at the end of the horizon the price will be at level U or above:
 
-<p align="center"><strong>P↑ = P(X(t + H) ≥ U | ℱₜ)</strong></p>
+$$
+P_{\uparrow} = P\left(X_{t+H} \ge U \mid \mathcal{F}_t\right)
+$$
 
 For the lower target D, the analogous formulation is:
 
-<p align="center"><strong>P↓ = P(X(t + H) ≤ D | ℱₜ)</strong></p>
+$$
+P_{\downarrow} = P\left(X_{t+H} \le D \mid \mathcal{F}_t\right)
+$$
 
-Here, X(t + H) is the price at the end of the forecast horizon, and ℱₜ represents the information available to the model at time t.
+Here, $X_{t+H}$ is the price at the end of the forecast horizon, and $\mathcal{F}_t$ represents the information available to the model at time $t$.
 
 **The distinction matters:** terminal probability concerns whether the price is at or beyond the target level at the end of the forecast horizon. Touch probability concerns whether the price touches or crosses that level at any time during the horizon, regardless of where it ends.
 
@@ -98,7 +103,9 @@ For illustration, suppose the threshold between Med and High is set at 0.60. The
 
 A fuzzy scale allows a smooth transition between states. For a fuzzy set A, the membership degree of a value x is written as:
 
-<p align="center"><strong>μ_A(x) ∈ [0, 1]</strong></p>
+$$
+\mu_A(x) \in [0, 1]
+$$
 
 A single value can have nonzero membership in more than one neighboring fuzzy set. For example, it may have a higher degree of membership in Med while retaining partial membership in High. This is why FMA uses the levels Min, Low, Med, High, and Max: they provide a unified language for probability, reachability, risk, and decision quality.
 

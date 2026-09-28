@@ -53,6 +53,22 @@
     <link rel="icon" type="image/png" sizes="128x128" href="/static/images/favicon-128x128.png" />
     <link rel="stylesheet" href="/static/style.css" />
 
+    {% if page.math %}
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']],
+          processEscapes: true
+        },
+        svg: {
+          fontCache: 'global'
+        }
+      };
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-svg.js"></script>
+    {% endif %}
+
     <title>{{ page.title | default: site.title }}</title>
   </head>
 
