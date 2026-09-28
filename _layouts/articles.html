@@ -8,18 +8,24 @@ layout: default
 {% assign articles_intro = "Research notes and engineering articles from Fuzzy Technologies." %}
 {% assign read_more = "Read more →" %}
 {% assign placeholder_label = "Translation placeholder" %}
+{% assign team_alt = "Fuzzy Technologies team" %}
+{% assign team_roster = "Fuzzy Technologies team · Darina — Knowledge & Engineering Practices · Eva — QA & Test Engineer · Vera — Senior Product Analyst / Product Manager · Inga — Solutions / Presales / Integration Engineer · Alice — Quant / Mathematical Research Engineer · Maria — Security / Pentest Engineer · Aina — Lab Lead / Engineering Platform & Automation Lead" %}
 {% if articles_lang == "ru" %}
   {% assign home_url = "/ru/" %}
   {% assign articles_label = "Статьи" %}
   {% assign articles_intro = "Исследовательские и инженерные статьи Fuzzy Technologies." %}
   {% assign read_more = "Подробнее →" %}
   {% assign placeholder_label = "Перевод готовится" %}
+  {% assign team_alt = "Команда Fuzzy Technologies" %}
+  {% assign team_roster = "Команда Fuzzy Technologies · Дарина — знания и инженерные практики · Ева — QA и тестирование · Вера — продуктовая аналитика и управление продуктом · Инга — решения, пресейл и интеграции · Алиса — квантовые и математические исследования · Мария — безопасность и пентест · АИна — заведующая лабораторией, инженерная платформа и автоматизация" %}
 {% elsif articles_lang == "zh-CN" %}
   {% assign home_url = "/zh-cn/" %}
   {% assign articles_label = "文章" %}
   {% assign articles_intro = "Fuzzy Technologies 的研究与工程文章。" %}
   {% assign read_more = "阅读全文 →" %}
   {% assign placeholder_label = "翻译占位页" %}
+  {% assign team_alt = "Fuzzy Technologies 团队" %}
+  {% assign team_roster = "Fuzzy Technologies 团队 · Darina — 知识与工程实践 · Eva — QA 与测试工程 · Vera — 高级产品分析与产品管理 · Inga — 解决方案、售前与集成工程 · Alice — 量化与数学研究 · Maria — 安全与渗透测试 · Aina — 实验室负责人、工程平台与自动化" %}
 {% endif %}
 
 <header class="site-header">
@@ -52,6 +58,12 @@ layout: default
 <section class="articles-heading">
   <p class="eyebrow">Fuzzy Technologies</p>
   <h1>{{ articles_label }}</h1>
+
+  <div class="team-banner-wrap" tabindex="0" aria-describedby="articles-team-roster">
+    <img class="team-banner" src="/static/images/Fuzzy-Technologies-Team.png" alt="{{ team_alt }}" />
+    <div class="team-banner-tooltip" id="articles-team-roster" role="tooltip">{{ team_roster }}</div>
+  </div>
+
   <p class="hero-lead">{{ articles_intro }}</p>
 </section>
 

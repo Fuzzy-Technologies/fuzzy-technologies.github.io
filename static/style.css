@@ -387,6 +387,51 @@ blockquote {
   margin: 0;
 }
 
+
+.team-banner-wrap {
+  position: relative;
+  margin: 1.1rem 0 1rem;
+  outline: none;
+}
+
+.team-banner {
+  display: block;
+  width: 100%;
+  margin: 0;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--panel);
+  box-shadow: 0 0 14px #00eaff33, 0 12px 32px #00000044;
+}
+
+.team-banner-tooltip {
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  bottom: 0.85rem;
+  width: min(92%, 860px);
+  padding: 0.65rem 0.8rem;
+  border: 1px solid #00eaff55;
+  border-radius: 8px;
+  background: #070b10ee;
+  box-shadow: 0 0 18px #00eaff22;
+  color: var(--text-strong);
+  font-size: 0.74rem;
+  line-height: 1.45;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, 8px);
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+.team-banner-wrap:hover .team-banner-tooltip,
+.team-banner-wrap:focus .team-banner-tooltip,
+.team-banner-wrap:focus-within .team-banner-tooltip {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
 .article-feed {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
