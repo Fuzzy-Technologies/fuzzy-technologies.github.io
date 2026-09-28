@@ -128,7 +128,9 @@ blockquote {
 /* Long-form articles reuse the site's neon media treatment. */
 .article-content img {
   box-shadow: 0 0 12px #00eaff88;
-  animation: pulseGlow 3s ease-in-out infinite;
+  animation:
+    pulseGlow 6.4s ease-in-out infinite,
+    signalJitterA 19s steps(1, end) infinite;
 }
 
 .article-content a {
@@ -257,13 +259,104 @@ blockquote {
   display: block;
   margin: 0 auto;
   box-shadow: 0 0 12px #00eaff88;
-  animation: pulseGlow 3s ease-in-out infinite;
+  animation:
+    pulseGlow 7.1s ease-in-out infinite,
+    signalJitterC 23s steps(1, end) infinite;
 }
 
 @keyframes pulseGlow {
   0% { box-shadow: 0 0 6px #00eaff22; }
   50% { box-shadow: 0 0 18px #00eaffcc; }
   100% { box-shadow: 0 0 6px #00eaff22; }
+}
+
+
+/* Rare signal artifacts: short, desynchronized glitches rather than constant motion. */
+@keyframes signalJitterA {
+  0%, 99.29%, 99.82%, 100% { translate: 0 0; filter: none; }
+  99.32% { translate: 1px 0; filter: contrast(1.07) saturate(1.08) hue-rotate(5deg); }
+  99.53% { translate: -1px 0; filter: contrast(1.05) saturate(1.12) hue-rotate(-4deg); }
+  99.72% { translate: 1px 0; filter: contrast(1.08) saturate(1.05); }
+}
+
+@keyframes signalJitterB {
+  0%, 99.38%, 99.86%, 100% { translate: 0 0; filter: none; }
+  99.42% { translate: -1px 0; filter: contrast(1.08) saturate(1.1) hue-rotate(-5deg); }
+  99.61% { translate: 1px 0; filter: contrast(1.06) saturate(1.06) hue-rotate(4deg); }
+  99.78% { translate: 0 -1px; filter: contrast(1.04); }
+}
+
+@keyframes signalJitterC {
+  0%, 99.46%, 99.9%, 100% { translate: 0 0; filter: none; }
+  99.5% { translate: 1px 0; filter: contrast(1.08) saturate(1.1); }
+  99.69% { translate: -1px 0; filter: hue-rotate(5deg) contrast(1.05); }
+  99.83% { translate: 0 1px; filter: none; }
+}
+
+@keyframes textSignalA {
+  0%, 99.34%, 99.86%, 100% { text-shadow: inherit; }
+  99.38% { text-shadow: -1px 0 #55e7ff, 1px 0 #ff5bd8; }
+  99.59% { text-shadow: 1px 0 #55e7ff, -1px 0 #ff5bd8; }
+  99.78% { text-shadow: 0 0 5px #55e7ff88; }
+}
+
+@keyframes textSignalB {
+  0%, 99.18%, 99.7%, 100% { text-shadow: inherit; }
+  99.22% { text-shadow: 1px 0 #ff5bd8, -1px 0 #55e7ff; }
+  99.43% { text-shadow: -1px 0 #ff5bd8, 1px 0 #55e7ff; }
+  99.62% { text-shadow: 0 0 4px #ff5bd866; }
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    #ffffff08 0,
+    #ffffff08 1px,
+    transparent 1px,
+    transparent 4px
+  );
+  opacity: 0.12;
+  mix-blend-mode: screen;
+}
+
+.site-title a {
+  animation: textSignalA 23s steps(1, end) -7s infinite;
+}
+
+.eyebrow {
+  animation: textSignalB 19s steps(1, end) -11s infinite;
+}
+
+.card-label {
+  animation: textSignalA 17s steps(1, end) -5s infinite;
+}
+
+.article-preview-image {
+  animation: signalJitterB 22s steps(1, end) -13s infinite;
+}
+
+.team-banner {
+  animation: signalJitterC 25s steps(1, end) -9s infinite;
+}
+
+.article-content p:nth-of-type(3n + 1) > img {
+  animation-duration: 5.4s, 17s;
+  animation-delay: -1.2s, -7s;
+}
+
+.article-content p:nth-of-type(3n + 2) > img {
+  animation-duration: 6.7s, 21s;
+  animation-delay: -3.1s, -12s;
+}
+
+.article-content p:nth-of-type(3n) > img {
+  animation-duration: 7.8s, 24s;
+  animation-delay: -4.4s, -16s;
 }
 
 .eyebrow {
@@ -711,7 +804,16 @@ td img {
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  body, .fuzzy-avatar, .article-content img { animation: none; }
+  body,
+  .fuzzy-avatar,
+  .article-content img,
+  .article-preview-image,
+  .team-banner,
+  .site-title a,
+  .eyebrow,
+  .card-label {
+    animation: none;
+  }
 }
 
 /* FMA product catalog: same visual language as the company project cards. */
