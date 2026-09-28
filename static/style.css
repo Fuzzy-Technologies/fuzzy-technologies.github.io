@@ -632,7 +632,7 @@ body::before {
 }
 
 .article-preview-copy p {
-  color: var(--text-strong);
+  color: var(--text);
 }
 
 .article-read-more {

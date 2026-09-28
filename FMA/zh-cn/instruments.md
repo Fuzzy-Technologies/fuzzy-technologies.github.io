@@ -93,9 +93,8 @@ MDMG, LIFE, GECO, OZPH, ABIO, PRMD, GEMC.
 | PLTRUB_TOM | rub | 铂金 |
 | PLDRUB_TOM | rub | 钯金 |
 
-<div style="text-align: center; margin-top: 2em;">
-  <a href="/zh-cn/">
-    <img src="/static/images/Technologies-Knowledge-Science.png" alt="技术 · 知识 · 科学" width="200"/>
-  </a>
-  <p style="font-size: 0.9em; color: #666;">Fuzzy Technologies</p>
-</div>
+<footer class="site-footer">
+  <strong><a href="/zh-cn/">Fuzzy Technologies</a></strong>
+  <span>技术 · 知识 · 科学</span>
+  <span class="footer-signature">— powered by math &amp; fuzzy logic</span>
+</footer>

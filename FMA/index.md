@@ -204,9 +204,8 @@ FMA помогает принимать обоснованные решения,
 
 *[Через тернии к звёздам: история создания торгового алгоритма](https://teletype.in/@tgilmullin/trading-algorithm-history)*
 
-<div style="text-align: center; margin-top: 2em;">
-  <a href="/ru/">
-    <img src="/static/images/Technologies-Knowledge-Science.png" alt="Technologies · Knowledge · Science" width="200"/>
-  </a>
-  <p style="font-size: 0.9em; color: #666;">Fuzzy Technologies</p>
-</div>
+<footer class="site-footer">
+  <strong><a href="/ru/">Fuzzy Technologies</a></strong>
+  <span>Технологии · Знания · Наука</span>
+  <span class="footer-signature">— powered by math &amp; fuzzy logic</span>
+</footer>
