@@ -130,6 +130,7 @@
     const lightbox = document.createElement('div');
     const stage = document.createElement('div');
     const expandedImage = document.createElement('img');
+    const openingGlitch = document.createElement('span');
     const closeButton = document.createElement('button');
 
     lightbox.className = 'article-lightbox';
@@ -141,12 +142,20 @@
 
     stage.className = 'article-lightbox__stage';
     expandedImage.className = 'article-lightbox__image';
+    openingGlitch.className = 'digital-glitch-overlay article-lightbox__opening-glitch';
+    openingGlitch.setAttribute('aria-hidden', 'true');
     closeButton.className = 'article-lightbox__close';
     closeButton.type = 'button';
     closeButton.setAttribute('aria-label', 'Close image preview');
     closeButton.textContent = '\u00d7';
 
-    stage.appendChild(expandedImage);
+    for (let fragmentIndex = 0; fragmentIndex < 6; fragmentIndex += 1) {
+      const fragment = document.createElement('i');
+      fragment.className = 'digital-glitch-fragment';
+      openingGlitch.appendChild(fragment);
+    }
+
+    stage.append(expandedImage, openingGlitch);
     lightbox.append(stage, closeButton);
     document.body.appendChild(lightbox);
 
@@ -154,6 +163,50 @@
     let scrollPosition = 0;
     let bodyStyles = null;
     let cleanupTimer = null;
+    let openingGlitchTimer = null;
+    let openingGlitchRequest = 0;
+
+    function stopOpeningGlitch() {
+      if (openingGlitchTimer) {
+        window.clearTimeout(openingGlitchTimer);
+        openingGlitchTimer = null;
+      }
+      openingGlitch.classList.remove('is-corrupting');
+    }
+
+    function playOpeningGlitch() {
+      stopOpeningGlitch();
+      if (reducedMotion.matches) return;
+
+      const imageWidth = expandedImage.clientWidth;
+      const imageHeight = expandedImage.clientHeight;
+      if (!imageWidth || !imageHeight) return;
+
+      const duration = Math.round(randomBetween(480, 650));
+      const activeCount = Math.round(randomBetween(3, 6));
+      openingGlitch.style.width = `${imageWidth}px`;
+      openingGlitch.style.height = `${imageHeight}px`;
+      openingGlitch.style.setProperty('--glitch-duration', `${duration}ms`);
+      Array.from(openingGlitch.children).forEach((fragment, index) => {
+        configureFragment(fragment, index, activeCount, duration);
+      });
+
+      openingGlitch.classList.add('is-corrupting');
+      openingGlitchTimer = window.setTimeout(() => {
+        openingGlitch.classList.remove('is-corrupting');
+        openingGlitchTimer = null;
+      }, duration + 30);
+    }
+
+    function queueOpeningGlitch() {
+      const request = ++openingGlitchRequest;
+      expandedImage.decode().catch(() => {}).then(() => {
+        window.requestAnimationFrame(() => {
+          if (request !== openingGlitchRequest || !lightbox.classList.contains('is-open')) return;
+          playOpeningGlitch();
+        });
+      });
+    }
 
     function lockScroll() {
       const body = document.body;
@@ -208,6 +261,7 @@
       window.requestAnimationFrame(() => {
         lightbox.classList.add('is-open');
         closeButton.focus({ preventScroll: true });
+        queueOpeningGlitch();
       });
     }
 
@@ -215,6 +269,8 @@
       if (!lightbox.classList.contains('is-open')) return;
 
       lightbox.classList.remove('is-open');
+      openingGlitchRequest += 1;
+      stopOpeningGlitch();
       const restorePosition = unlockScroll();
       const trigger = activeTrigger;
       activeTrigger = null;
@@ -266,6 +322,9 @@
         event.preventDefault();
         closeButton.focus({ preventScroll: true });
       }
+    });
+    reducedMotion.addEventListener('change', () => {
+      if (reducedMotion.matches) stopOpeningGlitch();
     });
   }
 

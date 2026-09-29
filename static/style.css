@@ -446,7 +446,18 @@ blockquote {
   place-items: center;
 }
 
+.article-lightbox__opening-glitch {
+  position: relative;
+  z-index: 1;
+  inset: auto;
+  overflow: hidden;
+  grid-area: 1 / 1;
+  place-self: center;
+  border-radius: 11px;
+}
+
 .article-lightbox__image {
+  grid-area: 1 / 1;
   width: auto;
   height: auto;
   max-width: min(96vw, 100%);
