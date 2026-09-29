@@ -446,7 +446,18 @@ blockquote {
   place-items: center;
 }
 
+.article-lightbox__opening-glitch {
+  position: relative;
+  z-index: 1;
+  inset: auto;
+  overflow: hidden;
+  grid-area: 1 / 1;
+  place-self: center;
+  border-radius: 11px;
+}
+
 .article-lightbox__image {
+  grid-area: 1 / 1;
   width: auto;
   height: auto;
   max-width: min(96vw, 100%);
@@ -498,68 +509,8 @@ blockquote {
 }
 
 /* Text digital glitch */
-@keyframes textSignalA {
-  0%, 63.7%, 64.7%, 100% { text-shadow: var(--text-glitch-rest); filter: none; }
-  63.9% { text-shadow: -2px 0 #ff234f, 2px 0 #a855f7, 0 0 6px #55e7ff77; filter: saturate(1.14); }
-  64.2% { text-shadow: 2px 0 #ff2bd6, -2px 0 #7c3aed, 0 0 8px #ff234f66; filter: saturate(1.2); }
-  64.5% { text-shadow: -1px 0 #ff234f, 2px 0 #ff2bd6, 0 0 5px #55e7ff66; filter: none; }
-}
-
-@keyframes textSignalB {
-  0%, 31.8%, 32.8%, 100% { text-shadow: var(--text-glitch-rest); filter: none; }
-  32.0% { text-shadow: 2px 0 #ff234f, -2px 0 #a855f7, 0 0 7px #ff2bd677; filter: saturate(1.15); }
-  32.3% { text-shadow: -2px 0 #ff2bd6, 2px 0 #7c3aed, 0 0 8px #ff234f55; filter: saturate(1.2); }
-  32.6% { text-shadow: 1px 0 #ff234f, -1px 0 #a855f7, 0 0 4px #55e7ff55; filter: none; }
-}
-
-@keyframes textSignalC {
-  0%, 78.1%, 78.9%, 100% { text-shadow: var(--text-glitch-rest); filter: none; }
-  78.3% { text-shadow: -1px 0 #ff2bd6, 2px 0 #a855f7, 0 0 5px #55e7ff66; filter: saturate(1.12); }
-  78.6% { text-shadow: 1px 0 #ff234f, -1px 0 #7c3aed, 0 0 6px #ff2bd655; filter: none; }
-}
-
-h1, h2, h3 {
-  --text-glitch-rest: 0 0 1px #00eaff, 0 0 3px #00eaff55;
-}
-
-.site-title a {
-  --text-glitch-rest: 0 0 1px #00eaff, 0 0 3px #00eaff55;
-  animation: textSignalA 13.7s steps(1, end) -3.6s infinite;
-}
-
-h1:not(.site-title) {
-  animation: textSignalB 15.1s steps(1, end) -8.2s infinite;
-}
-
-h2 {
-  animation: textSignalA 18.4s steps(1, end) -5.3s infinite;
-}
-
-h2:nth-of-type(2n),
-.article-preview-copy:nth-child(2n) h2 {
-  animation-name: textSignalB;
-  animation-duration: 21.3s;
-  animation-delay: -13.1s;
-}
-
-h3,
-.eyebrow,
-.card-label {
-  --text-glitch-rest: 0 0 transparent;
-  animation: textSignalC 27.1s steps(1, end) -16.2s infinite;
-}
-
-.project-card h3,
-.fma-product-card h3 {
-  --text-glitch-rest: 0 0 1px #00eaff, 0 0 3px #00eaff55;
-  animation: textSignalB 19.7s steps(1, end) -11.4s infinite;
-}
-
-h3:nth-of-type(2n),
-.project-card:nth-child(2n) h3,
-.card-label:nth-of-type(2n) {
-  animation-delay: -23.7s;
-  animation-duration: 31.1s;
+.text-glitch-target.is-text-glitching {
+  will-change: text-shadow, filter;
 }
 
 /* Global scan texture */
