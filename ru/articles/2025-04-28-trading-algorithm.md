@@ -17,7 +17,7 @@ preview_text: 'Как из рыночных данных получается т
 cover_image: /static/images/articles/2025-04-28-trading-algorithm/Girls-and-signals.png
 source_url: https://teletype.in/@tgilmullin/trading-algorithm
 ---
-> Архивное описание алгоритма на апрель 2025 года. Правила усреднения, стоп-уровней и управления капиталом сохранены как часть истории проекта; это не описание текущей версии сервиса FMA.
+> Алгоритм FMA образца апреля 2025 года: правила усреднения, стоп-уровней и управления капиталом того времени.
 
 ![Алгоритм определяет нечёткую силу сигналов и уровень вероятности достижимости целевой цены](/static/images/articles/2025-04-28-trading-algorithm/Girls-and-signals.png)
 
@@ -261,4 +261,4 @@ signalFilter = {
 
 ## Источник
 
-[Исходная публикация в Teletype](https://teletype.in/@tgilmullin/trading-algorithm). Дата в карточке сохранена по папке авторского архива.
+[Исходная публикация в Teletype](https://teletype.in/@tgilmullin/trading-algorithm).

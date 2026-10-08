@@ -145,4 +145,4 @@ P. S. Если интересно, как применяются нечётки�
 
 ## Источник
 
-[Исходная публикация в Teletype](https://teletype.in/@tgilmullin/fuzzy-scales). Дата в карточке сохранена по папке авторского архива.
+[Исходная публикация в Teletype](https://teletype.in/@tgilmullin/fuzzy-scales).

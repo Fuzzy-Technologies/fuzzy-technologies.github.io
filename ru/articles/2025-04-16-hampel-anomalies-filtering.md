@@ -211,4 +211,4 @@ $$
 
 ## Источник
 
-[Исходная публикация в Teletype](https://teletype.in/@tgilmullin/hampel-anomalies-filtering). Дата в карточке сохранена по папке авторского архива.
+[Исходная публикация в Teletype](https://teletype.in/@tgilmullin/hampel-anomalies-filtering).
