@@ -49,3 +49,7 @@ Inspect the full article and every `post*.txt` variant, including text after sig
 - Keep the index teaser concise; put these additions in the full article. Remove the editorial marker once its content has been incorporated.
 
 Before deleting temporary sources, compare every supplemental block with the final article and confirm that all substantive additions are accounted for. Add corrections to the article's existing branch and pull request.
+
+## Pull request handoff
+
+Immediately after creating a project-owned pull request, assign it to `Tim55667757` and add the `documentation` label. Preserve any other assignees and relevant labels, and verify both required fields before handing the PR to the owner for review.
