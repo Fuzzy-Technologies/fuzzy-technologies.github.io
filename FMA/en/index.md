@@ -22,18 +22,19 @@ alternate_zh: /FMA/zh-cn/
   </div>
 </header>
 
-<table class="table-clean">
-  <tr>
-    <td style="width: 280px;">
-      <img class="fuzzy-avatar" src="/static/images/FMA-purple-pink.png" alt="Fuzzy Market Analytics Logo">
-    </td>
-    <td>
-      <p><strong>Fuzzy Market Analytics</strong> (FMA) is a family of tools and services for market analysis and trading automation.</p>
-      <p>FMA methods combine probability models, Bayesian updates, modified Hampel filtering, target-reachability estimates and fuzzy decision rules adapted to real-time market data.</p>
-      <p>The goal is practical: reduce noise, keep the logic interpretable and make risk and target estimates explicit.</p>
-    </td>
-  </tr>
-</table>
+<section class="fma-intro">
+  <div class="fma-intro-visual">
+    <img class="fuzzy-avatar" src="/static/images/FMA-purple-pink.png" alt="Fuzzy Market Analytics Logo">
+  </div>
+  <div class="fma-intro-copy">
+    <p><strong>Fuzzy Market Analytics</strong> (FMA) is a family of tools and services for market analysis and trading automation.</p>
+    <p>FMA methods combine probability models, Bayesian updates, modified Hampel filtering, target-reachability estimates and fuzzy decision rules adapted to real-time market data.</p>
+    <p>The goal is practical: reduce noise, keep the logic interpretable and make risk and target estimates explicit.</p>
+    <div class="hero-actions">
+      <a class="button-neon" href="/articles/">Articles</a>
+    </div>
+  </div>
+</section>
 
 ## Products & services
 

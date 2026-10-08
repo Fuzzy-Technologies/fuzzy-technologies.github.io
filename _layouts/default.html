@@ -64,6 +64,18 @@
         },
         svg: {
           fontCache: 'global'
+        },
+        startup: {
+          pageReady: function () {
+            // GitHub renders fenced math directly; CommonMark preserves it as code.
+            document.querySelectorAll('.article-content pre > code.language-math').forEach(function (code) {
+              var display = document.createElement('div');
+              display.className = 'math-display';
+              display.textContent = '$$\n' + code.textContent.trim() + '\n$$';
+              code.parentElement.replaceWith(display);
+            });
+            return MathJax.startup.defaultPageReady();
+          }
         }
       };
     </script>

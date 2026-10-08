@@ -4,6 +4,7 @@
     '.article-preview-image',
     '.team-banner',
     '.home-intro-visual > img',
+    '.fma-intro-visual > img',
     '.fma-product-card .product-art',
     '.article-content img',
     '.table-clean img.fuzzy-avatar'
