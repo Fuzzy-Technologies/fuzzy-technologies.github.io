@@ -74,7 +74,7 @@ source_url: https://teletype.in/@tgilmullin/anomaly
 Значение MAD вычисляется так:
 
 ```math
-\operatorname{MAD}(X)=\operatorname{Median}\left(\lvert x_1-\operatorname{Median}(X)\rvert,\ldots,\lvert x_n-\operatorname{Median}(X)\rvert\right)\qquad\text{(1)}
+\mathrm{MAD}(X)=\mathrm{Median}\left(\lvert x_1-\mathrm{Median}(X)\rvert,\ldots,\lvert x_n-\mathrm{Median}(X)\rvert\right)\qquad\text{(1)}
 ```
 
 где X — выборка из n наблюдений x₁, …, xₙ.
@@ -94,7 +94,7 @@ source_url: https://teletype.in/@tgilmullin/anomaly
 Согласно определению 1, все аномалии ряда образуют некоторое его подмножество A:
 
 ```math
-A=\left\{a\in X:\lvert a-\operatorname{Median}(W_i)\rvert>s\,k\,\operatorname{MAD}(W_i)\right\}\qquad\text{(2)}
+A=\left\{a\in X:\lvert a-\mathrm{Median}(W_i)\rvert>s\,k\,\mathrm{MAD}(W_i)\right\}\qquad\text{(2)}
 ```
 
 где множество X — исходный числовой ряд, множество Wᵢ — ряд чисел i-го скользящего окна, а всего окон: (n − w + 1), где w — размер окна.

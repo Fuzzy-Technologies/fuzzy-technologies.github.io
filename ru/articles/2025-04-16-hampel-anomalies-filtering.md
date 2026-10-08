@@ -44,7 +44,7 @@ source_url: https://teletype.in/@tgilmullin/hampel-anomalies-filtering
 Более формально значение MAD определяется так:
 
 ```math
-\operatorname{MAD}(X)=\operatorname{Median}\left(\lvert x_1-\operatorname{Median}(X)\rvert,\ldots,\lvert x_n-\operatorname{Median}(X)\rvert\right)
+\mathrm{MAD}(X)=\mathrm{Median}\left(\lvert x_1-\mathrm{Median}(X)\rvert,\ldots,\lvert x_n-\mathrm{Median}(X)\rvert\right)
 ```
 
 где X — выборка из n наблюдений x₁, …, xₙ.
@@ -70,7 +70,7 @@ source_url: https://teletype.in/@tgilmullin/hampel-anomalies-filtering
 Все аномалии ряда образуют некоторое его подмножество A:
 
 ```math
-A=\left\{a\in X:\lvert a-\operatorname{Median}(X_i)\rvert>s\,k\,\operatorname{MAD}(X_i)\right\}
+A=\left\{a\in X:\lvert a-\mathrm{Median}(X_i)\rvert>s\,k\,\mathrm{MAD}(X_i)\right\}
 ```
 
 где a — аномальный элемент из X, Х — исходный числовой ряд, Xᵢ — ряд чисел i-го скользящего окна, всего окон: (n − w + 1), где w — размер окна.
