@@ -68,17 +68,15 @@ Keep the blank line between the image and its caption: it makes the caption a se
 
 Images in the article open in the shared full-screen preview automatically. No image links or JavaScript are needed. `preview_image` and `cover_image` do not insert an image into the body: add it in Markdown when needed. Use `hero_image` only if you intentionally want the layout to insert a hero; do not also repeat that image at the start of the body.
 
-For simple inline math, use `$x$`. Set `math: true` on the page. To preserve LaTeX backslashes and underscores in a display equation with this site's CommonMark parser, use this raw HTML wrapper:
+For simple inline math, use `$x$`. Set `math: true` on the page. Use fenced `math` blocks for display equations so that the original LaTeX reaches both GitHub's preview and the website renderer:
 
-```html
-<div class="math-display">
-$$
+````markdown
+```math
 P(A)=\frac{n_A}{n}
-$$
-</div>
 ```
+````
 
-For complex inline LaTeX, check the rendered page carefully: CommonMark can interpret backslashes and underscores before MathJax sees them. GitHub's Markdown preview is useful for prose but does not reproduce the site's layouts, formula processing, or image viewer.
+Do not wrap these blocks in HTML or add `$$` inside them. Follow the [math formatting guide](ARTICLE_MATH.md) for equation numbers and inline escaping. Check formulas visually in both GitHub and the website: CommonMark can interpret backslashes and underscores in inline text before MathJax sees them, and GitHub's preview does not reproduce the site's layouts or image viewer.
 
 ### Moving an archived article
 
