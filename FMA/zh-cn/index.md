@@ -22,18 +22,19 @@ alternate_zh: /FMA/zh-cn/
   </div>
 </header>
 
-<table class="table-clean">
-  <tr>
-    <td style="width: 280px;">
-      <img class="fuzzy-avatar" src="/static/images/FMA-purple-pink.png" alt="Fuzzy Market Analytics Logo">
-    </td>
-    <td>
-      <p><strong>Fuzzy Market Analytics</strong>（FMA）是一组面向市场分析与交易自动化的工具和服务。</p>
-      <p>FMA 方法结合概率模型、贝叶斯更新、改进型 Hampel 滤波、目标价可达性估计，以及适用于实时市场数据的模糊决策规则。</p>
-      <p>目标很实际：降低噪声、保持决策逻辑可解释，并把风险与目标估计明确呈现出来。</p>
-    </td>
-  </tr>
-</table>
+<section class="fma-intro">
+  <div class="fma-intro-visual">
+    <img class="fuzzy-avatar" src="/static/images/FMA-purple-pink.png" alt="Fuzzy Market Analytics Logo">
+  </div>
+  <div class="fma-intro-copy">
+    <p><strong>Fuzzy Market Analytics</strong>（FMA）是一组面向市场分析与交易自动化的工具和服务。</p>
+    <p>FMA 方法结合概率模型、贝叶斯更新、改进型 Hampel 滤波、目标价可达性估计，以及适用于实时市场数据的模糊决策规则。</p>
+    <p>目标很实际：降低噪声、保持决策逻辑可解释，并把风险与目标估计明确呈现出来。</p>
+    <div class="hero-actions">
+      <a class="button-neon" href="/zh-cn/articles/">文章</a>
+    </div>
+  </div>
+</section>
 
 ## 产品与服务
 
