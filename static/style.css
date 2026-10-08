@@ -296,6 +296,7 @@ blockquote {
 
 .article-preview-link .digital-media-frame,
 .team-banner-wrap .digital-media-frame,
+.fma-intro-visual .digital-media-frame,
 .product-art-link .digital-media-frame {
   width: 100%;
 }
@@ -1025,7 +1026,29 @@ td img {
   }
 }
 
-/* FMA product catalog: same visual language as the company project cards. */
+/* FMA introduction and product catalog. */
+.fma-intro {
+  display: grid;
+  grid-template-columns: 300px minmax(0, 1fr);
+  align-items: center;
+  gap: 1.75rem;
+  margin: 1rem 0;
+}
+
+.fma-intro-visual,
+.fma-intro-copy {
+  min-width: 0;
+}
+
+.fma-intro-visual img {
+  width: 100%;
+  height: auto;
+}
+
+.fma-intro-copy > p:first-child {
+  margin-top: 0;
+}
+
 .fma-product-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1053,6 +1076,17 @@ td img {
 }
 
 @media (max-width: 820px) {
+  .fma-intro {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.25rem;
+  }
+
+  .fma-intro-visual {
+    width: min(300px, 100%);
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   .fma-product-grid {
     grid-template-columns: 1fr;
   }
