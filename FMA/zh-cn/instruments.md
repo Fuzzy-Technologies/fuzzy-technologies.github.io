@@ -34,16 +34,16 @@ alternate_zh: /FMA/zh-cn/instruments.html
 
 ### T-Capital 基金
 
-| Ticker | 货币 | 说明 |
-|---|---|---|
-| TRUR | rub | 全天候资产配置基金 |
-| TMOS@ | rub | 俄罗斯大型公司 |
-| TBRU@ | rub | 俄罗斯债券 |
-| TGLD | rub | 黄金 |
-| TRND | rub | 趋势股票 |
-| TLCB@ | rub | 本币债券 |
-| TOFZ@ | rub | 政府债券 |
-| TITR@ | rub | 俄罗斯科技公司 |
+| Ticker | 货币 | 说明               |
+| ------ | ---- | ------------------ |
+| TRUR   | rub  | 全天候资产配置基金 |
+| TMOS@  | rub  | 俄罗斯大型公司     |
+| TBRU@  | rub  | 俄罗斯债券         |
+| TGLD   | rub  | 黄金               |
+| TRND   | rub  | 趋势股票           |
+| TLCB@  | rub  | 本币债券           |
+| TOFZ@  | rub  | 政府债券           |
+| TITR@  | rub  | 俄罗斯科技公司     |
 
 ### 俄罗斯股息类公司
 
@@ -83,15 +83,15 @@ MDMG, LIFE, GECO, OZPH, ABIO, PRMD, GEMC.
 
 ### 货币与贵金属
 
-| Ticker | 货币 | 说明 |
-|---|---|---|
-| KZTRUB_TOM | rub | 哈萨克斯坦坚戈 |
-| BYNRUB_TOM | rub | 白俄罗斯卢布 |
-| AMDRUB_TOM | rub | 亚美尼亚德拉姆 |
-| GLDRUB_TOM | rub | 实物黄金 |
-| SLVRUB_TOM | rub | 实物白银 |
-| PLTRUB_TOM | rub | 铂金 |
-| PLDRUB_TOM | rub | 钯金 |
+| Ticker     | 货币 | 说明           |
+| ---------- | ---- | -------------- |
+| KZTRUB_TOM | rub  | 哈萨克斯坦坚戈 |
+| BYNRUB_TOM | rub  | 白俄罗斯卢布   |
+| AMDRUB_TOM | rub  | 亚美尼亚德拉姆 |
+| GLDRUB_TOM | rub  | 实物黄金       |
+| SLVRUB_TOM | rub  | 实物白银       |
+| PLTRUB_TOM | rub  | 铂金           |
+| PLDRUB_TOM | rub  | 钯金           |
 
 <footer class="site-footer">
   <strong><a href="/zh-cn/">Fuzzy Technologies</a></strong>

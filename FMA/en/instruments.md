@@ -34,16 +34,16 @@ The production list is organized by market segment. Tickers are shown exactly as
 
 ### T-Capital funds
 
-| Ticker | Currency | Description |
-|---|---|---|
-| TRUR | rub | All-weather portfolio fund |
-| TMOS@ | rub | Largest Russian companies |
-| TBRU@ | rub | Russian bonds |
-| TGLD | rub | Gold |
-| TRND | rub | Trend equities |
-| TLCB@ | rub | Local-currency bonds |
-| TOFZ@ | rub | Government bonds |
-| TITR@ | rub | Russian technology companies |
+| Ticker | Currency | Description                  |
+| ------ | -------- | ---------------------------- |
+| TRUR   | rub      | All-weather portfolio fund   |
+| TMOS@  | rub      | Largest Russian companies    |
+| TBRU@  | rub      | Russian bonds                |
+| TGLD   | rub      | Gold                         |
+| TRND   | rub      | Trend equities               |
+| TLCB@  | rub      | Local-currency bonds         |
+| TOFZ@  | rub      | Government bonds             |
+| TITR@  | rub      | Russian technology companies |
 
 ### Russian dividend companies
 
@@ -83,15 +83,15 @@ MDMG, LIFE, GECO, OZPH, ABIO, PRMD, GEMC.
 
 ### Currencies and metals
 
-| Ticker | Currency | Description |
-|---|---|---|
-| KZTRUB_TOM | rub | Kazakhstan tenge |
-| BYNRUB_TOM | rub | Belarusian ruble |
-| AMDRUB_TOM | rub | Armenian dram |
-| GLDRUB_TOM | rub | Physical gold |
-| SLVRUB_TOM | rub | Physical silver |
-| PLTRUB_TOM | rub | Platinum |
-| PLDRUB_TOM | rub | Palladium |
+| Ticker     | Currency | Description      |
+| ---------- | -------- | ---------------- |
+| KZTRUB_TOM | rub      | Kazakhstan tenge |
+| BYNRUB_TOM | rub      | Belarusian ruble |
+| AMDRUB_TOM | rub      | Armenian dram    |
+| GLDRUB_TOM | rub      | Physical gold    |
+| SLVRUB_TOM | rub      | Physical silver  |
+| PLTRUB_TOM | rub      | Platinum         |
+| PLDRUB_TOM | rub      | Palladium        |
 
 
 <footer class="site-footer">
