@@ -111,7 +111,7 @@ $$
 
 - метод адаптирован для возможности детекта аномалий в первом и последнем элементах числового ряда.
 
-Всё это реализовано на языке Python в функции фильтрации HampelFilter() и в функции детекта аномалий HampelAnomalyDetection() из библиотеки TradeRoutines <https://github.com/Fuzzy-Technologies/TKSBrokerAPI/blob/develop/tksbrokerapi/TradeRoutines.py> платформы ⚙️TKSBrokerAPI. <https://github.com/Fuzzy-Technologies/TKSBrokerAPI/tree/develop>
+Всё это реализовано на языке Python в функции фильтрации HampelFilter() и в функции детекта аномалий HampelAnomalyDetection() из библиотеки [TradeRoutines](https://github.com/Fuzzy-Technologies/TKSBrokerAPI/blob/develop/tksbrokerapi/TradeRoutines.py) платформы ⚙️[TKSBrokerAPI](https://github.com/Fuzzy-Technologies/TKSBrokerAPI/tree/develop).
 
 ## Примеры работы фильтра Хампеля
 
@@ -193,22 +193,22 @@ $$
 
 ## Полезные ссылки
 
-- 🌐 Полный FAQ по сигналам и описание методик FMA: [fuzzy-technologies.github.io/FMA](https://fuzzy-technologies.github.io/FMA/)
+- 🌐 Полный FAQ по сигналам и описание методик FMA: [Fuzzy Market Analytics](https://fuzzy-technologies.github.io/FMA/)
 
-- ⚙️ Платформа TKSBrokerAPI: [fuzzy-technologies.github.io/TKSBrokerAPI](https://fuzzy-technologies.github.io/TKSBrokerAPI/)
+- ⚙️ Платформа TKSBrokerAPI: [TKSBrokerAPI](https://fuzzy-technologies.github.io/TKSBrokerAPI/)
 
 ## Дополнительные материалы к статье
 
-- «Быстрый поиск аномалий в числовых рядах при помощи модифицированного метода Хампеля» (2023). <https://moitvivt.ru/ru/journal/pdf?id=1482>
+- [«Быстрый поиск аномалий в числовых рядах при помощи модифицированного метода Хампеля» (2023)](https://moitvivt.ru/ru/journal/pdf?id=1482).
 
-- Исследование на Kaggle (2023). <https://www.kaggle.com/code/timurgilmullin/how-to-quickly-find-anomalies-in-number-series>
+- [Исследование на Kaggle (2023)](https://www.kaggle.com/code/timurgilmullin/how-to-quickly-find-anomalies-in-number-series).
 
-- Генератор тестовых биржевых данных PriceGenerator. <https://github.com/Fuzzy-Technologies/PriceGenerator>
+- [Генератор тестовых биржевых данных PriceGenerator](https://github.com/Fuzzy-Technologies/PriceGenerator).
 
-- Лабораторная работа по фильтрации аномалий методом Хампеля в Jupyter Notebook. <https://nbviewer.org/github/Tim55667757/TKSBrokerAPI/blob/develop/docs/examples/HampelFilteringExample.ipynb>
+- [Лабораторная работа по фильтрации аномалий методом Хампеля в Jupyter Notebook](https://nbviewer.org/github/Tim55667757/TKSBrokerAPI/blob/develop/docs/examples/HampelFilteringExample.ipynb).
 
-- Код функции фильтрации аномалий методом Хампеля из библиотеки платформы ⚙️ TKSBrokerAPI. <https://fuzzy-technologies.github.io/TKSBrokerAPI/docs/tksbrokerapi/TradeRoutines.html>
+- [Код функции фильтрации аномалий методом Хампеля из библиотеки платформы ⚙️ TKSBrokerAPI](https://fuzzy-technologies.github.io/TKSBrokerAPI/docs/tksbrokerapi/TradeRoutines.html).
 
 ## Источник
 
-[Исходная публикация в Teletype](https://teletype.in/@tgilmullin/hampel-anomalies-filtering). Дата в карточке сохранена по папке авторского архива.
+[Исходная публикация в Teletype](https://teletype.in/@tgilmullin/hampel-anomalies-filtering).

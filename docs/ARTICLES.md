@@ -45,6 +45,10 @@ The first FMA Research article deliberately uses `00_FMA_Research_Intro.png` as 
 
 Keep Markdown tables readable in source: pad every column to its widest cell, align all vertical separators, and size the header separator row to the same widths. Preserve alignment markers and table content. Apply this convention to article text, templates, and publishing documentation, and check the raw diff as well as the rendered table.
 
+Use descriptive Markdown links on the relevant term, title, author or resource name in both prose and reference lists. Do not append a bare URL or URL-only autolink after the text it describes. Preserve the original destination when restoring a link. Check the rendered article body for visible URL strings; metadata and code examples are separate from reader-facing prose. Numbered citations should link to the corresponding bibliography entry when one is present.
+
+Keep reader-facing prose, teasers and translation notices free of migration or editing commentary. Do not describe source folders, date recovery, preserved wording, merged drafts or publication mechanics. Keep that information in repository documentation or the PR. Preserve useful historical context, scientific qualifications and source links in natural editorial language; translation notices should simply state availability and link to the readable version.
+
 ## Supplemental comments in archived sources
 
 Inspect the full article and every `post*.txt` variant, including text after signatures, hashtags and source links. Markers such as “Опубликовать в комментариях”, including repeated blocks, are editorial instructions; their substantive content belongs in the migrated article.

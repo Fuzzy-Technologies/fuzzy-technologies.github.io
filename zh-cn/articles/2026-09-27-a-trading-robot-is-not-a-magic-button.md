@@ -14,7 +14,7 @@ alternate_en: "/articles/2026-09-27-a-trading-robot-is-not-a-magic-button/"
 alternate_ru: "/ru/articles/2026-09-27-a-trading-robot-is-not-a-magic-button/"
 alternate_zh: "/zh-cn/articles/2026-09-27-a-trading-robot-is-not-a-magic-button/"
 preview_image: "/static/images/articles/2026-09-27-a-trading-robot-is-not-a-magic-button/00_FMA_Research_Intro.png"
-preview_text: "简体中文译文正在准备中。本页面目前仅为翻译占位页；请阅读英文原文。"
+preview_text: "简体中文译文正在准备中，请先阅读英文原文。"
 cover_image: "/static/images/articles/2026-09-27-a-trading-robot-is-not-a-magic-button/00_FMA_Research_Intro_5.png"
 translation_status: placeholder
 ---

@@ -17,7 +17,7 @@ preview_text: 'От первых Python-скриптов и набросков �
 cover_image: /static/images/articles/2025-05-13-trading-algorithm-history/promo-3.png
 source_url: https://teletype.in/@tgilmullin/trading-algorithm-history
 ---
-> История проекта по состоянию на май 2025 года. Описания платформ и торговых правил относятся к тому этапу разработки.
+> История FMA по состоянию на май 2025 года.
 
 ![Вдохновение, превращённое в алгоритм. От первых идей и математических набросков — до полноценной торговой системы, встроенной в платформу автоматизации](/static/images/articles/2025-05-13-trading-algorithm-history/promo-3.png)
 
@@ -207,9 +207,9 @@ source_url: https://teletype.in/@tgilmullin/trading-algorithm-history
 
 ## Полезные ссылки
 
-- 🌐 Полный FAQ по сигналам и описание методик FMA: [fuzzy-technologies.github.io/FMA](https://fuzzy-technologies.github.io/FMA/)
+- 🌐 Полный FAQ по сигналам и описание методик FMA: [Fuzzy Market Analytics](https://fuzzy-technologies.github.io/FMA/)
 
-- ⚙️ Платформа TKSBrokerAPI: [fuzzy-technologies.github.io/TKSBrokerAPI](https://fuzzy-technologies.github.io/TKSBrokerAPI/)
+- ⚙️ Платформа TKSBrokerAPI: [TKSBrokerAPI](https://fuzzy-technologies.github.io/TKSBrokerAPI/)
 
 ## Что ещё почитать по теме разработки трейдинговых алгоритмов
 
@@ -227,4 +227,4 @@ source_url: https://teletype.in/@tgilmullin/trading-algorithm-history
 
 ## Источник
 
-[Исходная публикация в Teletype](https://teletype.in/@tgilmullin/trading-algorithm-history). Дата в карточке сохранена по папке авторского архива.
+[Исходная публикация в Teletype](https://teletype.in/@tgilmullin/trading-algorithm-history).

@@ -13,14 +13,13 @@ alternate_en: /articles/2025-05-13-my-research/
 alternate_ru: /ru/articles/2025-05-13-my-research/
 preview_image: /static/images/articles/2025-05-13-my-research/preview.png
 preview_text: >-
-  English translation is planned. Read the complete Russian article,
-  including the research examples and illustrations.
+  English translation is planned. Read the full article in Russian.
 cover_image: /static/images/articles/2025-05-13-my-research/cover.png
 translation_status: placeholder
 ---
 
 **English translation is planned.**
 
-The complete article is currently available in Russian. Both versions use the original publication date.
+The complete article is currently available in Russian.
 
 [Read the full Russian article](/ru/articles/2025-05-13-my-research/).
