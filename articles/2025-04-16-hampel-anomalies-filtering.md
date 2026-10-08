@@ -6,7 +6,7 @@ title: 'Finding anomalies without complex models: the Hampel method'
 description: Archived research article. The full text is available in Russian; an English translation is planned.
 keywords: FMA Research, mathematics, data analysis, fuzzy logic, research archive
 date: 2025-04-16
-author: Timur Gilmullin and Mansur Gilmullin
+author: Timur & Mansur Gilmullin
 series: FMA Research
 series_url: /FMA/
 permalink: /articles/2025-04-16-hampel-anomalies-filtering/
