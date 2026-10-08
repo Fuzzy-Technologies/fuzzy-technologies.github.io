@@ -6,7 +6,7 @@ title: Fast anomaly detection with a modified Hampel filter
 description: Archived research article. The full text is available in Russian; an English translation is planned.
 keywords: FMA Research, mathematics, data analysis, fuzzy logic, research archive
 date: 2024-12-01
-author: Timur Gilmullin and Mansur Gilmullin
+author: Timur & Mansur Gilmullin
 series: FMA Research
 series_url: /FMA/
 permalink: /articles/2024-12-01-modified-hampel-filter/
