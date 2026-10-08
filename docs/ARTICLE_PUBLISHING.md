@@ -8,11 +8,11 @@ Use the original publication date for an archived article, including a date reco
 
 Choose a short lowercase English slug with hyphens. This guide uses `2025-05-13-my-research` as an example; replace it everywhere with your own date and slug. Keep a published URL stable when editing its text later.
 
-| What | Copy from | Save as (paths from the repository root) |
-|---|---|---|
-| Full Russian article | [`article.ru.md`](../_templates/articles/article.ru.md) | `ru/articles/2025-05-13-my-research.md` |
-| English translation placeholder | [`article.en-placeholder.md`](../_templates/articles/article.en-placeholder.md) | `articles/2025-05-13-my-research.md` |
-| Illustrations, preview and social cover | Your selected image files | `static/images/articles/2025-05-13-my-research/` |
+| What                                    | Copy from                                                                       | Save as (paths from the repository root)         |
+| --------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------ |
+| Full Russian article                    | [`article.ru.md`](../_templates/articles/article.ru.md)                         | `ru/articles/2025-05-13-my-research.md`          |
+| English translation placeholder         | [`article.en-placeholder.md`](../_templates/articles/article.en-placeholder.md) | `articles/2025-05-13-my-research.md`             |
+| Illustrations, preview and social cover | Your selected image files                                                       | `static/images/articles/2025-05-13-my-research/` |
 
 The templates support the owner-approved Russian-first archive workflow. For a normal English-first article, use the same metadata structure, write the complete English body, remove `translation_status: placeholder`, and review its localizations under [LOCALIZATION.md](LOCALIZATION.md). Do not claim an unfinished translation is complete. Add a Chinese alternate only when its page exists.
 
@@ -31,20 +31,20 @@ Open each linked template, use **Raw** or **Copy raw file**, and copy its entire
 
 Replace every `REPLACE_...` value and every example date/slug. The templates are excluded from the website build, so they cannot appear as sample articles.
 
-| Field | What to put here |
-|---|---|
-| `title` | The title in this page's language. The layout displays it; do not repeat it as an H1 in the body. |
-| `date` | Original publication date, e.g. `2025-05-13`, identical in both files. This is what the index sorts by. |
-| `author` | Joint research: `Тимур и Мансур Гильмуллины` / `Timur & Mansur Gilmullin`. For a single author: `Тимур Гильмуллин` / `Timur Gilmullin` or `Мансур Гильмуллин` / `Mansur Gilmullin`. |
-| `description` | A concise description for search engines and link previews. |
-| `preview_text` | The editorial digest shown on the Articles page, usually one compact paragraph of a few sentences. Use the existing research cards as the length reference; omit figure numbers and service instructions. |
-| `permalink` | This file's public address, with a leading and trailing slash. RU starts `/ru/articles/`; EN starts `/articles/`. |
-| `alternate_en`, `alternate_ru` | The same matching pair of public addresses in both files. |
-| `preview_image` | Image for the article card. Use an existing path starting `/static/images/articles/`. |
-| `cover_image` | Image for social sharing. It may reuse the preview file, but it has a separate purpose. |
-| `math` | `true` if the full article contains formulas; otherwise `false` or omit it. |
-| `series`, `series_url` | Keep `FMA Research` and `/FMA/` for that series. Change or remove both for another topic. |
-| `translation_status` | Keep `placeholder` only on an unfinished translation. Remove it when the full translation is ready. |
+| Field                          | What to put here                                                                                                                                                                                          |
+| ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `title`                        | The title in this page's language. The layout displays it; do not repeat it as an H1 in the body.                                                                                                         |
+| `date`                         | Original publication date, e.g. `2025-05-13`, identical in both files. This is what the index sorts by.                                                                                                   |
+| `author`                       | Joint research: `Тимур и Мансур Гильмуллины` / `Timur & Mansur Gilmullin`. For a single author: `Тимур Гильмуллин` / `Timur Gilmullin` or `Мансур Гильмуллин` / `Mansur Gilmullin`.                       |
+| `description`                  | A concise description for search engines and link previews.                                                                                                                                               |
+| `preview_text`                 | The editorial digest shown on the Articles page, usually one compact paragraph of a few sentences. Use the existing research cards as the length reference; omit figure numbers and service instructions. |
+| `permalink`                    | This file's public address, with a leading and trailing slash. RU starts `/ru/articles/`; EN starts `/articles/`.                                                                                         |
+| `alternate_en`, `alternate_ru` | The same matching pair of public addresses in both files.                                                                                                                                                 |
+| `preview_image`                | Image for the article card. Use an existing path starting `/static/images/articles/`.                                                                                                                     |
+| `cover_image`                  | Image for social sharing. It may reuse the preview file, but it has a separate purpose.                                                                                                                   |
+| `math`                         | `true` if the full article contains formulas; otherwise `false` or omit it.                                                                                                                               |
+| `series`, `series_url`         | Keep `FMA Research` and `/FMA/` for that series. Change or remove both for another topic.                                                                                                                 |
+| `translation_status`           | Keep `placeholder` only on an unfinished translation. Remove it when the full translation is ready.                                                                                                       |
 
 Keep text values quoted if they contain `:` or other YAML punctuation. Inside a single-quoted YAML value, write an apostrophe twice: `'Author''s article'`. Long metadata text can use `>-` followed by indented lines, as in the templates.
 
@@ -58,10 +58,13 @@ The body starts after the second `---`. Write the full article there, replacing 
 Ordinary text with **emphasis** and [a link](/FMA/).
 
 ![What the illustration shows](/static/images/articles/2025-05-13-my-research/figure-01.png)
+
 *Figure 1. A short explanation of the illustration.*
 
 > An important clarification or historical context.
 ```
+
+Keep the blank line between the image and its caption: it makes the caption a separate paragraph below the image in both GitHub's Markdown preview and the website. Article images are centered, keep their natural width when small, and shrink to fit the column when large.
 
 Images in the article open in the shared full-screen preview automatically. No image links or JavaScript are needed. `preview_image` and `cover_image` do not insert an image into the body: add it in Markdown when needed. Use `hero_image` only if you intentionally want the layout to insert a hero; do not also repeat that image at the start of the body.
 

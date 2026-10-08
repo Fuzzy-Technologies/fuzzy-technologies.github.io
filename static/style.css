@@ -127,6 +127,9 @@ blockquote {
 
 /* Long-form articles reuse the site's neon media treatment. */
 .article-content img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
   border: 1px solid #00eaff55;
   box-shadow: 0 0 12px #00eaff88;
   animation: cyanFramePulse 6.4s ease-in-out infinite;
@@ -293,13 +296,13 @@ blockquote {
 
 .article-preview-link .digital-media-frame,
 .team-banner-wrap .digital-media-frame,
-.product-art-link .digital-media-frame,
-.article-content .digital-media-frame {
+.product-art-link .digital-media-frame {
   width: 100%;
 }
 
 .home-intro-visual .digital-media-frame,
-.table-clean .digital-media-frame {
+.table-clean .digital-media-frame,
+.article-content .digital-media-frame {
   width: fit-content;
   margin-right: auto;
   margin-left: auto;

@@ -14,38 +14,38 @@ It complements [LOCALIZATION.md](LOCALIZATION.md). English is canonical; Russian
 
 ## Company directions
 
-| Concept | English | Russian | Simplified Chinese |
-|---|---|---|---|
-| Research and development | applied R&D | прикладные исследования и разработка | 应用研发 |
-| Trading systems | trading systems | торговые системы | 交易系统 |
-| Algorithmic trading | algorithmic trading | алгоритмическая торговля | 算法交易 |
-| Quantitative analysis | quantitative analysis | количественный анализ | 量化分析 |
-| Risk estimation | risk estimation / risk assessment | оценка риска | 风险评估 |
-| Fuzzy logic | fuzzy logic | нечёткая логика | 模糊逻辑 |
-| Engineering automation | engineering automation | инженерная автоматизация | 工程自动化 |
-| Artificial intelligence | AI | ИИ | AI / 人工智能 |
-| Agent systems | agent systems | агентные системы | 智能体系统 |
-| Open source | open source | открытый код / ПО с открытым исходным кодом | 开源 |
+| Concept                  | English                           | Russian                                     | Simplified Chinese |
+| ------------------------ | --------------------------------- | ------------------------------------------- | ------------------ |
+| Research and development | applied R&D                       | прикладные исследования и разработка        | 应用研发           |
+| Trading systems          | trading systems                   | торговые системы                            | 交易系统           |
+| Algorithmic trading      | algorithmic trading               | алгоритмическая торговля                    | 算法交易           |
+| Quantitative analysis    | quantitative analysis             | количественный анализ                       | 量化分析           |
+| Risk estimation          | risk estimation / risk assessment | оценка риска                                | 风险评估           |
+| Fuzzy logic              | fuzzy logic                       | нечёткая логика                             | 模糊逻辑           |
+| Engineering automation   | engineering automation            | инженерная автоматизация                    | 工程自动化         |
+| Artificial intelligence  | AI                                | ИИ                                          | AI / 人工智能      |
+| Agent systems            | agent systems                     | агентные системы                            | 智能体系统         |
+| Open source              | open source                       | открытый код / ПО с открытым исходным кодом | 开源               |
 
 ## Cybersecurity
 
 Prefer terminology already established among security practitioners.
 
-| Concept | English | Russian | Simplified Chinese |
-|---|---|---|---|
-| Cybersecurity | cybersecurity / security engineering | информационная безопасность / инженерия ИБ | 网络安全 / 安全工程 |
-| Penetration testing | penetration testing / pentest | тестирование на проникновение / пентест | 渗透测试 |
-| Attack surface | attack surface | поверхность атаки | 攻击面 |
-| Reachability | reachability / reachability analysis | достижимость / анализ достижимости | 网络可达性 |
-| Attack path | attack path | путь атаки | 攻击路径 |
-| Lateral movement | lateral movement | перемещение по инфраструктуре | 横向移动 |
-| Security control | security control | мера защиты | 安全控制 / 防护控制 |
-| Digital forensics | digital forensics | цифровая криминалистика | 数字取证 |
-| Incident response | incident response | реагирование на инциденты | 事件响应 |
-| Evidence | evidence | доказательства / материалы | 证据 / 取证材料 |
-| Timeline | timeline | хронология | 时间线 |
-| Retest | retest | повторная проверка | 复测 |
-| Software supply chain | software supply chain | цепочка поставки ПО | 软件供应链 |
+| Concept               | English                              | Russian                                    | Simplified Chinese  |
+| --------------------- | ------------------------------------ | ------------------------------------------ | ------------------- |
+| Cybersecurity         | cybersecurity / security engineering | информационная безопасность / инженерия ИБ | 网络安全 / 安全工程 |
+| Penetration testing   | penetration testing / pentest        | тестирование на проникновение / пентест    | 渗透测试            |
+| Attack surface        | attack surface                       | поверхность атаки                          | 攻击面              |
+| Reachability          | reachability / reachability analysis | достижимость / анализ достижимости         | 网络可达性          |
+| Attack path           | attack path                          | путь атаки                                 | 攻击路径            |
+| Lateral movement      | lateral movement                     | перемещение по инфраструктуре              | 横向移动            |
+| Security control      | security control                     | мера защиты                                | 安全控制 / 防护控制 |
+| Digital forensics     | digital forensics                    | цифровая криминалистика                    | 数字取证            |
+| Incident response     | incident response                    | реагирование на инциденты                  | 事件响应            |
+| Evidence              | evidence                             | доказательства / материалы                 | 证据 / 取证材料     |
+| Timeline              | timeline                             | хронология                                 | 时间线              |
+| Retest                | retest                               | повторная проверка                         | 复测                |
+| Software supply chain | software supply chain                | цепочка поставки ПО                        | 软件供应链          |
 
 ## English style
 

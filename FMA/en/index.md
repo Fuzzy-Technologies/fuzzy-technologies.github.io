@@ -127,10 +127,10 @@ A signal estimates target reachability; it does **not** promise an exact arrival
 
 Signal strength uses a fuzzy scale:
 
-| Level | Meaning |
-|---|---|
-| 🔵 | medium |
-| 🟡🟡 | high |
+| Level  | Meaning |
+| ------ | ------- |
+| 🔵     | medium  |
+| 🟡🟡   | high    |
 | 🟢🟢🟢 | maximum |
 
 The message also includes the model probability (%) and the internal forecast horizon.

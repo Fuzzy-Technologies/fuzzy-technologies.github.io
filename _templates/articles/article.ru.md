@@ -25,6 +25,7 @@ REPLACE_INTRODUCTION
 REPLACE_FULL_ARTICLE_TEXT
 
 ![REPLACE_IMAGE_DESCRIPTION](/static/images/articles/2025-05-13-my-research/figure-01.png)
+
 *REPLACE_IMAGE_CAPTION*
 
 ## Выводы

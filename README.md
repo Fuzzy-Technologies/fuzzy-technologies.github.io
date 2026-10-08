@@ -34,10 +34,10 @@
 ## Product pages
 
 | Project                   | English                                                                          | Русский                                                                       | 简中                                                                               |
-|---------------------------|----------------------------------------------------------------------------------|-------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
+| ------------------------- | -------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
 | 📊 Fuzzy Market Analytics | [FMA / EN](https://fuzzy-technologies.github.io/FMA/en/)                         | [FMA / RU](https://fuzzy-technologies.github.io/FMA/)                         | [FMA / 简中](https://fuzzy-technologies.github.io/FMA/zh-cn/)                      |
 | 💼 FMA instruments        | [Instruments / EN](https://fuzzy-technologies.github.io/FMA/en/instruments.html) | [Инструменты / RU](https://fuzzy-technologies.github.io/FMA/instruments.html) | [分析品种 / 简中](https://fuzzy-technologies.github.io/FMA/zh-cn/instruments.html) |
-| ⚙️ TKSBrokerAPI           | [TKSBrokerAPI / EN](https://fuzzy-technologies.github.io/TKSBrokerAPI/en/)       | [TKSBrokerAPI / RU](https://fuzzy-technologies.github.io/TKSBrokerAPI/)       | —                                                                                  |
+| ⚙️ TKSBrokerAPI            | [TKSBrokerAPI / EN](https://fuzzy-technologies.github.io/TKSBrokerAPI/en/)       | [TKSBrokerAPI / RU](https://fuzzy-technologies.github.io/TKSBrokerAPI/)       | —                                                                                  |
 | 🧮 FuzzyRoutines          | [FuzzyRoutines / EN](https://fuzzy-technologies.github.io/FuzzyRoutines/)        | [FuzzyRoutines / RU](https://fuzzy-technologies.github.io/ru/FuzzyRoutines/)  | [FuzzyRoutines / 简中](https://fuzzy-technologies.github.io/zh-cn/FuzzyRoutines/)  |
 
 ## Links
