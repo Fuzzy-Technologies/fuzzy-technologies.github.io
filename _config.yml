@@ -4,6 +4,8 @@ keywords: "Fuzzy Technologies, cybersecurity, AI agents, security engineering, a
 lang: "en"
 url: "https://fuzzy-technologies.github.io"
 baseurl: ""
+exclude:
+  - _templates
 markdown: CommonMarkGhPages
 commonmark:
   options: ["UNSAFE", "SMART", "FOOTNOTES"]

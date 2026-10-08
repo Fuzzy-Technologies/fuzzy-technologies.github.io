@@ -91,6 +91,8 @@ Do not use machine translation output as final public copy without practitioner-
 
 ## 6. Content discipline
 
+For article work, follow the [step-by-step publishing guide](docs/ARTICLE_PUBLISHING.md), copy the [article templates](_templates/articles/), and validate the [article publishing contract](docs/ARTICLES.md) before opening a PR.
+
 - Keep landing-page copy concise.
 - Prefer engineering facts over promotional filler.
 - Do not publish confidential implementation details.

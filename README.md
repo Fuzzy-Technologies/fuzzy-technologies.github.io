@@ -29,6 +29,7 @@
 - [Public terminology guide](docs/TERMINOLOGY.md)
 - [Development protocol](DEVELOPMENT_PROTOCOL.md)
 - [Article publishing contract](docs/ARTICLES.md)
+- [How to publish an article](docs/ARTICLE_PUBLISHING.md) — file locations, copyable templates, images, dates, and the GitHub workflow
 
 ## Product pages
 

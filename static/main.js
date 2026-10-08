@@ -166,6 +166,26 @@
     let openingGlitchTimer = null;
     let openingGlitchRequest = 0;
 
+    function fitExpandedImage() {
+      const { naturalWidth, naturalHeight } = expandedImage;
+      if (!naturalWidth || !naturalHeight) return;
+
+      // Fit both axes, including upscaling small originals, without cropping.
+      const scale = Math.min(stage.clientWidth / naturalWidth, stage.clientHeight / naturalHeight);
+      const width = `${naturalWidth * scale}px`;
+      const height = `${naturalHeight * scale}px`;
+      expandedImage.style.width = width;
+      expandedImage.style.height = height;
+      openingGlitch.style.width = width;
+      openingGlitch.style.height = height;
+    }
+
+    expandedImage.addEventListener('load', fitExpandedImage);
+    const stageObserver = new ResizeObserver(() => {
+      if (lightbox.classList.contains('is-open')) fitExpandedImage();
+    });
+    stageObserver.observe(stage);
+
     function stopOpeningGlitch() {
       if (openingGlitchTimer) {
         window.clearTimeout(openingGlitchTimer);
@@ -203,6 +223,7 @@
       expandedImage.decode().catch(() => {}).then(() => {
         window.requestAnimationFrame(() => {
           if (request !== openingGlitchRequest || !lightbox.classList.contains('is-open')) return;
+          fitExpandedImage();
           playOpeningGlitch();
         });
       });
@@ -259,6 +280,7 @@
       lockScroll();
 
       window.requestAnimationFrame(() => {
+        fitExpandedImage();
         lightbox.classList.add('is-open');
         closeButton.focus({ preventScroll: true });
         queueOpeningGlitch();
