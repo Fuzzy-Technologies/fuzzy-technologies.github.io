@@ -129,19 +129,19 @@ source_url: https://teletype.in/@tgilmullin/fuzzy-scales
 
 ## Полезные ссылки
 
-- 🌐 Полный FAQ по сигналам и описание методик FMA: [fuzzy-technologies.github.io/FMA](https://fuzzy-technologies.github.io/FMA/)
+- 🌐 Полный FAQ по сигналам и описание методик FMA: [Fuzzy Market Analytics](https://fuzzy-technologies.github.io/FMA/)
 
-- ⚙️ Платформа TKSBrokerAPI: [fuzzy-technologies.github.io/TKSBrokerAPI](https://fuzzy-technologies.github.io/TKSBrokerAPI/)
+- ⚙️ Платформа TKSBrokerAPI: [TKSBrokerAPI](https://fuzzy-technologies.github.io/TKSBrokerAPI/)
 
 P. S. Если интересно, как применяются нечёткие шкалы в задачах кибербезопасности, посмотрите эти статьи:
 
-- «Подходы к автоматизации процесса валидации уязвимостей, найденных автоматическими сканерами безопасности, при помощи нечётких множеств и нейронных сетей» (2014) <https://s.fundamental-research.ru/pdf/2014/11-2/35511.pdf>
+- [«Подходы к автоматизации процесса валидации уязвимостей, найденных автоматическими сканерами безопасности, при помощи нечётких множеств и нейронных сетей» (2014)](https://s.fundamental-research.ru/pdf/2014/11-2/35511.pdf)
 
-- «Сканеры безопасности: автоматическая валидация уязвимостей с помощью нечетких множеств и нейронных сетей» (2014) <https://habr.com/ru/companies/pt/articles/246197/>
+- [«Сканеры безопасности: автоматическая валидация уязвимостей с помощью нечетких множеств и нейронных сетей» (2014)](https://habr.com/ru/companies/pt/articles/246197/)
 
-- «Сканеры безопасности: автоматическая классификация уязвимостей» (2015) <https://habr.com/ru/companies/pt/articles/274241/>
+- [«Сканеры безопасности: автоматическая классификация уязвимостей» (2015)](https://habr.com/ru/companies/pt/articles/274241/)
 
-- «Как мы анализируем уязвимости с помощью нейронных сетей и нечеткой логики» (2017) <https://habr.com/ru/companies/pt/articles/323436/>
+- [«Как мы анализируем уязвимости с помощью нейронных сетей и нечеткой логики» (2017)](https://habr.com/ru/companies/pt/articles/323436/)
 
 ## Источник
 

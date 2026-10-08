@@ -207,9 +207,9 @@ source_url: https://teletype.in/@tgilmullin/trading-algorithm-history
 
 ## Полезные ссылки
 
-- 🌐 Полный FAQ по сигналам и описание методик FMA: [fuzzy-technologies.github.io/FMA](https://fuzzy-technologies.github.io/FMA/)
+- 🌐 Полный FAQ по сигналам и описание методик FMA: [Fuzzy Market Analytics](https://fuzzy-technologies.github.io/FMA/)
 
-- ⚙️ Платформа TKSBrokerAPI: [fuzzy-technologies.github.io/TKSBrokerAPI](https://fuzzy-technologies.github.io/TKSBrokerAPI/)
+- ⚙️ Платформа TKSBrokerAPI: [TKSBrokerAPI](https://fuzzy-technologies.github.io/TKSBrokerAPI/)
 
 ## Что ещё почитать по теме разработки трейдинговых алгоритмов
 
