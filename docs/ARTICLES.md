@@ -38,3 +38,18 @@ Article pages use `layout: article`. The article indexes discover pages with thi
 Keep article prose in Markdown and do not duplicate shared headers or footers. Use H2 section headings, Markdown blockquotes, MathJax/LaTeX for mathematical notation (`$...$` inline, `$$...$$` display), and Markdown images. Place each image caption immediately after its image in italic text. Keep a Related articles section at the end.
 
 The first FMA Research article deliberately uses `00_FMA_Research_Intro.png` as its index preview and `00_FMA_Research_Intro_5.png` as its social cover. Its article body begins with numbered Fig. 1 and continues through Fig. 9.
+
+## Supplemental comments in archived sources
+
+Inspect the full article and every `post*.txt` variant, including text after signatures, hashtags and source links. Markers such as “Опубликовать в комментариях”, including repeated blocks, are editorial instructions; their substantive content belongs in the migrated article.
+
+- Preserve each unique explanation, example, formula, reference and relevant illustration.
+- Integrate a clarification into the passage it explains. Put independent additions after the main text under “Примечания” (Notes) or “Послесловие” (Afterword), according to their meaning.
+- Combine overlapping variants without losing unique information or changing the author's argument. Flag conflicting versions for review.
+- Keep the index teaser concise; put these additions in the full article. Remove the editorial marker once its content has been incorporated.
+
+Before deleting temporary sources, compare every supplemental block with the final article and confirm that all substantive additions are accounted for. Add corrections to the article's existing branch and pull request.
+
+## Pull request handoff
+
+Immediately after creating a project-owned pull request, assign it to `Tim55667757` and add the `documentation` label. Preserve any other assignees and relevant labels, and verify both required fields before handing the PR to the owner for review.
