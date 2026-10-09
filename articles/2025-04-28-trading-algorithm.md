@@ -17,7 +17,7 @@ preview_text: 'How do market data become a trading signal? We follow the whole p
 cover_image: /static/images/articles/2025-04-28-trading-algorithm/Girls-and-signals.png
 source_url: https://teletype.in/@tgilmullin/trading-algorithm
 ---
-> The FMA algorithm as of April 2025: the position-averaging, stop-level and money-management rules used at that time.
+> The FMA algorithm as of April 2025: the rules for adding to existing positions, setting stop levels and managing capital used at that time.
 
 ![The algorithm determines fuzzy signal strength and the probability level of reaching a target price](/static/images/articles/2025-04-28-trading-algorithm/Girls-and-signals.png)
 
@@ -33,7 +33,7 @@ We have already discussed three key components on this blog that form the basis 
 
 - [fuzzy measurement scales](/articles/2025-04-10-fuzzy-scales/)—to interpret risk and probability through understandable levels as well as numbers;
 
-- [estimating target-price attainability](/articles/2025-04-22-target-probability/)—to work with actual probabilities of success rather than categorical, often inaccurate forecasts, using the mathematical tools of probability estimation, statistics and data analysis.
+- [estimating target-price attainability](/articles/2025-04-22-target-probability/)—to work with estimated probabilities of success rather than categorical, often inaccurate forecasts, using the mathematical tools of probability estimation, statistics and data analysis.
 
 Combining these elements makes it possible to build a reasonably reliable automated signal system that:
 
@@ -45,7 +45,7 @@ Combining these elements makes it possible to build a reasonably reliable automa
 
 - interprets signals and risks on a fuzzy scale that people can understand;
 
-- and decides whether to open or average a position, hold it, or realise the current profit according to predefined rules.
+- and decides whether to open a position, add to it to adjust its average entry price, hold it, or realise the current profit according to predefined rules.
 
 In this article, we will show how the algorithm itself works: how it analyses data, makes decisions and manages trades.
 
@@ -87,17 +87,17 @@ Each signal is also analysed in several ways:
 
 - signal strength is filtered according to target-attainment probability.
 
-Weak or unstable signals are screened out at this stage. A signal reaches the trade-entry decision stage only if the probability is sufficiently high and the additional conditions are met. Signal strength also directly affects the quantity of the instrument used in trading.
+Weak or unstable signals are screened out at this stage. A signal reaches the trade-entry decision stage only if the probability is sufficiently high and the additional conditions are met. Signal strength also directly affects the trade size.
 
 Immediately before executing the trade, the algorithm also analyses the current order book:
 
-- whether sufficient buy-side and sell-side volume is available;
+- whether sufficient displayed bid-side and ask-side liquidity is available;
 
-- whether the selected direction is favoured;
+- whether the bid–ask volume imbalance supports the intended trade direction;
 
-- whether there are anomalously large volumes in the order book.
+- whether there are unusually large concentrations of displayed volume at particular price levels.
 
-Order-book analysis provides another reason to cancel a trade. For example, if a buy signal is received but sell-side volume is several times larger than buy-side volume, it is worth postponing the purchase. The same applies if the order book contains too many anomalously large sell orders. When anomalous volumes are present, however, a buy order can also be placed just above the anomaly, or a sell order just below it, using the approach referred to here as front-running a large visible order.
+Order-book analysis provides another reason to cancel a trade. For example, if a buy signal is received but sell-side volume is several times larger than buy-side volume, it is worth postponing the purchase. The same applies if the order book contains too many anomalously large sell orders. When unusually large displayed volumes are present, however, a buy order can also be placed just above the large bid-side volume, or a sell order just below the large ask-side volume, positioning it ahead of that visible liquidity in price priority.
 
 ## Rules for opening and closing positions
 
@@ -105,21 +105,21 @@ As mentioned above, signal strength affects both the trade size and the way orde
 
 1. For a Max-level signal:
     - use the maximum permitted trade size for a single instrument;
-    - submit a market order:
-      - at the best ask for a buy trade;
-	  - or at the best bid for a sell trade.
+    - submit a market order for execution against available liquidity:
+      - on the ask side, starting at the best available ask, for a buy trade;
+	  - or on the bid side, starting at the best available bid, for a sell trade.
 
 2. For a High-level signal:
     - use a reduced share of the permitted trade size for a single instrument;
-    - submit a stop order:
+    - place a pending order at the following price level:
       - at the best bid for a buy trade;
 	  - or at the best ask for a sell trade;
 
 3. For a Med-level signal:
     - use half the size permitted for a single trade;
-	- submit a stop order
-	  - one tick above the first anomalously large buy-side volume for a buy trade;
-	  - or one tick below the first anomalously large sell-side volume for a sell trade.
+	- place a pending order at the following price level:
+	  - one tick above the first bid-side price level with anomalously large displayed volume for a buy trade;
+	  - or one tick below the first ask-side price level with anomalously large displayed volume for a sell trade.
 
 The colour-coded diagrams of position-opening and closing rules show how progressively stricter conditions are applied as signal strength increases.
 
@@ -133,21 +133,21 @@ The colour-coded diagrams of position-opening and closing rules show how progres
     - the instrument's drawdown is within acceptable limits;
     - signal strength remains sufficient after averaging.
 
-![Basic rules for opening or averaging Buy positions](/static/images/articles/2025-04-28-trading-algorithm/OpenRules.png)
+![Basic rules for opening or adding to positions (Buy)](/static/images/articles/2025-04-28-trading-algorithm/OpenRules.png)
 
-*Basic rules for opening or averaging positions [Buy]*
+*Basic rules for opening or adding to positions [Buy]*
 
 ### Holding positions or taking profit
 
-1. Take profit when either the target, or desired, level or a sufficient profit level is reached.
+1. Take profit when either the desired target level or the minimum acceptable profit level is reached.
 
 2. Force a trade to close if the probability of reaching the target has fallen substantially.
 
 3. Limit losses when stop levels are reached or the acceptable risk is exceeded.
 
-![Basic rules for holding and closing Sell positions](/static/images/articles/2025-04-28-trading-algorithm/CloseRules.png)
+![Basic rules for holding or closing existing positions (Sell)](/static/images/articles/2025-04-28-trading-algorithm/CloseRules.png)
 
-*Basic rules for holding and closing positions [Sell]*
+*Basic rules for holding or closing existing positions [Sell]*
 
 ## Money management rules
 
@@ -161,11 +161,11 @@ The basic rules are fairly simple and aim to grow the portfolio's value steadily
 
 1. Close all positions in the portfolio when the total profit exceeds a specified level.
 
-2. Close losing positions, offsetting their losses with a number of profitable positions, if the loss exceeds the acceptable threshold.
+2. Close losing positions together with enough profitable positions to offset their losses if the loss exceeds the acceptable threshold.
 
 3. Manage idle cash:
     - when there are no buy signals, temporarily move available funds into money market funds with daily compounding;
-    - when a purchase is required, withdraw some of the money from those funds.
+    - when a purchase is required, sell part of the money market fund holdings to release cash.
 
 The Money Management Rules run automatically on a schedule, usually once or twice a day.
 
