@@ -53,7 +53,7 @@ Here, X is a sample of n observations x₁, …, xₙ.
 
 The basic algorithm is:
 
-1. For each element, take its neighbours within a sliding window—for example, a window of 5 values.
+1. For each element, take its neighbours within a sliding window — for example, a window of 5 values.
 
 2. Calculate the median and MAD for that window.
 
@@ -87,7 +87,7 @@ Here, X is the original sequence of n elements xᵢ, and A is the set of anomali
 
 In simple terms, we check whether an element is anomalous as follows:
 
-- calculate the typical value—the median—of the neighbouring points;
+- calculate the typical value — the median — of the neighbouring points;
 
 - compare the current point's distance from the median with the deviations of its neighbours;
 
@@ -187,7 +187,7 @@ The filter helps clean machine-learning training sets by automatically removing 
 
 ### Algorithmic trading
 
-The Hampel method is used to filter anomalies in streams of market data: prices, trade volumes and OHLCV candle parameters. This allows accidental outliers—such as occasional price spikes caused by broker errors or spurious volume surges—to be removed automatically before the signals reach the trading algorithm. Filtering helps a trading robot avoid false entries and reduces erroneous trades.
+The Hampel method is used to filter anomalies in streams of market data: prices, trade volumes and OHLCV candle parameters. This allows accidental outliers — such as occasional price spikes caused by broker errors or spurious volume surges — to be removed automatically before the signals reach the trading algorithm. Filtering helps a trading robot avoid false entries and reduces erroneous trades.
 
 The method is used in real time for fast quote-stream preprocessing, preparing data for estimates of target-attainment probability, and removing anomalies before generating trading signals.
 

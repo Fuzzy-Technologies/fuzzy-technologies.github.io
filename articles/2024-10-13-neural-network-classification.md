@@ -24,7 +24,7 @@ full_width_images: true
 
 For many years, neural networks have attracted considerable interest and have been successfully applied in a wide range of fields: business, medicine, engineering, geology and physics. They have become practical tools wherever forecasting, classification or control problems arise. Several factors explain their success.
 
-**The capabilities of neural networks.** Neural networks are a powerful modelling method capable of representing very complex relationships. In particular, they can model nonlinear behaviour. For many years, linear modelling dominated most fields because well-developed optimisation procedures were available for it. Where a linear approximation is inadequate—and there are plenty of such problems—linear models perform poorly. Neural networks also address problems in which linear models cannot capture the relationships among a large number of variables.
+**The capabilities of neural networks.** Neural networks are a powerful modelling method capable of representing very complex relationships. In particular, they can model nonlinear behaviour. For many years, linear modelling dominated most fields because well-developed optimisation procedures were available for it. Where a linear approximation is inadequate — and there are plenty of such problems — linear models perform poorly. Neural networks also address problems in which linear models cannot capture the relationships among a large number of variables.
 
 **Ease of use.** Neural networks learn from examples. The user selects representative data and runs a training algorithm that automatically captures the structure of those data. Of course, the user still needs some practical knowledge of how to select and prepare data, choose an appropriate network architecture and interpret the results. The depth of that knowledge depends on the problem and the requirements placed on the solution.
 
@@ -34,9 +34,9 @@ Neural networks are also intuitively appealing: they are based on a simplified b
 
 Expert systems were a major area of artificial intelligence research from the 1960s to the 1980s. They relied on high-level models of thought, particularly the idea that thinking consists of manipulating symbols. It soon became clear that, although useful in some fields, these systems failed to capture certain key aspects of human intelligence. One explanation was that they did not reproduce the brain's structure. This prompted the idea of building systems with a similar architecture.
 
-The brain consists of a very large number of neurons connected by numerous links—on average, several thousand connections per neuron, although the number varies considerably.
+The brain consists of a very large number of neurons connected by numerous links — on average, several thousand connections per neuron, although the number varies considerably.
 
-***Neurons*** are specialised cells capable of propagating electrochemical signals (see Fig. 1). A neuron has a branching input structure (***dendrites***), a nucleus and a branching output (the ***axon***). Its axon connects to the dendrites of other cells through ***synapses***. When activated, a neuron sends an electrochemical signal along its axon. Through the synapses, this signal reaches other neurons, which may then activate in turn. A neuron activates when the combined level of signals arriving from its dendrites exceeds a certain level—the ***activation threshold***.
+***Neurons*** are specialised cells capable of propagating electrochemical signals (see Fig. 1). A neuron has a branching input structure (***dendrites***), a nucleus and a branching output (the ***axon***). Its axon connects to the dendrites of other cells through ***synapses***. When activated, a neuron sends an electrochemical signal along its axon. Through the synapses, this signal reaches other neurons, which may then activate in turn. A neuron activates when the combined level of signals arriving from its dendrites exceeds a certain level — the ***activation threshold***.
 
 ![A schematic illustration of a biological neuron](/static/images/articles/2024-10-13-neural-network-classification/01-classification.webp)
 
@@ -46,7 +46,7 @@ The strength of the signal a neuron receives, and therefore the likelihood of it
 
 Donald Hebb, an influential researcher in neural systems, proposed that learning primarily involves changes in the strength of synaptic connections. For example, in Pavlov's classic experiment, a bell rang immediately before a dog was fed. The dog quickly learned to associate the bell with food. In this simplified illustration, repeatedly pairing the two stimuli reinforces the connection between them: the sound begins to induce salivation before the food appears.
 
-Thus, a system composed of a very large number of simple elements—each taking a weighted sum of input signals and passing a signal on when that sum exceeds a certain level—can solve extremely complex problems.
+Thus, a system composed of a very large number of simple elements — each taking a weighted sum of input signals and passing a signal on when that sum exceeds a certain level — can solve extremely complex problems.
 
 ## 2. The mathematical neuron: a perceptron
 
@@ -222,7 +222,7 @@ The vector $b=(-3,2)$ belongs to the second class: the output is 0 because $b\_{
 
 ### 3.3. Implementing the Boolean functions AND and OR with a perceptron
 
-It is easy to verify that a single-layer perceptron can implement the Boolean functions *AND* and *OR*. To keep the examples compact, we will give only the required parameters and diagrams of the hyperplanes—in this case, straight lines—and the perceptrons.
+It is easy to verify that a single-layer perceptron can implement the Boolean functions *AND* and *OR*. To keep the examples compact, we will give only the required parameters and diagrams of the hyperplanes — in this case, straight lines — and the perceptrons.
 
 The parameters for *AND* are shown below. See Fig. 5 for the hyperplane and Fig. 6 for the perceptron.
 
@@ -311,7 +311,7 @@ Two-layer networks formed by connecting single-layer networks in sequence can pe
 
 By placing enough perceptrons in the input layer, each dividing the plane into two half-planes, we can form a convex polygon of the required shape. These regions are all convex because they are constructed by applying *AND* to the half-planes defined by the separating lines.
 
-Consider an example in which we need to identify a triangular region in a two-dimensional input space (Fig. 11). The hyperplanes—in this case, ordinary straight lines—can be specified as follows:
+Consider an example in which we need to identify a triangular region in a two-dimensional input space (Fig. 11). The hyperplanes — in this case, ordinary straight lines — can be specified as follows:
 
 | Perceptron          | Boundary             | Activation condition | Weight vector      | Normal vector    |
 | ------------------- | -------------------- | -------------------- | ------------------ | ---------------- |

@@ -325,7 +325,7 @@ As the examples above showed, both very small and very large values can be class
 
 *Figure 2 — Filtering results with default parameters*
 
-At first glance, the filter appears to have worked well: anomalies have been found and marked. However, the results may be puzzling to someone unaware of the small sliding-window size. Some marked elements appear unnecessary. Let us expand the window to cover the entire series—window = 75 in this example—and detect anomalies again, as shown in Figure 3.
+At first glance, the filter appears to have worked well: anomalies have been found and marked. However, the results may be puzzling to someone unaware of the small sliding-window size. Some marked elements appear unnecessary. Let us expand the window to cover the entire series — window = 75 in this example — and detect anomalies again, as shown in Figure 3.
 
 ![Figure 3 — Filtering results after expanding the sliding window](/static/images/articles/2024-12-01-modified-hampel-filter/3-Hampel-Detect-Anomalies-Custom-Parameters.png)
 
@@ -337,7 +337,7 @@ The chart now marks only those elements that most observers considering the whol
 
 The Hampel method does have limitations. For example, when implementing the original algorithm, anomalies at the first or last position in a sequence may be ignored. This is a consequence of using a sliding window. To handle these boundary cases in our implementation of HampelFilter(), we first had to extend the sequence at both ends by the window size. Only then could we detect anomalies at the beginning and end of the original sequence as well.
 
-In practice, however, the Hampel filter is highly effective. With modern libraries such as [pandas](https://pandas.pydata.org/), it can process sequences containing tens of thousands of elements in seconds and is amenable to optimisation and parallelisation—for example, using [CUDA Python](https://developer.nvidia.com/cuda/python) and Numba's [@cuda.jit](https://numba.readthedocs.io/en/stable/user/jit.html#compiling-python-code-with-jit) decorator, or a [Python multiprocessing ThreadPool](https://superfastpython.com/threadpool-python/).
+In practice, however, the Hampel filter is highly effective. With modern libraries such as [pandas](https://pandas.pydata.org/), it can process sequences containing tens of thousands of elements in seconds and is amenable to optimisation and parallelisation — for example, using [CUDA Python](https://developer.nvidia.com/cuda/python) and Numba's [@cuda.jit](https://numba.readthedocs.io/en/stable/user/jit.html#compiling-python-code-with-jit) decorator, or a [Python multiprocessing ThreadPool](https://superfastpython.com/threadpool-python/).
 
 The modified Hampel filter therefore provides an effective solution to anomaly detection in numerical sequences. It produces results quickly and is straightforward to understand and implement.
 
