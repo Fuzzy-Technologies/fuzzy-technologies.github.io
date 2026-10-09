@@ -82,8 +82,18 @@ alternate_zh: /zh-cn/
     <h3>🧮 FuzzyRoutines</h3>
     <p>Mathematically reliable Python foundation for membership functions, fuzzy sets, fuzzy scales, and common fuzzy-logic operators.</p>
     <div class="project-links">
-      <a href="/FuzzyRoutines/">Project page →</a>
+      <a href="https://fuzzy-technologies.github.io/FuzzyRoutines/">Project site →</a>
       <a href="https://github.com/Fuzzy-Technologies/FuzzyRoutines">GitHub →</a>
+    </div>
+  </section>
+
+  <section class="project-card">
+    <span class="card-label">Cloud · Python · Automation</span>
+    <h3>☁️ F-Layer</h3>
+    <p>Cloud infrastructure automation from Python and the CLI: Yandex Cloud deployments, SSH gateways, and HTTP availability checks.</p>
+    <div class="project-links">
+      <a href="https://fuzzy-technologies.github.io/F-Layer/en/">Project site →</a>
+      <a href="https://github.com/Fuzzy-Technologies/F-Layer">GitHub →</a>
     </div>
   </section>
 </div>
