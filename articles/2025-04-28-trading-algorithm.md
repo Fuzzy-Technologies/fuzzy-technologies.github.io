@@ -29,11 +29,11 @@ Automating the analysis of exchange data makes trading decisions faster and more
 
 We have already discussed three key components on this blog that form the basis of a working trading algorithm:
 
-- [anomaly filtering](/articles/2025-04-16-hampel-anomalies-filtering/) using the modified Hampel method—to remove outliers that distort calculations;
+- [anomaly filtering](/articles/2025-04-16-hampel-anomalies-filtering/) using the modified Hampel method — to remove outliers that distort calculations;
 
-- [fuzzy measurement scales](/articles/2025-04-10-fuzzy-scales/)—to interpret risk and probability through understandable levels as well as numbers;
+- [fuzzy measurement scales](/articles/2025-04-10-fuzzy-scales/) — to interpret risk and probability through understandable levels as well as numbers;
 
-- [estimating target-price attainability](/articles/2025-04-22-target-probability/)—to work with estimated probabilities of success rather than categorical, often inaccurate forecasts, using the mathematical tools of probability estimation, statistics and data analysis.
+- [estimating target-price attainability](/articles/2025-04-22-target-probability/) — to work with estimated probabilities of success rather than categorical, often inaccurate forecasts, using the mathematical tools of probability estimation, statistics and data analysis.
 
 Combining these elements makes it possible to build a reasonably reliable automated signal system that:
 
@@ -77,7 +77,7 @@ An algorithmic trading robot performs the following tasks.
 
 ## How trading signals are generated
 
-Once the data have been cleaned of anomalies and target-attainment probabilities calculated, the algorithm proceeds to generate trading signals: it checks opportunities to close existing positions and open new ones. During each trading iteration, it evaluates numerous price-series characteristics for dozens of instruments in parallel according to the Open / Close Rules, using both conventional technical analysis—constructing Bollinger Bands and calculating the Parabolic SAR indicator—and probabilistic price characteristics: logarithmic returns, mean returns, volatility and the standardised deviation. The result is a desired target price and a strength value for a buy or sell signal.
+Once the data have been cleaned of anomalies and target-attainment probabilities calculated, the algorithm proceeds to generate trading signals: it checks opportunities to close existing positions and open new ones. During each trading iteration, it evaluates numerous price-series characteristics for dozens of instruments in parallel according to the Open / Close Rules, using both conventional technical analysis — constructing Bollinger Bands and calculating the Parabolic SAR indicator — and probabilistic price characteristics: logarithmic returns, mean returns, volatility and the standardised deviation. The result is a desired target price and a strength value for a buy or sell signal.
 
 Each signal is also analysed in several ways:
 
@@ -197,7 +197,7 @@ The universal fuzzy measurement scale itself can then look like this:
 
 ![A universal fuzzy measurement scale with the levels Min, Low, Med, High and Max. It is constructed using supports and several types of membership function: hyperbolic, bell-shaped and parabolic](/static/images/articles/2025-04-28-trading-algorithm/02_scale_fuzzy.png)
 
-*A universal fuzzy measurement scale with the levels Min—minimum, Low—low, Med—medium, High—high and Max—maximum. It is constructed using supports and several types of membership function: hyperbolic, bell-shaped and parabolic*
+*A universal fuzzy measurement scale with the levels Min — minimum, Low — low, Med — medium, High — high and Max — maximum. It is constructed using supports and several types of membership function: hyperbolic, bell-shaped and parabolic*
 
 ## Filtering signal strength
 
