@@ -2,8 +2,8 @@
 layout: article
 math: true
 lang: en
-title: 'Through trials to a trading algorithm: an engineering history'
-description: The full text is available in Russian; an English translation is planned.
+title: 'Through hardships to the stars: the story of a trading algorithm'
+description: 'From the first Python scripts and sketches on paper to a signal algorithm: how, since 2015, we studied trends, formalised risk and target attainability, created PriceGenerator and built a decision-making system. Complete with drafts, charts and mistakes.'
 keywords: FMA Research, mathematics, data analysis, fuzzy logic, research archive
 date: 2025-05-13
 author: Timur & Mansur Gilmullin
@@ -13,13 +13,214 @@ permalink: /articles/2025-05-13-trading-algorithm-history/
 alternate_en: /articles/2025-05-13-trading-algorithm-history/
 alternate_ru: /ru/articles/2025-05-13-trading-algorithm-history/
 preview_image: /static/images/articles/2025-05-13-trading-algorithm-history/promo-3.png
-preview_text: English translation is planned. Read the full article in Russian.
+preview_text: 'From the first Python scripts and sketches on paper to a signal algorithm: how, since 2015, we studied trends, formalised risk and target attainability, created PriceGenerator and built a decision-making system. Complete with drafts, charts and mistakes.'
 cover_image: /static/images/articles/2025-05-13-trading-algorithm-history/promo-3.png
 source_url: https://teletype.in/@tgilmullin/trading-algorithm-history
-translation_status: placeholder
 ---
-**English translation is planned.**
+> The story of FMA as of May 2025.
 
-The complete article is currently available in Russian.
+![Inspiration turned into an algorithm. From the first ideas and mathematical sketches to a complete trading system integrated into an automation platform](/static/images/articles/2025-05-13-trading-algorithm-history/promo-3.png)
 
-[Read the full Russian article](/ru/articles/2025-05-13-trading-algorithm-history/).
+*Inspiration turned into an algorithm. From the first ideas and mathematical sketches to a complete trading system integrated into an automation platform*
+
+## How it all began
+
+Automating exchange operations and developing signal algorithms was not a spur-of-the-moment idea, but the result of years of engineering and scientific work.
+
+It all began back in 2015, when we first tackled trading automation by creating our own Python API to connect to ZuluTrade. At the time, it was one of the few platforms where we could experiment with automation through a REST API and copy trading.
+
+This was our first deliberate engineering effort to develop copy-trading robots that would make decisions and execute trades automatically by analysing price series. It took almost two years, but the project gave us our first practical experience with real market data and brokerage systems.
+
+That was when a thought first occurred to us: what matters is not just whether the price will get there, but how it will get there. We seriously hoped that neural networks would help answer that question (spoiler: they did not). After months of experiments, conventional methods proved more stable, predictable and faster for our live-trading tasks. In defence of neural-network approaches, though, AI can considerably speed up market-news sentiment analysis and company fundamental analysis.
+
+![An idea that preceded the algorithm: what matters is not just whether the price will get there, but how it will get there. This surviving screenshot shows one of our first gold-price forecasting experiments, made on 6 June 2017 for the next 48 hours, using simple algorithms without neural networks. The slope, levels and shape of the movement were all quite similar. At the time, we thought this was enough to launch automated trading. But there was still a long road ahead, through dozens of mistakes, research efforts and changes of direction](/static/images/articles/2025-05-13-trading-algorithm-history/forecast_and_real_chart.png)
+
+*An idea that preceded the algorithm: what matters is not just whether the price will get there, but how it will get there. This surviving screenshot shows one of our first gold-price forecasting experiments, made on 6 June 2017 for the next 48 hours, using simple algorithms without neural networks. The slope, levels and shape of the movement were all quite similar. At the time, we thought this was enough to launch automated trading. But there was still a long road ahead, through dozens of mistakes, research efforts and changes of direction*
+
+Later, we developed PriceGenerator, a platform for generating synthetic market data for testing. It produces prices that are statistically similar to real ones, and even their charts look very much like actual stock charts. This lets us reproduce market behaviour when real historical data are unavailable or do not meet an algorithm's specific requirements. The platform became our next step: an essential tool for testing trading algorithms and analysing price dynamics.
+
+![A segment of a price series generated by PriceGenerator, with deep drawdowns, spikes and realistic volumes. A highly volatile, noisy series—exactly the kind of dirty data needed to properly stress-test algorithms before putting them into live trading](/static/images/articles/2025-05-13-trading-algorithm-history/long-series-example-with-realistic-volumes.png)
+
+*A segment of a price series generated by PriceGenerator, with deep drawdowns, spikes and realistic volumes. A highly volatile, noisy series—exactly the kind of dirty data needed to properly stress-test algorithms before putting them into live trading*
+
+By 2020, it had become clear that we needed our own platform tailored to working with Russian brokers. That was the start of TKSBrokerAPI, a lightweight, flexible Python API for automating trading workflows.
+
+## Experiments: from observations to formalised logic
+
+Our work on the mathematics behind the algorithms and the trading logic for exchange-trading robots followed several directions:
+
+- analysing price changes;
+
+- identifying characteristic trend patterns;
+
+- trying to formalise risk and target attainability.
+
+## Identifying basic trend patterns on real charts
+
+At first, everything was quite literally sketched on the move: price charts divided into intervals, simple trend patterns, and formulas for estimating risk from the price's position within a candle. Every formula was designed with eventual automation in mind from the outset. Any idea that occurred to us—on the road, while travelling or commuting—went straight onto a tablet.
+
+![One of the earliest drafts: formalising a forecasting problem over a time interval by identifying key points (O-H-L-C), analysing the trend and dividing it into subintervals. Sketches like these, made on the move, became the foundation of the future algorithm](/static/images/articles/2025-05-13-trading-algorithm-history/000-Main-forecast-problem.png)
+
+*One of the earliest drafts: formalising a forecasting problem over a time interval by identifying key points (O-H-L-C), analysing the trend and dividing it into subintervals. Sketches like these, made on the move, became the foundation of the future algorithm*
+
+In the early stages, we tried to identify which kinds of price movement occurred most often in real markets. The first sketches were a simple diagram of two main trend types, each with two possible patterns.
+
+1. An upward trend:
+    - a small price decline followed by sustained growth;
+    - a rapid price rise followed by a brief pullback.
+
+2. A downward trend:
+    - a small rise followed by a pronounced decline;
+    - a rapid fall followed by a modest recovery.
+
+Later, the observed trend type and pattern determined how the algorithm entered a position: with a pending order or immediately with a market order.
+
+Markets rarely move in a perfectly smooth line. There is almost always noise, outliers and small fluctuations, which also need to be accounted for in modelling.
+
+These observations became the basis of the decision logic and helped establish the basic structure of the future trading algorithm.
+
+![Early attempts to classify actual price movements within an overall upward trend. These simple but clear patterns helped lay the groundwork for the algorithm's forecasting and decision logic. Downward trends were described in the same way](/static/images/articles/2025-05-13-trading-algorithm-history/002-Up-trend-examples.png)
+
+*Early attempts to classify actual price movements within an overall upward trend. These simple but clear patterns helped lay the groundwork for the algorithm's forecasting and decision logic. Downward trends were described in the same way*
+
+## Assessing risks and target attainability
+
+The next important step was realising that classifying price movements was not enough. We needed to learn how to assess signal strength, the risk of opening a position and the probability of reaching a target.
+
+The first drafts introduced formulas for fuzzy risk assessment: by examining the current price relative to candle reference levels—the low, high, open and close—across different intervals, we could make an approximate estimate of the probability of a move in the desired direction.
+
+At the same time, we were building fuzzy models of target attainability: if the forecast point was far from the current price, the probability of reaching it decreased. If it was close, the probability increased.
+
+![Early draft diagrams for calculating risk and target attainability. They used simple formulas that normalised the price relative to candle reference levels and classified the result on the fuzzy scale {Min, Low, Med, High, Max}. These approaches formed the basis of a more formal signal-assessment system](/static/images/articles/2025-05-13-trading-algorithm-history/Risk-Reachability.png)
+
+*Early draft diagrams for calculating risk and target attainability. They used simple formulas that normalised the price relative to candle reference levels and classified the result on the fuzzy scale {Min, Low, Med, High, Max}. These approaches formed the basis of a more formal signal-assessment system*
+
+We also experimented with reconstructing a price chart from a fuzzy forecast: given a signal's strength and direction, we could mechanically reconstruct the body and wicks of the next forecast candle. Building a series of these candles let us visually assess target attainability and see how the forecast would look under different movement scenarios. Simple formulas based on the centre of a future candle and fuzzy estimates of its body and wick sizes became the basis for generating realistic forecasts.
+
+![A simple mechanism for reconstructing a candle's body and wicks from the direction and magnitude of a fuzzy signal. In the early stages, it was used to visualise forecasts: first calculate the candle's centre, then add the body and wicks, with sizes determined by their fuzzy estimates. This made it possible to construct realistic sequences of forecast candles, as in the 2017 screenshot above, and visually assess target attainability before the formal signal algorithm existed](/static/images/articles/2025-05-13-trading-algorithm-history/Recovery-candle-for-up-and-down-trends-forecast.png)
+
+*A simple mechanism for reconstructing a candle's body and wicks from the direction and magnitude of a fuzzy signal. In the early stages, it was used to visualise forecasts: first calculate the candle's centre, then add the body and wicks, with sizes determined by their fuzzy estimates. This made it possible to construct realistic sequences of forecast candles, as in the 2017 screenshot above, and visually assess target attainability before the formal signal algorithm existed*
+
+## Building a risk matrix
+
+To simplify the algorithm and move from individual numerical estimates to a systematic decision model, we began building a risk matrix based on fuzzy assessments. This let us move from a trader's gut feeling to formalised decisions while keeping the model intuitive.
+
+The idea was to combine:
+
+- the probability of reaching a target;
+
+- an assessment of the position's current risk;
+
+- and a subjective assessment of how desirable it was to open, close or hold a trade under the current conditions.
+
+At this stage, the first drafts of a fuzzy decision matrix appeared. Its columns represented fuzzy risk levels and its rows represented fuzzy levels of target-attainment probability, while each intersection gave a yes-or-no answer (True or False) to the relevant question: should we open or average a position, or should we close or hold it?
+
+![A fuzzy decision matrix: columns represent fuzzy risk levels and rows represent fuzzy levels of target-attainment probability. Colours indicate the action region and fuzzy-level values, while the cells specify whether to open or average a position, or close or hold it (T—True, F—False). This approach formalised the strategy while keeping it understandable to a person](/static/images/articles/2025-05-13-trading-algorithm-history/005-Open-Close-Rules-Matrix.png)
+
+*A fuzzy decision matrix: columns represent fuzzy risk levels and rows represent fuzzy levels of target-attainment probability. Colours indicate the action region and fuzzy-level values, while the cells specify whether to open or average a position, or close or hold it (T—True, F—False). This approach formalised the strategy while keeping it understandable to a person*
+
+The matrix already allowed decisions to be made automatically without relying solely on intuition, while remaining understandable to a person.
+
+## Developing the TKSBrokerAPI platform
+
+Alongside the trading algorithm, we began developing TKSBrokerAPI, a general-purpose platform for interacting with a broker and writing trading and analytical workflows in Python.
+
+The aim was to create a lightweight, extensible API that would:
+
+- connect to a brokerage account through a REST API;
+
+- collect and process market data;
+
+- run trading workflows implemented as Python modules.
+
+The platform was initially conceived as a technical layer to simplify data collection and analytics, but it quickly became a complete foundation for trading automation.
+
+The platform made it possible to:
+
+- retrieve current prices, volumes and instrument specifications;
+
+- manage positions and orders;
+
+- compile portfolio analytics;
+
+- generate Markdown/HTML reports;
+
+- and integrate workflow execution into a CI/CD pipeline.
+
+![The architecture and main capabilities of TKSBrokerAPI: automating trading workflows, collecting and processing market data, generating analytical reports and supporting Python trading-workflow templates. Everything needed to turn trading ideas into working algorithms](/static/images/articles/2025-05-13-trading-algorithm-history/TKSBrokerAPI-flow-with-data-extend.png)
+
+*The architecture and main capabilities of TKSBrokerAPI: automating trading workflows, collecting and processing market data, generating analytical reports and supporting Python trading-workflow templates. Everything needed to turn trading ideas into working algorithms*
+
+## Formulating the forecasting problem
+
+Once the broad outlines and principles were clear, it was time to formulate the problem. In one of the early drafts, we first set out its multiple components as follows:
+
+- implement price forecasting for six timeframes: 5 minutes, 15 minutes, 1 hour, 1 day, 1 week and 1 month;
+
+- optimise the number of instruments to maximise returns;
+
+- investigate and identify the best combinations of nested timeframe intervals;
+
+- select the most reliable pairs of timeframes for forecasting.
+
+![One of our early attempts to formally define the forecasting problem for the trading robot. Here we first described forecasting across multiple timeframes, evaluating how intervals nest within one another, and optimising the number of instruments to maximise returns](/static/images/articles/2025-05-13-trading-algorithm-history/011-research.png)
+
+*One of our early attempts to formally define the forecasting problem for the trading robot. Here we first described forecasting across multiple timeframes, evaluating how intervals nest within one another, and optimising the number of instruments to maximise returns*
+
+It was at this point that we realised reliable algorithm operation required probabilistic models across different timeframes and forecast horizons.
+
+## The final diagram: how the algorithm took shape
+
+All our work culminated in the final diagram, which we laboured over for several months, scribbling through and erasing version after version on the whiteboard.
+
+It brought together:
+
+- price-series analysis: removing anomalies with the Hampel method and calculating basic statistics;
+
+- defining a volatility channel using Bollinger Bands;
+
+- generating forecasts: calculating volatility and assessing signal strength on a fuzzy scale;
+
+- assessing target attainability through statistics and probability theory;
+
+- several trade-entry checks: examining order-book prices and checking volumes for anomalies;
+
+- some basic Money Management Rules.
+
+![The final algorithm diagram, the result of months of work: it captures the key ideas, formulas and logic that became the foundation of the signal and trading module. This whiteboard was where it all truly began, and where the algorithm finally came together as a single system](/static/images/articles/2025-05-13-trading-algorithm-history/Anomaly-Scenario3-draft.jpg)
+
+*The final algorithm diagram, the result of months of work: it captures the key ideas, formulas and logic that became the foundation of the signal and trading module. This whiteboard was where it all truly began, and where the algorithm finally came together as a single system*
+
+The forecasting method and target-attainability assessment were key steps towards creating the signal algorithm. The theoretical framework we developed then provided the basis for implementing and testing the algorithm in live trading. The decision algorithm itself was subsequently documented as a set of trade-opening and closing rules in the Open / Close Rules tables.
+
+![Formalised decision rules: this is how the algorithm turns market data into specific trading actions. The Open / Close Rules decision tables](/static/images/articles/2025-05-13-trading-algorithm-history/OpenCloseRules.png)
+
+*Formalised decision rules: this is how the algorithm turns market data into specific trading actions. The Open / Close Rules decision tables*
+
+… And to think it all started back in 2015 with a single gold-price chart and a desire to analyse it automatically and forecast its future movement, strength and target levels. Looking at the final implementation, it is hard to believe how much went into it: research, experiments, modelling, programming and automation …
+
+To close this story, we would like to say that developing a trading algorithm—or any new algorithm, really—is not a matter of overnight inspiration. It is the result of sustained engineering work and analysis of real data, mathematical modelling of trends and risks, architectural design and the development of reliable automated systems. PriceGenerator, TKSBrokerAPI, and the signal and trading algorithms we implemented were the natural continuation of all those stages. And, as is often the case in engineering projects, each new solution emerged through many sketches, tests, mistakes and changes of direction rather than arriving fully formed.
+
+![Developing a signal and trading algorithm, from idea to implementation: Timur & Mansur Gilmullin—son and father, engineer and scientist](/static/images/articles/2025-05-13-trading-algorithm-history/authors.png)
+
+*Developing a signal and trading algorithm, from idea to implementation: Timur & Mansur Gilmullin—son and father, engineer and scientist*
+
+## Useful links
+
+- 🌐 The full signal FAQ and an explanation of FMA methods: [Fuzzy Market Analytics](https://fuzzy-technologies.github.io/FMA/)
+
+- ⚙️ The TKSBrokerAPI platform: [TKSBrokerAPI](https://fuzzy-technologies.github.io/TKSBrokerAPI/)
+
+## Further reading on trading algorithm development
+
+- [What are fuzzy measurement scales?](/articles/2025-04-10-fuzzy-scales/)
+
+- [How to find anomalies in numerical sequences](/articles/2025-04-16-hampel-anomalies-filtering/)
+
+- [How to estimate the probability of reaching a target](/articles/2025-04-22-target-probability/)
+
+- [How a trading robot's signal algorithm works](/articles/2025-04-28-trading-algorithm/)
+
+- [PriceGenerator—a platform for generating prices that resemble real market charts](https://teletype.in/@tgilmullin/PriceGenerator)
+
+- [TKSBrokerAPI—a platform for automating trading workflows](https://teletype.in/@tgilmullin/TKSBrokerAPI)
