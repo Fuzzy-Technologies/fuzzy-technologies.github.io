@@ -32,7 +32,7 @@ However, this was exactly where the fundamental problem emerged. Even getting th
 
 > **A beautiful forecast and a working trading system are not the same thing.**
 
-[For the background to these experiments, see “Through Thorns to the Stars: How We Developed a Trading Algorithm”](https://teletype.in/@tgilmullin/trading-algorithm-history)
+[For the background to these experiments, see “Through Thorns to the Stars: How We Developed a Trading Algorithm”](/articles/2025-05-13-trading-algorithm-history/)
 
 ![Historical example: a forecast scenario is compared with actual market movement, allowing evaluation of not only direction but also model quality](/static/images/articles/2026-09-27-a-trading-robot-is-not-a-magic-button/02_FMA_history_example.png)
 
@@ -76,7 +76,7 @@ Here, $X_{t+H}$ is the price at the end of the forecast horizon, and $\mathcal{F
 
 Both formulations are useful in a trading system, but they answer different questions. For the same target, horizon, and price process, the probability of touching or crossing the level within the horizon is at least as high as the probability of ending at or beyond it. In real market data, the difference between these values can be significant. We therefore distinguish the end-of-horizon probability estimate from the practical assessment of target reachability, rather than treating them as interchangeable.
 
-[More about the basic probabilistic formulation: “Will the Price Reach the Target: Probability Estimation Instead of Guessing”](https://teletype.in/@tgilmullin/target-probability)
+[More about the basic probabilistic formulation: “Will the Price Reach the Target: Probability Estimation Instead of Guessing”](/articles/2025-04-22-target-probability/)
 
 ![Terminal probability and touch probability refer to different events: the price may touch or cross a target during the forecast horizon but finish back on the other side of that level](/static/images/articles/2026-09-27-a-trading-robot-is-not-a-magic-button/04_FMA_probability_reachability.png)
 
@@ -86,8 +86,8 @@ Our early Fuzzy Market Analytics (FMA) research included probability estimates b
 
 As FMA evolved, the analytical context expanded. Today, probability estimation is supplemented by analysis of multiple time horizons, market state, and consistency between different features. At the same time, an individual diagnostic indicator should not by itself become a command to open a trade: it only strengthens or weakens the overall picture.
 
-- [On handling anomalous observations: “Detecting Anomalies in Numerical Data Without Complex Models: The Hampel Method”](https://teletype.in/@tgilmullin/hampel-anomalies-filtering)
-- [A detailed study of the modified Hampel method](https://teletype.in/@tgilmullin/anomaly)
+- [On handling anomalous observations: “Detecting Anomalies in Numerical Data Without Complex Models: The Hampel Method”](/articles/2025-04-16-hampel-anomalies-filtering/)
+- [A detailed study of the modified Hampel method](/articles/2024-12-01-modified-hampel-filter/)
 
 ## Why a Number Is Not a Promise
 
@@ -115,7 +115,7 @@ A single value can have nonzero membership in more than one neighboring fuzzy se
 
 This is not simply a replacement of a numerical value with a verbal label. In fuzzy logic terms, Min, Low, Med, High, and Max are values of a linguistic variable connected to a numerical domain through membership functions. This representation formalizes qualitative assessments and gradual transitions between categories without imposing artificial precision on boundaries that are not sharply defined.
 
-[More details: “When ‘Yes’ and ‘No’ Are Not Enough: How Fuzzy Scales Work”](https://teletype.in/@tgilmullin/fuzzy-scales)
+[More details: “When ‘Yes’ and ‘No’ Are Not Enough: How Fuzzy Scales Work”](/articles/2025-04-10-fuzzy-scales/)
 
 ![Hard thresholds and fuzzy scales are two different ways of interpreting market states. Fuzzy assessments allow transition and borderline conditions to be represented more naturally](/static/images/articles/2026-09-27-a-trading-robot-is-not-a-magic-button/05_FMA_fuzzy_levels.png)
 
@@ -137,7 +137,7 @@ In earlier versions of our system, probability and risk were combined using fuzz
 
 As FMA evolved, it incorporated more analytical factors and safeguards, but the core principle remained unchanged: a trading signal must be considered together with the probability of the underlying scenario, the market state, and the associated risk.
 
-[An earlier version of the architecture: “An Engineering Perspective on Trading: How a Signal-Generation Algorithm Works”](https://teletype.in/@tgilmullin/trading-algorithm)
+[An earlier version of the architecture: “An Engineering Perspective on Trading: How a Signal-Generation Algorithm Works”](/articles/2025-04-28-trading-algorithm/)
 
 > *Important: this publication describes an earlier generation of the system; the modern FMA architecture has been significantly expanded*
 
@@ -215,8 +215,8 @@ This publication opens a series of articles about mathematical methods for marke
 
 ### Related articles
 
-- [probabilistic assessment of price targets](https://teletype.in/@tgilmullin/target-probability)
-- [fuzzy scales](https://teletype.in/@tgilmullin/fuzzy-scales)
-- [Hampel method](https://teletype.in/@tgilmullin/hampel-anomalies-filtering)
-- [algorithm development history](https://teletype.in/@tgilmullin/trading-algorithm-history)
+- [probabilistic assessment of price targets](/articles/2025-04-22-target-probability/)
+- [fuzzy scales](/articles/2025-04-10-fuzzy-scales/)
+- [Hampel method](/articles/2025-04-16-hampel-anomalies-filtering/)
+- [algorithm development history](/articles/2025-05-13-trading-algorithm-history/)
 - [Fuzzy Market Analytics — news, research, and project development](https://t.me/FuzzyMarketAnalytics)

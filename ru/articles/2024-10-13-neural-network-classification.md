@@ -294,7 +294,3 @@ $b=(-3,2)$ — вектор, относящийся ко второму клас
 ![Двухслойная сеть для выделения треугольной области](/static/images/articles/2024-10-13-neural-network-classification/68-classification.png)
 
 *Двухслойная сеть для выделения треугольной области*
-
-## Источник
-
-[Исходная публикация в Teletype](https://teletype.in/@tgilmullin/Neural-Network-Classification-Solutions).

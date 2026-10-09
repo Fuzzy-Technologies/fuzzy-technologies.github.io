@@ -213,18 +213,14 @@ source_url: https://teletype.in/@tgilmullin/trading-algorithm-history
 
 ## Что ещё почитать по теме разработки трейдинговых алгоритмов
 
-- [«Что такое нечёткие измерительные шкалы»](https://teletype.in/@tgilmullin/fuzzy-scales)
+- [«Что такое нечёткие измерительные шкалы»](/ru/articles/2025-04-10-fuzzy-scales/)
 
-- [«Как находить аномалии в числовых рядах»](https://teletype.in/@tgilmullin/hampel-anomalies-filtering)
+- [«Как находить аномалии в числовых рядах»](/ru/articles/2025-04-16-hampel-anomalies-filtering/)
 
-- [«Как оценить вероятность достижения цели»](https://teletype.in/@tgilmullin/target-probability)
+- [«Как оценить вероятность достижения цели»](/ru/articles/2025-04-22-target-probability/)
 
-- [«Как работает сигнальный алгоритм торгового робота»](https://teletype.in/@tgilmullin/trading-algorithm)
+- [«Как работает сигнальный алгоритм торгового робота»](/ru/articles/2025-04-28-trading-algorithm/)
 
 - [«PriceGenerator — платформа для генерации цен, похожих на настоящие биржевые графики»](https://teletype.in/@tgilmullin/PriceGenerator)
 
 - [«TKSBrokerAPI — платформа для автоматизации торговых сценариев»](https://teletype.in/@tgilmullin/TKSBrokerAPI)
-
-## Источник
-
-[Исходная публикация в Teletype](https://teletype.in/@tgilmullin/trading-algorithm-history).
