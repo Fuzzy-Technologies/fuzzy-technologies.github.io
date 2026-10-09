@@ -110,18 +110,18 @@ layout: default
 
 {% if next_article or previous_article %}
   <nav class="article-navigation" aria-label="{{ navigation_label }}">
-    {% if next_article %}
-      <a class="article-navigation__link article-navigation__link--next" href="{{ next_article.url }}" rel="next">
-        <span class="article-navigation__label"><span aria-hidden="true">←</span> {{ next_label }}</span>
-        <span class="article-navigation__title">{{ next_article.title | escape }}</span>
-        <time datetime="{{ next_article.date | date: '%Y-%m-%d' }}">{{ next_article.date | date: "%Y-%m-%d" }}</time>
-      </a>
-    {% endif %}
     {% if previous_article %}
       <a class="article-navigation__link article-navigation__link--previous" href="{{ previous_article.url }}" rel="prev">
-        <span class="article-navigation__label">{{ previous_label }} <span aria-hidden="true">→</span></span>
+        <span class="article-navigation__label"><span aria-hidden="true">←</span> {{ previous_label }}</span>
         <span class="article-navigation__title">{{ previous_article.title | escape }}</span>
         <time datetime="{{ previous_article.date | date: '%Y-%m-%d' }}">{{ previous_article.date | date: "%Y-%m-%d" }}</time>
+      </a>
+    {% endif %}
+    {% if next_article %}
+      <a class="article-navigation__link article-navigation__link--next" href="{{ next_article.url }}" rel="next">
+        <span class="article-navigation__label">{{ next_label }} <span aria-hidden="true">→</span></span>
+        <span class="article-navigation__title">{{ next_article.title | escape }}</span>
+        <time datetime="{{ next_article.date | date: '%Y-%m-%d' }}">{{ next_article.date | date: "%Y-%m-%d" }}</time>
       </a>
     {% endif %}
   </nav>

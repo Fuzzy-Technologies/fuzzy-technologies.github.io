@@ -710,7 +710,7 @@ body::before {
   overflow-wrap: anywhere;
 }
 
-.article-navigation__link--previous {
+.article-navigation__link--next {
   grid-column: 2;
   text-align: right;
 }
@@ -726,7 +726,7 @@ body::before {
 
 @media (max-width: 540px) {
   .article-navigation { grid-template-columns: minmax(0, 1fr); }
-  .article-navigation__link--previous { grid-column: 1; }
+  .article-navigation__link--next { grid-column: 1; }
 }
 
 .site-footer {
