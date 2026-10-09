@@ -25,13 +25,13 @@ source_url: https://teletype.in/@tgilmullin/trading-algorithm-history
 
 ## How it all began
 
-Automating exchange operations and developing signal algorithms was not a spur-of-the-moment idea, but the result of years of engineering and scientific work.
+Automating trading and developing signal algorithms was not a spur-of-the-moment idea, but the result of years of engineering and scientific work.
 
 It all began back in 2015, when we first tackled trading automation by creating our own Python API to connect to ZuluTrade. At the time, it was one of the few platforms where we could experiment with automation through a REST API and copy trading.
 
 This was our first deliberate engineering effort to develop copy-trading robots that would make decisions and execute trades automatically by analysing price series. It took almost two years, but the project gave us our first practical experience with real market data and brokerage systems.
 
-That was when a thought first occurred to us: what matters is not just whether the price will get there, but how it will get there. We seriously hoped that neural networks would help answer that question (spoiler: they did not). After months of experiments, conventional methods proved more stable, predictable and faster for our live-trading tasks. In defence of neural-network approaches, though, AI can considerably speed up market-news sentiment analysis and company fundamental analysis.
+That was when a thought first occurred to us: what matters is not just whether the price will get there, but how it will get there. We seriously hoped that neural networks would help answer that question (spoiler: they did not). After months of experiments, conventional methods proved more stable, predictable and faster for our live-trading tasks. In defence of neural-network approaches, though, AI can considerably speed up sentiment analysis of market news and fundamental analysis of companies.
 
 ![An idea that preceded the algorithm: what matters is not just whether the price will get there, but how it will get there. This surviving screenshot shows one of our first gold-price forecasting experiments, made on 6 June 2017 for the next 48 hours, using simple algorithms without neural networks. The slope, levels and shape of the movement were all quite similar. At the time, we thought this was enough to launch automated trading. But there was still a long road ahead, through dozens of mistakes, research efforts and changes of direction](/static/images/articles/2025-05-13-trading-algorithm-history/forecast_and_real_chart.png)
 
@@ -75,7 +75,7 @@ In the early stages, we tried to identify which kinds of price movement occurred
 
 Later, the observed trend type and pattern determined how the algorithm entered a position: with a pending order or immediately with a market order.
 
-Markets rarely move in a perfectly smooth line. There is almost always noise, outliers and small fluctuations, which also need to be accounted for in modelling.
+Markets rarely move in a perfectly smooth line. There is almost always noise, along with outliers and small fluctuations, all of which need to be accounted for in modelling.
 
 These observations became the basis of the decision logic and helped establish the basic structure of the future trading algorithm.
 
