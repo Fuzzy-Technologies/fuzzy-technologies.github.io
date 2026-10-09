@@ -19,7 +19,7 @@ def BuildVariants(checkOnly=False):
     originalBytes = 0
     readingBytes = 0
     for source in sorted((ROOT / "static/images").rglob("*")):
-        if source.suffix.lower() not in (".png", ".jpg", ".jpeg"):
+        if source.suffix.lower() not in (".png", ".jpg", ".jpeg", ".webp"):
             continue
         if source.stat().st_size < 200_000:
             continue

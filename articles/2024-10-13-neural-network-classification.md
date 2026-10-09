@@ -12,7 +12,7 @@ series_url: /FMA/
 permalink: /articles/2024-10-13-neural-network-classification/
 alternate_en: /articles/2024-10-13-neural-network-classification/
 alternate_ru: /ru/articles/2024-10-13-neural-network-classification/
-preview_image: /static/images/articles/2024-10-13-neural-network-classification/02-perceptron.svg
+preview_image: /static/images/articles/2024-10-13-neural-network-classification/01-classification.webp
 preview_text: English translation is planned. Read the full article in Russian.
 cover_image: /static/images/articles/2024-10-13-neural-network-classification/02-perceptron.png
 source_url: https://teletype.in/@tgilmullin/Neural-Network-Classification-Solutions
