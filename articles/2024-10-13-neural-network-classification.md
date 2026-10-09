@@ -104,13 +104,13 @@ The **algorithm for training a perceptron on individual examples** consists of t
 
 **3.** If $y=d$, leave $w\_i,\\quad i=0,\\ldots,n$ unchanged.
 
-**4.** If $y=0,\\quad d=1$, update the weights for the next training cycle as follows:
+**4.** If $y=0,\\quad d=1$, update the weights for the next training step as follows:
 
 ```math
 w_i(t+1)=w_i(t)+\alpha x_i,\quad\alpha\in(0,1)
 ```
 
-Here, *α* is the ***learning rate*** and *t* is the index of the current training cycle (***training epoch***).
+Here, *α* is the ***learning rate*** and *t* indexes the current training step; a ***training epoch*** is one complete pass through the training set.
 
 **5.** If $y=1,\\quad d=0$, update the weights using:
 
