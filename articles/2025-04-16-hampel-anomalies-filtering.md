@@ -61,7 +61,7 @@ The basic algorithm is:
 
 More formally, under the Hampel criterion, an outlier is a value x in a sample X whose absolute deviation from the sample median exceeds the sample MAD multiplied by a distribution-dependent scale factor k, approximately 1.4826 for a normal distribution.
 
-In practice, Hampel filters extend this definition using sliding windows and a threshold parameter s, or sigma, expressed as a number of standard deviations. The median and MAD are calculated for every sliding window of sample values. Each value's absolute deviation from the median is then compared with the MAD multiplied by k and s. A higher threshold s makes the filter less aggressive; a lower threshold identifies more values as outliers.
+In practice, Hampel filters extend this definition using sliding windows and a threshold multiplier s, or sigma, expressed in units of the robust standard-deviation estimate k × MAD. The median and MAD are calculated for every sliding window of sample values. Each value's absolute deviation from the median is then compared with the MAD multiplied by k and s. A higher threshold s makes the filter less aggressive; a lower threshold identifies more values as outliers.
 
 ## Checking whether an element is anomalous
 
@@ -99,9 +99,9 @@ The Hampel method has been adapted for practical applications:
 
 - sliding windows of a fixed size w provide a local assessment;
 
-- a configurable threshold s specifies how many deviations are acceptable;
+- a configurable threshold multiplier s sets the cutoff in units of k × MAD;
 
-- a scale factor k normalises the MAD;
+- a scale factor k calibrates the MAD as a robust estimate of standard deviation;
 
 - the method also handles anomalies at the first and last positions of a sequence.
 
@@ -113,7 +113,7 @@ HampelFilter() identifies anomalies according to the definition above. Its confi
 
 - window (w in the equations): the sliding-window size, 5 by default;
 
-- sigma (s): the threshold in standard deviations, 3 by default;
+- sigma (s): the multiplier applied to the robust standard-deviation estimate, 3 by default;
 
 - scaleFactor (k): the distribution-dependent scale factor, 1.4826 by default.
 
@@ -189,7 +189,7 @@ The filter helps clean machine-learning training sets by automatically removing 
 
 The Hampel method is used to filter anomalies in streams of market data: prices, trade volumes and OHLCV candle parameters. This allows accidental outliers—such as occasional price spikes caused by broker errors or spurious volume surges—to be removed automatically before the signals reach the trading algorithm. Filtering helps a trading robot avoid false entries and reduces erroneous trades.
 
-The method is used in real time for fast quote-stream preprocessing, preparing data for target-reaching probability estimates, and removing anomalies before generating trading signals.
+The method is used in real time for fast quote-stream preprocessing, preparing data for estimates of target-attainment probability, and removing anomalies before generating trading signals.
 
 In our trading-automation and signal-generation project, it serves as a basic filter:
 
