@@ -63,9 +63,9 @@ The following sections use market data to demonstrate how to find anomalies in n
 
 Outlier assessment for univariate data has been studied extensively in the statistical literature. The [sample mean](https://en.wikipedia.org/wiki/Sample_mean_and_covariance) and [sample variance](https://en.wikipedia.org/wiki/Variance) are traditionally among the most useful statistics for characterising data. They provide useful estimates of location and dispersion, provided the sample is not contaminated by outliers. Even a single observation that differs substantially from the others can cause the sample mean to deviate considerably from the mean calculated without that outlier.
 
-To measure an estimator's robustness to outliers, Hampel introduced the concept of the [breakdown point](https://en.wikipedia.org/wiki/Robust_statistics#Breakdown_point). This is the largest proportion of contaminated observations—incorrect values or outliers—that an estimator can tolerate before its result becomes unreliable. Such contamination may include arbitrarily large aberrant values [[6](#reference-6)].
+To measure an estimator's robustness to outliers, Hampel introduced the concept of the [breakdown point](https://en.wikipedia.org/wiki/Robust_statistics#Breakdown_point). For a location estimator, the finite-sample replacement breakdown point is the smallest fraction of observations that can be replaced by arbitrary values to make the estimate unbounded. Such contamination may include arbitrarily large aberrant values [[6](#reference-6)].
 
-Intuitively, the breakdown point cannot exceed 50%: if more than half the observations are contaminated, we cannot distinguish the underlying distribution from the contaminating one. The maximum outlier fraction at the breakdown point is therefore 0.5. Some statistics attain this maximum. For example, the [median](https://en.wikipedia.org/wiki/Median) has a breakdown point of 0.5, whereas the sample mean has a breakdown point of 1/n, where n is the sample size.
+Intuitively, 50% is the limiting robustness barrier for location estimation: if more than half the observations are contaminated, we cannot distinguish the underlying distribution from the contaminating one. The maximum asymptotic breakdown point is therefore 0.5. Some statistics attain this maximum. For example, the [median](https://en.wikipedia.org/wiki/Median) has a finite-sample breakdown point approaching 0.5, whereas the sample mean has a breakdown point of 1/n, where n is the sample size.
 
 In general, a higher breakdown point means greater resistance to contamination. A statistic with a high breakdown point is described as robust.
 
@@ -81,7 +81,7 @@ Here, X is a sample of n observations x₁, …, xₙ.
 
 Under the Hampel criterion, an [outlier](https://en.wikipedia.org/wiki/Outlier) is a value x in a sample X whose absolute deviation from the sample median exceeds the MAD in equation (1), multiplied by a distribution-dependent [scale factor k](https://en.wikipedia.org/wiki/Scale_parameter#Estimation), approximately 1.4826 for a normal distribution [[7](#reference-7)].
 
-In practical Hampel filters, this definition is extended using [sliding windows](https://www.geeksforgeeks.org/dsa/window-sliding-technique/) and a [threshold parameter s](https://en.wikipedia.org/wiki/Standard_deviation), expressed as a number of standard deviations. The median and MAD are calculated for each sliding window of sample values. Each value's absolute deviation from the median is then compared with the MAD multiplied by both k and s [[8](#reference-8)].
+In practical Hampel filters, this definition is extended using [sliding windows](https://www.geeksforgeeks.org/dsa/window-sliding-technique/) and a [threshold multiplier s](https://en.wikipedia.org/wiki/Standard_deviation), expressed in units of the robust standard-deviation estimate k × MAD. The median and MAD are calculated for each sliding window of sample values. Each value's absolute deviation from the median is then compared with the MAD multiplied by both k and s [[8](#reference-8)].
 
 A higher threshold s makes the filter less aggressive, while a lower threshold identifies more values as outliers.
 
@@ -113,7 +113,7 @@ Its configurable parameters are:
 
 - window (w in the equations): the sliding-window size, 5 by default;
 
-- sigma (s): the threshold in standard deviations, 3 by default;
+- sigma (s): the multiplier applied to the robust standard-deviation estimate, 3 by default;
 
 - scaleFactor (k): the distribution-dependent scale factor, 1.4826 by default.
 
@@ -265,7 +265,7 @@ Running the code above produces:
 
 To interpret the results, let us apply Hampel filtering to a practical problem: detecting anomalies in a sequence of market prices. To obtain a sequence containing outliers, we will use our synthetic market-data library, [PriceGenerator](https://github.com/Fuzzy-Technologies/PriceGenerator/blob/master/README_RU.md).
 
-Traders and market analysts commonly represent prices as a time series of OHLCV candlesticks: open, high, low, close and volume, also known as Japanese candlesticks. Each row contains the data for one candle: its opening date, opening price, highest price, lowest price, closing price for the interval, and trading volume between the open and close.
+Traders and market analysts commonly represent prices as a time series of OHLCV candlesticks: open, high, low, close and volume, also known as Japanese candlesticks. Each row contains the data for one candle: its opening timestamp, opening price, highest price, lowest price, closing price for the interval, and trading volume over that interval.
 
 PriceGenerator can be used as a Python module or run from the command line to generate random price data that resemble real prices while having predefined statistical properties. Its settings include the overall price trend, candle timeframe, minimum and maximum prices, maximum candle size, the probability of the next candle's direction, the probability of price outliers, the number of candles to generate and many other parameters.
 
@@ -275,7 +275,7 @@ The notebook generates a price series with the following properties:
 
 - integer prices only, for simplicity;
 
-- candle interval and generation horizon: 1 day, 75 candles;
+- candle interval: 1 day; generation horizon: 75 candles;
 
 - minimum and maximum closing prices: 40 and 140;
 
@@ -361,7 +361,7 @@ The modified Hampel filter therefore provides an effective solution to anomaly d
 
 9. <span id="reference-9"></span> Hampel F.R. A General Qualitative Definition of Robustness. Ann. Math. Stat. 1971;42:1887–1896.
 
-10. <span id="reference-10"></span> Hampel F.R., Rousseeuw P.J., Ronchtti E.M., Stahel W.A. Robust Statistic: The Approach Based on Influence Functons. New York, Wiley & Sons; 1986. 536 p.
+10. <span id="reference-10"></span> Hampel F.R., Ronchetti E.M., Rousseeuw P.J., Stahel W.A. Robust Statistics: The Approach Based on Influence Functions. New York, Wiley & Sons; 1986. 536 p.
 
 ## Links
 
