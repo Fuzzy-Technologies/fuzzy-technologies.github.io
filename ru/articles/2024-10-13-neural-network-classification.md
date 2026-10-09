@@ -13,7 +13,7 @@ series_url: /FMA/
 permalink: /ru/articles/2024-10-13-neural-network-classification/
 alternate_en: /articles/2024-10-13-neural-network-classification/
 alternate_ru: /ru/articles/2024-10-13-neural-network-classification/
-preview_image: /static/images/articles/2024-10-13-neural-network-classification/02-perceptron.svg
+preview_image: /static/images/articles/2024-10-13-neural-network-classification/01-classification.webp
 preview_text: Одна из моих первых статей о нейросетях — по учебным материалам 2008 года. Разбираем устройство персептрона, обучение с учителем, линейное разделение классов и функции AND, OR и XOR. Та самая базовая математика, с которой удобно начинать знакомство с нейросетями.
 cover_image: /static/images/articles/2024-10-13-neural-network-classification/02-perceptron.png
 source_url: https://teletype.in/@tgilmullin/Neural-Network-Classification-Solutions
@@ -156,7 +156,9 @@ w=\frac{\sum_{i=1}^{k}x^i-\sum_{j=1}^{l}y^j}{k+l}\qquad\text{(3)}
 
 В *n*-мерном векторном пространстве (пространстве входных сигналов персептрона) вектор нормали $w'=(w\_1,\\ldots,w\_n)$ перпендикулярен разделяющей гиперплоскости (4).
 
-Длину проекции вектора *x* на вектор нормали *w'* вычислим как:
+Стрелки нормалей на рисунках показывают направление; их длина на схемах условна.
+
+Скалярную проекцию вектора *x* на направление нормали *w'* вычислим как:
 
 ```math
 x_{w'}=\frac{(w',x)}{\lVert w'\rVert}
@@ -206,7 +208,7 @@ $w'=(1,1)$ — нормаль к прямой.
 
 $a=(2,2),\\quad b=(-3,2)$. Требуется отнести их к одному из классов, в зависимости от положения точек относительно разделяющей прямой.
 
-Длины проекций векторов *a* и *b* на нормаль *w'* вычислим по формуле (5):
+Скалярные проекции векторов *a* и *b* на направление нормали *w'* вычислим по формуле (5):
 
 ```math
 a_{w'}=\frac{4}{\sqrt{2}},\quad b_{w'}=-\frac{1}{\sqrt{2}}

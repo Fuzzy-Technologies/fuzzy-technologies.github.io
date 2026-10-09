@@ -59,6 +59,11 @@
     "height": 1006,
     "srcset": "/static/media/eb744f21bc8728a4-480.webp 480w, /static/media/eb744f21bc8728a4-960.webp 960w, /static/media/eb744f21bc8728a4-1920.webp 1920w"
   },
+  "/static/images/articles/2024-10-13-neural-network-classification/01-classification.webp": {
+    "width": 1536,
+    "height": 1024,
+    "srcset": "/static/media/7aa0359a7f19082d-480.webp 480w, /static/media/7aa0359a7f19082d-960.webp 960w, /static/media/7aa0359a7f19082d-1536.webp 1536w"
+  },
   "/static/images/articles/2024-12-01-modified-hampel-filter/digest-robot-1200x630.png": {
     "width": 1536,
     "height": 1024,

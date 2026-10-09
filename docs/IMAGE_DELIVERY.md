@@ -1,6 +1,6 @@
 # Article image delivery
 
-Keep the original PNG/JPEG files and their existing Markdown paths. Article and article-index layouts wrap supported images in `picture` elements at build time. Browsers select lossless WebP variants using their viewport and pixel density; the original remains the fallback and opens in the image viewer.
+Keep the original PNG, JPEG or static WebP files and their existing Markdown paths. Article and article-index layouts wrap supported images in `picture` elements at build time. Browsers select lossless WebP variants using their viewport and pixel density; the original remains the fallback and opens in the image viewer.
 
 The variants use widths up to 480, 960 and 1920 pixels without upscaling. Smaller variants are resized for reading, so they are not pixel-identical to the source. WebP encoding itself is lossless, and original-size variants are checked pixel by pixel. Full-resolution source files are never overwritten by this process.
 
