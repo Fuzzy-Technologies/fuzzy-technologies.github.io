@@ -42,6 +42,8 @@ def Arrow(axis, start, end, color=TEXT, width=2.4, **kwargs):
 def Save(figure, name, png=False):
     OUTPUT.mkdir(parents=True, exist_ok=True)
     figure.savefig(OUTPUT / (name + ".svg"), facecolor=BG, metadata={"Date": None})
+    svgPath = OUTPUT / (name + ".svg")
+    svgPath.write_text("\n".join(line.rstrip() for line in svgPath.read_text().splitlines()) + "\n")
     if png:
         figure.savefig(OUTPUT / (name + ".png"), facecolor=BG, dpi=100)
     preview = ROOT.parent / "neural-review"
