@@ -98,6 +98,7 @@ Commit both article files to the same branch. In **Compare & pull request**, cho
 - The Russian body is complete and the English placeholder links to it.
 - Captions, formulas, sources and supplemental notes are preserved.
 - Links are attached to meaningful terms or titles in the body and reference lists; no raw URL strings remain in reader-facing prose.
+- Put a space on both sides of punctuation dashes in every language, including article prose, teasers, headings, captions and image alt text (`text — text`). Keep compound-word hyphens, numeric ranges and mathematical minus signs intact.
 - Article prose, teasers and translation notices contain no internal migration or editing notes (source folders, recovered dates, preserved text or merged drafts).
 - Only the intended article files and useful images are included.
 

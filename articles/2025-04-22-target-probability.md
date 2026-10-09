@@ -17,9 +17,9 @@ preview_text: Real markets contain noise, outliers and uncertainty. We explain h
 cover_image: /static/images/articles/2025-04-22-target-probability/Girls-and-probability.png
 source_url: https://teletype.in/@tgilmullin/target-probability
 ---
-![Probable improbability—or improbable probability!](/static/images/articles/2025-04-22-target-probability/Girls-and-probability.png)
+![Probable improbability — or improbable probability!](/static/images/articles/2025-04-22-target-probability/Girls-and-probability.png)
 
-*Probable improbability—or improbable probability!*
+*Probable improbability — or improbable probability!*
 
 In practical data analysis and trading, we often need to know how likely an asset's price is to reach a particular level. This is a key problem in algorithmic trading and risk management because it helps screen out unrealistic trade-entry signals. A simple prediction that the price will or will not reach its target is inadequate: markets are unstable and subject to random fluctuations, noise and anomalous price spikes.
 
@@ -51,7 +51,7 @@ One cleaning method is Hampel filtering, discussed in the [previous article](/ar
 
 ## The target-probability estimation problem
 
-The inputs are historical closing prices from standard OHLCV candles—open, high, low, close and volume—at five-minute and hourly intervals; in fact, any pair of timeframes can be selected. The target under analysis may come from an external forecast based on technical or fundamental analysis, or be specified as an expert's hypothesis without a formal derivation.
+The inputs are historical closing prices from standard OHLCV candles — open, high, low, close and volume — at five-minute and hourly intervals; in fact, any pair of timeframes can be selected. The target under analysis may come from an external forecast based on technical or fundamental analysis, or be specified as an expert's hypothesis without a formal derivation.
 
 ![Estimating the probability of reaching a target from the current price Cₜ over a forecast horizon H](/static/images/articles/2025-04-22-target-probability/Signals-Buy-Max-High-Med-with-probability-BW.png)
 
@@ -75,7 +75,7 @@ We use the following approach to estimate the probability associated with a spec
    - the standard deviation of returns, or volatility;
    - the standardised deviation (z-score).
 
-5. Calculate the upper-tail probability—one minus the standard normal cumulative distribution function at the calculated z-score—to estimate the probability of the price exceeding the target at the end of the horizon, under the assumed model of normally distributed log returns.
+5. Calculate the upper-tail probability — one minus the standard normal cumulative distribution function at the calculated z-score — to estimate the probability of the price exceeding the target at the end of the horizon, under the assumed model of normally distributed log returns.
 
 6. Aggregate the assessments for different timeframes, then produce an overall assessment as a number or a fuzzy level.
 
@@ -85,7 +85,7 @@ The detailed calculation is presented in the [research paper on estimating targe
 
 Sometimes a precise-looking probability estimate, such as 74.3%, creates a false sense of confidence: the number suggests precision where uncertainty remains. Fuzzy probability scales are useful in practice, particularly when data are unstable or incomplete.
 
-Fuzzy scales are qualitative, level-based scales in which each level is represented by a linguistic term—a named fuzzy set.
+Fuzzy scales are qualitative, level-based scales in which each level is represented by a linguistic term — a named fuzzy set.
 
 Instead of a precise number, we can specify a probability level:
 

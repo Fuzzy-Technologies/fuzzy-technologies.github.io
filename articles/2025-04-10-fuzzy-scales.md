@@ -21,7 +21,7 @@ source_url: https://teletype.in/@tgilmullin/fuzzy-scales
 
 *A moment of philosophy: judging the girls' beauty is a kind of fuzzy assessment, too*
 
-When automating processes—whether assessing security threats, analysing data or evaluating financial risk in trading—we constantly deal with incomplete, missing or imprecise information. We often have to make decisions when the data are contradictory or insufficiently precise. In such situations, a simple yes/no scale or a score from 0 to 1 becomes inadequate.
+When automating processes — whether assessing security threats, analysing data or evaluating financial risk in trading — we constantly deal with incomplete, missing or imprecise information. We often have to make decisions when the data are contradictory or insufficiently precise. In such situations, a simple yes/no scale or a score from 0 to 1 becomes inadequate.
 
 Fuzzy measurement scales help us handle uncertainty and build reliable signalling and decision-making systems. In this article, we will briefly explain what they are, why we need them and what they look like in practice.
 
