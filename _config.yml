@@ -6,6 +6,8 @@ url: "https://fuzzy-technologies.github.io"
 baseurl: ""
 exclude:
   - _templates
+  - scripts
+  - requirements-media.txt
 markdown: CommonMarkGhPages
 commonmark:
   options: ["UNSAFE", "SMART", "FOOTNOTES"]

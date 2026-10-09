@@ -18,7 +18,7 @@
 
 * { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; background-color: var(--bg); color-scheme: dark; }
 
 body {
   margin: 0;
@@ -318,7 +318,8 @@ blockquote {
   border-radius: 11px;
 }
 
-.digital-glitch-surface > img {
+.digital-glitch-surface > img,
+.digital-glitch-surface > picture > img {
   display: block;
   width: 100%;
   margin: 0;
@@ -515,6 +516,13 @@ blockquote {
   color: var(--pink-hot);
   outline: none;
 }
+
+/* Reading pages retain their palette without continuous repaint effects. */
+body.reading-page { animation: none; background-size: 100% 100%; }
+body.reading-page::before { display: none; }
+.reading-page .article-content img,
+.reading-page .digital-media-frame { animation: none; }
+picture { display: block; max-width: 100%; }
 
 /* Text digital glitch */
 .text-glitch-target.is-text-glitching {
