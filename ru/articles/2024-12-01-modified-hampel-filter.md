@@ -381,7 +381,3 @@ PriceGenerator --debug-level 10 --ticker "TEST_DATA_OF_OHLCV" --precision 0 --ti
 - Реализация функций:
   - [HampelFilter() для фильтрации аномалий в числовом ряду](https://github.com/Fuzzy-Technologies/TKSBrokerAPI/blob/develop/tksbrokerapi/TradeRoutines.py)
   - [HampelAnomalyDetection() для поиска индекса первого аномального элемента в ряду](https://github.com/Fuzzy-Technologies/TKSBrokerAPI/blob/develop/tksbrokerapi/TradeRoutines.py)
-
-## Источник
-
-[Исходная публикация в Teletype](https://teletype.in/@tgilmullin/anomaly).

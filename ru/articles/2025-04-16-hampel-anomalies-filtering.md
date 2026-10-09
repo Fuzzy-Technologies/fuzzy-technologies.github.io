@@ -202,7 +202,3 @@ F:X\to\{\mathrm{True},\mathrm{False}\},\qquad F(x_i)=\begin{cases}\mathrm{True},
 - [Лабораторная работа по фильтрации аномалий методом Хампеля в Jupyter Notebook](https://nbviewer.org/github/Tim55667757/TKSBrokerAPI/blob/develop/docs/examples/HampelFilteringExample.ipynb).
 
 - [Код функции фильтрации аномалий методом Хампеля из библиотеки платформы ⚙️ TKSBrokerAPI](https://fuzzy-technologies.github.io/TKSBrokerAPI/docs/tksbrokerapi/TradeRoutines.html).
-
-## Источник
-
-[Исходная публикация в Teletype](https://teletype.in/@tgilmullin/hampel-anomalies-filtering).
