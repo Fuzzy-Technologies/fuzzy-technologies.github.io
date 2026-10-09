@@ -71,7 +71,7 @@ An algorithmic trading robot performs the following tasks.
 
 ## Algorithm flowchart
 
-![Trading algorithm flowchart](/static/images/articles/2025-04-28-trading-algorithm/S3-Trader-Scheme.png)
+![Trading algorithm flowchart](/static/images/articles/2025-04-28-trading-algorithm/S3-Trader-Scheme-en.png)
 
 *Trading algorithm flowchart*
 
@@ -133,7 +133,7 @@ The colour-coded diagrams of position-opening and closing rules show how progres
     - the instrument's drawdown is within acceptable limits;
     - signal strength remains sufficient after averaging.
 
-![Basic rules for opening or adding to positions (Buy)](/static/images/articles/2025-04-28-trading-algorithm/OpenRules.png)
+![Basic rules for opening or adding to positions (Buy)](/static/images/articles/2025-04-28-trading-algorithm/OpenRules-en.png)
 
 *Basic rules for opening or adding to positions [Buy]*
 
@@ -145,7 +145,7 @@ The colour-coded diagrams of position-opening and closing rules show how progres
 
 3. Limit losses when stop levels are reached or the acceptable risk is exceeded.
 
-![Basic rules for holding or closing existing positions (Sell)](/static/images/articles/2025-04-28-trading-algorithm/CloseRules.png)
+![Basic rules for holding or closing existing positions (Sell)](/static/images/articles/2025-04-28-trading-algorithm/CloseRules-en.png)
 
 *Basic rules for holding or closing existing positions [Sell]*
 
@@ -187,7 +187,7 @@ Why use a probabilistic estimate?
 
 Probabilities are mapped to levels on a fuzzy scale:
 
-![Supports of the levels on a fuzzy probability scale](/static/images/articles/2025-04-28-trading-algorithm/level-sets.png)
+![Supports of the levels on a fuzzy probability scale](/static/images/articles/2025-04-28-trading-algorithm/level-sets-en.png)
 
 *Supports of the levels on a fuzzy probability scale*
 
@@ -203,7 +203,7 @@ The universal fuzzy measurement scale itself can then look like this:
 
 Once signal strength has been assessed on a fuzzy scale, it is easy to adjust it according to target-attainment probability:
 
-![Adjusting signal strength according to probability](/static/images/articles/2025-04-28-trading-algorithm/filtering.png)
+![Adjusting signal strength according to probability](/static/images/articles/2025-04-28-trading-algorithm/filtering-en.png)
 
 *Adjusting signal strength according to probability*
 

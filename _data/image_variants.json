@@ -84,6 +84,11 @@
     "height": 1024,
     "srcset": "/static/media/f326d73004a6053e-480.webp 480w, /static/media/f326d73004a6053e-960.webp 960w, /static/media/f326d73004a6053e-1536.webp 1536w"
   },
+  "/static/images/articles/2025-04-28-trading-algorithm/CloseRules-en.png": {
+    "width": 4750,
+    "height": 6450,
+    "srcset": "/static/media/3ea224b349012e06-480.webp 480w, /static/media/3ea224b349012e06-960.webp 960w, /static/media/3ea224b349012e06-1920.webp 1920w"
+  },
   "/static/images/articles/2025-04-28-trading-algorithm/CloseRules.png": {
     "width": 4750,
     "height": 6450,
@@ -93,6 +98,11 @@
     "width": 1536,
     "height": 1024,
     "srcset": "/static/media/2052788dc5dddf55-480.webp 480w, /static/media/2052788dc5dddf55-960.webp 960w, /static/media/2052788dc5dddf55-1536.webp 1536w"
+  },
+  "/static/images/articles/2025-04-28-trading-algorithm/OpenRules-en.png": {
+    "width": 4750,
+    "height": 6450,
+    "srcset": "/static/media/02cf1656d022bfa4-480.webp 480w, /static/media/02cf1656d022bfa4-960.webp 960w, /static/media/02cf1656d022bfa4-1920.webp 1920w"
   },
   "/static/images/articles/2025-04-28-trading-algorithm/OpenRules.png": {
     "width": 4750,
