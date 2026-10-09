@@ -21,7 +21,7 @@ source_url: https://teletype.in/@tgilmullin/target-probability
 
 *Probable improbability—or improbable probability!*
 
-In practical data analysis and trading, we often need to know how likely an asset's price is to reach a particular level. This is a key problem in algorithmic trading and risk management because it helps screen out unrealistic trade-entry signals. A simple prediction of will reach or will not reach is inadequate: markets are unstable and subject to random fluctuations, noise and anomalous price spikes.
+In practical data analysis and trading, we often need to know how likely an asset's price is to reach a particular level. This is a key problem in algorithmic trading and risk management because it helps screen out unrealistic trade-entry signals. A simple prediction that the price will or will not reach its target is inadequate: markets are unstable and subject to random fluctuations, noise and anomalous price spikes.
 
 It therefore makes sense to estimate the probability of reaching a target rather than make categorical predictions. Several approaches are available:
 
@@ -33,7 +33,7 @@ It therefore makes sense to estimate the probability of reaching a target rather
 
 The third approach is simpler, easier to explain and more reliable under real, noisy data conditions. It is also well suited to automated signal systems that need fast assessments of target attainability without computationally heavy models.
 
-## Why we cannot simply say will reach or will not reach
+## Why a yes-or-no forecast is not enough
 
 Real market data are noisy and contain:
 
@@ -73,9 +73,9 @@ We use the following approach to estimate the probability associated with a spec
    - logarithmic returns;
    - mean returns;
    - the standard deviation of returns, or volatility;
-   - the standardised deviation.
+   - the standardised deviation (z-score).
 
-5. Use the standard normal cumulative distribution function evaluated at the standardised deviation to calculate the probability of the price exceeding the target at the end of the horizon, under the assumed model of normally distributed log returns.
+5. Calculate the upper-tail probability—one minus the standard normal cumulative distribution function at the calculated z-score—to estimate the probability of the price exceeding the target at the end of the horizon, under the assumed model of normally distributed log returns.
 
 6. Aggregate the assessments for different timeframes, then produce an overall assessment as a number or a fuzzy level.
 
@@ -83,7 +83,7 @@ The detailed calculation is presented in the [research paper on estimating targe
 
 ## Why a probability should not always be expressed as a precise number
 
-Sometimes a precise-looking probability, such as 74.3%, creates a false sense of confidence: the number suggests precision where uncertainty remains. Fuzzy probability scales are useful in practice, particularly when data are unstable or incomplete.
+Sometimes a precise-looking probability estimate, such as 74.3%, creates a false sense of confidence: the number suggests precision where uncertainty remains. Fuzzy probability scales are useful in practice, particularly when data are unstable or incomplete.
 
 Fuzzy scales are qualitative, level-based scales in which each level is represented by a linguistic term—a named fuzzy set.
 
@@ -109,7 +109,7 @@ We discussed fuzzy scales and their use in assessment in an [earlier article](/a
 
 Estimating target-attainment probability is an engineering way to assess plausible price levels from real data, rather than an attempt to guess the future.
 
-By removing outliers from historical data and analysing their statistical distributions, we can:
+By removing outliers from historical price data and analysing the distribution of the remaining price changes, we can:
 
 - construct appropriate probabilistic models;
 
