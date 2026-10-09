@@ -73,11 +73,9 @@ source_url: https://teletype.in/@tgilmullin/anomaly
 
 Значение MAD вычисляется так:
 
-<div class="math-display">
-$$
-\operatorname{MAD}(X)=\operatorname{Median}\left(\lvert x_1-\operatorname{Median}(X)\rvert,\ldots,\lvert x_n-\operatorname{Median}(X)\rvert\right)\tag{1}
-$$
-</div>
+```math
+\mathrm{MAD}(X)=\mathrm{Median}\left(\lvert x_1-\mathrm{Median}(X)\rvert,\ldots,\lvert x_n-\mathrm{Median}(X)\rvert\right)\qquad\text{(1)}
+```
 
 где X — выборка из n наблюдений x₁, …, xₙ.
 
@@ -95,21 +93,17 @@ $$
 
 Согласно определению 1, все аномалии ряда образуют некоторое его подмножество A:
 
-<div class="math-display">
-$$
-A=\left\{a\in X:\lvert a-\operatorname{Median}(W_i)\rvert>s\,k\,\operatorname{MAD}(W_i)\right\}\tag{2}
-$$
-</div>
+```math
+A=\left\{a\in X:\lvert a-\mathrm{Median}(W_i)\rvert>s\,k\,\mathrm{MAD}(W_i)\right\}\qquad\text{(2)}
+```
 
 где множество X — исходный числовой ряд, множество Wᵢ — ряд чисел i-го скользящего окна, а всего окон: (n − w + 1), где w — размер окна.
 
 Определение 2. Фильтром аномалий числового ряда называется функция:
 
-<div class="math-display">
-$$
-F:X\to\{\mathrm{True},\mathrm{False}\},\qquad F(x_i)=\begin{cases}\mathrm{True},&x_i\in A,\\\mathrm{False},&x_i\notin A.\end{cases}\tag{3}
-$$
-</div>
+```math
+F:X\to\{\mathrm{True},\mathrm{False}\},\qquad F(x_i)=\begin{cases}\mathrm{True},&x_i\in A,\\\mathrm{False},&x_i\notin A.\end{cases}\qquad\text{(3)}
+```
 
 где X — исходный числовой ряд, состоящий из n элементов xᵢ, A — множество аномалий (2).
 

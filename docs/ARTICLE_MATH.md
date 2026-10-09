@@ -16,6 +16,8 @@ Inline formulas use `$...$`. In ordinary Markdown text, escape underscores and d
 
 For numbered equations, append `\qquad\text{(1)}` (with the appropriate number). GitHub's current MathML preview can stack terms vertically when `\tag` produces a labeled table row, so check the visual layout as well as parser errors.
 
+For named functions such as MAD and Median, use `\mathrm{MAD}` and `\mathrm{Median}`. GitHub's math renderer rejects `\operatorname` even though the website's MathJax supports it. Check for GitHub error banners as well as rendered formula counts.
+
 Check every display equation and inline expression for rendering errors, preserved subscripts, fractions, cases, and equation numbers. Verify the rendered result rather than only matching delimiters in the source.
 
 References: [GitHub math syntax](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions) and [MathJax startup hooks](https://docs.mathjax.org/en/v3.2/web/configuration.html#performing-actions-during-initialization).
