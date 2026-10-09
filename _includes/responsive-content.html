@@ -1,0 +1,30 @@
+{%- assign image_chunks = include.html | split: '<img ' -%}
+{%- assign optimized_count = 0 -%}
+{%- for chunk in image_chunks -%}
+  {%- if forloop.first -%}
+    {{- chunk -}}
+  {%- else -%}
+    {%- assign image_tag = chunk | split: '>' | first | append: '>' -%}
+    {%- assign image_source = image_tag | split: 'src="' | last | split: '"' | first -%}
+    {%- assign media = site.data.image_variants[image_source] -%}
+    {%- if media -%}
+      {%- assign tag_length = image_tag.size | minus: 1 -%}
+      {%- assign attributes = image_tag | slice: 0, tag_length | strip -%}
+      {%- assign last_character = attributes | slice: -1 -%}
+      {%- if last_character == '/' -%}
+        {%- assign attribute_length = attributes.size | minus: 1 -%}
+        {%- assign attributes = attributes | slice: 0, attribute_length -%}
+      {%- endif -%}
+      {%- assign attributes = attributes | remove: 'loading="lazy"' | remove: 'loading="eager"' | remove: 'decoding="async"' | strip -%}
+      {%- assign image_sizes = '(max-width: 980px) calc(100vw - 40px), 940px' -%}
+      {%- if attributes contains 'article-preview-image' -%}
+        {%- assign image_sizes = '(max-width: 680px) calc(100vw - 40px), (max-width: 980px) calc(42vw - 17px), 395px' -%}
+      {%- endif -%}
+      <picture><source type="image/webp" srcset="{{ media.srcset }}" sizes="{{ image_sizes }}"><img {{ attributes }} width="{{ media.width }}" height="{{ media.height }}" decoding="async" loading="{% if optimized_count == 0 %}eager{% else %}lazy{% endif %}" data-full-src="{{ image_source }}"></picture>
+      {%- assign optimized_count = optimized_count | plus: 1 -%}
+    {%- else -%}
+      <img {{- image_tag | prepend: ' ' -}}
+    {%- endif -%}
+    {{- chunk | remove_first: image_tag -}}
+  {%- endif -%}
+{%- endfor -%}

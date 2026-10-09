@@ -1,0 +1,212 @@
+{
+  "/static/images/0000-Вера-и-Дарина.png": {
+    "width": 1024,
+    "height": 1024,
+    "srcset": "/static/media/c30b312e00b099e1-480.webp 480w, /static/media/c30b312e00b099e1-960.webp 960w, /static/media/c30b312e00b099e1-1024.webp 1024w"
+  },
+  "/static/images/0001-Ева-и-Мария.png": {
+    "width": 1024,
+    "height": 1024,
+    "srcset": "/static/media/2cbebc2cd9df6b52-480.webp 480w, /static/media/2cbebc2cd9df6b52-960.webp 960w, /static/media/2cbebc2cd9df6b52-1024.webp 1024w"
+  },
+  "/static/images/FMA-bw.png": {
+    "width": 1024,
+    "height": 1024,
+    "srcset": "/static/media/9988c82a39657818-480.webp 480w, /static/media/9988c82a39657818-960.webp 960w, /static/media/9988c82a39657818-1024.webp 1024w"
+  },
+  "/static/images/FMA-purple-pink.png": {
+    "width": 1024,
+    "height": 1024,
+    "srcset": "/static/media/154ac2ab451d822f-480.webp 480w, /static/media/154ac2ab451d822f-960.webp 960w, /static/media/154ac2ab451d822f-1024.webp 1024w"
+  },
+  "/static/images/FMA-red-green.png": {
+    "width": 1024,
+    "height": 1024,
+    "srcset": "/static/media/2539fb7230ce83e1-480.webp 480w, /static/media/2539fb7230ce83e1-960.webp 960w, /static/media/2539fb7230ce83e1-1024.webp 1024w"
+  },
+  "/static/images/FTech-corporate-mark-circular-dark-2048.png": {
+    "width": 1254,
+    "height": 1254,
+    "srcset": "/static/media/e9a867f60dd581f9-480.webp 480w, /static/media/e9a867f60dd581f9-960.webp 960w, /static/media/e9a867f60dd581f9-1254.webp 1254w"
+  },
+  "/static/images/Fuzzy-Technologies-Team.png": {
+    "width": 2142,
+    "height": 734,
+    "srcset": "/static/media/45069130e7c92d04-480.webp 480w, /static/media/45069130e7c92d04-960.webp 960w, /static/media/45069130e7c92d04-1920.webp 1920w"
+  },
+  "/static/images/FuzzyMarketAnalytics-Logo-Full-1200x1200v2.png": {
+    "width": 1200,
+    "height": 1200,
+    "srcset": "/static/media/dc10d4ff69205276-480.webp 480w, /static/media/dc10d4ff69205276-960.webp 960w, /static/media/dc10d4ff69205276-1200.webp 1200w"
+  },
+  "/static/images/TKSBrokerAPI-Logo-mini.png": {
+    "width": 1120,
+    "height": 1119,
+    "srcset": "/static/media/7f10e3532f452d76-480.webp 480w, /static/media/7f10e3532f452d76-960.webp 960w, /static/media/7f10e3532f452d76-1120.webp 1120w"
+  },
+  "/static/images/TKSBrokerAPI-Logo.png": {
+    "width": 2484,
+    "height": 1124,
+    "srcset": "/static/media/d31c1199fc1d3510-480.webp 480w, /static/media/d31c1199fc1d3510-960.webp 960w, /static/media/d31c1199fc1d3510-1920.webp 1920w"
+  },
+  "/static/images/TKSBrokerAPI-extend-data-flow.png": {
+    "width": 2649,
+    "height": 1109,
+    "srcset": "/static/media/12510c1fc47d2e10-480.webp 480w, /static/media/12510c1fc47d2e10-960.webp 960w, /static/media/12510c1fc47d2e10-1920.webp 1920w"
+  },
+  "/static/images/TKSBrokerAPI-flow.png": {
+    "width": 2192,
+    "height": 1006,
+    "srcset": "/static/media/eb744f21bc8728a4-480.webp 480w, /static/media/eb744f21bc8728a4-960.webp 960w, /static/media/eb744f21bc8728a4-1920.webp 1920w"
+  },
+  "/static/images/articles/2024-12-01-modified-hampel-filter/digest-robot-1200x630.png": {
+    "width": 1536,
+    "height": 1024,
+    "srcset": "/static/media/bcd4c20692a934f0-480.webp 480w, /static/media/bcd4c20692a934f0-960.webp 960w, /static/media/bcd4c20692a934f0-1536.webp 1536w"
+  },
+  "/static/images/articles/2025-04-10-fuzzy-scales/Girls-and-scales.png": {
+    "width": 1536,
+    "height": 1024,
+    "srcset": "/static/media/7de5be008103e8e6-480.webp 480w, /static/media/7de5be008103e8e6-960.webp 960w, /static/media/7de5be008103e8e6-1536.webp 1536w"
+  },
+  "/static/images/articles/2025-04-16-hampel-anomalies-filtering/Girls-and-Hampel.png": {
+    "width": 1536,
+    "height": 1024,
+    "srcset": "/static/media/b7d34bf6af1e087f-480.webp 480w, /static/media/b7d34bf6af1e087f-960.webp 960w, /static/media/b7d34bf6af1e087f-1536.webp 1536w"
+  },
+  "/static/images/articles/2025-04-22-target-probability/Girls-and-probability.png": {
+    "width": 1536,
+    "height": 1024,
+    "srcset": "/static/media/f326d73004a6053e-480.webp 480w, /static/media/f326d73004a6053e-960.webp 960w, /static/media/f326d73004a6053e-1536.webp 1536w"
+  },
+  "/static/images/articles/2025-04-28-trading-algorithm/CloseRules.png": {
+    "width": 4750,
+    "height": 6450,
+    "srcset": "/static/media/5cc4a8af8b848032-480.webp 480w, /static/media/5cc4a8af8b848032-960.webp 960w, /static/media/5cc4a8af8b848032-1920.webp 1920w"
+  },
+  "/static/images/articles/2025-04-28-trading-algorithm/Girls-and-signals.png": {
+    "width": 1536,
+    "height": 1024,
+    "srcset": "/static/media/2052788dc5dddf55-480.webp 480w, /static/media/2052788dc5dddf55-960.webp 960w, /static/media/2052788dc5dddf55-1536.webp 1536w"
+  },
+  "/static/images/articles/2025-04-28-trading-algorithm/OpenRules.png": {
+    "width": 4750,
+    "height": 6450,
+    "srcset": "/static/media/cbcd6f80da8ae196-480.webp 480w, /static/media/cbcd6f80da8ae196-960.webp 960w, /static/media/cbcd6f80da8ae196-1920.webp 1920w"
+  },
+  "/static/images/articles/2025-05-13-trading-algorithm-history/000-Main-forecast-problem.png": {
+    "width": 1176,
+    "height": 1605,
+    "srcset": "/static/media/d2b31c795b5ea033-480.webp 480w, /static/media/d2b31c795b5ea033-960.webp 960w, /static/media/d2b31c795b5ea033-1176.webp 1176w"
+  },
+  "/static/images/articles/2025-05-13-trading-algorithm-history/005-Open-Close-Rules-Matrix.png": {
+    "width": 1199,
+    "height": 1637,
+    "srcset": "/static/media/7a6a6a6881ba74d6-480.webp 480w, /static/media/7a6a6a6881ba74d6-960.webp 960w, /static/media/7a6a6a6881ba74d6-1199.webp 1199w"
+  },
+  "/static/images/articles/2025-05-13-trading-algorithm-history/011-research.png": {
+    "width": 1398,
+    "height": 989,
+    "srcset": "/static/media/7ed98d7c57f1d6a2-480.webp 480w, /static/media/7ed98d7c57f1d6a2-960.webp 960w, /static/media/7ed98d7c57f1d6a2-1398.webp 1398w"
+  },
+  "/static/images/articles/2025-05-13-trading-algorithm-history/Anomaly-Scenario3-draft.jpg": {
+    "width": 4096,
+    "height": 3072,
+    "srcset": "/static/media/5fb25ce060e196eb-480.webp 480w, /static/media/5fb25ce060e196eb-960.webp 960w, /static/media/5fb25ce060e196eb-1920.webp 1920w"
+  },
+  "/static/images/articles/2025-05-13-trading-algorithm-history/OpenCloseRules.png": {
+    "width": 9500,
+    "height": 6450,
+    "srcset": "/static/media/d30248c3c25b5458-480.webp 480w, /static/media/d30248c3c25b5458-960.webp 960w, /static/media/d30248c3c25b5458-1920.webp 1920w"
+  },
+  "/static/images/articles/2025-05-13-trading-algorithm-history/Recovery-candle-for-up-and-down-trends-forecast.png": {
+    "width": 2372,
+    "height": 1605,
+    "srcset": "/static/media/5d5ca65a54dbe7b4-480.webp 480w, /static/media/5d5ca65a54dbe7b4-960.webp 960w, /static/media/5d5ca65a54dbe7b4-1920.webp 1920w"
+  },
+  "/static/images/articles/2025-05-13-trading-algorithm-history/Risk-Reachability.png": {
+    "width": 2416,
+    "height": 1637,
+    "srcset": "/static/media/7f2e4e33145bc9f5-480.webp 480w, /static/media/7f2e4e33145bc9f5-960.webp 960w, /static/media/7f2e4e33145bc9f5-1920.webp 1920w"
+  },
+  "/static/images/articles/2025-05-13-trading-algorithm-history/TKSBrokerAPI-flow-with-data-extend.png": {
+    "width": 2190,
+    "height": 1865,
+    "srcset": "/static/media/23d89df9d3a67908-480.webp 480w, /static/media/23d89df9d3a67908-960.webp 960w, /static/media/23d89df9d3a67908-1920.webp 1920w"
+  },
+  "/static/images/articles/2025-05-13-trading-algorithm-history/authors.png": {
+    "width": 1890,
+    "height": 1050,
+    "srcset": "/static/media/00aab66c5f0554df-480.webp 480w, /static/media/00aab66c5f0554df-960.webp 960w, /static/media/00aab66c5f0554df-1890.webp 1890w"
+  },
+  "/static/images/articles/2025-05-13-trading-algorithm-history/forecast_and_real_chart.png": {
+    "width": 2800,
+    "height": 2600,
+    "srcset": "/static/media/60a341f7cf5e98e3-480.webp 480w, /static/media/60a341f7cf5e98e3-960.webp 960w, /static/media/60a341f7cf5e98e3-1920.webp 1920w"
+  },
+  "/static/images/articles/2025-05-13-trading-algorithm-history/long-series-example-with-realistic-volumes.png": {
+    "width": 2553,
+    "height": 944,
+    "srcset": "/static/media/c567745eb11adcbd-480.webp 480w, /static/media/c567745eb11adcbd-960.webp 960w, /static/media/c567745eb11adcbd-1920.webp 1920w"
+  },
+  "/static/images/articles/2025-05-13-trading-algorithm-history/promo-3.png": {
+    "width": 1536,
+    "height": 1024,
+    "srcset": "/static/media/cb9012f661cd5316-480.webp 480w, /static/media/cb9012f661cd5316-960.webp 960w, /static/media/cb9012f661cd5316-1536.webp 1536w"
+  },
+  "/static/images/articles/2026-09-27-a-trading-robot-is-not-a-magic-button/00_FMA_Research_Intro.png": {
+    "width": 1734,
+    "height": 907,
+    "srcset": "/static/media/4447b00b87cf3ee6-480.webp 480w, /static/media/4447b00b87cf3ee6-960.webp 960w, /static/media/4447b00b87cf3ee6-1734.webp 1734w"
+  },
+  "/static/images/articles/2026-09-27-a-trading-robot-is-not-a-magic-button/00_FMA_Research_Intro_5.png": {
+    "width": 2508,
+    "height": 627,
+    "srcset": "/static/media/7ceb813d5f9a772c-480.webp 480w, /static/media/7ceb813d5f9a772c-960.webp 960w, /static/media/7ceb813d5f9a772c-1920.webp 1920w"
+  },
+  "/static/images/articles/2026-09-27-a-trading-robot-is-not-a-magic-button/01_FMA_probabilistic_scenarios.png": {
+    "width": 1735,
+    "height": 906,
+    "srcset": "/static/media/ce4072e2b3399ab3-480.webp 480w, /static/media/ce4072e2b3399ab3-960.webp 960w, /static/media/ce4072e2b3399ab3-1735.webp 1735w"
+  },
+  "/static/images/articles/2026-09-27-a-trading-robot-is-not-a-magic-button/02_FMA_history_example.png": {
+    "width": 1734,
+    "height": 907,
+    "srcset": "/static/media/f22672dc0a03371f-480.webp 480w, /static/media/f22672dc0a03371f-960.webp 960w, /static/media/f22672dc0a03371f-1734.webp 1734w"
+  },
+  "/static/images/articles/2026-09-27-a-trading-robot-is-not-a-magic-button/03_FMA_Different_Futures.png": {
+    "width": 1672,
+    "height": 941,
+    "srcset": "/static/media/5def8e9766318d2a-480.webp 480w, /static/media/5def8e9766318d2a-960.webp 960w, /static/media/5def8e9766318d2a-1672.webp 1672w"
+  },
+  "/static/images/articles/2026-09-27-a-trading-robot-is-not-a-magic-button/04_FMA_probability_reachability.png": {
+    "width": 1672,
+    "height": 941,
+    "srcset": "/static/media/64aebae41ab94ad0-480.webp 480w, /static/media/64aebae41ab94ad0-960.webp 960w, /static/media/64aebae41ab94ad0-1672.webp 1672w"
+  },
+  "/static/images/articles/2026-09-27-a-trading-robot-is-not-a-magic-button/05_FMA_fuzzy_levels.png": {
+    "width": 1734,
+    "height": 907,
+    "srcset": "/static/media/a8f2c5b4ea5dd819-480.webp 480w, /static/media/a8f2c5b4ea5dd819-960.webp 960w, /static/media/a8f2c5b4ea5dd819-1734.webp 1734w"
+  },
+  "/static/images/articles/2026-09-27-a-trading-robot-is-not-a-magic-button/06_FMA_steps_1b.png": {
+    "width": 1672,
+    "height": 941,
+    "srcset": "/static/media/4f9b516ee7b085ea-480.webp 480w, /static/media/4f9b516ee7b085ea-960.webp 960w, /static/media/4f9b516ee7b085ea-1672.webp 1672w"
+  },
+  "/static/images/articles/2026-09-27-a-trading-robot-is-not-a-magic-button/07_FMA_Selective_filtering_2.png": {
+    "width": 1734,
+    "height": 907,
+    "srcset": "/static/media/85bb9ae078d941a8-480.webp 480w, /static/media/85bb9ae078d941a8-960.webp 960w, /static/media/85bb9ae078d941a8-1734.webp 1734w"
+  },
+  "/static/images/articles/2026-09-27-a-trading-robot-is-not-a-magic-button/08_FMA_Reproducible.png": {
+    "width": 1672,
+    "height": 941,
+    "srcset": "/static/media/4fde5ccd73306cc5-480.webp 480w, /static/media/4fde5ccd73306cc5-960.webp 960w, /static/media/4fde5ccd73306cc5-1672.webp 1672w"
+  },
+  "/static/images/articles/2026-09-27-a-trading-robot-is-not-a-magic-button/09_FMA_Research_Outro.png": {
+    "width": 1672,
+    "height": 941,
+    "srcset": "/static/media/839d2a729d0be47e-480.webp 480w, /static/media/839d2a729d0be47e-960.webp 960w, /static/media/839d2a729d0be47e-1672.webp 1672w"
+  }
+}

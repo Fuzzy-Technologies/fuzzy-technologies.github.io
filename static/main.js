@@ -33,9 +33,10 @@
     overlay.className = 'digital-glitch-overlay';
     overlay.setAttribute('aria-hidden', 'true');
 
-    image.parentNode.insertBefore(frame, image);
+    const media = image.closest('picture') || image;
+    media.parentNode.insertBefore(frame, media);
     frame.appendChild(surface);
-    surface.appendChild(image);
+    surface.appendChild(media);
     surface.appendChild(overlay);
 
     for (let fragmentIndex = 0; fragmentIndex < 8; fragmentIndex += 1) {
@@ -274,7 +275,7 @@
       }
 
       activeTrigger = trigger;
-      expandedImage.src = image.currentSrc || image.src;
+      expandedImage.src = image.dataset.fullSrc || image.currentSrc || image.src;
       expandedImage.alt = image.alt || '';
       lightbox.setAttribute('aria-hidden', 'false');
       lightbox.inert = false;
@@ -519,11 +520,13 @@
   }
 
   function initialize() {
-    document.querySelectorAll(targetSelectors.join(',')).forEach(createTarget);
-    start();
-    reducedMotion.addEventListener('change', start);
+    if (!document.body.classList.contains('reading-page')) {
+      document.querySelectorAll(targetSelectors.join(',')).forEach(createTarget);
+      start();
+      reducedMotion.addEventListener('change', start);
+      initializeTextGlitches();
+    }
     initializeArticleLightbox();
-    initializeTextGlitches();
   }
 
   if (document.readyState === 'loading') {

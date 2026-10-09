@@ -25,6 +25,8 @@ The templates support the owner-approved Russian-first archive workflow. For a n
 
 Prefer descriptive image names without spaces. PNG, JPG and WebP work as ordinary article images. Reuse a selected image where appropriate; do not duplicate it for each language.
 
+For PNG/JPEG files of 200 kB or more, generate and commit the responsive variants described in [Article image delivery](IMAGE_DELIVERY.md). Keep the original file: the image viewer opens it at full resolution. If you publish through GitHub's web editor, the original still works; ask a contributor to generate the lighter variants before merging large-image changes.
+
 ## 3. Copy and fill the two Markdown files
 
 Open each linked template, use **Raw** or **Copy raw file**, and copy its entire contents, including the metadata block. On your branch, choose **Add file → Create new file**, enter the destination path from the table, and paste the template. Do not edit the template itself to publish an article.
