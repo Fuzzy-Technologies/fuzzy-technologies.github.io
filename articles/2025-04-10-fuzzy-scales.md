@@ -87,7 +87,7 @@ To construct a scale:
 
 1. Define the measurement range. For example, all numbers from 0 to 1.
 
-2. Choose the scale's levels. A common general-purpose scale uses {Min, Low, Med, High, Max}. Here, Min represents the minimum probability of reaching the price target, Low a low probability, Med a medium one, High a high one and Max the maximum. These labels let us express the assessment without long fractional values while keeping it understandable to a human expert.
+2. Choose the scale's levels. A common general-purpose scale uses {Min, Low, Med, High, Max}. Here, Min represents the minimum probability of reaching the price target, Low a low probability, Med a medium one, High a high one and Max the maximum. These labels let us express the assessment without excessive decimal precision while keeping it understandable to a human expert.
 
 3. Construct the membership functions. Triangular or bell-shaped functions are convenient starting points.
 
@@ -105,7 +105,7 @@ Fuzzy scales have applications across scientific disciplines and practical syste
 
 - Analysing anomalies in market data: assessing deviations without rigid thresholds.
 
-- Trading-signal systems: estimating the probability of reaching price targets.
+- Trading-signal systems: expressing estimates of the probability of reaching price targets as qualitative levels.
 
 - Automated decision-making: deriving an overall assessment from several contributing factors.
 
