@@ -139,6 +139,25 @@ blockquote {
   text-shadow: 0 0 3px #ff79c633;
 }
 
+/* Opt in for illustration-led articles; preserve each image's aspect ratio. */
+.article-content--full-width-images img,
+.article-content--full-width-images picture,
+.article-content.article-content--full-width-images .digital-media-frame {
+  width: 100%;
+  height: auto;
+}
+
+/* Preserve the relationships in mathematical tables on narrow screens. */
+.article-content--full-width-images table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+}
+.article-content--full-width-images tbody { display: table-row-group; width: auto; }
+.article-content--full-width-images tr { display: table-row; width: auto; }
+.article-content--full-width-images td,
+.article-content--full-width-images th { display: table-cell; width: auto; }
+
 .article-content a:hover {
   text-shadow: 0 0 7px #ff79c6aa;
 }
