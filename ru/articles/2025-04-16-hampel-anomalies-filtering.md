@@ -131,15 +131,25 @@ F:X\to\{\mathrm{True},\mathrm{False}\},\qquad F(x_i)=\begin{cases}\mathrm{True},
 
 Примеры входных данных и результатов фильтрации, HampelFilter(window=5, sigma=3, scaleFactor=1.4826):
 
-![Фильтрация списка чисел с окном 5](/static/images/articles/2025-04-16-hampel-anomalies-filtering/example1.png)
+```text
+Входные данные              Вывод функции
 
-*Фильтрация списка чисел с окном 5*
+[10, 10, 10, 10, 10]        [False, False, False, False, False]
+[1, 10, 10, 10, 10]         [True, False, False, False, False]
+[1, 5, 10, 10, 10]          [True, True, False, False, False]
+[1, 5, 1, 1, 1]             [False, True, False, False, False]
+```
 
 Примеры входных данных и результатов фильтрации, HampelFilter(window=3, sigma=3, scaleFactor=1.4826):
 
-![Фильтрация списка чисел с окном 3](/static/images/articles/2025-04-16-hampel-anomalies-filtering/example2.png)
+```text
+Входные данные              Вывод функции
 
-*Фильтрация списка чисел с окном 3*
+[1, 5, 1, 1, 1]             [False, True, False, False, False]
+[1, 10, 10, 1, 10, 1]       [True, False, False, False, False, False]
+[1, 10, 10, 10, 10, 1]      [True, False, False, False, False, True]
+[1, 1, 1, 10, 10, 10]       [False, False, False, False, False, False]
+```
 
 ## Поиск индекса первого аномального элемента
 
@@ -149,9 +159,21 @@ F:X\to\{\mathrm{True},\mathrm{False}\},\qquad F(x_i)=\begin{cases}\mathrm{True},
 
 Примеры входных данных и результатов, HampelAnomalyDetection():
 
-![Поиск аномалий с помощью функции HampelAnomalyDetection() со значениями по умолчанию](/static/images/articles/2025-04-16-hampel-anomalies-filtering/example3.png)
+```text
+Входные данные              Вывод функции
 
-*Поиск аномалий с помощью функции HampelAnomalyDetection() со значениями по умолчанию*
+[1, 1, 1, 1, 111, 1]        4
+[1, 1, 10, 1, 1, 1]         2
+[111, 1, 1, 1, 1, 1]        0
+[111, 1, 1, 1, 1, 111]      0
+[1, 11, 1, 111, 1, 1]       1
+[1, 1, 1, 111, 99, 11]      3
+[-111, 1, 1, 1, 1]          0
+[1, 2, 1, -1, 1]            1
+[1]                         None
+[1, 2]                      None
+[1, 1, 1, 1, 1, 1]          None
+```
 
 ## Где применяется метод Хампеля
 

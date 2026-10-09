@@ -78,6 +78,55 @@ layout: default
   {{ content }}
 </article>
 
+{% assign navigation_label = "Article navigation" %}
+{% assign next_label = "Next article" %}
+{% assign previous_label = "Previous article" %}
+{% if article_lang == "ru" %}
+  {% assign navigation_label = "Навигация по статьям" %}
+  {% assign next_label = "Следующая статья" %}
+  {% assign previous_label = "Предыдущая статья" %}
+{% elsif article_lang == "zh-CN" %}
+  {% assign navigation_label = "文章导航" %}
+  {% assign next_label = "下一篇" %}
+  {% assign previous_label = "上一篇" %}
+{% endif %}
+
+{% assign locale_articles = site.pages | where: "layout", "article" | where: "lang", article_lang | sort: "date" | reverse %}
+{% assign next_article = nil %}
+{% assign previous_article = nil %}
+{% for article in locale_articles %}
+  {% if article.url == page.url %}
+    {% unless forloop.first %}
+      {% assign next_index = forloop.index0 | minus: 1 %}
+      {% assign next_article = locale_articles[next_index] %}
+    {% endunless %}
+    {% unless forloop.last %}
+      {% assign previous_index = forloop.index0 | plus: 1 %}
+      {% assign previous_article = locale_articles[previous_index] %}
+    {% endunless %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% if next_article or previous_article %}
+  <nav class="article-navigation" aria-label="{{ navigation_label }}">
+    {% if next_article %}
+      <a class="article-navigation__link article-navigation__link--next" href="{{ next_article.url }}" rel="next">
+        <span class="article-navigation__label"><span aria-hidden="true">←</span> {{ next_label }}</span>
+        <span class="article-navigation__title">{{ next_article.title | escape }}</span>
+        <time datetime="{{ next_article.date | date: '%Y-%m-%d' }}">{{ next_article.date | date: "%Y-%m-%d" }}</time>
+      </a>
+    {% endif %}
+    {% if previous_article %}
+      <a class="article-navigation__link article-navigation__link--previous" href="{{ previous_article.url }}" rel="prev">
+        <span class="article-navigation__label">{{ previous_label }} <span aria-hidden="true">→</span></span>
+        <span class="article-navigation__title">{{ previous_article.title | escape }}</span>
+        <time datetime="{{ previous_article.date | date: '%Y-%m-%d' }}">{{ previous_article.date | date: "%Y-%m-%d" }}</time>
+      </a>
+    {% endif %}
+  </nav>
+{% endif %}
+
 <footer class="site-footer">
   <strong><a href="{{ home_url }}">Fuzzy Technologies</a></strong>
   {% if article_lang == "ru" %}
