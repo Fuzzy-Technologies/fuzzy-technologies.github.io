@@ -8,11 +8,11 @@ Use the original publication date for an archived article, including a date reco
 
 Choose a short lowercase English slug with hyphens. This guide uses `2025-05-13-my-research` as an example; replace it everywhere with your own date and slug. Keep a published URL stable when editing its text later.
 
-| What                                    | Copy from                                                                       | Save as (paths from the repository root)         |
-| --------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------ |
-| Full Russian article                    | [`article.ru.md`](../_templates/articles/article.ru.md)                         | `ru/articles/2025-05-13-my-research.md`          |
-| English translation placeholder         | [`article.en-placeholder.md`](../_templates/articles/article.en-placeholder.md) | `articles/2025-05-13-my-research.md`             |
-| Illustrations, preview and social cover | Your selected image files                                                       | `static/images/articles/2025-05-13-my-research/` |
+| What                                    | Copy from                                                                                                                                                   | Save as (paths from the repository root)         |
+| --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ |
+| Full Russian article                    | [`article.ru.md`](https://github.com/Fuzzy-Technologies/fuzzy-technologies.github.io/blob/master/_templates/articles/article.ru.md)                         | `ru/articles/2025-05-13-my-research.md`          |
+| English translation placeholder         | [`article.en-placeholder.md`](https://github.com/Fuzzy-Technologies/fuzzy-technologies.github.io/blob/master/_templates/articles/article.en-placeholder.md) | `articles/2025-05-13-my-research.md`             |
+| Illustrations, preview and social cover | Your selected image files                                                                                                                                   | `static/images/articles/2025-05-13-my-research/` |
 
 The templates support the owner-approved Russian-first archive workflow. For a normal English-first article, use the same metadata structure, write the complete English body, remove `translation_status: placeholder`, and review its localizations under [LOCALIZATION.md](LOCALIZATION.md). Do not claim an unfinished translation is complete. Add a Chinese alternate only when its page exists.
 
@@ -45,7 +45,7 @@ Replace every `REPLACE_...` value and every example date/slug. The templates are
 | `preview_image`                | Image for the article card. Use an existing path starting `/static/images/articles/`.                                                                                                                     |
 | `cover_image`                  | Image for social sharing. It may reuse the preview file, but it has a separate purpose.                                                                                                                   |
 | `math`                         | `true` if the full article contains formulas; otherwise `false` or omit it.                                                                                                                               |
-| `series`, `series_url`         | Keep `FMA Research` and `/FMA/` for that series. Change or remove both for another topic.                                                                                                                 |
+| `series`, `series_url`         | For `FMA Research`, use `/FMA/` (EN), `/ru/FMA/` (RU), or `/zh-cn/FMA/` (Simplified Chinese). Change or remove both for another topic.                                                                    |
 | `translation_status`           | Keep `placeholder` only on an unfinished translation. Remove it when the full translation is ready.                                                                                                       |
 
 Keep text values quoted if they contain `:` or other YAML punctuation. Inside a single-quoted YAML value, write an apostrophe twice: `'Author''s article'`. Long metadata text can use `>-` followed by indented lines, as in the templates.

@@ -129,9 +129,9 @@ Fuzzy scales therefore offer a way to teach a system to reason approximately, as
 
 ## Useful links
 
-- 🌐 The full signal FAQ and an explanation of FMA methods: [Fuzzy Market Analytics](https://fuzzy-technologies.github.io/FMA/)
+- 🌐 The full signal FAQ and an explanation of FMA methods: [Fuzzy Market Analytics](/FMA/)
 
-- ⚙️ The TKSBrokerAPI platform: [TKSBrokerAPI](https://fuzzy-technologies.github.io/TKSBrokerAPI/)
+- ⚙️ The TKSBrokerAPI platform: [TKSBrokerAPI](/TKSBrokerAPI/)
 
 P. S. If you would like to see how fuzzy scales are applied in cybersecurity, take a look at these articles:
 

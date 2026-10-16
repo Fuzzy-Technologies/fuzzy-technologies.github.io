@@ -63,7 +63,7 @@ alternate_zh: /zh-cn/
     <h3>📊 Fuzzy Market Analytics</h3>
     <p>基于统计学、概率模型、异常过滤、风险评估与模糊推理的量化市场分析和交易系统。</p>
     <div class="project-links">
-      <a href="/FMA/zh-cn/">项目页面 →</a>
+      <a href="/zh-cn/FMA/">项目页面 →</a>
     </div>
   </section>
 
@@ -82,7 +82,7 @@ alternate_zh: /zh-cn/
     <h3>🧮 FuzzyRoutines</h3>
     <p>数学可靠的 Python 模糊计算基础库，提供隶属函数、模糊集、模糊量表及常用模糊逻辑算子。</p>
     <div class="project-links">
-      <a href="https://fuzzy-technologies.github.io/FuzzyRoutines/">项目网站 →</a>
+      <a href="/FuzzyRoutines/">项目网站 →</a>
       <a href="https://github.com/Fuzzy-Technologies/FuzzyRoutines">GitHub →</a>
     </div>
   </section>
@@ -92,7 +92,7 @@ alternate_zh: /zh-cn/
     <h3>☁️ F-Layer</h3>
     <p>通过 Python 和命令行自动管理云基础设施：在 Yandex Cloud 中部署资源、配置 SSH 网关，以及检查 HTTP 服务的可用性。</p>
     <div class="project-links">
-      <a href="https://fuzzy-technologies.github.io/F-Layer/zh-CN/">项目网站 →</a>
+      <a href="/F-Layer/zh-CN/">项目网站 →</a>
       <a href="https://github.com/Fuzzy-Technologies/F-Layer">GitHub →</a>
     </div>
   </section>

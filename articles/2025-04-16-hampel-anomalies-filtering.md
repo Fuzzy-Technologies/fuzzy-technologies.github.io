@@ -209,9 +209,9 @@ The Hampel method does not replace machine learning; it is a basic filter that i
 
 ## Useful links
 
-- 🌐 The full signal FAQ and an explanation of FMA methods: [Fuzzy Market Analytics](https://fuzzy-technologies.github.io/FMA/)
+- 🌐 The full signal FAQ and an explanation of FMA methods: [Fuzzy Market Analytics](/FMA/)
 
-- ⚙️ The TKSBrokerAPI platform: [TKSBrokerAPI](https://fuzzy-technologies.github.io/TKSBrokerAPI/)
+- ⚙️ The TKSBrokerAPI platform: [TKSBrokerAPI](/TKSBrokerAPI/)
 
 ## Further reading
 
@@ -223,4 +223,4 @@ The Hampel method does not replace machine learning; it is a basic filter that i
 
 - [A Jupyter Notebook laboratory exercise on Hampel anomaly filtering](https://nbviewer.org/github/Tim55667757/TKSBrokerAPI/blob/develop/docs/examples/HampelFilteringExample.ipynb).
 
-- [The Hampel anomaly-filtering implementation in the ⚙️ TKSBrokerAPI library](https://fuzzy-technologies.github.io/TKSBrokerAPI/docs/tksbrokerapi/TradeRoutines.html).
+- [The Hampel anomaly-filtering implementation in the ⚙️ TKSBrokerAPI library](/TKSBrokerAPI/docs/tksbrokerapi/TradeRoutines.html).

@@ -10,6 +10,14 @@ Russian and Simplified Chinese are derived public editions. They must preserve t
 
 When canonical English copy changes, the corresponding Russian and Simplified Chinese copy should be reviewed in the same pull request whenever practical.
 
+## Public URL convention
+
+English uses unprefixed URLs; Russian uses `/ru/`; Simplified Chinese uses `/zh-cn/`. For FMA, use `/FMA/`, `/ru/FMA/`, and `/zh-cn/FMA/`. Instrument lists use `instruments.html` below the matching FMA directory. Navigation, article series links, templates, canonical URLs, and language alternates must follow this convention.
+
+The former explicitly localized `/FMA/en/` and `/FMA/zh-cn/` URLs, including their instrument pages, redirect to the current URLs. The unprefixed `/FMA/` and `/FMA/instruments.html` now serve English; Russian links must explicitly use `/ru/FMA/`.
+
+Use current-origin paths for internal navigation and assets, including links to organization project sites. Canonical and social metadata derive their absolute URLs from the configured production origin. Follow the [domain-migration contract and audit](DOMAIN_MIGRATION.md).
+
 ## General rules
 
 - Write for native technical practitioners in each language.

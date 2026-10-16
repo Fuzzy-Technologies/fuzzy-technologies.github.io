@@ -207,9 +207,9 @@ To close this story, we would like to say that developing a trading algorithm �
 
 ## Useful links
 
-- 🌐 The full signal FAQ and an explanation of FMA methods: [Fuzzy Market Analytics](https://fuzzy-technologies.github.io/FMA/)
+- 🌐 The full signal FAQ and an explanation of FMA methods: [Fuzzy Market Analytics](/FMA/)
 
-- ⚙️ The TKSBrokerAPI platform: [TKSBrokerAPI](https://fuzzy-technologies.github.io/TKSBrokerAPI/)
+- ⚙️ The TKSBrokerAPI platform: [TKSBrokerAPI](/TKSBrokerAPI/)
 
 ## Further reading on trading algorithm development
 

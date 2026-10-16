@@ -8,7 +8,7 @@ keywords: FMA Research, математика, анализ данных, неч�
 date: 2025-04-16
 author: Тимур и Мансур Гильмуллины
 series: FMA Research
-series_url: /FMA/
+series_url: /ru/FMA/
 permalink: /ru/articles/2025-04-16-hampel-anomalies-filtering/
 alternate_en: /articles/2025-04-16-hampel-anomalies-filtering/
 alternate_ru: /ru/articles/2025-04-16-hampel-anomalies-filtering/
@@ -209,9 +209,9 @@ F:X\to\{\mathrm{True},\mathrm{False}\},\qquad F(x_i)=\begin{cases}\mathrm{True},
 
 ## Полезные ссылки
 
-- 🌐 Полный FAQ по сигналам и описание методик FMA: [Fuzzy Market Analytics](https://fuzzy-technologies.github.io/FMA/)
+- 🌐 Полный FAQ по сигналам и описание методик FMA: [Fuzzy Market Analytics](/ru/FMA/)
 
-- ⚙️ Платформа TKSBrokerAPI: [TKSBrokerAPI](https://fuzzy-technologies.github.io/TKSBrokerAPI/)
+- ⚙️ Платформа TKSBrokerAPI: [TKSBrokerAPI](/TKSBrokerAPI/)
 
 ## Дополнительные материалы к статье
 
@@ -223,4 +223,4 @@ F:X\to\{\mathrm{True},\mathrm{False}\},\qquad F(x_i)=\begin{cases}\mathrm{True},
 
 - [Лабораторная работа по фильтрации аномалий методом Хампеля в Jupyter Notebook](https://nbviewer.org/github/Tim55667757/TKSBrokerAPI/blob/develop/docs/examples/HampelFilteringExample.ipynb).
 
-- [Код функции фильтрации аномалий методом Хампеля из библиотеки платформы ⚙️ TKSBrokerAPI](https://fuzzy-technologies.github.io/TKSBrokerAPI/docs/tksbrokerapi/TradeRoutines.html).
+- [Код функции фильтрации аномалий методом Хампеля из библиотеки платформы ⚙️ TKSBrokerAPI](/TKSBrokerAPI/docs/tksbrokerapi/TradeRoutines.html).

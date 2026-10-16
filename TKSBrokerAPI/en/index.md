@@ -62,7 +62,7 @@ docker pull tim55667757/tksbrokerapi:1.6.dev269
 
 - [Source code on GitHub](https://github.com/Fuzzy-Technologies/TKSBrokerAPI/tree/develop)
 - [README and examples](https://github.com/Fuzzy-Technologies/TKSBrokerAPI/blob/develop/README.md)
-- [Generated API documentation](https://tim55667757.github.io/TKSBrokerAPI/docs/tksbrokerapi/TKSBrokerAPI.html)
+- [Generated API documentation](/TKSBrokerAPI/docs/tksbrokerapi/TKSBrokerAPI.html)
 - [CHANGELOG](https://github.com/Fuzzy-Technologies/TKSBrokerAPI/blob/develop/CHANGELOG.md)
 
 ### Why TKSBrokerAPI exists

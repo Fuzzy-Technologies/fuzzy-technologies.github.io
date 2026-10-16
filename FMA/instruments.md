@@ -1,301 +1,101 @@
 ---
 layout: default
-lang: ru
-alternate_en: /FMA/en/instruments.html
-alternate_ru: /FMA/instruments.html
-alternate_zh: /FMA/zh-cn/instruments.html
-title: Fuzzy Market Analytics — Инструменты
-description: Сервисы биржевых сигналов Fuzzy Market Analytics на основе статистики, вероятностей и нечёткой логики. Список анализируемых инструментов.
+lang: en
+title: Fuzzy Market Analytics — Instruments
+description: List of market instruments currently tracked by Fuzzy Market Analytics.
+alternate_en: /FMA/instruments.html
+alternate_ru: /ru/FMA/instruments.html
+alternate_zh: /zh-cn/FMA/instruments.html
 ---
 
 <header class="site-header">
-  <h1 class="site-title"><a href="/FMA/instruments.html">📊 Fuzzy Market Analytics: Инструменты</a></h1>
+  <h1 class="site-title"><a href="/FMA/instruments.html">📊 Fuzzy Market Analytics: Instruments</a></h1>
   <div class="site-actions">
-    <nav class="language-switch" aria-label="Язык">
-      <a href="/FMA/en/instruments.html" lang="en">EN</a>
-      <span class="active" aria-current="page">RU</span>
-      <a href="/FMA/zh-cn/instruments.html" lang="zh-CN">简中</a>
+    <nav class="language-switch" aria-label="Language">
+      <span class="active" aria-current="page">EN</span>
+      <a href="/ru/FMA/instruments.html" lang="ru">RU</a>
+      <a href="/zh-cn/FMA/instruments.html" lang="zh-CN">简中</a>
     </nav>
-    <a class="brand-button" href="/ru/" aria-label="Назад на Fuzzy Technologies">
+    <a class="brand-button" href="/" aria-label="Back to Fuzzy Technologies">
       <img src="/static/images/FuzzyTechnologies-Logo-transp.png" alt="Fuzzy Technologies" />
     </a>
   </div>
 </header>
 
-<a href="https://fuzzy-technologies.github.io/FMA">
+<a href="/FMA/">
   <img src="/static/images/FuzzyMarketAnalytics-Text-Logo-1000x180-transp.png" alt="Fuzzy Market Analytics Logo" width="300"/>
-</a><br>
-<a href="https://teletype.in/@tgilmullin/fma-signals-how-it-works"><i>Статья: ➤ Как работают FMA-сервисы</i></a><br><br>
+</a>
 
-## 💼 FMA — список анализируемых инструментов
+## 💼 Tracked instruments
 
-***Всего уникальных инструментов: 166***
+***166 unique instruments***
 
-### Фонды от Т-Капитал (0% комиссии)
+The production list is organized by market segment. Tickers are shown exactly as they are used by the service.
 
-| Тикер | Валюта | Комментарий                          |
-| ----- | ------ | ------------------------------------ |
-| TRUR  | rub    | Фонд "Вечный портфель".              |
-| TMOS@ | rub    | Фонд "Крупнейшие компании РФ".       |
-| TBRU@ | rub    | Фонд "Российские облигации".         |
-| TGLD  | rub    | Фонд "Золото".                       |
-| TRND  | rub    | Фонд "Трендовые акции".              |
-| TLCB@ | rub    | Фонд "Локальные валютные облигации". |
-| TOFZ@ | rub    | Фонд "Государственные облигации".    |
-| TITR@ | rub    | Фонд "Российские Технологии".        |
+### T-Capital funds
 
-### Российские дивидендные компании
+| Ticker | Currency | Description                  |
+| ------ | -------- | ---------------------------- |
+| TRUR   | rub      | All-weather portfolio fund   |
+| TMOS@  | rub      | Largest Russian companies    |
+| TBRU@  | rub      | Russian bonds                |
+| TGLD   | rub      | Gold                         |
+| TRND   | rub      | Trend equities               |
+| TLCB@  | rub      | Local-currency bonds         |
+| TOFZ@  | rub      | Government bonds             |
+| TITR@  | rub      | Russian technology companies |
 
-#### Крупнейшие российские компании с устойчивыми дивидендными выплатами
+### Russian dividend companies
 
-На основе доступных источников (2024–2025 гг.) среди списка крупнейших российских компаний с регулярными и высокими дивидендами.
+SBER, SBERP, ROSN, LKOH, TATN, TATNP, NVTK, SIBN, IRAO, PHOR, PLZL, CHMF, NLMK, ALRS, MOEX, MGNT, BSPB, AFLT, VTBR, ASTR, BELU, DIAS, FLOT, GCHE, PMSB, POSI, ZAYM.
 
-| Тикер | Валюта | Комментарий                                                          |
-| ----- | ------ | -------------------------------------------------------------------- |
-| SBER  | rub    | СберБанк — крупнейший банк России, устойчивые высокие дивиденды.     |
-| SBERP | rub    | СберБанк — привилегированные акции.                                  |
-| ROSN  | rub    | Роснефть — крупнейшая нефтяная компания, стабильные выплаты.         |
-| LKOH  | rub    | Лукойл — исторически высокая дивидендная доходность.                 |
-| TATN  | rub    | Татнефть — стабильный дивидендный поток.                             |
-| TATNP | rub    | Татнефть — привилегированные акции.                                  |
-| NVTK  | rub    | Новатэк — крупнейший независимый производитель газа.                 |
-| SIBN  | rub    | Газпром нефть — дивиденды по итогам стабильной прибыли.              |
-| IRAO  | rub    | Интер РАО — дивидендная политика 25–50% от прибыли.                  |
-| PHOR  | rub    | ФосАгро — производитель удобрений, выплачивает регулярно.            |
-| PLZL  | rub    | Полюс — крупнейший золотодобытчик, дивиденды дважды в год.           |
-| CHMF  | rub    | Северсталь — высокая доходность, выплаты даже в кризис.              |
-| NLMK  | rub    | НЛМК — регулярные выплаты, хорошая маржинальность.                   |
-| ALRS  | rub    | АЛРОСА — алмазодобытчик, периодически выплачивает хорошие дивиденды. |
-| MOEX  | rub    | Московская биржа — высокие дивиденды от комиссионного дохода.        |
-| MGNT  | rub    | Магнит — стабильные дивиденды с акцентом на ритейл-инвесторов.       |
-| BSPB  | rub    | Банк Санкт-Петербург — высокие дивиденды, почти каждый год.          |
+### Technology, IT and telecom
 
-#### Прочие компании, у которых были дивиденды
+YDEX, POSI, RTKM, RTKMP, ASTR, SOFL, VKCO, ELMT, DATA, QIWI, IVAT, DIAS, TTLK, MTSS, MGTSP, CNTL, CNTLP, VEON-RX, NSVZ, CNRU, DELI, HEAD.
 
-| Тикер | Валюта | Комментарий                                                                     |
-| ----- | ------ | ------------------------------------------------------------------------------- |
-| AFLT  | rub    | Аэрофлот — вернул выплаты в 2024 году.                                          |
-| VTBR  | rub    | ВТБ — второй по величине банк, возобновил дивиденды в 2024 году.                |
-| ASTR  | rub    | Группа "Астра" — платит небольшие, но регулярные дивиденды.                     |
-| BELU  | rub    | Novabev Group — выплаты по итогам чистой прибыли.                               |
-| DIAS  | rub    | Диасофт — специализированное ПО, выплачивает дивиденды.                         |
-| FLOT  | rub    | Совкомфлот — дивиденды при устойчивом фрахтовом доходе.                         |
-| GCHE  | rub    | Группа Черкизово — умеренная, но стабильная доходность.                         |
-| PMSB  | rub    | Пермэнергосбыт — региональная энергокомпания с дивидендами.                     |
-| POSI  | rub    | Positive Technologies, кибербезопасность, B2B — нестабильно, но дивиденды были. |
-| ZAYM  | rub    | Займер — микрофинансовая компания с дивидендной моделью.                        |
+### Energy and oil & gas
 
-### Российские технологии, ИТ и телеком
+ROSN, GAZP, IRAO, SNGS, SNGSP, NVTK, SIBN, TATN, TATNP, BANE, BANEP, RNFT, TRNFP, LKOH, TGKA, TGKB, TGKBP, MRKC, MRKP, MRKZ, TGKN, ELFV, VRSB, MRKV, MRKY, MSNG, PMSB, PMSBP, LSNG, LSNGP, KLSB, DVEC, UPRO, MSRS, MRKS, HYDR, FEES, MRKU, OGKB, YAKG.
 
-| Тикер   | Валюта | Комментарий                                                                                                          |
-| ------- | ------ | -------------------------------------------------------------------------------------------------------------------- |
-| YDEX    | rub    | "Яндекс", ИТ-компания, поисковые системы, доставка, реклама. Российская часть бизнеса.                               |
-| POSI    | rub    | Positive Technologies, кибербезопасность, B2B.                                                                       |
-| RTKM    | rub    | ПАО "Ростелеком" — крупнейший в России интегрированный провайдер цифровых услуг и решений.                           |
-| RTKMP   | rub    | ПАО "Ростелеком" — крупнейший в России интегрированный провайдер цифровых услуг и решений — привилегированные акции. |
-| ASTR    | rub    | Группа "Астра" — один из лидеров российского IT-рынка, разработчик защищённого отечественного ПО.                    |
-| SOFL    | rub    | "Софтлайн" — мировой поставщик решений и услуг в области цифровой трансформации.                                     |
-| VKCO    | rub    | VK — ВКонтакте, соцсеть, реклама.                                                                                    |
-| ELMT    | rub    | ПАО "Элемент" — производитель микросхем и радиоэлектроники.                                                          |
-| DATA    | rub    | Arenadata — разработчик систем обработки данных.                                                                     |
-| QIWI    | rub    | QIWI — провайдер платёжных и финансовых сервисов.                                                                    |
-| IVAT    | rub    | IVA Technologies — разработчик корпоративной экосистемы коммуникаций.                                                |
-| DIAS    | rub    | Диасофт — разработчик ПО для финансового сектора.                                                                    |
-| TTLK    | rub    | Таттелеком — телекоммуникации в Татарстане.                                                                          |
-| MTSS    | rub    | МТС — цифровая экосистема и телеком.                                                                                 |
-| MGTSP   | rub    | МГТС — телеком, привилегированные акции.                                                                             |
-| CNTL    | rub    | Центральный телеграф — телекоммуникации.                                                                             |
-| CNTLP   | rub    | Центральный телеграф — привилегированные акции.                                                                      |
-| VEON-RX | rub    | Veon — телеком и цифровые услуги.                                                                                    |
-| NSVZ    | rub    | Наука-Связь — цифровые решения и системная интеграция.                                                               |
-| CNRU    | rub    | Циан — платформа недвижимости и оценки.                                                                              |
-| DELI    | rub    | Делимобиль — каршеринг.                                                                                              |
-| HEAD    | rub    | Хэдхантер — онлайн-рекрутинг.                                                                                        |
+### Materials and mining
 
-<!-- RBCM временно исключён: очень низкая ликвидность и отключены от торгов -->
+KZOS, KZOSP, RUAL, SELG, ALRS, NKNC, NKNCP, TRMK, MTLR, MTLRP, NLMK, RASP, KAZT, KAZTP, PHOR, CHMF, PLZL, LNZL, LNZLP, UNKL, GMKN, VSMO, MAGN, BLNG, AKRN, ROLO, ENPG, UGLD, CHMK, PRFN, SGZH.
 
-### Российская энергетика и нефтегазовый сектор
+### Finance, banking, brokers and leasing
 
-| Тикер | Валюта | Комментарий                              |
-| ----- | ------ | ---------------------------------------- |
-| ROSN  | rub    | Роснефть.                                |
-| GAZP  | rub    | Газпром.                                 |
-| IRAO  | rub    | Интер РАО.                               |
-| SNGS  | rub    | Сургутнефтегаз.                          |
-| SNGSP | rub    | Сургутнефтегаз — привилегированные.      |
-| NVTK  | rub    | НОВАТЭК.                                 |
-| SIBN  | rub    | Газпром нефть.                           |
-| TATN  | rub    | Татнефть.                                |
-| TATNP | rub    | Татнефть — привилегированные.            |
-| BANE  | rub    | Башнефть.                                |
-| BANEP | rub    | Башнефть — привилегированные.            |
-| RNFT  | rub    | РуссНефть.                               |
-| TRNFP | rub    | Транснефть — привилегированные.          |
-| LKOH  | rub    | ЛУКОЙЛ.                                  |
-| TGKA  | rub    | ТГК-1.                                   |
-| TGKB  | rub    | ТГК-2.                                   |
-| TGKBP | rub    | ТГК-2 — привилегированные.               |
-| MRKC  | rub    | Россети Центр.                           |
-| MRKP  | rub    | Россети Центр и Приволжье.               |
-| MRKZ  | rub    | Россети Северо-Запад.                    |
-| TGKN  | rub    | ТГК-14.                                  |
-| ELFV  | rub    | ЭЛ5-Энерго.                              |
-| VRSB  | rub    | ТСН энерго Воронеж.                      |
-| MRKV  | rub    | МРСК Волги.                              |
-| MRKY  | rub    | МРСК Юга.                                |
-| MSNG  | rub    | Мосэнерго.                               |
-| PMSB  | rub    | Пермэнергосбыт.                          |
-| PMSBP | rub    | Пермэнергосбыт — привилегированные.      |
-| LSNG  | rub    | Ленэнерго.                               |
-| LSNGP | rub    | Ленэнерго — привилегированные.           |
-| KLSB  | rub    | Калужская сбытовая компания.             |
-| DVEC  | rub    | Дальневосточная энергетическая компания. |
-| UPRO  | rub    | Юнипро.                                  |
-| MSRS  | rub    | Россети Московский регион.               |
-| MRKS  | rub    | МРСК Сибири.                             |
-| HYDR  | rub    | РусГидро.                                |
-| FEES  | rub    | ФСК Россети.                             |
-| MRKU  | rub    | Россети Урал.                            |
-| OGKB  | rub    | ОГК-2.                                   |
-| YAKG  | rub    | Якутская ТЭК.                            |
+SBER, SBERP, MOEX, VTBR, AFKS, CBOM, SPBE, BSPB, SVCB, RENI, SFIN, MBNK, JETL, ZAYM, MGKL, CARM, LEAS.
 
-<!-- KRKNP временно исключён: Саратовский НПЗ — привилегированные. Дорогие для трейдинга (~8000 руб.) -->
+### Retail, consumer goods and services
 
-### Российская сырьевая промышленность
+MGNT, GCHE, OZON, X5, LENT, SVAV, AQUA, MVID, BELU, RAGR, ABRD, HNFG, KROT, VSEH, AFLT, OKEY, APTK, KLVZ.
 
-| Тикер | Валюта | Комментарий                              |
-| ----- | ------ | ---------------------------------------- |
-| KZOS  | rub    | Органический синтез.                     |
-| KZOSP | rub    | Органический синтез — привилегированные. |
-| RUAL  | rub    | РУСАЛ.                                   |
-| SELG  | rub    | Селигдар.                                |
-| ALRS  | rub    | АЛРОСА.                                  |
-| NKNC  | rub    | Нижнекамскнефтехим.                      |
-| NKNCP | rub    | Нижнекамскнефтехим — привилегированные.  |
-| TRMK  | rub    | ТМК.                                     |
-| MTLR  | rub    | Мечел.                                   |
-| MTLRP | rub    | Мечел — привилегированные.               |
-| NLMK  | rub    | НЛМК.                                    |
-| RASP  | rub    | Распадская.                              |
-| KAZT  | rub    | КуйбышевАзот.                            |
-| KAZTP | rub    | КуйбышевАзот — привилегированные.        |
-| PHOR  | rub    | ФосАгро.                                 |
-| CHMF  | rub    | Северсталь.                              |
-| PLZL  | rub    | Полюс.                                   |
-| LNZL  | rub    | Лензолото.                               |
-| LNZLP | rub    | Лензолото — привилегированные.           |
-| UNKL  | rub    | Южуралникель.                            |
-| GMKN  | rub    | Норильский Никель.                       |
-| VSMO  | rub    | ВСМПО-АВИСМА.                            |
-| MAGN  | rub    | ММК.                                     |
-| BLNG  | rub    | Белон.                                   |
-| AKRN  | rub    | Акрон.                                   |
-| ROLO  | rub    | Русолово.                                |
-| ENPG  | rub    | Эн+.                                     |
-| UGLD  | rub    | Южуралзолото.                            |
-| CHMK  | rub    | Челябинский металлургический комбинат.   |
-| PRFN  | rub    | ЧЗПСН.                                   |
-| SGZH  | rub    | Сегежа.                                  |
+### Real estate and developers
 
-### Российский финансовый сектор, банки и брокеры, лизинг
+SMLT, LSRG, PIKK.
 
-| Тикер | Валюта | Комментарий                   |
-| ----- | ------ | ----------------------------- |
-| SBER  | rub    | СберБанк.                     |
-| SBERP | rub    | СберБанк — привилегированные. |
-| MOEX  | rub    | Московская биржа.             |
-| VTBR  | rub    | ВТБ.                          |
-| AFKS  | rub    | АФК Система.                  |
-| CBOM  | rub    | Московский кредитный банк.    |
-| SPBE  | rub    | СПб Биржа.                    |
-| BSPB  | rub    | Банк Санкт-Петербург.         |
-| SVCB  | rub    | Совкомбанк.                   |
-| RENI  | rub    | Ренессанс Страхование.        |
-| SFIN  | rub    | ЭсЭфАй.                       |
-| MBNK  | rub    | МТС Банк.                     |
-| JETL  | rub    | Джетленд Холдинг.             |
-| ZAYM  | rub    | МФК Займер.                   |
-| MGKL  | rub    | МГКЛ.                         |
-| CARM  | rub    | CarMoney.                     |
-| LEAS  | rub    | Европлан.                     |
+### Engineering and transport
 
-<!-- T временно исключён: Т-Технологии — финтех-экосистема. Удалены из торгов, тикер T конфликтует с AT&T. -->
+KMAZ, WUSH, RKKE, NKHP, GTRK, MSTT, EUTR, FLOT, FESH, NMTP, IRKT, UNAC, UWGN.
 
-### Российский ритейл, потребительские товары и услуги
+### Healthcare
 
-| Тикер | Валюта | Комментарий         |
-| ----- | ------ | ------------------- |
-| MGNT  | rub    | Магнит.             |
-| GCHE  | rub    | Группа Черкизово.   |
-| OZON  | rub    | Ozon.               |
-| X5    | rub    | X5 Retail Group.    |
-| LENT  | rub    | Лента.              |
-| SVAV  | rub    | СОЛЛЕРС Авто.       |
-| AQUA  | rub    | ИНАРКТИКА.          |
-| MVID  | rub    | М.Видео.            |
-| BELU  | rub    | Novabev Group.      |
-| RAGR  | rub    | РусАгро.            |
-| ABRD  | rub    | Абрау-Дюрсо.        |
-| HNFG  | rub    | HENDERSON.          |
-| KROT  | rub    | Красный Октябрь.    |
-| VSEH  | rub    | ВИ.РУ.              |
-| AFLT  | rub    | Аэрофлот.           |
-| OKEY  | rub    | O'Key Group.        |
-| APTK  | rub    | Аптечная сеть 36,6. |
-| KLVZ  | rub    | Кристалл.           |
+MDMG, LIFE, GECO, OZPH, ABIO, PRMD, GEMC.
 
-### Российская недвижимость, застройщики
+### Currencies and metals
 
-| Тикер | Валюта | Комментарий |
-| ----- | ------ | ----------- |
-| SMLT  | rub    | ГК Самолет. |
-| LSRG  | rub    | Группа ЛСР. |
-| PIKK  | rub    | ГК ПИК.     |
+| Ticker     | Currency | Description      |
+| ---------- | -------- | ---------------- |
+| KZTRUB_TOM | rub      | Kazakhstan tenge |
+| BYNRUB_TOM | rub      | Belarusian ruble |
+| AMDRUB_TOM | rub      | Armenian dram    |
+| GLDRUB_TOM | rub      | Physical gold    |
+| SLVRUB_TOM | rub      | Physical silver  |
+| PLTRUB_TOM | rub      | Platinum         |
+| PLDRUB_TOM | rub      | Palladium        |
 
-### Российское машиностроение и транспорт
-
-| Тикер | Валюта | Комментарий                             |
-| ----- | ------ | --------------------------------------- |
-| KMAZ  | rub    | КАМАЗ.                                  |
-| WUSH  | rub    | Whoosh.                                 |
-| RKKE  | rub    | РКК Энергия.                            |
-| NKHP  | rub    | Новороссийский комбинат хлебопродуктов. |
-| GTRK  | rub    | Globaltruck.                            |
-| MSTT  | rub    | Мостотрест.                             |
-| EUTR  | rub    | ЕвроТранс.                              |
-| FLOT  | rub    | Совкомфлот.                             |
-| FESH  | rub    | Дальневосточное морское пароходство.    |
-| NMTP  | rub    | Новороссийский морской торговый порт.   |
-| IRKT  | rub    | Яковлев (бывшая Иркут).                 |
-| UNAC  | rub    | ОАК.                                    |
-| UWGN  | rub    | Объединённая Вагонная Компания.         |
-
-### Российская медицина и здравоохранение
-
-| Тикер | Валюта | Комментарий                    |
-| ----- | ------ | ------------------------------ |
-| MDMG  | rub    | Мать и дитя.                   |
-| LIFE  | rub    | Фармсинтез.                    |
-| GECO  | rub    | Генетико.                      |
-| OZPH  | rub    | Озон Фармацевтика.             |
-| ABIO  | rub    | Артген биотех.                 |
-| PRMD  | rub    | Промомед.                      |
-| GEMC  | rub    | Европейский медицинский центр. |
-
-### Валюта и металлы  
-
-| Тикер      | Валюта | Комментарий                        |
-| ---------- | ------ | ---------------------------------- |
-| KZTRUB_TOM | rub    | Казахстанский тенге.               |
-| BYNRUB_TOM | rub    | Белорусский рубль.                 |
-| AMDRUB_TOM | rub    | Армянский драм.                    |
-| GLDRUB_TOM | rub    | Физическое золото (от 1 грамма).   |
-| SLVRUB_TOM | rub    | Физическое серебро (от 100 грамм). |
-| PLTRUB_TOM | rub    | Платина.                           |
-| PLDRUB_TOM | rub    | Палладий.                          |
 
 <footer class="site-footer">
-  <strong><a href="/ru/">Fuzzy Technologies</a></strong>
-  <span>Технологии · Знания · Наука</span>
+  <strong><a href="/">Fuzzy Technologies</a></strong>
+  <span>Technologies · Knowledge · Science</span>
   <span class="footer-signature">— powered by math &amp; fuzzy logic</span>
 </footer>

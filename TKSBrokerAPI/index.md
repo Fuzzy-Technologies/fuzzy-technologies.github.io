@@ -21,7 +21,7 @@ description: Платформа ⚙️ TKSBrokerAPI для упрощённой 
 </header>
 
 *By [Fuzzy Technologies](/ru/)*<br>
-<a href="https://fuzzy-technologies.github.io/TKSBrokerAPI">
+<a href="/TKSBrokerAPI">
   <img src="/static/images/TKSBrokerAPI-Logo.png" alt="TKSBrokerAPI Logo">
 </a><br>
 <a href="https://t.me/TKSBrokerAPI/19"><i>Телеграм-канал разработчиков платформы: ➤ @TKSBrokerAPI</i></a><br><br>
@@ -32,7 +32,7 @@ description: Платформа ⚙️ TKSBrokerAPI для упрощённой 
 
 TKSBrokerAPI легко встраивается в CI/CD, автоматизированные сценарии и конвейеры обработки данных. Платформа подойдёт как для локальной аналитики, так и для полноценных бэктестов и торговых роботов.
 
-Все сигнальные и торговые сценарии [FMA](https://fuzzy-technologies.github.io/FMA) также работают на базе платформы TKSBrokerAPI.
+Все сигнальные и торговые сценарии [FMA](/ru/FMA/) также работают на базе платформы TKSBrokerAPI.
 
 
 ### 📦 Как установить
@@ -64,7 +64,7 @@ docker pull tim55667757/tksbrokerapi:1.6.dev269
 🇷🇺 📚 Документация на русском:
 - Код на GitHub: [TKSBrokerAPI](https://github.com/Fuzzy-Technologies/TKSBrokerAPI/tree/develop)
 - Подробное описание и примеры: [README.md](https://github.com/Fuzzy-Technologies/TKSBrokerAPI/blob/develop/README.md)
-- Документация на API: [TKSBrokerAPI module docs](https://tim55667757.github.io/TKSBrokerAPI/docs/tksbrokerapi/TKSBrokerAPI.html)
+- Документация на API: [TKSBrokerAPI module docs](/TKSBrokerAPI/docs/tksbrokerapi/TKSBrokerAPI.html)
 - Накопительные релиз-ноты: [CHANGELOG.md](https://github.com/Fuzzy-Technologies/TKSBrokerAPI/blob/develop/CHANGELOG.md)
 
 

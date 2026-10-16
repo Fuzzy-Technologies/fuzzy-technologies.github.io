@@ -9,7 +9,7 @@ keywords: FMA Research, математика, анализ данных, неч�
 date: 2024-10-13
 author: Тимур Гильмуллин
 series: FMA Research
-series_url: /FMA/
+series_url: /ru/FMA/
 permalink: /ru/articles/2024-10-13-neural-network-classification/
 alternate_en: /articles/2024-10-13-neural-network-classification/
 alternate_ru: /ru/articles/2024-10-13-neural-network-classification/

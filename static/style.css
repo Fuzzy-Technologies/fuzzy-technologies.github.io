@@ -691,6 +691,31 @@ body::before {
 
 .direction-card p { margin-bottom: 0; }
 
+.article-index-link {
+  font-size: 0.85rem;
+}
+
+.article-index-link--top {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0.75rem;
+}
+
+.article-index-link--bottom {
+  margin-top: 1.25rem;
+  text-align: center;
+}
+
+.article-index-link a {
+  display: inline-block;
+  padding: 0.35rem 0.25rem;
+}
+
+.article-index-link a:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 3px;
+}
+
 .article-navigation {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

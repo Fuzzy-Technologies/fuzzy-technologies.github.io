@@ -4,10 +4,16 @@ layout: default
 
 {% assign article_lang = page.lang | default: "en" %}
 {% assign home_url = "/" %}
+{% assign articles_url = "/articles/" %}
+{% assign articles_label = "All articles" %}
 {% if article_lang == "ru" %}
   {% assign home_url = "/ru/" %}
+  {% assign articles_url = "/ru/articles/" %}
+  {% assign articles_label = "Все статьи" %}
 {% elsif article_lang == "zh-CN" %}
   {% assign home_url = "/zh-cn/" %}
+  {% assign articles_url = "/zh-cn/articles/" %}
+  {% assign articles_label = "所有文章" %}
 {% endif %}
 
 <header class="site-header">
@@ -40,6 +46,10 @@ layout: default
 </header>
 
 <article class="article-content{% if page.full_width_images %} article-content--full-width-images{% endif %}">
+  <div class="article-index-link article-index-link--top">
+    <a class="article-index-link__anchor" href="{{ articles_url }}">{{ articles_label }}</a>
+  </div>
+
   {% if page.series %}
     <p class="eyebrow">
       {% if page.series_url %}
@@ -126,6 +136,10 @@ layout: default
     {% endif %}
   </nav>
 {% endif %}
+
+<div class="article-index-link article-index-link--bottom">
+  <a class="article-index-link__anchor" href="{{ articles_url }}">{{ articles_label }}</a>
+</div>
 
 <footer class="site-footer">
   <strong><a href="{{ home_url }}">Fuzzy Technologies</a></strong>

@@ -1,22 +1,22 @@
 ---
 layout: default
-lang: ru
-alternate_en: /FMA/en/
-alternate_ru: /FMA/
-alternate_zh: /FMA/zh-cn/
+lang: en
 title: Fuzzy Market Analytics
-description: Сервисы биржевых сигналов Fuzzy Market Analytics на основе статистики, вероятностей и нечёткой логики. Отбор сильных сигналов выполняется по фазе, тренду и встроенной модели риска — прозрачная методика, без шума, без рекламы.
+description: Fuzzy Market Analytics services use statistics, probability models, anomaly filtering and fuzzy logic for market analysis and trading automation.
+alternate_en: /FMA/
+alternate_ru: /ru/FMA/
+alternate_zh: /zh-cn/FMA/
 ---
 
 <header class="site-header">
   <h1 class="site-title"><a href="/FMA/">📊 Fuzzy Market Analytics</a></h1>
   <div class="site-actions">
-    <nav class="language-switch" aria-label="Язык">
-      <a href="/FMA/en/" lang="en">EN</a>
-      <span class="active" aria-current="page">RU</span>
-      <a href="/FMA/zh-cn/" lang="zh-CN">简中</a>
+    <nav class="language-switch" aria-label="Language">
+      <span class="active" aria-current="page">EN</span>
+      <a href="/ru/FMA/" lang="ru">RU</a>
+      <a href="/zh-cn/FMA/" lang="zh-CN">简中</a>
     </nav>
-    <a class="brand-button" href="/ru/" aria-label="Назад на Fuzzy Technologies">
+    <a class="brand-button" href="/" aria-label="Back to Fuzzy Technologies">
       <img src="/static/images/FuzzyTechnologies-Logo-transp.png" alt="Fuzzy Technologies" />
     </a>
   </div>
@@ -27,186 +27,139 @@ description: Сервисы биржевых сигналов Fuzzy Market Analy
     <img class="fuzzy-avatar" src="/static/images/FMA-purple-pink.png" alt="Fuzzy Market Analytics Logo">
   </div>
   <div class="fma-intro-copy">
-    <p>Линейка продуктов и сервисов для автоматизации биржевой аналитики и торговли, созданные с использованием авторских методик <b>Fuzzy Market Analytics</b> (FMA, «Нечёткая аналитика рынка»).</p>
-    <p>Методики FMA основаны на вероятностных моделях, байесовском пересчёте, фильтрации данных с помощью модифицированного фильтра Хампеля, оценке достижимости целей и нечёткой логике принятия решений, адаптированной к реальному времени биржевой торговли.</p>
-    <p>Эти технологии позволяют строить более точные, адаптивные и интерпретируемые модели для реальных торговых условий.</p>
+    <p><strong>Fuzzy Market Analytics</strong> (FMA) is a family of tools and services for market analysis and trading automation.</p>
+    <p>FMA methods combine probability models, Bayesian updates, modified Hampel filtering, target-reachability estimates and fuzzy decision rules adapted to real-time market data.</p>
+    <p>The goal is practical: reduce noise, keep the logic interpretable and make risk and target estimates explicit.</p>
     <div class="hero-actions">
-      <a class="button-neon" href="/ru/articles/">Статьи</a>
+      <a class="button-neon" href="/articles/">Articles</a>
     </div>
   </div>
 </section>
 
-## Продукты и сервисы
+## Products & services
 
 <div class="fma-product-grid">
   <section class="project-card fma-product-card featured">
-    <span class="card-label">Сигналы · Аналитика · Бесплатно</span>
+    <span class="card-label">Signals · Analytics · Free</span>
     <a class="product-art-link" href="https://t.me/FuzzyMarketAnalytics">
-      <img class="fuzzy-avatar product-art" src="/static/images/0001-Ева-и-Мария.png" alt="Fuzzy Market Analytics — сервис сигналов">
+      <img class="fuzzy-avatar product-art" src="/static/images/0001-Ева-и-Мария.png" alt="Fuzzy Market Analytics signal service">
     </a>
-    <h3>📈 Краткосрочные сигналы по российским акциям</h3>
-    <p class="quiet">⏸ Сервис временно приостановлен. Планируем восстановить публикацию сигналов после релиза торгового робота.</p>
-    <p>🤖 Бот-трейдер отслеживает рынок России и сообщает о моментах входа в краткосрочные позиции, указывает цели, вероятности и силу сигналов. Использует теханализ, нечёткую логику и выявляет ценовые аномалии.</p>
-    <p>📊 Сильные сигналы отбираются по фазе рынка, тренду и встроенной модели риска — без потока случайного шума.</p>
-    <p>📡 Сигналы публикуются автоматически в течение торгового дня. <a href="/FMA/instruments.html"><strong>Список анализируемых инструментов →</strong></a></p>
+    <h3>📈 Short-term signals for Russian equities</h3>
+    <p class="quiet">⏸ The service is temporarily paused. We plan to restore signal publishing after the trading robot release.</p>
+    <p>🤖 The service watches the Russian market and reports short-term entry setups together with target prices, estimated probability, and signal strength. It combines technical analysis, fuzzy rules, and anomaly detection.</p>
+    <p>📊 Strong signals are filtered by market phase, trend, and the built-in risk model instead of publishing every price movement.</p>
+    <p>📡 Signals are generated automatically during the trading day. <a href="/FMA/instruments.html"><strong>Tracked instruments →</strong></a></p>
     <div class="project-links">
-      <a href="https://t.me/FuzzyMarketAnalytics">🔔 Подписаться в Telegram →</a>
+      <a href="https://t.me/FuzzyMarketAnalytics">🔔 Follow on Telegram →</a>
     </div>
   </section>
 
   <section class="project-card fma-product-card">
-    <span class="card-label">Автоторговля · Робот · В разработке</span>
+    <span class="card-label">Automated Trading · Robot · In Development</span>
     <a class="product-art-link" href="https://t.me/fuzzy_technologies">
-      <img class="fuzzy-avatar product-art" src="/static/images/0000-Вера-и-Дарина.png" alt="Fuzzy Market Analytics — торговый робот">
+      <img class="fuzzy-avatar product-art" src="/static/images/0000-Вера-и-Дарина.png" alt="Fuzzy Market Analytics trading robot">
     </a>
-    <h3>🤖 Робот для автоматической торговли</h3>
-    <p>💼 Готовим решения для автоматической торговли на брокерском счёте пользователя: подключение к сигналам и настройка стратегии под выбранные инструменты.</p>
-    <p>📡 Робот предназначен для пользователей, которые хотят автоматизировать исполнение стратегии и не тратить время на ручное сопровождение каждой сделки.</p>
-    <p>💰 Базовая коммерческая модель — фиксированная аренда и вознаграждение за результат. Прототип автономного торгового робота уже существует.</p>
-    <p>🛠️ Платформа и автоследование через Т-Инвестиции находятся в разработке.</p>
+    <h3>🤖 Automated trading robot</h3>
+    <p>FMA research is also used in automated trading systems and strategy prototypes running on a user's brokerage account.</p>
+    <p>The goal is to automate strategy execution while keeping risk rules and operating assumptions explicit.</p>
+    <p>The current commercial direction combines a fixed rental fee with performance-based compensation. Product availability depends on the platform and development stage.</p>
     <div class="project-links">
-      <a href="https://t.me/fuzzy_technologies">💬 Обсудить условия →</a>
+      <a href="https://t.me/fuzzy_technologies">💬 Discuss access →</a>
     </div>
   </section>
 </div>
 
-### ❓ FAQ — Ответы на частые вопросы
+### ❓ FAQ
 
-#### 🤖 Для кого сигнальный сервис
+#### 🤖 Who is the signal service for?
 
-Для тех, кто торгует внутри дня или удерживает позицию 1–5 дней.
+It is aimed at traders working intraday or holding positions for roughly 1–5 trading days.
 
-Прогнозы краткосрочные — анализ ведётся на таймфреймах 5м и 1ч. Внутренний расчёт вероятности — на горизонте 72ч. Цель бота — получать небольшую прибыль в 1–2% на сделку, но часто.
+The analysis uses 5-minute and 1-hour timeframes. The internal probability model uses a limited forecast horizon rather than pretending to predict an exact time of arrival.
 
-🩳 Шортов пока нет. Сигналы только на покупки от локальных трендовых минимумов. Не зафиксировал прибыль — ушёл вниз? Теперь ты инвестор 😈
+#### 💼 Which instruments are tracked?
 
-#### 💼 Какие инструменты анализируются
+The current service covers selected Russian shares, funds, currencies and metals. See the <a href="/FMA/instruments.html"><strong>instrument list</strong></a>.
 
-На данный момент сервис работает с биржевыми инструментами: российскими акциями и фондами. С полным списком можно ознакомиться <a href="https://fuzzy-technologies.github.io/FMA/instruments.html"><b>на страничке анализируемых инструментов</b></a>.
+#### 📆 When does the service run?
 
-#### 📆 Когда работает сервис
+- Weekdays: 07:00–23:55, updates every 5 minutes.
+- Weekends: 10:00–18:00, updates every 15 minutes.
 
-- Будни — с 07:00 до 23:55, обновления каждые 5 минут
-- Выходные — с 10:00 до 18:00, обновления каждые 15 минут
+#### 🔔 When is a signal published?
 
-#### 🔔 Как часто публикуются сигналы
+A new message may appear when the rule set is satisfied, when signal strength increases, or when the estimated probability changes materially.
 
-- сразу при выполнении условий методики,
-- либо если выросла сила сигнала,
-- либо если заметно выросла вероятность.
+#### 🤔 Why do signals fail?
 
-Повторы по одной бумаге возможны — при обновлении оценки в течение дня.
+Because markets are probabilistic. News, liquidity and broader market conditions can invalidate even a strong statistical setup. FMA reduces noise and formalizes decisions; it does not predict the future.
 
-#### 🤔 Почему сигналы не всегда срабатывают
+#### 📈 How should signals be used?
 
-Потому что рынок — вероятностная система. Даже при высоких вероятностях и сильных сигналах, поведение цены зависит от новостей, ликвидности в моменте и глобальных условий. Методики FMA снижают шум, но не предсказывают будущее — они помогают принимать более обоснованные решения.
+Signals are analytical output, not an instruction to trade. They can be used as an additional filter, a way to watch changing probability estimates, or an input to your own strategy and risk process.
 
-#### 📈 Как связаны сигналы и принятие торговых решений
+#### ⚠️ Disclaimer
 
-Сигналы — это не призыв к действию. Это инструмент анализа. Их можно использовать:
-- как фильтр перед входом в сделку,
-- для отслеживания всплесков активности и повышения вероятности по любимым бумагам,
-- как подсказку при принятии решений в рамках собственной стратегии.
+*Information published on this site and in the Telegram channel is automatically generated statistical analysis and is not individualized investment advice. Trading decisions and the associated risks remain with the user.*
 
-#### 📚 Что лежит в основе работы сервиса
+### ⚡ Reading an FMA signal
 
-Ответы можно найти в статьях об алгоритмах и методиках FMA:
+Each FMA signal is a **statistical estimate of the probability of reaching a target price**, based on trend behavior, volatility, fuzzy risk assessment and price anomalies on **5-minute and 1-hour timeframes**.
 
-[Что такое нечёткие шкалы](https://teletype.in/@tgilmullin/fuzzy-scales) • [Метод Хампеля и аномалии](https://teletype.in/@tgilmullin/hampel-anomalies-filtering) • [Как оценивается вероятность](https://teletype.in/@tgilmullin/target-probability) • [Как бот принимает решения](https://teletype.in/@tgilmullin/trading-algorithm) • [История создания алгоритма](https://teletype.in/@tgilmullin/trading-algorithm-history) • [Как работают сигнальные сервисы в Telegram](https://teletype.in/@tgilmullin/fma-signals-how-it-works)
+A signal estimates target reachability; it does **not** promise an exact arrival time.
 
-#### ⚠️ Дисклеймер
-
-*Информация, публикуемая на сайте и в Telegram-канале, не является индивидуальной инвестиционной рекомендацией в соответствии с Федеральным законом №39-ФЗ «О рынке ценных бумаг». Сервис предоставляет автоматически сгенерированную статистическую аналитику на основе открытых данных. Решения о сделках вы принимаете самостоятельно. Все риски, связанные с торговлей активами, лежат на вас.*
-
-### ⚡ Как читать сигналы
-
-Каждый сигнал в методиках FMA — это **статистическая оценка вероятности достижения цели** на основе авторской методики анализа трендов, волатильности, нечёткой оценки рисков и аномалий поведения цены на **пятиминутных и часовых таймфреймах**.
-
-Сигнал представляет собой **совокупную оценку достижимости целевой цены** в ближайшем будущем, но **не указывает точный момент её достижения**. При этом модель учитывает как краткосрочные, так и среднесрочные характеристики поведения цены, а расчёт производится с ограниченным **внутренним прогнозным горизонтом**.
-
-> 🕔🔔📈 *Сигналы актуальны обычно в течение **1–5 торговых дней**, в зависимости от поведения актива и рыночной ситуации.*
+> 🕔🔔📈 *A signal is usually intended for a horizon of roughly **1–5 trading days**, depending on the instrument and market conditions.*
 
 <table class="table-clean">
 <tr>
   <td style="width: 280px; vertical-align: top;">
 
-#### 🟩 Пример сигнала
+#### 🟩 Signal example
 
   <img class="fuzzy-avatar" src="/static/images/signal-example.png" alt="Signal Example">
   </td>
   <td>
 
-#### 🟩 Структура сигнала
+#### 🟩 Signal structure
 
-- 📈 **Цена входа**
-- 🎯 **Целевая цена** и ожидаемый прирост (в %)
-- 💪 **Сила сигнала** и **вероятность достижения цели**
+- 📈 **Entry price**
+- 🎯 **Target price** and expected move (%)
+- 💪 **Signal strength** and **target probability**
 
-Сила и вероятность оцениваются по **нечёткой шкале**:
+Signal strength uses a fuzzy scale:
 
-| Уровень | Обозначение          |
-| ------- | -------------------- |
-| 🔵      | ср. (средний)        |
-| 🟡🟡    | выс. (высокий)       |
-| 🟢🟢🟢  | макс. (максимальный) |
+| Level  | Meaning |
+| ------ | ------- |
+| 🔵     | medium  |
+| 🟡🟡   | high    |
+| 🟢🟢🟢 | maximum |
 
-Также указываются:
-
-- Рассчитанная по модели **вероятность** (%)
-- **Прогнозный горизонт** (в часах)
+The message also includes the model probability (%) and the internal forecast horizon.
 
   </td>
 </tr>
 </table>
 
-#### ℹ️ Интерпретация цели и горизонта
+#### ℹ️ Target and horizon
 
-Целевая цена — это **ориентир**, а не фиксированный уровень. Горизонт — **не жёсткий дедлайн**, а внутреннее предположение модели.
+The target is an **estimate**, not a guaranteed price. The horizon is an internal model assumption, not a hard deadline.
 
-- **Максимальные сигналы** (🟢🟢🟢) могут отработать даже в течение нескольких часов.
-- **Высокие** (🟡🟡) — в течение 1–3 дней.
-- **Средние** (🔵) — требуют наблюдения: возможен рост вероятности позже или недостижение цели вовсе.
+A medium signal can strengthen later; a high or maximum signal may resolve quickly; any signal can fail when conditions change.
 
-> 💡 Часто после сигнала средней силы (🔵) минут через 15–30 может появиться сильнее (🟡🟡 / 🟢🟢🟢), особенно если на графике наблюдается **резкое движение цены**.
+### 💡 Methodology
 
-⚠️ Применяйте сигналы с учётом общей рыночной ситуации и собственной стратегии — как дополнительный фактор принятия решений, а не как руководство к действию.
+FMA is built around engineering mathematics and explicit data-processing rules:
 
-### 💡 Почему методики FMA работают для реального трейдинга
+- **Target probability:** volatility and returns are converted into probability estimates and combined using Bayesian updates.
+- **Noise filtering:** a modified Hampel filter is used to reduce the effect of outliers and abnormal observations.
+- **Decision rules:** reachability and risk estimates are converted into fuzzy levels used by the trading rules.
+- **Real-time operation:** the model accounts for current volatility, session activity and the lifetime of market observations.
+- **Efficient implementation:** calculations are optimized for repeated processing of large market datasets.
 
-Все FMA-методики построены на инженерной математике — не на догадках, не на «магии», а на строгой логике обработки рыночных данных.
-
-Что лежит в её основе:
-
-- **Оценка вероятности достижения целей:** мы рассчитываем волатильность и доходности, [объединяем вероятности](https://teletype.in/@tgilmullin/target-probability) с помощью Байесовского пересчёта, а результаты превращаем в понятные [нечёткие уровни](https://teletype.in/@tgilmullin/fuzzy-scales).
-
-- **Защита от рыночного шума:** [модифицированный фильтр Хампеля](https://teletype.in/@tgilmullin/hampel-anomalies-filtering) автоматически очищает ценовые ряды от выбросов и аномалий — чтобы сигналы строились только на надёжных данных.
-
-- **Осознанные сигналы, а не случайные догадки:** алгоритм принимает решения на основе пересечения нечётких уровней риска и достижимости цели. Всё зафиксировано в [открытых и понятных правилах](https://teletype.in/@tgilmullin/trading-algorithm).
-
-- **Работа в реальном времени:** сигналы учитывают волатильность, сессионную активность и реальное время жизни ордеров — без отставания от рынка.
-
-- **Оптимизированная инфраструктура:** полная работа в оперативной памяти (tmpfs), мультипроцессинг, минимизация загрузки системы и сверхбыстрый расчёт на больших данных (ускоренные расчёты индикаторов PSAR и Bollinger Bands, оптимизированная фильтрация выбросов методом Хампеля, быстрая оценка вероятности достижимости целевой цены, оптимизированный доступ к данным при расчёте нечётких правил открытия и закрытия для торговых сигналов).
-
-### ✨ Что это даёт вам
-
-✅ Чистые, надёжные торговые сигналы без перегруза шумом. Автоматические и без влияния человека.
-
-✅ Понятные оценки и актуальные цели — достижимые в реальных условиях, а не гипотетические.
-
-✅ Ясные правила принятия решений, которые можно объяснить, проверить и контролировать.
-
-✅ Скорость работы, достаточная для реального рынка, а не для «бумажных моделей».
-
-⚠️ Важно понимать, что FMA — это не про скальпинг, не про HFT, не про «купи-продай» и не про инфоцыганство на новостях, а про математический расчёт и управление вероятностями на реальном рынке. Это система, где каждая торговая идея проходит через статистическую фильтрацию, оценку рисков, вероятностный прогноз и строгие правила принятия решений.
-
-FMA помогает принимать обоснованные решения, а не гадать на новостях или импульсах. Это дополнительный инструмент-помощник для тех, кто ценит точность, стабильность и прозрачность в торговле.
-
-> FMA: математика, инженерия и реальный трейдинг — без лишних обещаний.
-
-*[Через тернии к звёздам: история создания торгового алгоритма](https://teletype.in/@tgilmullin/trading-algorithm-history)*
+> **FMA: mathematics, engineering and real markets — without magic promises.**
 
 <footer class="site-footer">
-  <strong><a href="/ru/">Fuzzy Technologies</a></strong>
-  <span>Технологии · Знания · Наука</span>
+  <strong><a href="/">Fuzzy Technologies</a></strong>
+  <span>Technologies · Knowledge · Science</span>
   <span class="footer-signature">— powered by math &amp; fuzzy logic</span>
 </footer>

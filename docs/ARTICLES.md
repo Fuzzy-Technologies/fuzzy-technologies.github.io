@@ -2,7 +2,7 @@
 
 English is the canonical article language. Russian and Simplified Chinese articles are adaptive localizations and use the same metadata and public URL structure.
 
-Start with the [step-by-step publishing guide](ARTICLE_PUBLISHING.md) and [copyable templates](../_templates/articles/). The owner-approved archive migration publishes full Russian articles with clearly marked English placeholders.
+Start with the [step-by-step publishing guide](ARTICLE_PUBLISHING.md) and [copyable templates](https://github.com/Fuzzy-Technologies/fuzzy-technologies.github.io/tree/master/_templates/articles/). The owner-approved archive migration publishes full Russian articles with clearly marked English placeholders.
 
 For joint research authorship, use **Тимур и Мансур Гильмуллины** in Russian and **Timur & Mansur Gilmullin** in English. Keep single-author credits unchanged when only one person authored the article.
 
@@ -10,7 +10,7 @@ For joint research authorship, use **Тимур и Мансур Гильмулл
 
 Article pages use `layout: article`. The article indexes discover pages with this layout, select the current `lang`, and sort them by `date` in descending order. No separate article registry is maintained.
 
-The shared article layout adds navigation after the article and before the site footer, using the same language filter and date order as the index. “Previous article” links to the adjacent older article on the left (←); “Next article” links to the adjacent newer article on the right (→). Each link shows its title and publication date. On narrow screens the links stack. Missing neighbors are omitted without wrapping around. Labels follow the page language (EN, RU or Simplified Chinese), and translation placeholders participate only in their own language's sequence. No navigation metadata or manually maintained links are needed in article files.
+The shared article layout adds navigation after the article and before the site footer, using the same language filter and date order as the index. “Previous article” links to the adjacent older article on the left (←); “Next article” links to the adjacent newer article on the right (→). Each link shows its title and publication date. On narrow screens the links stack. Missing neighbors are omitted without wrapping around. Labels follow the page language (EN, RU or Simplified Chinese), and translation placeholders participate only in their own language's sequence. Compact “All articles” links appear above the title on the right and below the adjacent-article navigation. They return to the current language's article index, including when no adjacent articles exist. No navigation metadata or manually maintained links are needed in article files.
 
 | Field                | Intended use                                                                                                                                                  |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
