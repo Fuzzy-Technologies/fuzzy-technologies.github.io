@@ -15,7 +15,7 @@ The `.com` and `.org` apex domains are the intended canonical origins. Their `ww
 
 ## Connection status on 2026-10-17 (Europe/Moscow)
 
-The company repository's Pages settings now contain `fuzzy-technologies.com`; GitHub confirmed the setting was saved and added its `CNAME` file on `master`. Public Google and Cloudflare DNS queries returned the expected ownership TXT value, but the organization-level Verify action still reported that the TXT record could not be found. Treat ownership verification as pending, not complete. The serving A/www records still require the owner's REG.RU update, followed by a successful Pages DNS check and HTTPS provisioning. No journal or `.ru` custom-domain settings have been changed. The production-origin CI expectation is being updated in this PR to match the newly configured hostname.
+The company repository's Pages settings now contain `fuzzy-technologies.com`; GitHub confirmed the setting was saved and added its `CNAME` file on `master`. Public Google and Cloudflare DNS queries returned the expected ownership TXT value, but the organization-level Verify action still reported that the TXT record could not be found. Treat ownership verification as pending, not complete. The serving A/www records still require the owner's REG.RU update, followed by a successful Pages DNS check and HTTPS provisioning. No journal or `.ru` custom-domain settings have been changed. The CI matrix builds the intended production HTTPS origin and an independent synthetic origin explicitly, and checks that the production origin matches `CNAME`. The live DNS/certificate transition is checked separately in Pages settings.
 
 ## GitHub Pages connection runbook
 
@@ -56,7 +56,7 @@ Public navigation and assets use paths on the current origin: `/FMA/`, `/ru/FMA/
 
 Canonical, alternate-language and social-image URLs must be absolute. The shared layouts generate them with Jekyll's `absolute_url` filter. `_config.yml` leaves `url: null` so the GitHub Pages metadata plugin supplies the configured site origin, including its custom domain. It must not be pinned to the former Pages hostname. A build hosted outside GitHub Pages must supply its public `url` in a configuration override.
 
-The CI matrix builds both the normal Pages configuration and a simulated `https://www.example.test` origin. It verifies all rendered HTML references, local files, anchor fragments, canonical/alternate metadata, social-image metadata, runtime assets, FMA redirects and article navigation. The simulated domain is a test fixture and is never published.
+The CI matrix builds both the intended `https://fuzzy-technologies.com` production origin and a simulated `https://www.example.test` origin using explicit build-only URL overrides. The production job also checks that the committed `CNAME` matches the intended hostname. This keeps PR link validation reproducible while GitHub may still report an HTTP public origin during DNS/certificate activation. It verifies all rendered HTML references, local files, anchor fragments, canonical/alternate metadata, social-image metadata, runtime assets, FMA redirects and article navigation. The simulated domain is a test fixture and is never published.
 
 ## Organization project sites
 
