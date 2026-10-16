@@ -13,6 +13,10 @@ The owner confirmed purchasing the following four domains on **2026-10-16**. The
 
 The `.com` and `.org` apex domains are the intended canonical origins. Their `www` variants should redirect to the corresponding apex. The `.ru` registrations are separate domains, not aliases automatically handled by GitHub Pages. No additional TLDs or shortened brand domains are part of this inventory.
 
+## Connection status on 2026-10-17 (Europe/Moscow)
+
+The company repository's Pages settings now contain `fuzzy-technologies.com`; GitHub confirmed the setting was saved and added its `CNAME` file on `master`. Public Google and Cloudflare DNS queries returned the expected ownership TXT value, but the organization-level Verify action still reported that the TXT record could not be found. Treat ownership verification as pending, not complete. The serving A/www records still require the owner's REG.RU update, followed by a successful Pages DNS check and HTTPS provisioning. No journal or `.ru` custom-domain settings have been changed. The production-origin CI expectation is being updated in this PR to match the newly configured hostname.
+
 ## GitHub Pages connection runbook
 
 This is a deployment plan. Publishing settings and DNS must be checked at execution time; this documentation change does not alter either service.
