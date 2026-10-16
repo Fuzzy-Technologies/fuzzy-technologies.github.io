@@ -45,7 +45,7 @@ Replace every `REPLACE_...` value and every example date/slug. The templates are
 | `preview_image`                | Image for the article card. Use an existing path starting `/static/images/articles/`.                                                                                                                     |
 | `cover_image`                  | Image for social sharing. It may reuse the preview file, but it has a separate purpose.                                                                                                                   |
 | `math`                         | `true` if the full article contains formulas; otherwise `false` or omit it.                                                                                                                               |
-| `series`, `series_url`         | Keep `FMA Research` and `/FMA/` for that series. Change or remove both for another topic.                                                                                                                 |
+| `series`, `series_url`         | For `FMA Research`, use `/FMA/` (EN), `/ru/FMA/` (RU), or `/zh-cn/FMA/` (Simplified Chinese). Change or remove both for another topic.                                                                    |
 | `translation_status`           | Keep `placeholder` only on an unfinished translation. Remove it when the full translation is ready.                                                                                                       |
 
 Keep text values quoted if they contain `:` or other YAML punctuation. Inside a single-quoted YAML value, write an apostrophe twice: `'Author''s article'`. Long metadata text can use `>-` followed by indented lines, as in the templates.

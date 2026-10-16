@@ -62,7 +62,7 @@ alternate_zh: /zh-cn/
     <h3>📊 Fuzzy Market Analytics</h3>
     <p>Количественная рыночная аналитика и торговые системы: статистика, вероятностные модели, фильтрация аномалий, оценка риска и нечёткая логика.</p>
     <div class="project-links">
-      <a href="/FMA/">Открыть FMA →</a>
+      <a href="/ru/FMA/">Открыть FMA →</a>
     </div>
   </section>
 

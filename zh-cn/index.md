@@ -63,7 +63,7 @@ alternate_zh: /zh-cn/
     <h3>📊 Fuzzy Market Analytics</h3>
     <p>基于统计学、概率模型、异常过滤、风险评估与模糊推理的量化市场分析和交易系统。</p>
     <div class="project-links">
-      <a href="/FMA/zh-cn/">项目页面 →</a>
+      <a href="/zh-cn/FMA/">项目页面 →</a>
     </div>
   </section>
 

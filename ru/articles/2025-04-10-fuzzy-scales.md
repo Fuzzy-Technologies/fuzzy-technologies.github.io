@@ -8,7 +8,7 @@ keywords: FMA Research, математика, анализ данных, неч�
 date: 2025-04-10
 author: Тимур и Мансур Гильмуллины
 series: FMA Research
-series_url: /FMA/
+series_url: /ru/FMA/
 permalink: /ru/articles/2025-04-10-fuzzy-scales/
 alternate_en: /articles/2025-04-10-fuzzy-scales/
 alternate_ru: /ru/articles/2025-04-10-fuzzy-scales/
@@ -129,7 +129,7 @@ source_url: https://teletype.in/@tgilmullin/fuzzy-scales
 
 ## Полезные ссылки
 
-- 🌐 Полный FAQ по сигналам и описание методик FMA: [Fuzzy Market Analytics](https://fuzzy-technologies.github.io/FMA/)
+- 🌐 Полный FAQ по сигналам и описание методик FMA: [Fuzzy Market Analytics](https://fuzzy-technologies.github.io/ru/FMA/)
 
 - ⚙️ Платформа TKSBrokerAPI: [TKSBrokerAPI](https://fuzzy-technologies.github.io/TKSBrokerAPI/)
 

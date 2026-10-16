@@ -10,7 +10,7 @@ date: 2026-09-27
 author: "Mansur Gilmullin"
 author_url: "https://www.mql5.com/en/users/gilmullin.mansur"
 series: "FMA Research"
-series_url: "/FMA/en/"
+series_url: "/FMA/"
 permalink: "/articles/2026-09-27-a-trading-robot-is-not-a-magic-button/"
 alternate_en: "/articles/2026-09-27-a-trading-robot-is-not-a-magic-button/"
 alternate_ru: "/ru/articles/2026-09-27-a-trading-robot-is-not-a-magic-button/"

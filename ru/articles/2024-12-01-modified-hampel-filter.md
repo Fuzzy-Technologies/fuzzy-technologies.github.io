@@ -8,7 +8,7 @@ keywords: FMA Research, математика, анализ данных, неч�
 date: 2024-12-01
 author: Тимур и Мансур Гильмуллины
 series: FMA Research
-series_url: /FMA/
+series_url: /ru/FMA/
 permalink: /ru/articles/2024-12-01-modified-hampel-filter/
 alternate_en: /articles/2024-12-01-modified-hampel-filter/
 alternate_ru: /ru/articles/2024-12-01-modified-hampel-filter/

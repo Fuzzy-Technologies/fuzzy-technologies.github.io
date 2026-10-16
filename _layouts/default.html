@@ -1,6 +1,6 @@
 {% assign document_lang = page.lang | default: site.lang | default: "en" %}
 {% unless page.lang %}
-  {% if page.url contains '/FMA/' or page.url contains '/TKSBrokerAPI/' %}
+  {% if page.url contains '/TKSBrokerAPI/' %}
     {% assign document_lang = "ru" %}
   {% endif %}
 {% endunless %}

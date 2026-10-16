@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang }}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <link rel="canonical" href="{{ page.redirect_to | absolute_url }}" />
+    <title>{{ page.title }}</title>
+    <script>
+      window.location.replace({{ page.redirect_to | jsonify }} + window.location.search + window.location.hash);
+    </script>
+    <noscript><meta http-equiv="refresh" content="0; url={{ page.redirect_to }}" /></noscript>
+  </head>
+  <body>
+    <p><a href="{{ page.redirect_to }}">{{ page.title }}</a></p>
+  </body>
+</html>

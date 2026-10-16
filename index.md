@@ -63,7 +63,7 @@ alternate_zh: /zh-cn/
     <h3>📊 Fuzzy Market Analytics</h3>
     <p>Quantitative market analytics and trading systems based on statistics, probability models, anomaly filtering, risk estimation, and fuzzy inference.</p>
     <div class="project-links">
-      <a href="/FMA/en/">Project page →</a>
+      <a href="/FMA/">Project page →</a>
     </div>
   </section>
 

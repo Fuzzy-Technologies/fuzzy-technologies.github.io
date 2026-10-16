@@ -8,7 +8,7 @@ description: >-
 date: 2025-05-13
 author: 'Тимур и Мансур Гильмуллины'
 series: FMA Research
-series_url: /FMA/
+series_url: /ru/FMA/
 permalink: /ru/articles/2025-05-13-my-research/
 alternate_en: /articles/2025-05-13-my-research/
 alternate_ru: /ru/articles/2025-05-13-my-research/
@@ -34,5 +34,5 @@ REPLACE_CONCLUSIONS
 
 ## Что ещё почитать
 
-- [Fuzzy Market Analytics](/FMA/)
+- [Fuzzy Market Analytics](/ru/FMA/)
 

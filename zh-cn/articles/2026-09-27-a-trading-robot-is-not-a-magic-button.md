@@ -8,7 +8,7 @@ keywords: "Fuzzy Market Analytics, FMA, 算法交易, 交易机器人, 概率, �
 date: 2026-09-27
 author: "Mansur Gilmullin"
 series: "FMA Research"
-series_url: "/FMA/zh-cn/"
+series_url: "/zh-cn/FMA/"
 permalink: "/zh-cn/articles/2026-09-27-a-trading-robot-is-not-a-magic-button/"
 alternate_en: "/articles/2026-09-27-a-trading-robot-is-not-a-magic-button/"
 alternate_ru: "/ru/articles/2026-09-27-a-trading-robot-is-not-a-magic-button/"

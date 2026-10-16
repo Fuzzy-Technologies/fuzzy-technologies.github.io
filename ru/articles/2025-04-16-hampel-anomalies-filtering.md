@@ -8,7 +8,7 @@ keywords: FMA Research, математика, анализ данных, неч�
 date: 2025-04-16
 author: Тимур и Мансур Гильмуллины
 series: FMA Research
-series_url: /FMA/
+series_url: /ru/FMA/
 permalink: /ru/articles/2025-04-16-hampel-anomalies-filtering/
 alternate_en: /articles/2025-04-16-hampel-anomalies-filtering/
 alternate_ru: /ru/articles/2025-04-16-hampel-anomalies-filtering/
@@ -209,7 +209,7 @@ F:X\to\{\mathrm{True},\mathrm{False}\},\qquad F(x_i)=\begin{cases}\mathrm{True},
 
 ## Полезные ссылки
 
-- 🌐 Полный FAQ по сигналам и описание методик FMA: [Fuzzy Market Analytics](https://fuzzy-technologies.github.io/FMA/)
+- 🌐 Полный FAQ по сигналам и описание методик FMA: [Fuzzy Market Analytics](https://fuzzy-technologies.github.io/ru/FMA/)
 
 - ⚙️ Платформа TKSBrokerAPI: [TKSBrokerAPI](https://fuzzy-technologies.github.io/TKSBrokerAPI/)
 
