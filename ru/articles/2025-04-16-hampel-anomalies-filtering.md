@@ -209,9 +209,9 @@ F:X\to\{\mathrm{True},\mathrm{False}\},\qquad F(x_i)=\begin{cases}\mathrm{True},
 
 ## Полезные ссылки
 
-- 🌐 Полный FAQ по сигналам и описание методик FMA: [Fuzzy Market Analytics](https://fuzzy-technologies.github.io/ru/FMA/)
+- 🌐 Полный FAQ по сигналам и описание методик FMA: [Fuzzy Market Analytics](/ru/FMA/)
 
-- ⚙️ Платформа TKSBrokerAPI: [TKSBrokerAPI](https://fuzzy-technologies.github.io/TKSBrokerAPI/)
+- ⚙️ Платформа TKSBrokerAPI: [TKSBrokerAPI](/TKSBrokerAPI/)
 
 ## Дополнительные материалы к статье
 
@@ -223,4 +223,4 @@ F:X\to\{\mathrm{True},\mathrm{False}\},\qquad F(x_i)=\begin{cases}\mathrm{True},
 
 - [Лабораторная работа по фильтрации аномалий методом Хампеля в Jupyter Notebook](https://nbviewer.org/github/Tim55667757/TKSBrokerAPI/blob/develop/docs/examples/HampelFilteringExample.ipynb).
 
-- [Код функции фильтрации аномалий методом Хампеля из библиотеки платформы ⚙️ TKSBrokerAPI](https://fuzzy-technologies.github.io/TKSBrokerAPI/docs/tksbrokerapi/TradeRoutines.html).
+- [Код функции фильтрации аномалий методом Хампеля из библиотеки платформы ⚙️ TKSBrokerAPI](/TKSBrokerAPI/docs/tksbrokerapi/TradeRoutines.html).

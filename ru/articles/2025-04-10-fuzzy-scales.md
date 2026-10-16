@@ -129,9 +129,9 @@ source_url: https://teletype.in/@tgilmullin/fuzzy-scales
 
 ## Полезные ссылки
 
-- 🌐 Полный FAQ по сигналам и описание методик FMA: [Fuzzy Market Analytics](https://fuzzy-technologies.github.io/ru/FMA/)
+- 🌐 Полный FAQ по сигналам и описание методик FMA: [Fuzzy Market Analytics](/ru/FMA/)
 
-- ⚙️ Платформа TKSBrokerAPI: [TKSBrokerAPI](https://fuzzy-technologies.github.io/TKSBrokerAPI/)
+- ⚙️ Платформа TKSBrokerAPI: [TKSBrokerAPI](/TKSBrokerAPI/)
 
 P. S. Если интересно, как применяются нечёткие шкалы в задачах кибербезопасности, посмотрите эти статьи:
 

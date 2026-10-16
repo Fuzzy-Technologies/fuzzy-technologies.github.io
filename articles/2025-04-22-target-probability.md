@@ -135,9 +135,9 @@ This makes target-probability estimation a useful tool for both manual analysis 
 
 ## Useful links
 
-- 🌐 The full signal FAQ and an explanation of FMA methods: [Fuzzy Market Analytics](https://fuzzy-technologies.github.io/FMA/)
+- 🌐 The full signal FAQ and an explanation of FMA methods: [Fuzzy Market Analytics](/FMA/)
 
-- ⚙️ The TKSBrokerAPI platform: [TKSBrokerAPI](https://fuzzy-technologies.github.io/TKSBrokerAPI/)
+- ⚙️ The TKSBrokerAPI platform: [TKSBrokerAPI](/TKSBrokerAPI/)
 
 ## Further reading
 

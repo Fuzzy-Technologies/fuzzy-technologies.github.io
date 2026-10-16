@@ -10,8 +10,8 @@ Choose a short lowercase English slug with hyphens. This guide uses `2025-05-13-
 
 | What                                    | Copy from                                                                       | Save as (paths from the repository root)         |
 | --------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------ |
-| Full Russian article                    | [`article.ru.md`](../_templates/articles/article.ru.md)                         | `ru/articles/2025-05-13-my-research.md`          |
-| English translation placeholder         | [`article.en-placeholder.md`](../_templates/articles/article.en-placeholder.md) | `articles/2025-05-13-my-research.md`             |
+| Full Russian article                    | [`article.ru.md`](https://github.com/Fuzzy-Technologies/fuzzy-technologies.github.io/blob/master/_templates/articles/article.ru.md)                         | `ru/articles/2025-05-13-my-research.md`          |
+| English translation placeholder         | [`article.en-placeholder.md`](https://github.com/Fuzzy-Technologies/fuzzy-technologies.github.io/blob/master/_templates/articles/article.en-placeholder.md) | `articles/2025-05-13-my-research.md`             |
 | Illustrations, preview and social cover | Your selected image files                                                       | `static/images/articles/2025-05-13-my-research/` |
 
 The templates support the owner-approved Russian-first archive workflow. For a normal English-first article, use the same metadata structure, write the complete English body, remove `translation_status: placeholder`, and review its localizations under [LOCALIZATION.md](LOCALIZATION.md). Do not claim an unfinished translation is complete. Add a Chinese alternate only when its page exists.

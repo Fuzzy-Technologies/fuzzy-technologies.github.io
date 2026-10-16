@@ -13,19 +13,46 @@ jobs:
   site-navigation:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: pages-default
+            site_url: https://fuzzy-technologies.github.io
+          - name: custom-domain
+            site_url: https://www.example.test
     steps:
       - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+      - name: Simulate the configured custom origin
+        if: matrix.name == 'custom-domain'
+        env:
+          SITE_URL: ${{ matrix.site_url }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+          config_path = Path('_config.yml')
+          config_text = config_path.read_text()
+          assert 'url: null' in config_text, 'The production origin must come from Pages metadata.'
+          config_path.write_text(config_text.replace('url: null', 'url: ' + json.dumps(os.environ['SITE_URL']), 1))
+          PY
       - uses: actions/jekyll-build-pages@v1
         with:
           source: ./
           destination: ./_site
-      - uses: actions/setup-python@v6
-        with:
-          python-version: '3.13'
-      - run: python scripts/check_site_navigation.py _site
+      - name: Check locale navigation and all internal links
+        env:
+          SITE_URL: ${{ matrix.site_url }}
+        run: |
+          python scripts/check_site_navigation.py _site --site-url "$SITE_URL"
+          python scripts/check_site_links.py _site --site-url "$SITE_URL"
       - uses: actions/upload-artifact@v4
         with:
-          name: site-navigation-preview
+          name: site-navigation-preview-${{ matrix.name }}
           retention-days: 3
           path: |
             _site/**/*.html

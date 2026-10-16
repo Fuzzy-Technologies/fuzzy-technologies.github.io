@@ -10,7 +10,6 @@ LOCALES = {
     "ru": ("/ru/FMA/", "/ru/articles/", "\u0412\u0441\u0435 \u0441\u0442\u0430\u0442\u044c\u0438"),
     "zh-CN": ("/zh-cn/FMA/", "/zh-cn/articles/", "\u6240\u6709\u6587\u7ae0"),
 }
-SITE_URL = "https://fuzzy-technologies.github.io"
 REDIRECTS = {
     "/FMA/en/": "/FMA/",
     "/FMA/en/instruments.html": "/FMA/instruments.html",
@@ -30,6 +29,9 @@ class HtmlPage(HTMLParser):
         self.canonical = None
         self.alternates = {}
         self.links = []
+        self.references = []
+        self.ids = set()
+        self.metadata_urls = []
         self.active_link = None
         self.is_article = False
         self.text = text
@@ -39,6 +41,26 @@ class HtmlPage(HTMLParser):
         """Read metadata and anchor attributes using HTMLParser callbacks."""
 
         attributes = dict(attrs)
+
+        for name in ("href", "src", "action", "poster", "data-full-src"):
+            if attributes.get(name):
+                self.references.append((tag, name, attributes[name]))
+
+        for candidate in attributes.get("srcset", "").split(","):
+            if candidate.strip():
+                self.references.append((tag, "srcset", candidate.strip().split()[0]))
+
+        if attributes.get("id"):
+            self.ids.add(attributes["id"])
+
+        if tag == "a" and attributes.get("name"):
+            self.ids.add(attributes["name"])
+
+        if tag == "meta" and attributes.get("property") in ("og:url", "og:image"):
+            self.metadata_urls.append((attributes["property"], attributes.get("content", "")))
+
+        if tag == "meta" and attributes.get("name") == "twitter:image":
+            self.metadata_urls.append(("twitter:image", attributes.get("content", "")))
 
         if tag == "html":
             self.lang = attributes.get("lang")
@@ -83,7 +105,7 @@ def ReadPage(site_dir, url):
     return HtmlPage(path.read_text(encoding="utf-8"))
 
 
-def Validate(site_dir):
+def Validate(site_dir, site_url):
     """Check canonical routes, locale-preserving links and article returns."""
 
     fma_pages = 0
@@ -93,14 +115,14 @@ def Validate(site_dir):
             url = fma_url + suffix
             page = ReadPage(site_dir, url)
             assert page.lang == lang, f"Wrong document language at {url}: {page.lang}."
-            assert page.canonical == SITE_URL + url, f"Wrong canonical URL at {url}."
+            assert page.canonical == site_url + url, f"Wrong canonical URL at {url}."
 
             for alternate_lang, (alternate_fma, _, _) in LOCALES.items():
-                assert page.alternates.get(alternate_lang) == SITE_URL + alternate_fma + suffix, (
+                assert page.alternates.get(alternate_lang) == site_url + alternate_fma + suffix, (
                     f"Wrong {alternate_lang} alternate at {url}; locale switches may be reversed."
                 )
 
-            assert page.alternates.get("x-default") == SITE_URL + "/FMA/" + suffix, (
+            assert page.alternates.get("x-default") == site_url + "/FMA/" + suffix, (
                 f"English must be the default alternate at {url}."
             )
             ReadPage(site_dir, articles_url)
@@ -108,7 +130,7 @@ def Validate(site_dir):
 
     for old_url, target in REDIRECTS.items():
         page = ReadPage(site_dir, old_url)
-        assert page.canonical == SITE_URL + target, f"Wrong redirect canonical at {old_url}."
+        assert page.canonical == site_url + target, f"Wrong redirect canonical at {old_url}."
         assert any(link.get("href") == target for link in page.links), f"Missing fallback at {old_url}."
         assert "window.location.replace" in page.text, f"Missing redirect at {old_url}."
         assert "window.location.search + window.location.hash" in page.text, (
@@ -127,9 +149,9 @@ def Validate(site_dir):
             continue
 
         for link in page.links:
-            destination = urlsplit(urljoin(SITE_URL + public_path, link.get("href", "")))
+            destination = urlsplit(urljoin(site_url + public_path, link.get("href", "")))
 
-            if destination.netloc != urlsplit(SITE_URL).netloc or "FMA" not in destination.path.split("/"):
+            if destination.netloc != urlsplit(site_url).netloc or "FMA" not in destination.path.split("/"):
                 continue
 
             link_lang = link.get("lang", page.lang)
@@ -170,8 +192,9 @@ def Main():
 
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("site_dir", type=Path, nargs="?", default=Path("_site"))
+    parser.add_argument("--site-url", required=True, help="Expected public origin for this build.")
     args = parser.parse_args()
-    Validate(args.site_dir)
+    Validate(args.site_dir, args.site_url.rstrip("/"))
 
 
 if __name__ == "__main__":

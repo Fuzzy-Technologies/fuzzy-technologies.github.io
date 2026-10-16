@@ -2,7 +2,7 @@
 
 English is the canonical article language. Russian and Simplified Chinese articles are adaptive localizations and use the same metadata and public URL structure.
 
-Start with the [step-by-step publishing guide](ARTICLE_PUBLISHING.md) and [copyable templates](../_templates/articles/). The owner-approved archive migration publishes full Russian articles with clearly marked English placeholders.
+Start with the [step-by-step publishing guide](ARTICLE_PUBLISHING.md) and [copyable templates](https://github.com/Fuzzy-Technologies/fuzzy-technologies.github.io/tree/master/_templates/articles/). The owner-approved archive migration publishes full Russian articles with clearly marked English placeholders.
 
 For joint research authorship, use **Тимур и Мансур Гильмуллины** in Russian and **Timur & Mansur Gilmullin** in English. Keep single-author credits unchanged when only one person authored the article.
 

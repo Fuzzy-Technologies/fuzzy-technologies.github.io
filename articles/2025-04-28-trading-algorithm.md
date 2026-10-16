@@ -245,9 +245,9 @@ An engineering approach to trading is not about guesswork. It means handling unc
 
 ## Useful links
 
-- 🌐 The full signal FAQ and an explanation of FMA methods: [Fuzzy Market Analytics](https://fuzzy-technologies.github.io/FMA/)
+- 🌐 The full signal FAQ and an explanation of FMA methods: [Fuzzy Market Analytics](/FMA/)
 
-- ⚙️ The TKSBrokerAPI platform: [TKSBrokerAPI](https://fuzzy-technologies.github.io/TKSBrokerAPI/)
+- ⚙️ The TKSBrokerAPI platform: [TKSBrokerAPI](/TKSBrokerAPI/)
 
 ## Further reading
 

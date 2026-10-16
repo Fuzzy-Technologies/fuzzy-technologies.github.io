@@ -81,7 +81,7 @@ alternate_zh: /zh-cn/
     <h3>🧮 FuzzyRoutines</h3>
     <p>Математически надёжная Python-основа для функций принадлежности, нечётких множеств и шкал, а также основных операторов нечёткой логики.</p>
     <div class="project-links">
-      <a href="https://fuzzy-technologies.github.io/FuzzyRoutines/">Сайт проекта →</a>
+      <a href="/FuzzyRoutines/">Сайт проекта →</a>
       <a href="https://github.com/Fuzzy-Technologies/FuzzyRoutines">GitHub →</a>
     </div>
   </section>
@@ -91,7 +91,7 @@ alternate_zh: /zh-cn/
     <h3>☁️ F-Layer</h3>
     <p>Автоматизация облачной инфраструктуры из Python и командной строки: развёртывание ресурсов в Yandex Cloud, SSH-шлюзы и проверка доступности по HTTP.</p>
     <div class="project-links">
-      <a href="https://fuzzy-technologies.github.io/F-Layer/ru/">Сайт проекта →</a>
+      <a href="/F-Layer/ru/">Сайт проекта →</a>
       <a href="https://github.com/Fuzzy-Technologies/F-Layer">GitHub →</a>
     </div>
   </section>

@@ -135,9 +135,9 @@ source_url: https://teletype.in/@tgilmullin/target-probability
 
 ## Полезные ссылки
 
-- 🌐 Полный FAQ по сигналам и описание методик FMA: [Fuzzy Market Analytics](https://fuzzy-technologies.github.io/ru/FMA/)
+- 🌐 Полный FAQ по сигналам и описание методик FMA: [Fuzzy Market Analytics](/ru/FMA/)
 
-- ⚙️ Платформа TKSBrokerAPI: [TKSBrokerAPI](https://fuzzy-technologies.github.io/TKSBrokerAPI/)
+- ⚙️ Платформа TKSBrokerAPI: [TKSBrokerAPI](/TKSBrokerAPI/)
 
 ## Дополнительные материалы к статье
 
