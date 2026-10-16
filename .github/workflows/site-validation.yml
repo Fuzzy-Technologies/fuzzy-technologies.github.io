@@ -32,6 +32,8 @@ jobs:
           SITE_URL: ${{ matrix.site_url }}
         run: |
           python - <<'PY'
+          """Set a synthetic origin for the custom-domain regression build."""
+
           import json
           import os
           from pathlib import Path

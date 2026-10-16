@@ -12,10 +12,10 @@ GitHub Pages normally makes public project sites available below the organizatio
 
 The root site's links to these separately built resources use the same current-origin paths. The deterministic checker registers their exact routes rather than treating missing local files as valid by prefix. Their destinations were checked over HTTP during this audit; network availability is not part of the deterministic PR gate.
 
-| Resource | Paths used by this website | Source of deployed content |
-| -------- | -------------------------- | -------------------------- |
-| 1337 | `/1337/`, `/1337/zh-cn/` | [1337](https://github.com/Fuzzy-Technologies/1337) |
-| F-Layer | `/F-Layer/en/`, `/F-Layer/ru/`, `/F-Layer/zh-CN/` | [F-Layer](https://github.com/Fuzzy-Technologies/F-Layer) |
+| Resource         | Paths used by this website                                                                                | Source of deployed content                                         |
+| ---------------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| 1337             | `/1337/`, `/1337/zh-cn/`                                                                                  | [1337](https://github.com/Fuzzy-Technologies/1337)                 |
+| F-Layer          | `/F-Layer/en/`, `/F-Layer/ru/`, `/F-Layer/zh-CN/`                                                         | [F-Layer](https://github.com/Fuzzy-Technologies/F-Layer)           |
 | TKSBrokerAPI API | `/TKSBrokerAPI/docs/tksbrokerapi/TKSBrokerAPI.html`, `/TKSBrokerAPI/docs/tksbrokerapi/TradeRoutines.html` | [TKSBrokerAPI](https://github.com/Fuzzy-Technologies/TKSBrokerAPI) |
 
 The former personal-account TKSBrokerAPI documentation URL returned 404; the organization paths returned 200 and replace it in both product-page languages.

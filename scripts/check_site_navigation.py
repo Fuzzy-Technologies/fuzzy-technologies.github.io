@@ -70,9 +70,11 @@ class HtmlPage(HTMLParser):
 
         elif tag == "link" and attributes.get("rel") == "canonical":
             self.canonical = attributes.get("href")
+            self.metadata_urls.append(("canonical", self.canonical))
 
         elif tag == "link" and attributes.get("rel") == "alternate":
             self.alternates[attributes.get("hreflang")] = attributes.get("href")
+            self.metadata_urls.append(("alternate", attributes.get("href", "")))
 
         elif tag == "a":
             self.active_link = {**attributes, "text": ""}
