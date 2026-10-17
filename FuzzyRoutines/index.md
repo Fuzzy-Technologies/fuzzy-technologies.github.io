@@ -60,17 +60,22 @@ alternate_zh: /zh-cn/FuzzyRoutines/
 Install the published package from PyPI:
 
 ```bash
-pip install fuzzyroutines
+python -m pip install fuzzyroutines==2.0.0
 ```
 
-Create a universal fuzzy scale and classify a normalized value:
+Create a small linguistic scale and classify a temperature:
 
 ```python
-from fuzzyroutines.FuzzyRoutines import UniversalFuzzyScale
+from fuzzyroutines import (
+    ContinuousUniverse, LinguisticScale, LinguisticTerm, ScalarFuzzySet, Triangle,
+)
 
-scale = UniversalFuzzyScale()
-result = scale.Fuzzy(0.7)
-print(result["name"])
+universe = ContinuousUniverse(0, 40, True, True)
+scale = LinguisticScale((
+    LinguisticTerm("Comfort", ScalarFuzzySet(universe, Triangle(16, 22, 28))),
+))
+result = scale.Fuzzify(24)
+print(result.selectedTerms[0].name)  # Comfort
 ```
 
 To work with the current repository version:
@@ -83,7 +88,7 @@ python -m pip install .
 
 ## Project status
 
-FuzzyRoutines is an open-source Beta project under the MIT License. The repository currently declares the `2.0.0.dev0` development line while its packaging is being modernized. This first modernization step preserves the existing runtime layout, mathematical behavior, and public API. The latest tagged release is `1.0.3`.
+FuzzyRoutines is published under the Apache-2.0 license. The stable PyPI release is `2.0.0`, supporting CPython 3.13 and 3.14 with no mandatory runtime dependencies. The modern scalar API has explicit domains, immutable policies and inspectable results; protected historical imports remain available for existing applications.
 
 The project deliberately keeps its numerical objects readable: functions expose their parameters, fuzzy sets expose their support intervals, and scales expose their linguistic levels. This makes the library useful when a result must be examined rather than treated as a black box.
 
@@ -91,8 +96,9 @@ The project deliberately keeps its numerical objects readable: functions expose 
 
 - [Source code and usage examples](https://github.com/Fuzzy-Technologies/FuzzyRoutines)
 - [Published package on PyPI](https://pypi.org/project/fuzzyroutines/)
+- [Documentation](/FuzzyRoutines/api/latest/en/)
 - [Tests](https://github.com/Fuzzy-Technologies/FuzzyRoutines/tree/master/tests)
-- [MIT License](https://github.com/Fuzzy-Technologies/FuzzyRoutines/blob/master/LICENSE)
+- [Apache-2.0 License](https://github.com/Fuzzy-Technologies/FuzzyRoutines/blob/master/LICENSE)
 
 <footer class="site-footer">
   <strong><a href="/">Fuzzy Technologies</a></strong>

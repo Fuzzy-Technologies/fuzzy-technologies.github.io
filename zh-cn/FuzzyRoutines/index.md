@@ -60,17 +60,22 @@ alternate_zh: /zh-cn/FuzzyRoutines/
 从 PyPI 安装已发布的软件包：
 
 ```bash
-pip install fuzzyroutines
+python -m pip install fuzzyroutines==2.0.0
 ```
 
-创建通用模糊量表并对归一化数值进行分类：
+创建一个简单的语言标度并对温度进行分类：
 
 ```python
-from fuzzyroutines.FuzzyRoutines import UniversalFuzzyScale
+from fuzzyroutines import (
+    ContinuousUniverse, LinguisticScale, LinguisticTerm, ScalarFuzzySet, Triangle,
+)
 
-scale = UniversalFuzzyScale()
-result = scale.Fuzzy(0.7)
-print(result["name"])
+universe = ContinuousUniverse(0, 40, True, True)
+scale = LinguisticScale((
+    LinguisticTerm("Comfort", ScalarFuzzySet(universe, Triangle(16, 22, 28))),
+))
+result = scale.Fuzzify(24)
+print(result.selectedTerms[0].name)  # Comfort
 ```
 
 如需使用仓库中的当前版本：
@@ -83,7 +88,7 @@ python -m pip install .
 
 ## 项目状态
 
-FuzzyRoutines 是采用 MIT 许可证的开源 Beta 项目。仓库当前声明的开发版本线为 `2.0.0.dev0`，正在推进软件包构建与发布方式的现代化。第一阶段保持现有运行时代码结构、数学行为和公共 API 不变。最新标签版本为 `1.0.3`。
+FuzzyRoutines 采用 Apache-2.0 许可证。PyPI 上的稳定版本为 `2.0.0`，支持 CPython 3.13 和 3.14，且没有必需的运行时依赖。现代标量 API 提供显式定义域、不可变策略及可检查的结果；同时保留兼容的历史导入方式，便于现有应用继续使用。
 
 库中的数值对象有意保持可读：函数显示自身参数，模糊集显示支撑区间，量表显示语言层级。因此，它适合需要检查计算依据、而不是把结果交给黑盒模型的任务。
 
@@ -91,8 +96,9 @@ FuzzyRoutines 是采用 MIT 许可证的开源 Beta 项目。仓库当前声明�
 
 - [源代码与使用示例](https://github.com/Fuzzy-Technologies/FuzzyRoutines)
 - [PyPI 软件包](https://pypi.org/project/fuzzyroutines/)
+- [文档](/FuzzyRoutines/api/latest/zh-CN/)
 - [测试](https://github.com/Fuzzy-Technologies/FuzzyRoutines/tree/master/tests)
-- [MIT 许可证](https://github.com/Fuzzy-Technologies/FuzzyRoutines/blob/master/LICENSE)
+- [Apache-2.0 许可证](https://github.com/Fuzzy-Technologies/FuzzyRoutines/blob/master/LICENSE)
 
 <footer class="site-footer">
   <strong><a href="/zh-cn/">Fuzzy Technologies</a></strong>
