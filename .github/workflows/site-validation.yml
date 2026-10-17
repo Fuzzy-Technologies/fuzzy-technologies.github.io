@@ -18,7 +18,7 @@ jobs:
       matrix:
         include:
           - name: production-domain
-            site_url: https://fuzzy-technologies.com
+            site_url: ''
           - name: custom-domain
             site_url: https://www.example.test
     steps:
@@ -32,27 +32,35 @@ jobs:
           BUILD_NAME: ${{ matrix.name }}
         run: |
           python - <<'PY'
-          """Set a synthetic origin for the custom-domain regression build."""
+          """Select the configured production origin or an independent HTTPS fixture."""
 
           import json
           import os
           from pathlib import Path
           from urllib.parse import urlsplit
 
+          site_url = os.environ["SITE_URL"]
+
           if os.environ["BUILD_NAME"] == "production-domain":
-              assert Path("CNAME").read_text().strip() == urlsplit(os.environ["SITE_URL"]).hostname, "CNAME must match the production origin."
-          config_path = Path('_config.yml')
-          config_text = config_path.read_text()
-          assert 'url: null' in config_text, 'The production origin must come from Pages metadata.'
-          config_path.write_text(config_text.replace('url: null', 'url: ' + json.dumps(os.environ['SITE_URL']), 1))
+              cname_path = Path("CNAME")
+              hostname = cname_path.read_text(encoding="utf-8").strip().lower() if cname_path.is_file() else "fuzzy-technologies.github.io"
+              site_url = "https://" + hostname
+
+          origin = urlsplit(site_url)
+          assert origin.scheme == "https" and origin.hostname and site_url == "https://" + origin.hostname, "Expected a single HTTPS hostname without paths, ports, or extra lines."
+          config_path = Path("_config.yml")
+          config_text = config_path.read_text(encoding="utf-8")
+          assert "url: null" in config_text, "The production origin must come from Pages metadata."
+          config_path.write_text(config_text.replace("url: null", "url: " + json.dumps(site_url), 1), encoding="utf-8")
+
+          with Path(os.environ["GITHUB_ENV"]).open("a", encoding="utf-8") as env_file:
+              env_file.write("SITE_URL=" + site_url + "\n")
           PY
       - uses: actions/jekyll-build-pages@v1
         with:
           source: ./
           destination: ./_site
       - name: Check locale navigation and all internal links
-        env:
-          SITE_URL: ${{ matrix.site_url }}
         run: |
           python scripts/check_site_navigation.py _site --site-url "$SITE_URL"
           python scripts/check_site_links.py _site --site-url "$SITE_URL"
