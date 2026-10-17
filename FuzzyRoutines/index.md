@@ -96,7 +96,7 @@ The project deliberately keeps its numerical objects readable: functions expose 
 
 - [Source code and usage examples](https://github.com/Fuzzy-Technologies/FuzzyRoutines)
 - [Published package on PyPI](https://pypi.org/project/fuzzyroutines/)
-- [Documentation](https://fuzzy-technologies.github.io/FuzzyRoutines/api/latest/en/)
+- [Documentation](/FuzzyRoutines/api/latest/en/)
 - [Tests](https://github.com/Fuzzy-Technologies/FuzzyRoutines/tree/master/tests)
 - [Apache-2.0 License](https://github.com/Fuzzy-Technologies/FuzzyRoutines/blob/master/LICENSE)
 

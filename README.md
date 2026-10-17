@@ -26,7 +26,7 @@
 ## Project documentation
 
 - [Localization policy](docs/LOCALIZATION.md)
-- [Domain-independent navigation and migration audit](docs/DOMAIN_MIGRATION.md)
+- [Previous and new website URLs](docs/DOMAIN_MIGRATION.md)
 - [Public terminology guide](docs/TERMINOLOGY.md)
 - [Development protocol](DEVELOPMENT_PROTOCOL.md)
 - [Article publishing contract](docs/ARTICLES.md)

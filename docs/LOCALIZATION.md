@@ -16,7 +16,7 @@ English uses unprefixed URLs; Russian uses `/ru/`; Simplified Chinese uses `/zh-
 
 The former explicitly localized `/FMA/en/` and `/FMA/zh-cn/` URLs, including their instrument pages, redirect to the current URLs. The unprefixed `/FMA/` and `/FMA/instruments.html` now serve English; Russian links must explicitly use `/ru/FMA/`.
 
-Use current-origin paths for internal navigation and assets, including links to organization project sites. Canonical and social metadata derive their absolute URLs from the configured production origin. Follow the [domain-migration contract and audit](DOMAIN_MIGRATION.md).
+Use current-origin paths for internal navigation and assets, including links to organization project sites. Canonical and social metadata derive their absolute URLs from the configured production origin. See the [previous and new website URLs](DOMAIN_MIGRATION.md).
 
 ## General rules
 

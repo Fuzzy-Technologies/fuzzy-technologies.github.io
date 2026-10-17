@@ -96,7 +96,7 @@ FuzzyRoutines распространяется под лицензией Apache-
 
 - [Исходный код и примеры использования](https://github.com/Fuzzy-Technologies/FuzzyRoutines)
 - [Пакет в PyPI](https://pypi.org/project/fuzzyroutines/)
-- [Документация](https://fuzzy-technologies.github.io/FuzzyRoutines/api/latest/ru/)
+- [Документация](/FuzzyRoutines/api/latest/ru/)
 - [Тесты](https://github.com/Fuzzy-Technologies/FuzzyRoutines/tree/master/tests)
 - [Лицензия Apache-2.0](https://github.com/Fuzzy-Technologies/FuzzyRoutines/blob/master/LICENSE)
 

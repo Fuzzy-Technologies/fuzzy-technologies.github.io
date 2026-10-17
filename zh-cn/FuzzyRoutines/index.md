@@ -96,7 +96,7 @@ FuzzyRoutines 采用 Apache-2.0 许可证。PyPI 上的稳定版本为 `2.0.0`�
 
 - [源代码与使用示例](https://github.com/Fuzzy-Technologies/FuzzyRoutines)
 - [PyPI 软件包](https://pypi.org/project/fuzzyroutines/)
-- [文档](https://fuzzy-technologies.github.io/FuzzyRoutines/api/latest/zh-CN/)
+- [文档](/FuzzyRoutines/api/latest/zh-CN/)
 - [测试](https://github.com/Fuzzy-Technologies/FuzzyRoutines/tree/master/tests)
 - [Apache-2.0 许可证](https://github.com/Fuzzy-Technologies/FuzzyRoutines/blob/master/LICENSE)
 

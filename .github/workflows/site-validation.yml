@@ -17,8 +17,8 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - name: pages-default
-            site_url: https://fuzzy-technologies.github.io
+          - name: production-domain
+            site_url: https://fuzzy-technologies.com
           - name: custom-domain
             site_url: https://www.example.test
     steps:
@@ -26,10 +26,10 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: '3.13'
-      - name: Simulate the configured custom origin
-        if: matrix.name == 'custom-domain'
+      - name: Build the selected HTTPS origin
         env:
           SITE_URL: ${{ matrix.site_url }}
+          BUILD_NAME: ${{ matrix.name }}
         run: |
           python - <<'PY'
           """Set a synthetic origin for the custom-domain regression build."""
@@ -37,6 +37,10 @@ jobs:
           import json
           import os
           from pathlib import Path
+          from urllib.parse import urlsplit
+
+          if os.environ["BUILD_NAME"] == "production-domain":
+              assert Path("CNAME").read_text().strip() == urlsplit(os.environ["SITE_URL"]).hostname, "CNAME must match the production origin."
           config_path = Path('_config.yml')
           config_text = config_path.read_text()
           assert 'url: null' in config_text, 'The production origin must come from Pages metadata.'
