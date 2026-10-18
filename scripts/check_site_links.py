@@ -14,6 +14,8 @@ PROJECT_ROUTES = {
     "/F-Layer/en/",
     "/F-Layer/ru/",
     "/F-Layer/zh-CN/",
+    "/FuzzyRoutines/ru/",
+    "/FuzzyRoutines/zh-CN/",
     "/FuzzyRoutines/api/latest/en/",
     "/FuzzyRoutines/api/latest/ru/",
     "/FuzzyRoutines/api/latest/zh-CN/",

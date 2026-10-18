@@ -1,4 +1,4 @@
-"""Validate rendered FMA locale routes and shared article navigation."""
+"""Validate rendered project locale routes and shared article navigation."""
 
 import argparse
 from html.parser import HTMLParser
@@ -15,6 +15,11 @@ REDIRECTS = {
     "/FMA/en/instruments.html": "/FMA/instruments.html",
     "/FMA/zh-cn/": "/zh-cn/FMA/",
     "/FMA/zh-cn/instruments.html": "/zh-cn/FMA/instruments.html",
+}
+PROJECT_HOMEPAGES = {
+    "en": ("/", "/FuzzyRoutines/"),
+    "ru": ("/ru/", "/FuzzyRoutines/ru/"),
+    "zh-CN": ("/zh-cn/", "/FuzzyRoutines/zh-CN/"),
 }
 
 
@@ -107,9 +112,28 @@ def ReadPage(site_dir, url):
     return HtmlPage(path.read_text(encoding="utf-8"))
 
 
+def ValidateProjectNavigation(site_dir, site_url):
+    """Require company project cards to preserve the selected public language."""
+
+    origin = urlsplit(site_url).netloc
+
+    for lang, (homepage_url, project_url) in PROJECT_HOMEPAGES.items():
+        page = ReadPage(site_dir, homepage_url)
+        assert page.lang == lang, f"Wrong company language at {homepage_url}: {page.lang}."
+        destinations = [urlsplit(urljoin(site_url + homepage_url, link.get("href", ""))) for link in page.links]
+        project_links = [link for link in destinations if link.netloc == origin and link.path.startswith("/FuzzyRoutines/")]
+        assert len(project_links) == 1, f"Expected one FuzzyRoutines project link at {homepage_url}."
+        assert project_links[0].path == project_url, (
+            f"Wrong FuzzyRoutines locale at {homepage_url}: {project_links[0].path}; expected {project_url}."
+        )
+
+    return len(PROJECT_HOMEPAGES)
+
+
 def Validate(site_dir, site_url):
     """Check canonical routes, locale-preserving links and article returns."""
 
+    project_pages = ValidateProjectNavigation(site_dir, site_url)
     fma_pages = 0
 
     for lang, (fma_url, articles_url, _) in LOCALES.items():
@@ -186,7 +210,7 @@ def Validate(site_dir, site_url):
         article_count += 1
 
     assert article_count > 0, "No rendered articles were checked; verify the Jekyll build destination."
-    print(f"PASS: {fma_pages} FMA pages, {len(REDIRECTS)} redirects, {fma_links} FMA links, {article_count} articles.")
+    print(f"PASS: {project_pages} localized project links, {fma_pages} FMA pages, {len(REDIRECTS)} redirects, {fma_links} FMA links, {article_count} articles.")
 
 
 def Main():
