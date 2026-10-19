@@ -2,8 +2,8 @@
 layout: default
 lang: zh-CN
 title: Fuzzy Technologies — 工程与研发
-description: Fuzzy Technologies 专注于交易系统、网络安全、AI 与工程自动化领域的应用研发。
-keywords: Fuzzy Technologies, 网络安全, 安全工程, AI, 智能体, 工程自动化, 量化分析, 算法交易, 模糊逻辑, 开源, Python, 研发
+description: Fuzzy Technologies 将应用研究与工程开发相结合，涵盖交易系统、网络安全、AI、云自动化与数学。
+keywords: Fuzzy Technologies, 网络安全, 安全工程, AI, 智能体, 云自动化, VPN, 量化分析, 算法交易, 模糊逻辑, 数学史, 开源, Python, 研发
 alternate_en: /
 alternate_ru: /ru/
 alternate_zh: /zh-cn/
@@ -30,7 +30,7 @@ alternate_zh: /zh-cn/
     </td>
     <td class="home-intro-copy">
       <p class="eyebrow">工程 · 研发 · 开源</p>
-      <p class="hero-lead"><strong>Fuzzy Technologies</strong> 专注于交易系统、网络安全、AI 与工程自动化领域的应用研发。</p>
+      <p class="hero-lead"><strong>Fuzzy Technologies</strong> 将应用研究与工程开发相结合，涵盖交易系统、网络安全、AI、云自动化与数学。</p>
       <p>我们关注有难度的工程问题、明确的模型、可复现的实验，以及能够被验证而不只是被演示的软件系统。</p>
       <p class="brand-signature">— powered by math &amp; fuzzy logic</p>
       <div class="hero-actions">
@@ -50,10 +50,9 @@ alternate_zh: /zh-cn/
   <section class="project-card featured">
     <span class="card-label">安全 · AI · 开源</span>
     <h3>🛡️ 1337 Security Workbench</h3>
-    <p>开放、本地优先的安全工作台，面向渗透测试、安全调查与安全工程分析，以动态安全对象模型（Security Object Model）和可插拔工具为核心。</p>
-    <p class="quiet">授权范围 · 受控执行 · 证据 · 网络可达性 · 攻击路径</p>
+    <p>面向渗透测试、事件调查与安全自动化的开源安全工作台，架构兼顾 AI 智能体。</p>
     <div class="project-links">
-      <a href="/1337/zh-cn/">项目网站 →</a>
+      <a href="/1337/zh-cn/">了解更多 →</a>
       <a href="https://github.com/Fuzzy-Technologies/1337">GitHub →</a>
     </div>
   </section>
@@ -63,7 +62,7 @@ alternate_zh: /zh-cn/
     <h3>📊 Fuzzy Market Analytics</h3>
     <p>基于统计学、概率模型、异常过滤、风险评估与模糊推理的量化市场分析和交易系统。</p>
     <div class="project-links">
-      <a href="/zh-cn/FMA/">项目页面 →</a>
+      <a href="/zh-cn/FMA/">了解更多 →</a>
     </div>
   </section>
 
@@ -72,33 +71,42 @@ alternate_zh: /zh-cn/
     <h3>⚙️ TKSBrokerAPI</h3>
     <p>面向 T-Investments API 的开源 Python 平台，用于市场数据采集、分析与交易流程自动化。</p>
     <div class="project-links">
-      <a href="/TKSBrokerAPI/en/">项目页面 →</a>
+      <a href="/TKSBrokerAPI/en/">了解更多 →</a>
       <a href="https://github.com/Fuzzy-Technologies/TKSBrokerAPI">GitHub →</a>
     </div>
   </section>
 
   <section class="project-card">
-    <span class="card-label">Python · 模糊逻辑 (Fuzzy Logic) · 数学</span>
+    <span class="card-label">Python · 模糊逻辑 · 数学</span>
     <h3>🧮 FuzzyRoutines</h3>
-    <p>数学可靠的 Python 模糊计算基础库，提供隶属函数、模糊集、模糊量表及常用模糊逻辑算子。</p>
+    <p>Python 模糊计算库，涵盖模糊集、语言标度及 Mamdani 和 Sugeno 推理，标量核心无必需依赖。</p>
     <div class="project-links">
-      <a href="/FuzzyRoutines/">项目网站 →</a>
+      <a href="/FuzzyRoutines/zh-CN/">了解更多 →</a>
       <a href="https://github.com/Fuzzy-Technologies/FuzzyRoutines">GitHub →</a>
     </div>
   </section>
 
   <section class="project-card">
-    <span class="card-label">云 · Python · 自动化</span>
+    <span class="card-label">云 · VPN · 自动化</span>
     <h3>☁️ F-Layer</h3>
-    <p>通过 Python 和命令行自动管理云基础设施：在 Yandex Cloud 中部署资源、配置 SSH 网关，以及检查 HTTP 服务的可用性。</p>
+    <p>基于 Python 的云自动化平台：在 Yandex Cloud 上部署自有 VPN，支持 AmneziaWG、VLESS Reality、设备配置文件与二维码导出。</p>
     <div class="project-links">
-      <a href="/F-Layer/zh-CN/">项目网站 →</a>
+      <a href="/F-Layer/zh-CN/">了解更多 →</a>
       <a href="https://github.com/Fuzzy-Technologies/F-Layer">GitHub →</a>
+    </div>
+  </section>
+  <section class="project-card">
+    <span class="card-label">数学 · 历史 · 期刊</span>
+    <h3>📚 数学史</h3>
+    <p>《Mathematics with Mansur》是一本国际数学期刊，介绍数学家、重要发现与数学思想的发展历程。</p>
+    <div class="project-links">
+      <a href="https://history-math.org/" hreflang="en">阅读期刊（英文） →</a>
+      <a href="https://github.com/Fuzzy-Technologies/history_math">GitHub →</a>
     </div>
   </section>
 </div>
 
-## 工程方向
+## 研究与工程
 
 <div class="direction-grid">
   <section class="direction-card">
@@ -116,6 +124,14 @@ alternate_zh: /zh-cn/
   <section class="direction-card">
     <h3>开放工程</h3>
     <p>Python、API、自动化、CI/CD，以及可复用的开源工程工具。</p>
+  </section>
+  <section class="direction-card">
+    <h3>云基础设施</h3>
+    <p>云部署自动化、自有 VPN、访问管理与可复现的基础设施工作流。</p>
+  </section>
+  <section class="direction-card">
+    <h3>数学史</h3>
+    <p>研究数学思想的发展，查阅学术资料，并整理和出版期刊文章。</p>
   </section>
 </div>
 

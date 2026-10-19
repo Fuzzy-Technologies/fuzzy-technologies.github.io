@@ -2,8 +2,8 @@
 layout: default
 lang: ru
 title: Fuzzy Technologies — инженерные проекты и исследования
-description: Fuzzy Technologies занимается прикладными исследованиями и разработкой в области торговых систем, информационной безопасности, ИИ и инженерной автоматизации.
-keywords: Fuzzy Technologies, информационная безопасность, ИИ агенты, автоматизация, количественные системы, алгоритмическая торговля, нечёткая логика, open source, Python, исследования
+description: Fuzzy Technologies объединяет прикладные исследования и инженерную разработку в области торговых систем, информационной безопасности, ИИ, облачной автоматизации и математики.
+keywords: Fuzzy Technologies, информационная безопасность, ИИ агенты, облачная автоматизация, VPN, количественные системы, алгоритмическая торговля, нечёткая логика, история математики, open source, Python, исследования
 alternate_en: /
 alternate_ru: /ru/
 alternate_zh: /zh-cn/
@@ -30,7 +30,7 @@ alternate_zh: /zh-cn/
     </td>
     <td class="home-intro-copy">
       <p class="eyebrow">Инженерия · Исследования · Открытый код</p>
-      <p class="hero-lead"><strong>Fuzzy Technologies</strong> занимается прикладными исследованиями и разработкой в области торговых систем, информационной безопасности, ИИ и инженерной автоматизации.</p>
+      <p class="hero-lead"><strong>Fuzzy Technologies</strong> объединяет прикладные исследования и инженерную разработку в области торговых систем, информационной безопасности, ИИ, облачной автоматизации и математики.</p>
       <p>Любим сложные технические задачи, явные модели, воспроизводимые эксперименты и системы, работу которых можно проверить, а не только эффектно продемонстрировать.</p>
       <p class="brand-signature">— powered by math &amp; fuzzy logic</p>
       <div class="hero-actions">
@@ -50,9 +50,9 @@ alternate_zh: /zh-cn/
   <section class="project-card featured">
     <span class="card-label">Безопасность · ИИ · Открытый код</span>
     <h3>🛡️ 1337 Security Workbench</h3>
-    <p>Открытое рабочее место для ИБ-специалистов и пентестеров. Единое пространство для области проверки, управляемого запуска инструментов, доказательств, анализа достижимости и путей атаки; архитектура рассчитана и на ИИ-агентов.</p>
+    <p>Открытое рабочее место для пентеста, расследования инцидентов и автоматизации ИБ. Архитектура рассчитана на ИИ-агентов.</p>
     <div class="project-links">
-      <a href="/1337/">Сайт проекта →</a>
+      <a href="/1337/ru/">Подробнее →</a>
       <a href="https://github.com/Fuzzy-Technologies/1337">GitHub →</a>
     </div>
   </section>
@@ -62,7 +62,7 @@ alternate_zh: /zh-cn/
     <h3>📊 Fuzzy Market Analytics</h3>
     <p>Количественная рыночная аналитика и торговые системы: статистика, вероятностные модели, фильтрация аномалий, оценка риска и нечёткая логика.</p>
     <div class="project-links">
-      <a href="/ru/FMA/">Открыть FMA →</a>
+      <a href="/ru/FMA/">Подробнее →</a>
     </div>
   </section>
 
@@ -71,7 +71,7 @@ alternate_zh: /zh-cn/
     <h3>⚙️ TKSBrokerAPI</h3>
     <p>Открытая Python-платформа для API Т-Инвестиций, сбора и обработки рыночных данных, аналитики и автоматизации торговых сценариев.</p>
     <div class="project-links">
-      <a href="/TKSBrokerAPI/">Сайт проекта →</a>
+      <a href="/TKSBrokerAPI/">Подробнее →</a>
       <a href="https://github.com/Fuzzy-Technologies/TKSBrokerAPI">GitHub →</a>
     </div>
   </section>
@@ -79,25 +79,34 @@ alternate_zh: /zh-cn/
   <section class="project-card">
     <span class="card-label">Python · Нечёткая логика · Математика</span>
     <h3>🧮 FuzzyRoutines</h3>
-    <p>Математически надёжная Python-основа для функций принадлежности, нечётких множеств и шкал, а также основных операторов нечёткой логики.</p>
+    <p>Библиотека на Python для нечётких множеств, лингвистических шкал и вывода Мамдани и Сугено. Скалярное ядро без обязательных зависимостей.</p>
     <div class="project-links">
-      <a href="/FuzzyRoutines/">Сайт проекта →</a>
+      <a href="/FuzzyRoutines/ru/">Подробнее →</a>
       <a href="https://github.com/Fuzzy-Technologies/FuzzyRoutines">GitHub →</a>
     </div>
   </section>
 
   <section class="project-card">
-    <span class="card-label">Облако · Python · Автоматизация</span>
+    <span class="card-label">Облако · VPN · Автоматизация</span>
     <h3>☁️ F-Layer</h3>
-    <p>Автоматизация облачной инфраструктуры из Python и командной строки: развёртывание ресурсов в Yandex Cloud, SSH-шлюзы и проверка доступности по HTTP.</p>
+    <p>Облачная автоматизация на Python: собственный VPN в Yandex Cloud с AmneziaWG и VLESS Reality, профилями устройств и QR-кодами.</p>
     <div class="project-links">
-      <a href="/F-Layer/ru/">Сайт проекта →</a>
+      <a href="/F-Layer/ru/">Подробнее →</a>
       <a href="https://github.com/Fuzzy-Technologies/F-Layer">GitHub →</a>
+    </div>
+  </section>
+  <section class="project-card">
+    <span class="card-label">Математика · История · Журнал</span>
+    <h3>📚 История математики</h3>
+    <p>«Математика с Мансур-абый» — международный журнал об учёных, открытиях и развитии математических идей.</p>
+    <div class="project-links">
+      <a href="https://history-math.org/ru/" hreflang="ru">Читать журнал →</a>
+      <a href="https://github.com/Fuzzy-Technologies/history_math">GitHub →</a>
     </div>
   </section>
 </div>
 
-## Направления
+## Исследования и разработки
 
 <div class="direction-grid">
   <section class="direction-card">
@@ -115,6 +124,14 @@ alternate_zh: /zh-cn/
   <section class="direction-card">
     <h3>Открытая инженерия</h3>
     <p>Python, API, автоматизация, CI/CD и переиспользуемые инженерные инструменты.</p>
+  </section>
+  <section class="direction-card">
+    <h3>Облачная инфраструктура</h3>
+    <p>Автоматизация облачных развёртываний, собственные VPN, управление доступом и воспроизводимые инфраструктурные сценарии.</p>
+  </section>
+  <section class="direction-card">
+    <h3>История математики</h3>
+    <p>Развитие математических идей, научные источники, подготовка и публикация материалов журнала.</p>
   </section>
 </div>
 
