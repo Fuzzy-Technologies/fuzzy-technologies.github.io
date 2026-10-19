@@ -2,8 +2,8 @@
 layout: default
 lang: en
 title: Fuzzy Technologies — Engineering & R&D
-description: Fuzzy Technologies develops trading systems, cybersecurity tools, AI systems and engineering automation through applied R&D.
-keywords: Fuzzy Technologies, cybersecurity, AI agents, security engineering, quantitative systems, algorithmic trading, fuzzy logic, open source, Python, research, developer tools
+description: Fuzzy Technologies brings applied research and engineering to trading systems, cybersecurity, AI, cloud automation and mathematics.
+keywords: Fuzzy Technologies, cybersecurity, AI agents, security engineering, quantitative systems, algorithmic trading, fuzzy logic, cloud automation, VPN, history of mathematics, open source, Python, research
 alternate_en: /
 alternate_ru: /ru/
 alternate_zh: /zh-cn/
@@ -30,7 +30,7 @@ alternate_zh: /zh-cn/
     </td>
     <td class="home-intro-copy">
       <p class="eyebrow">Engineering · R&D · Open Source</p>
-      <p class="hero-lead"><strong>Fuzzy Technologies</strong> develops trading systems, cybersecurity tools, AI systems and engineering automation through applied R&amp;D.</p>
+      <p class="hero-lead"><strong>Fuzzy Technologies</strong> brings applied research and engineering to trading systems, cybersecurity, AI, cloud automation and mathematics.</p>
       <p>We like hard technical problems, explicit models, reproducible experiments, and software that can be checked instead of merely demonstrated.</p>
       <p class="brand-signature">— powered by math &amp; fuzzy logic</p>
       <div class="hero-actions">
@@ -50,10 +50,9 @@ alternate_zh: /zh-cn/
   <section class="project-card featured">
     <span class="card-label">Security · AI · Open Source</span>
     <h3>🛡️ 1337 Security Workbench</h3>
-    <p>Open security workstation and model-neutral cyber runtime for security engineers, pentesters, security teams, and future AI security agents.</p>
-    <p class="quiet">Scope · controlled execution · evidence · reachability · attack paths</p>
+    <p>Open security workbench for pentesting, incident investigation and security automation, with an architecture designed for AI agents.</p>
     <div class="project-links">
-      <a href="/1337/">Project site →</a>
+      <a href="/1337/">Learn more →</a>
       <a href="https://github.com/Fuzzy-Technologies/1337">GitHub →</a>
     </div>
   </section>
@@ -63,7 +62,7 @@ alternate_zh: /zh-cn/
     <h3>📊 Fuzzy Market Analytics</h3>
     <p>Quantitative market analytics and trading systems based on statistics, probability models, anomaly filtering, risk estimation, and fuzzy inference.</p>
     <div class="project-links">
-      <a href="/FMA/">Project page →</a>
+      <a href="/FMA/">Learn more →</a>
     </div>
   </section>
 
@@ -72,7 +71,7 @@ alternate_zh: /zh-cn/
     <h3>⚙️ TKSBrokerAPI</h3>
     <p>Open-source Python platform for the T-Investments API, market-data collection, analytics, and automated trading workflows.</p>
     <div class="project-links">
-      <a href="/TKSBrokerAPI/en/">Project page →</a>
+      <a href="/TKSBrokerAPI/en/">Learn more →</a>
       <a href="https://github.com/Fuzzy-Technologies/TKSBrokerAPI">GitHub →</a>
     </div>
   </section>
@@ -80,25 +79,34 @@ alternate_zh: /zh-cn/
   <section class="project-card">
     <span class="card-label">Python · Fuzzy Logic · Mathematics</span>
     <h3>🧮 FuzzyRoutines</h3>
-    <p>Mathematically reliable Python foundation for membership functions, fuzzy sets, fuzzy scales, and common fuzzy-logic operators.</p>
+    <p>Python library for fuzzy sets, linguistic scales, and Mamdani and Sugeno inference, with a dependency-free scalar core.</p>
     <div class="project-links">
-      <a href="/FuzzyRoutines/">Project site →</a>
+      <a href="/FuzzyRoutines/">Learn more →</a>
       <a href="https://github.com/Fuzzy-Technologies/FuzzyRoutines">GitHub →</a>
     </div>
   </section>
 
   <section class="project-card">
-    <span class="card-label">Cloud · Python · Automation</span>
+    <span class="card-label">Cloud · VPN · Automation</span>
     <h3>☁️ F-Layer</h3>
-    <p>Cloud infrastructure automation from Python and the CLI: Yandex Cloud deployments, SSH gateways, and HTTP availability checks.</p>
+    <p>Python cloud automation: deploy your VPN on Yandex Cloud with AmneziaWG and VLESS Reality, device profiles and QR codes.</p>
     <div class="project-links">
-      <a href="/F-Layer/en/">Project site →</a>
+      <a href="/F-Layer/en/">Learn more →</a>
       <a href="https://github.com/Fuzzy-Technologies/F-Layer">GitHub →</a>
+    </div>
+  </section>
+  <section class="project-card">
+    <span class="card-label">Mathematics · History · Journal</span>
+    <h3>📚 History of Mathematics</h3>
+    <p>Mathematics with Mansur: an international journal about mathematicians, discoveries and the history of mathematical ideas.</p>
+    <div class="project-links">
+      <a href="https://history-math.org/" hreflang="en">Read the journal →</a>
+      <a href="https://github.com/Fuzzy-Technologies/history_math">GitHub →</a>
     </div>
   </section>
 </div>
 
-## Engineering directions
+## Research & engineering
 
 <div class="direction-grid">
   <section class="direction-card">
@@ -116,6 +124,14 @@ alternate_zh: /zh-cn/
   <section class="direction-card">
     <h3>Open engineering</h3>
     <p>Python, APIs, automation, CI/CD, and reusable engineering tools that are useful in the open.</p>
+  </section>
+  <section class="direction-card">
+    <h3>Cloud infrastructure</h3>
+    <p>Cloud deployment automation, private VPNs, access management and reproducible infrastructure workflows.</p>
+  </section>
+  <section class="direction-card">
+    <h3>History of mathematics</h3>
+    <p>The development of mathematical ideas, scholarly sources and the preparation and publication of journal articles.</p>
   </section>
 </div>
 

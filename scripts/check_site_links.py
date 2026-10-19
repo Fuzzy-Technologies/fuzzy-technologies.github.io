@@ -10,6 +10,7 @@ LEGACY_HOSTS = {"fuzzy-technologies.github.io", "tim55667757.github.io"}
 # These exact routes are served by other organization repositories on Pages.
 PROJECT_ROUTES = {
     "/1337/",
+    "/1337/ru/",
     "/1337/zh-cn/",
     "/F-Layer/en/",
     "/F-Layer/ru/",
