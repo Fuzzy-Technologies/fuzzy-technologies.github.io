@@ -29,7 +29,7 @@ layout: default
 {% endif %}
 
 <header class="site-header">
-  <h1 class="site-title"><a href="{{ home_url }}"><img class="site-mark" src="/static/images/FTech-mark-mini.svg" alt="" aria-hidden="true" />Fuzzy Technologies</a></h1>
+  <h1 class="site-title"><a href="{{ home_url }}"><img class="site-mark" src="/static/images/FTech-mark-mini.svg" alt="" aria-hidden="true" />{% include brand-name.html %}</a></h1>
   <div class="site-actions">
     <nav class="language-switch" aria-label="Language">
       {% if articles_lang == "en" %}
@@ -50,7 +50,7 @@ layout: default
     </nav>
 
     <a class="brand-button" href="{{ home_url }}" aria-label="Fuzzy Technologies home">
-      <img src="/static/images/FuzzyTechnologies-Logo-transp.png" alt="Fuzzy Technologies" />
+      {% include brand-logo.html %}
     </a>
   </div>
 </header>
@@ -92,14 +92,4 @@ layout: default
   {% endfor %}
 </div>
 
-<footer class="site-footer">
-  <strong><a href="{{ home_url }}">Fuzzy Technologies</a></strong>
-  {% if articles_lang == "ru" %}
-    <span>Технологии · Знания · Наука</span>
-  {% elsif articles_lang == "zh-CN" %}
-    <span>技术 · 知识 · 科学</span>
-  {% else %}
-    <span>Technologies · Knowledge · Science</span>
-  {% endif %}
-  <span class="footer-signature">— powered by math &amp; fuzzy logic</span>
-</footer>
+{% include site-footer.html %}

@@ -15,7 +15,7 @@ description: Платформа ⚙️ TKSBrokerAPI для упрощённой 
       <span class="active" aria-current="page">RU</span>
     </nav>
     <a class="brand-button" href="/ru/" aria-label="Назад на Fuzzy Technologies">
-      <img src="/static/images/FuzzyTechnologies-Logo-transp.png" alt="Fuzzy Technologies" />
+      {% include brand-logo.html %}
     </a>
   </div>
 </header>
@@ -293,8 +293,4 @@ if __name__ == "__main__":
 
 <hr/>
 
-<footer class="site-footer">
-  <strong><a href="/ru/">Fuzzy Technologies</a></strong>
-  <span>Технологии · Знания · Наука</span>
-  <span class="footer-signature">— powered by math &amp; fuzzy logic</span>
-</footer>
+{% include site-footer.html %}

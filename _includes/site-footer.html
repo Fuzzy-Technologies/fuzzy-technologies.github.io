@@ -1,0 +1,17 @@
+{% assign brand_lang = page.lang | default: "en" %}
+{% case brand_lang %}
+  {% when "ru" %}
+    {% assign certificate_hint = "Товарный знак № 1276641 — свидетельство Роспатента" %}
+    {% assign brand_motto = "Технологии · Знания · Наука" %}
+  {% when "zh-CN" %}
+    {% assign certificate_hint = "第 1276641 号商标 — 注册证书（俄罗斯 FIPS/Rospatent 网站）" %}
+    {% assign brand_motto = "技术 · 知识 · 科学" %}
+  {% else %}
+    {% assign certificate_hint = "Trademark No. 1276641 — registration certificate (Russian FIPS/Rospatent website)" %}
+    {% assign brand_motto = "Technologies · Knowledge · Science" %}
+{% endcase %}
+<footer class="site-footer">
+  <strong><a class="trademark-link" href="https://fips.ru/EGD/e3ee2ab0-72e9-4524-a4b9-7123356f06fe" title="{{ certificate_hint }}" aria-description="{{ certificate_hint }}">{% include brand-name.html %}</a></strong>
+  <span>{{ brand_motto }}</span>
+  <span class="footer-signature">— powered by math &amp; fuzzy logic</span>
+</footer>

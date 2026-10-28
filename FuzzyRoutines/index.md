@@ -19,7 +19,7 @@ alternate_zh: /zh-cn/FuzzyRoutines/
       <a href="/zh-cn/FuzzyRoutines/" lang="zh-CN">简中</a>
     </nav>
     <a class="brand-button" href="/" aria-label="Back to Fuzzy Technologies">
-      <img src="/static/images/FuzzyTechnologies-Logo-transp.png" alt="Fuzzy Technologies" />
+      {% include brand-logo.html %}
     </a>
   </div>
 </header>
@@ -100,8 +100,4 @@ The project deliberately keeps its numerical objects readable: functions expose 
 - [Tests](https://github.com/Fuzzy-Technologies/FuzzyRoutines/tree/master/tests)
 - [Apache-2.0 License](https://github.com/Fuzzy-Technologies/FuzzyRoutines/blob/master/LICENSE)
 
-<footer class="site-footer">
-  <strong><a href="/">Fuzzy Technologies</a></strong>
-  <span>Technologies · Knowledge · Science</span>
-  <span class="footer-signature">— powered by math &amp; fuzzy logic</span>
-</footer>
+{% include site-footer.html %}

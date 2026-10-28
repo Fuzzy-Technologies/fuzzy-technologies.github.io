@@ -17,7 +17,7 @@ description: Сервисы биржевых сигналов Fuzzy Market Analy
       <a href="/zh-cn/FMA/instruments.html" lang="zh-CN">简中</a>
     </nav>
     <a class="brand-button" href="/ru/" aria-label="Назад на Fuzzy Technologies">
-      <img src="/static/images/FuzzyTechnologies-Logo-transp.png" alt="Fuzzy Technologies" />
+      {% include brand-logo.html %}
     </a>
   </div>
 </header>
@@ -294,8 +294,4 @@ description: Сервисы биржевых сигналов Fuzzy Market Analy
 | PLTRUB_TOM | rub    | Платина.                           |
 | PLDRUB_TOM | rub    | Палладий.                          |
 
-<footer class="site-footer">
-  <strong><a href="/ru/">Fuzzy Technologies</a></strong>
-  <span>Технологии · Знания · Наука</span>
-  <span class="footer-signature">— powered by math &amp; fuzzy logic</span>
-</footer>
+{% include site-footer.html %}
