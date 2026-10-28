@@ -155,11 +155,12 @@
     // or navigation while the optional network request is in flight.
     let interacted = false;
     const cancel = function () { interacted = true; };
-    win.document.addEventListener('pointerdown', cancel, { once: true, capture: true });
-    win.document.addEventListener('keydown', cancel, { once: true, capture: true });
+    const cancelEvents = ['pointerdown', 'keydown', 'wheel', 'touchstart'];
+    cancelEvents.forEach(function (name) {
+      win.document.addEventListener(name, cancel, { once: true, capture: true, passive: true });
+    });
     const country = await lookupCountry(win);
-    win.document.removeEventListener('pointerdown', cancel, true);
-    win.document.removeEventListener('keydown', cancel, true);
+    cancelEvents.forEach(function (name) { win.document.removeEventListener(name, cancel, true); });
     if (interacted || win.location.href !== url.href || savedPreference(win)) return;
     const target = destination(url.href, countryLanguage(country));
     if (target) win.location.replace(target);

@@ -141,12 +141,22 @@ test('geo request is aborted on timeout', async () => {
   assert.equal(calls.redirects.length, 0);
 });
 
-test('late geo result cannot override user input or a new manual choice', async () => {
+for (const event of ['pointerdown', 'keydown', 'wheel', 'touchstart']) test('late geo cannot interrupt ' + event, async () => {
   const { win, calls } = browser({ languages: ['de'] });
   let resolve;
   win.fetch = () => new Promise(done => { resolve = done; });
   const running = locale.start(win);
-  calls.events.get('pointerdown')();
+  calls.events.get(event)();
+  resolve({ ok: true, text: async () => 'loc=RU\n' });
+  await running;
+  assert.equal(calls.redirects.length, 0);
+});
+
+test('late geo cannot override a new manual choice', async () => {
+  const { win, calls } = browser({ languages: ['de'] });
+  let resolve;
+  win.fetch = () => new Promise(done => { resolve = done; });
+  const running = locale.start(win);
   locale.savePreference(win, 'en');
   resolve({ ok: true, text: async () => 'loc=RU\n' });
   await running;
