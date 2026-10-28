@@ -136,7 +136,7 @@ alternate_zh: /zh-cn/
 </div>
 
 <footer class="site-footer">
-  <strong><a class="trademark-link" href="https://fips.ru/EGD/e3ee2ab0-72e9-4524-a4b9-7123356f06fe" title="Товарный знак № 1276641 — свидетельство Роспатента" aria-description="Товарный знак № 1276641 — свидетельство Роспатента">Fuzzy Technologies<sup class="trademark-symbol">®</sup></a></strong>
+  <strong><a class="trademark-link" href="https://fips.ru/EGD/e3ee2ab0-72e9-4524-a4b9-7123356f06fe" title="Trademark No. 1276641 — registration certificate (Russian FIPS/Rospatent website)" aria-description="Trademark No. 1276641 — registration certificate (Russian FIPS/Rospatent website)">Fuzzy Technologies<sup class="trademark-symbol">®</sup></a></strong>
   <span>Technologies · Knowledge · Science</span>
   <span class="footer-signature">— powered by math &amp; fuzzy logic</span>
 </footer>
