@@ -15,7 +15,7 @@ alternate_ru: /TKSBrokerAPI/
       <a href="/TKSBrokerAPI/" lang="ru">RU</a>
     </nav>
     <a class="brand-button" href="/" aria-label="Back to Fuzzy Technologies">
-      <img src="/static/images/FuzzyTechnologies-Logo-transp.png" alt="Fuzzy Technologies" />
+      {% include brand-logo.html %}
     </a>
   </div>
 </header>
@@ -157,8 +157,4 @@ if __name__ == "__main__":
 
 More examples are available in the [project README](https://github.com/Fuzzy-Technologies/TKSBrokerAPI).
 
-<footer class="site-footer">
-  <strong><a href="/">Fuzzy Technologies</a></strong>
-  <span>Technologies · Knowledge · Science</span>
-  <span class="footer-signature">— powered by math &amp; fuzzy logic</span>
-</footer>
+{% include site-footer.html %}

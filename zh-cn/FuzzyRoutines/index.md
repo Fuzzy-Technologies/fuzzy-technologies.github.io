@@ -19,7 +19,7 @@ alternate_zh: /zh-cn/FuzzyRoutines/
       <span class="active" aria-current="page">简中</span>
     </nav>
     <a class="brand-button" href="/zh-cn/" aria-label="返回 Fuzzy Technologies">
-      <img src="/static/images/FuzzyTechnologies-Logo-transp.png" alt="Fuzzy Technologies" />
+      {% include brand-logo.html %}
     </a>
   </div>
 </header>
@@ -100,8 +100,4 @@ FuzzyRoutines 采用 Apache-2.0 许可证。PyPI 上的稳定版本为 `2.0.0`�
 - [测试](https://github.com/Fuzzy-Technologies/FuzzyRoutines/tree/master/tests)
 - [Apache-2.0 许可证](https://github.com/Fuzzy-Technologies/FuzzyRoutines/blob/master/LICENSE)
 
-<footer class="site-footer">
-  <strong><a href="/zh-cn/">Fuzzy Technologies</a></strong>
-  <span>技术 · 知识 · 科学</span>
-  <span class="footer-signature">— powered by math &amp; fuzzy logic</span>
-</footer>
+{% include site-footer.html %}

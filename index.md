@@ -10,7 +10,7 @@ alternate_zh: /zh-cn/
 ---
 
 <header class="site-header">
-  <h1 class="site-title"><a href="/"><img class="site-mark" src="/static/images/FTech-mark-mini.svg" alt="" aria-hidden="true" />Fuzzy Technologies</a></h1>
+  <h1 class="site-title"><a href="/"><img class="site-mark" src="/static/images/FTech-mark-mini.svg" alt="" aria-hidden="true" />{% include brand-name.html %}</a></h1>
   <div class="site-actions">
     <nav class="language-switch" aria-label="Language">
       <span class="active" aria-current="page">EN</span>
@@ -18,7 +18,7 @@ alternate_zh: /zh-cn/
       <a href="/zh-cn/" lang="zh-CN">简中</a>
     </nav>
     <a class="brand-button" href="/" aria-label="Fuzzy Technologies home">
-      <img src="/static/images/FuzzyTechnologies-Logo-registered.svg" width="1000" height="180" alt="Fuzzy Technologies®" />
+      {% include brand-logo.html %}
     </a>
   </div>
 </header>
@@ -135,8 +135,4 @@ alternate_zh: /zh-cn/
   </section>
 </div>
 
-<footer class="site-footer">
-  <strong><a class="trademark-link" href="https://fips.ru/EGD/e3ee2ab0-72e9-4524-a4b9-7123356f06fe" title="Trademark No. 1276641 — registration certificate (Russian FIPS/Rospatent website)" aria-description="Trademark No. 1276641 — registration certificate (Russian FIPS/Rospatent website)">Fuzzy Technologies<sup class="trademark-symbol">®</sup></a></strong>
-  <span>Technologies · Knowledge · Science</span>
-  <span class="footer-signature">— powered by math &amp; fuzzy logic</span>
-</footer>
+{% include site-footer.html %}

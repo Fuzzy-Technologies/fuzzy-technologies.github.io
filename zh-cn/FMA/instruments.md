@@ -17,7 +17,7 @@ alternate_zh: /zh-cn/FMA/instruments.html
       <span class="active" aria-current="page">简中</span>
     </nav>
     <a class="brand-button" href="/zh-cn/" aria-label="返回 Fuzzy Technologies">
-      <img src="/static/images/FuzzyTechnologies-Logo-transp.png" alt="Fuzzy Technologies" />
+      {% include brand-logo.html %}
     </a>
   </div>
 </header>
@@ -93,8 +93,4 @@ MDMG, LIFE, GECO, OZPH, ABIO, PRMD, GEMC.
 | PLTRUB_TOM | rub  | 铂金           |
 | PLDRUB_TOM | rub  | 钯金           |
 
-<footer class="site-footer">
-  <strong><a href="/zh-cn/">Fuzzy Technologies</a></strong>
-  <span>技术 · 知识 · 科学</span>
-  <span class="footer-signature">— powered by math &amp; fuzzy logic</span>
-</footer>
+{% include site-footer.html %}
