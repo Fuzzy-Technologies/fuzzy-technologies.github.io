@@ -25,6 +25,8 @@ class BrandingParser(HTMLParser):
         self.logos = []
         self.links = []
         self.current_link = None
+        self.in_brand_button = False
+        self.button_images = []
 
     def handle_starttag(self, tag, attrs):
         """Collect branding attributes without relying on source indentation."""
@@ -40,6 +42,12 @@ class BrandingParser(HTMLParser):
 
         if tag == "img" and "FuzzyTechnologies-Logo-" in attrs.get("src", ""):
             self.logos.append(attrs)
+
+        if tag == "a" and "brand-button" in classes:
+            self.in_brand_button = True
+
+        if tag == "img" and self.in_brand_button:
+            self.button_images.append(attrs)
 
         if tag == "a" and "trademark-link" in classes:
             self.current_link = {"attrs": attrs, "text": "", "superscript": False}
@@ -58,6 +66,7 @@ class BrandingParser(HTMLParser):
 
         if tag == "a":
             self.current_link = None
+            self.in_brand_button = False
 
     def handle_data(self, data):
         """Capture the full linked brand name, including its registration mark."""
@@ -79,6 +88,9 @@ def ValidatePage(path):
 
     if len(parser.logos) != 1 or parser.logos[0].get("src") != LOGO_URL:
         errors.append("header must use the registered logo exactly once")
+
+    if len(parser.button_images) != 1 or parser.button_images[0].get("src") != LOGO_URL:
+        errors.append("brand button must wrap only its logo; check inline include whitespace")
 
     if len(parser.links) != 1:
         errors.append("footer must contain exactly one certificate link")
