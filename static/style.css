@@ -769,6 +769,22 @@ body::before {
 
 .site-footer strong { color: var(--cyan); }
 
+.site-footer .trademark-link {
+  color: inherit;
+  white-space: nowrap;
+}
+
+.trademark-link:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 3px;
+}
+
+.trademark-symbol {
+  font-size: 0.65em;
+  line-height: 0;
+  vertical-align: super;
+}
+
 .articles-heading {
   width: 100%;
   max-width: none;
