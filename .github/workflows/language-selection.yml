@@ -1,0 +1,60 @@
+name: Validate first-entry language selection
+
+on:
+  pull_request:
+    branches: [master]
+  push:
+    branches: [master]
+  workflow_dispatch:
+    inputs:
+      target:
+        description: Browser test target
+        type: choice
+        default: preview
+        options: [preview, live]
+
+permissions:
+  contents: read
+
+jobs:
+  routing-policy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --test scripts/test_locale.cjs
+
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/jekyll-build-pages@v1
+        if: inputs.target != 'live'
+        with:
+          source: ./
+          destination: ./_site
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check language selection in Chromium
+        env:
+          TARGET: ${{ inputs.target }}
+        run: |
+          if [ "$TARGET" = "live" ]; then
+            export SITE_TEST_ORIGIN=https://fuzzy-technologies.com
+          else
+            python3 -m http.server 8765 --bind 127.0.0.1 --directory _site > /tmp/site-browser-server.log 2>&1 &
+            export SITE_TEST_ORIGIN=http://127.0.0.1:8765
+          fi
+          npm install --prefix "$RUNNER_TEMP/site-browser" --no-save playwright@1.62.1
+          "$RUNNER_TEMP/site-browser/node_modules/.bin/playwright" install --with-deps chromium
+          NODE_PATH="$RUNNER_TEMP/site-browser/node_modules" node scripts/test_site_browser.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: first-entry-language-browser-results
+          path: _browser-test-results
+          retention-days: 14
