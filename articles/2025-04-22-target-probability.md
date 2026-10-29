@@ -12,6 +12,7 @@ series_url: /FMA/
 permalink: /articles/2025-04-22-target-probability/
 alternate_en: /articles/2025-04-22-target-probability/
 alternate_ru: /ru/articles/2025-04-22-target-probability/
+alternate_zh: "/zh-cn/articles/2025-04-22-target-probability/"
 preview_image: /static/images/articles/2025-04-22-target-probability/Girls-and-probability.png
 preview_text: Real markets contain noise, outliers and uncertainty. We explain how to use historical data to estimate the probability of reaching a target, why prices need cleaning before calculation, and how to express the result as an understandable fuzzy assessment. With examples and diagrams.
 cover_image: /static/images/articles/2025-04-22-target-probability/Girls-and-probability.png

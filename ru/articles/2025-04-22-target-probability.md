@@ -12,6 +12,7 @@ series_url: /ru/FMA/
 permalink: /ru/articles/2025-04-22-target-probability/
 alternate_en: /articles/2025-04-22-target-probability/
 alternate_ru: /ru/articles/2025-04-22-target-probability/
+alternate_zh: "/zh-cn/articles/2025-04-22-target-probability/"
 preview_image: /static/images/articles/2025-04-22-target-probability/Girls-and-probability.png
 preview_text: На реальном рынке есть шум, выбросы и неопределённость. Рассказываем, как по историческим данным оценивать вероятность достижения целевого уровня, зачем очищать цены перед расчётом и как переводить результат в понятную нечёткую оценку. С примерами и схемами.
 cover_image: /static/images/articles/2025-04-22-target-probability/Girls-and-probability.png

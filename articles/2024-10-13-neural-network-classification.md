@@ -12,6 +12,7 @@ series_url: /FMA/
 permalink: /articles/2024-10-13-neural-network-classification/
 alternate_en: /articles/2024-10-13-neural-network-classification/
 alternate_ru: /ru/articles/2024-10-13-neural-network-classification/
+alternate_zh: "/zh-cn/articles/2024-10-13-neural-network-classification/"
 preview_image: /static/images/articles/2024-10-13-neural-network-classification/01-classification.webp
 preview_text: 'One of my earliest articles on neural networks, based on teaching materials from 2008. We examine the perceptron, supervised learning, linear class separation, and the AND, OR and XOR functions: the basic mathematics behind neural networks.'
 cover_image: /static/images/articles/2024-10-13-neural-network-classification/02-perceptron.png

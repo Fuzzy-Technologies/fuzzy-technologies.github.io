@@ -13,6 +13,7 @@ series_url: /ru/FMA/
 permalink: /ru/articles/2024-10-13-neural-network-classification/
 alternate_en: /articles/2024-10-13-neural-network-classification/
 alternate_ru: /ru/articles/2024-10-13-neural-network-classification/
+alternate_zh: "/zh-cn/articles/2024-10-13-neural-network-classification/"
 preview_image: /static/images/articles/2024-10-13-neural-network-classification/01-classification.webp
 preview_text: Одна из моих первых статей о нейросетях — по учебным материалам 2008 года. Разбираем устройство персептрона, обучение с учителем, линейное разделение классов и функции AND, OR и XOR. Та самая базовая математика, с которой удобно начинать знакомство с нейросетями.
 cover_image: /static/images/articles/2024-10-13-neural-network-classification/02-perceptron.png

@@ -12,6 +12,7 @@ series_url: /FMA/
 permalink: /articles/2025-05-13-trading-algorithm-history/
 alternate_en: /articles/2025-05-13-trading-algorithm-history/
 alternate_ru: /ru/articles/2025-05-13-trading-algorithm-history/
+alternate_zh: "/zh-cn/articles/2025-05-13-trading-algorithm-history/"
 preview_image: /static/images/articles/2025-05-13-trading-algorithm-history/promo-3.png
 preview_text: 'From the first Python scripts and sketches on paper to a signal algorithm: how, since 2015, we studied trends, formalised risk and target attainability, created PriceGenerator and built a decision-making system. Complete with drafts, charts and mistakes.'
 cover_image: /static/images/articles/2025-05-13-trading-algorithm-history/promo-3.png

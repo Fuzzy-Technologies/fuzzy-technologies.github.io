@@ -12,6 +12,7 @@ series_url: /FMA/
 permalink: /articles/2025-04-16-hampel-anomalies-filtering/
 alternate_en: /articles/2025-04-16-hampel-anomalies-filtering/
 alternate_ru: /ru/articles/2025-04-16-hampel-anomalies-filtering/
+alternate_zh: "/zh-cn/articles/2025-04-16-hampel-anomalies-filtering/"
 preview_image: /static/images/articles/2025-04-16-hampel-anomalies-filtering/Girls-and-Hampel.png
 preview_text: Measurement errors, network failures and price spikes are common. We show how to find these anomalies quickly using the median, MAD and a sliding window, from the basic idea of the Hampel filter to its applications in data analysis and algorithmic trading.
 cover_image: /static/images/articles/2025-04-16-hampel-anomalies-filtering/Girls-and-Hampel.png
