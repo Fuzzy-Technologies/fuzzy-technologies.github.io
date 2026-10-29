@@ -12,6 +12,7 @@ series_url: /ru/FMA/
 permalink: /ru/articles/2025-04-28-trading-algorithm/
 alternate_en: /articles/2025-04-28-trading-algorithm/
 alternate_ru: /ru/articles/2025-04-28-trading-algorithm/
+alternate_zh: "/zh-cn/articles/2025-04-28-trading-algorithm/"
 preview_image: /static/images/articles/2025-04-28-trading-algorithm/Girls-and-signals.png
 preview_text: 'Как из рыночных данных получается торговый сигнал? Разбираем всю цепочку: фильтрацию выбросов, оценку достижимости цели, нечёткую силу сигнала, правила открытия и закрытия позиций и управление капиталом. Историческая архитектура нашего алгоритма образца 2025 года.'
 cover_image: /static/images/articles/2025-04-28-trading-algorithm/Girls-and-signals.png

@@ -12,6 +12,7 @@ series_url: /ru/FMA/
 permalink: /ru/articles/2024-12-01-modified-hampel-filter/
 alternate_en: /articles/2024-12-01-modified-hampel-filter/
 alternate_ru: /ru/articles/2024-12-01-modified-hampel-filter/
+alternate_zh: "/zh-cn/articles/2024-12-01-modified-hampel-filter/"
 preview_image: /static/images/articles/2024-12-01-modified-hampel-filter/digest-robot-1200x630.png
 preview_text: 'Что считать аномалией в числовом ряду и как её найти? Разбираем модифицированный метод Хампеля: устойчивость медианы, MAD, скользящие окна и настройку порога. С формальными определениями, примерами на Python и экспериментом на сгенерированных биржевых данных.'
 cover_image: /static/images/articles/2024-12-01-modified-hampel-filter/digest-robot-1200x630.png

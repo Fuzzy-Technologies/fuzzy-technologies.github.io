@@ -12,6 +12,7 @@ series_url: /FMA/
 permalink: /articles/2025-04-28-trading-algorithm/
 alternate_en: /articles/2025-04-28-trading-algorithm/
 alternate_ru: /ru/articles/2025-04-28-trading-algorithm/
+alternate_zh: "/zh-cn/articles/2025-04-28-trading-algorithm/"
 preview_image: /static/images/articles/2025-04-28-trading-algorithm/Girls-and-signals.png
 preview_text: 'How do market data become a trading signal? We follow the whole process: outlier filtering, target-attainability estimates, fuzzy signal strength, rules for opening and closing positions, and capital management. The architecture of our algorithm as it stood in 2025.'
 cover_image: /static/images/articles/2025-04-28-trading-algorithm/Girls-and-signals.png

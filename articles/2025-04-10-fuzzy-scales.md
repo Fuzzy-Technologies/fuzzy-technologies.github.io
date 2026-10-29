@@ -12,6 +12,7 @@ series_url: /FMA/
 permalink: /articles/2025-04-10-fuzzy-scales/
 alternate_en: /articles/2025-04-10-fuzzy-scales/
 alternate_ru: /ru/articles/2025-04-10-fuzzy-scales/
+alternate_zh: "/zh-cn/articles/2025-04-10-fuzzy-scales/"
 preview_image: /static/images/articles/2025-04-10-fuzzy-scales/Girls-and-scales.png
 preview_text: How do you assess a system that is mostly secure, with a moderate level of risk? We explain fuzzy measurement scales, membership functions and transitions between levels, using examples from cybersecurity, data analysis and trading-signal assessment.
 cover_image: /static/images/articles/2025-04-10-fuzzy-scales/Girls-and-scales.png

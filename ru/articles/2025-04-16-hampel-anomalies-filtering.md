@@ -12,6 +12,7 @@ series_url: /ru/FMA/
 permalink: /ru/articles/2025-04-16-hampel-anomalies-filtering/
 alternate_en: /articles/2025-04-16-hampel-anomalies-filtering/
 alternate_ru: /ru/articles/2025-04-16-hampel-anomalies-filtering/
+alternate_zh: "/zh-cn/articles/2025-04-16-hampel-anomalies-filtering/"
 preview_image: /static/images/articles/2025-04-16-hampel-anomalies-filtering/Girls-and-Hampel.png
 preview_text: 'Ошибки измерений, сетевые сбои и ценовые всплески встречаются постоянно. Показываем, как быстро находить такие аномалии с помощью медианы, MAD и скользящего окна: от простой идеи фильтра Хампеля до примеров его применения в анализе данных и алгоритмическом трейдинге.'
 cover_image: /static/images/articles/2025-04-16-hampel-anomalies-filtering/Girls-and-Hampel.png

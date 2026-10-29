@@ -12,6 +12,7 @@ series_url: /FMA/
 permalink: /articles/2024-12-01-modified-hampel-filter/
 alternate_en: /articles/2024-12-01-modified-hampel-filter/
 alternate_ru: /ru/articles/2024-12-01-modified-hampel-filter/
+alternate_zh: "/zh-cn/articles/2024-12-01-modified-hampel-filter/"
 preview_image: /static/images/articles/2024-12-01-modified-hampel-filter/digest-robot-1200x630.png
 preview_text: 'What makes a value anomalous, and how do we detect it? We examine a modified Hampel filter: the robustness of the median, MAD, sliding windows and threshold selection. With formal definitions, Python examples and an experiment using synthetic market data.'
 cover_image: /static/images/articles/2024-12-01-modified-hampel-filter/digest-robot-1200x630.png
