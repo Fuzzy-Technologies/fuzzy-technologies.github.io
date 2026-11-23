@@ -20,7 +20,7 @@ class TestProjectNavigation(unittest.TestCase):
         self._WriteHome("ru", "ru", "/FuzzyRoutines/ru/")
         self._WriteHome("zh-CN", "zh-cn", "/FuzzyRoutines/zh-CN/")
 
-    def _WriteHome(self, lang, directory, target, *, duplicate=False):
+    def _WriteHome(self, lang, directory, target, *, duplicate=False, price_target=None):
         """Write a minimal HTML route, keeping external repository links separate."""
 
         path = self.site_dir / directory / "index.html"
@@ -30,8 +30,11 @@ class TestProjectNavigation(unittest.TestCase):
         if duplicate:
             project_link *= 2
 
+        if price_target is None:
+            price_target = {"en": "/PriceGenerator/", "ru": "/PriceGenerator/ru/", "zh-CN": "/PriceGenerator/zh-CN/"}[lang]
+
         path.write_text(
-            f'<html lang="{lang}"><body>{project_link}'
+            f'<html lang="{lang}"><body>{project_link}<a href="{price_target}">PriceGenerator</a>'
             '<a href="https://github.com/Fuzzy-Technologies/FuzzyRoutines">GitHub</a>'
             "</body></html>",
             encoding="utf-8",
@@ -42,7 +45,7 @@ class TestProjectNavigation(unittest.TestCase):
 
         for origin in ("https://fuzzy-technologies.com", "https://www.example.test"):
             with self.subTest(origin=origin):
-                self.assertEqual(ValidateProjectNavigation(self.site_dir, origin), 3)
+                self.assertEqual(ValidateProjectNavigation(self.site_dir, origin), 6)
 
     def test_RussianEnglishFallbackIsRejected(self):
         """Reproduce the Russian card incorrectly opening the English project."""
@@ -50,6 +53,14 @@ class TestProjectNavigation(unittest.TestCase):
         self._WriteHome("ru", "ru", "/FuzzyRoutines/")
 
         with self.assertRaisesRegex(AssertionError, "Wrong FuzzyRoutines locale at /ru/"):
+            ValidateProjectNavigation(self.site_dir, "https://fuzzy-technologies.com")
+
+    def test_PriceGeneratorPreservesTheProjectChineseLocale(self):
+        """Reject an English product landing from the Chinese company homepage."""
+
+        self._WriteHome("zh-CN", "zh-cn", "/FuzzyRoutines/zh-CN/", price_target="/PriceGenerator/")
+
+        with self.assertRaisesRegex(AssertionError, "expected /PriceGenerator/zh-CN/"):
             ValidateProjectNavigation(self.site_dir, "https://fuzzy-technologies.com")
 
     def test_ChineseRouteCaseIsProtected(self):

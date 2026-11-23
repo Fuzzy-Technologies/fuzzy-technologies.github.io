@@ -87,6 +87,16 @@ alternate_zh: /zh-cn/
   </section>
 
   <section class="project-card">
+    <span class="card-label">合成行情 · Python</span>
+    <h3>📈 PriceGenerator</h3>
+    <p>生成可复现的 K 线和成交量，用多条价格路径检验交易规则，并将模拟数据与真实市场历史比较。</p>
+    <div class="project-links">
+      <a href="/PriceGenerator/zh-CN/">了解更多 →</a>
+      <a href="https://github.com/Fuzzy-Technologies/PriceGenerator">GitHub →</a>
+    </div>
+  </section>
+
+  <section class="project-card">
     <span class="card-label">云 · VPN · 自动化</span>
     <h3>☁️ F-Layer</h3>
     <p>基于 Python 的云自动化平台：在 Yandex Cloud 上部署自有 VPN，支持 AmneziaWG、VLESS Reality、设备配置文件与二维码导出。</p>
