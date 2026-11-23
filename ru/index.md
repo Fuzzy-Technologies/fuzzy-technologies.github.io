@@ -87,6 +87,16 @@ alternate_zh: /zh-cn/
   </section>
 
   <section class="project-card">
+    <span class="card-label">Синтетические котировки · Python</span>
+    <h3>📈 PriceGenerator</h3>
+    <p>Генерируйте свечи и объёмы, испытывайте торговую стратегию на разных ценовых траекториях и сравнивайте сценарий с рыночной историей.</p>
+    <div class="project-links">
+      <a href="/PriceGenerator/ru/">Подробнее →</a>
+      <a href="https://github.com/Fuzzy-Technologies/PriceGenerator">GitHub →</a>
+    </div>
+  </section>
+
+  <section class="project-card">
     <span class="card-label">Облако · VPN · Автоматизация</span>
     <h3>☁️ F-Layer</h3>
     <p>Облачная автоматизация на Python: собственный VPN в Yandex Cloud с AmneziaWG и VLESS Reality, профилями устройств и QR-кодами.</p>

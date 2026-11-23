@@ -17,9 +17,9 @@ REDIRECTS = {
     "/FMA/zh-cn/instruments.html": "/zh-cn/FMA/instruments.html",
 }
 PROJECT_HOMEPAGES = {
-    "en": ("/", "/FuzzyRoutines/"),
-    "ru": ("/ru/", "/FuzzyRoutines/ru/"),
-    "zh-CN": ("/zh-cn/", "/FuzzyRoutines/zh-CN/"),
+    "en": ("/", ""),
+    "ru": ("/ru/", "ru/"),
+    "zh-CN": ("/zh-cn/", "zh-CN/"),
 }
 
 
@@ -117,17 +117,20 @@ def ValidateProjectNavigation(site_dir, site_url):
 
     origin = urlsplit(site_url).netloc
 
-    for lang, (homepage_url, project_url) in PROJECT_HOMEPAGES.items():
+    for lang, (homepage_url, project_locale) in PROJECT_HOMEPAGES.items():
         page = ReadPage(site_dir, homepage_url)
         assert page.lang == lang, f"Wrong company language at {homepage_url}: {page.lang}."
         destinations = [urlsplit(urljoin(site_url + homepage_url, link.get("href", ""))) for link in page.links]
-        project_links = [link for link in destinations if link.netloc == origin and link.path.startswith("/FuzzyRoutines/")]
-        assert len(project_links) == 1, f"Expected one FuzzyRoutines project link at {homepage_url}."
-        assert project_links[0].path == project_url, (
-            f"Wrong FuzzyRoutines locale at {homepage_url}: {project_links[0].path}; expected {project_url}."
-        )
+        for project in ("FuzzyRoutines", "PriceGenerator"):
+            prefix = f"/{project}/"
+            expected = prefix + project_locale
+            project_links = [link for link in destinations if link.netloc == origin and link.path.startswith(prefix)]
+            assert len(project_links) == 1, f"Expected one {project} project link at {homepage_url}."
+            assert project_links[0].path == expected, (
+                f"Wrong {project} locale at {homepage_url}: {project_links[0].path}; expected {expected}."
+            )
 
-    return len(PROJECT_HOMEPAGES)
+    return 2 * len(PROJECT_HOMEPAGES)
 
 
 def Validate(site_dir, site_url):
